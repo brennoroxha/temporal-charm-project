@@ -11,7 +11,7 @@
     document.head.appendChild(script);
   }
 
-  load("/cloak.js?v=" + Date.now());
+  
   load("/fb-pixel.js");
   load("/utmify-pixel.js");
   load("/visit-log.js");
