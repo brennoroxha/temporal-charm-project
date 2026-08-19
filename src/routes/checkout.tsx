@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { ChevronDown, Check, Lock, ArrowLeft } from "lucide-react";
 import { lojaProducts } from "@/data/lojaProducts";
 import { type LojaProduct } from "@/data/types";
-import { createFreepayPix } from "@/lib/freepay.functions";
+
 import { lojaImageSrc } from "@/lib/lojaImage";
 import { trackEvent, trackFieldOnce } from "@/lib/track";
 import mlDesktopLogo from "@/assets/ml-desktop-local.webp";
@@ -75,7 +75,7 @@ type Step = 1 | 2 | 3;
 type ShippingId = "standard" | "full";
 
 function CheckoutPage() {
-  const createFreepayPixFn = useServerFn(createFreepayPix);
+  
   
   const navigate = useNavigate();
   const [cart, setCart] = useState<CartItem[]>([]);
@@ -98,7 +98,7 @@ function CheckoutPage() {
   const [complemento, setComplemento] = useState("");
   const [salvarEndereco, setSalvarEndereco] = useState(true);
   const [cepLoading, setCepLoading] = useState(false);
-  const [activeGateway, setActiveGateway] = useState<"freepay">("freepay");
+  const [activeGateway, setActiveGateway] = useState<string | null>(null);
 
   const [cepError, setCepError] = useState("");
   const [shipping, setShipping] = useState<ShippingId>("standard");
@@ -176,81 +176,9 @@ function CheckoutPage() {
       localStorage.setItem("checkoutCustomer", JSON.stringify({ nome, email, cpf, telefone }));
     } catch { /* noop */ }
     setPayLoading(true);
-    try {
-      const items = cart.map((i) => ({
-        title: i.title,
-        unitPrice: Math.round(parsePrice(i.price) * 100),
-        quantity: i.qty,
-        tangible: true,
-      }));
-      const amount = Math.round(total * 100);
-      let result;
-      let gatewayUsed: "freepay" = "freepay";
-      const storedUtms = (window as any).getStoredUtms?.() || {};
-      const fbData = (window as any).fbTracking?.() || {};
-      
-      const trackingData = {
-        ...storedUtms,
-        fbp: fbData.fbp || "",
-        fbc: fbData.fbc || "",
-        url: fbData.event_source_url || window.location.href,
-        user_agent: fbData.user_agent || navigator.userAgent
-      };
-
-      try {
-        result = await createFreepayPixFn({
-          data: {
-            amount,
-            metadata: { ...trackingData },
-            customer: {
-              name: nome,
-              email,
-              phone: telefone.replace(/\D/g, ""),
-              cpf: cpf.replace(/\D/g, ""),
-            },
-            items,
-            shipping: {
-              street: rua || "Não informado",
-              streetNumber: numero || "S/N",
-              zipCode: cep.replace(/\D/g, ""),
-              neighborhood: bairro || "Não informado",
-              city: cidade || "Não informado",
-              state: estado || "SP",
-              complement: complemento || "",
-            },
-          },
-        });
-      } catch (err) {
-        console.error("FreePay gateway failed", err);
-        throw err;
-      }
-
-      if (!result || !result.qrcode) throw new Error("QR code não retornado");
-      const payload = JSON.stringify({
-        transactionId: result.id,
-        qrcode: result.qrcode,
-        qrcodeImage: result.qrcodeImage,
-        amount: total,
-        expirationDate: (result as any).expirationDate || "",
-        customerName: nome,
-        items: cart.map((c) => ({
-          slug: c.slug,
-          title: c.title,
-          image: lojaImageSrc(c.img),
-          qty: c.qty,
-          unitPrice: parsePrice(c.price),
-        })),
-      });
-      try { sessionStorage.setItem("pixPayment", payload); } catch { /* noop */ }
-      try { localStorage.setItem("pixPayment", payload); } catch { /* noop */ }
-      trackEvent("pix_generated", { transactionId: String(result.id), amount: Math.round(total * 100) });
-      window.location.assign("/pagamento");
-    } catch (e) {
-      console.error(e);
-      trackEvent("pix_error", { message: String((e as Error)?.message ?? e) });
-      alert(`Erro ao gerar pagamento PIX: ${String((e as Error)?.message ?? e)}. Tente novamente.`);
-      setPayLoading(false);
-    }
+    // Simulating gateway failure as they were requested to be removed
+    alert("Nenhum método de pagamento disponível no momento.");
+    setPayLoading(false);
   };
 
 
@@ -617,17 +545,10 @@ function CheckoutPage() {
                 <span style={{ width: 28, height: 28, background: "#000", color: "#fff", borderRadius: 4, display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: 15, fontWeight: 700 }}>3</span>
                 Escolha como pagar
               </h2>
-              <label style={{ display: "flex", alignItems: "center", gap: 14, padding: "14px 16px", border: "2px solid #3483FA", background: "#E3EEFD", borderRadius: 8, margin: "8px 0 16px", cursor: "pointer" }}>
-                <span style={{ width: 20, height: 20, borderRadius: "50%", border: "2px solid #3483FA", display: "inline-flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                  <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#3483FA" }} />
-                </span>
-                <img src="https://http2.mlstatic.com/storage/buyingflow-core-assets-web/bf-assets/svg/bf_v6_pix.svg" alt="Pix" style={{ width: 64, height: 64 }} />
-                <div>
-                  <div style={{ fontWeight: 600, fontSize: 16, color: "#333" }}>Pix</div>
-                  <div style={{ fontSize: 13, color: "#666" }}>Aprovação imediata</div>
-                </div>
-              </label>
-              <button type="button" className="co-btn" onClick={goPay} disabled={payLoading || cart.length === 0}>Finalizar Compra</button>
+              <div style={{ padding: "20px", textAlign: "center", color: "#666" }}>
+                Nenhum método de pagamento disponível no momento.
+              </div>
+              <button type="button" className="co-btn" onClick={goPay} disabled={true}>Finalizar Compra</button>
             </div>
           </div>
         )}

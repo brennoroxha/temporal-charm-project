@@ -23,7 +23,6 @@ import { Route as ApiPublicTrackEventRouteImport } from './routes/api/public/tra
 import { Route as ApiPublicTrackRouteImport } from './routes/api/public/track'
 import { Route as ApiPublicLogVisitRouteImport } from './routes/api/public/log-visit'
 import { Route as ApiPublicGeoRouteImport } from './routes/api/public/geo'
-import { Route as ApiPublicFreepayWebhookRouteImport } from './routes/api/public/freepay-webhook'
 
 const RoletaRoute = RoletaRouteImport.update({
   id: '/roleta',
@@ -94,11 +93,6 @@ const ApiPublicGeoRoute = ApiPublicGeoRouteImport.update({
   path: '/api/public/geo',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiPublicFreepayWebhookRoute = ApiPublicFreepayWebhookRouteImport.update({
-  id: '/api/public/freepay-webhook',
-  path: '/api/public/freepay-webhook',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -110,7 +104,6 @@ export interface FileRoutesByFullPath {
   '/roleta': typeof RoletaRoute
   '/admin': typeof AuthenticatedAdminRoute
   '/produto/$slug': typeof ProdutoSlugRoute
-  '/api/public/freepay-webhook': typeof ApiPublicFreepayWebhookRoute
   '/api/public/geo': typeof ApiPublicGeoRoute
   '/api/public/log-visit': typeof ApiPublicLogVisitRoute
   '/api/public/track': typeof ApiPublicTrackRoute
@@ -126,7 +119,6 @@ export interface FileRoutesByTo {
   '/roleta': typeof RoletaRoute
   '/admin': typeof AuthenticatedAdminRoute
   '/produto/$slug': typeof ProdutoSlugRoute
-  '/api/public/freepay-webhook': typeof ApiPublicFreepayWebhookRoute
   '/api/public/geo': typeof ApiPublicGeoRoute
   '/api/public/log-visit': typeof ApiPublicLogVisitRoute
   '/api/public/track': typeof ApiPublicTrackRoute
@@ -144,7 +136,6 @@ export interface FileRoutesById {
   '/roleta': typeof RoletaRoute
   '/_authenticated/admin': typeof AuthenticatedAdminRoute
   '/produto/$slug': typeof ProdutoSlugRoute
-  '/api/public/freepay-webhook': typeof ApiPublicFreepayWebhookRoute
   '/api/public/geo': typeof ApiPublicGeoRoute
   '/api/public/log-visit': typeof ApiPublicLogVisitRoute
   '/api/public/track': typeof ApiPublicTrackRoute
@@ -162,7 +153,6 @@ export interface FileRouteTypes {
     | '/roleta'
     | '/admin'
     | '/produto/$slug'
-    | '/api/public/freepay-webhook'
     | '/api/public/geo'
     | '/api/public/log-visit'
     | '/api/public/track'
@@ -178,7 +168,6 @@ export interface FileRouteTypes {
     | '/roleta'
     | '/admin'
     | '/produto/$slug'
-    | '/api/public/freepay-webhook'
     | '/api/public/geo'
     | '/api/public/log-visit'
     | '/api/public/track'
@@ -195,7 +184,6 @@ export interface FileRouteTypes {
     | '/roleta'
     | '/_authenticated/admin'
     | '/produto/$slug'
-    | '/api/public/freepay-webhook'
     | '/api/public/geo'
     | '/api/public/log-visit'
     | '/api/public/track'
@@ -212,7 +200,6 @@ export interface RootRouteChildren {
   QuizRoute: typeof QuizRoute
   RoletaRoute: typeof RoletaRoute
   ProdutoSlugRoute: typeof ProdutoSlugRoute
-  ApiPublicFreepayWebhookRoute: typeof ApiPublicFreepayWebhookRoute
   ApiPublicGeoRoute: typeof ApiPublicGeoRoute
   ApiPublicLogVisitRoute: typeof ApiPublicLogVisitRoute
   ApiPublicTrackRoute: typeof ApiPublicTrackRoute
@@ -319,13 +306,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicGeoRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/freepay-webhook': {
-      id: '/api/public/freepay-webhook'
-      path: '/api/public/freepay-webhook'
-      fullPath: '/api/public/freepay-webhook'
-      preLoaderRoute: typeof ApiPublicFreepayWebhookRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -350,7 +330,6 @@ const rootRouteChildren: RootRouteChildren = {
   QuizRoute: QuizRoute,
   RoletaRoute: RoletaRoute,
   ProdutoSlugRoute: ProdutoSlugRoute,
-  ApiPublicFreepayWebhookRoute: ApiPublicFreepayWebhookRoute,
   ApiPublicGeoRoute: ApiPublicGeoRoute,
   ApiPublicLogVisitRoute: ApiPublicLogVisitRoute,
   ApiPublicTrackRoute: ApiPublicTrackRoute,
