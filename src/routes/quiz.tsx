@@ -75,27 +75,10 @@ function Index() {
   const [step, setStep] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [done, setDone] = useState(false);
-  const [isCloaked, setIsCloaked] = useState(false);
 
   useEffect(() => {
-    // Verificamos se o cloak está ativo
-    if ((window as any).__whitePageRendered) {
-      setIsCloaked(true);
-      return;
-    }
-
-    const check = () => {
-      if ((window as any).__whitePageRendered) {
-        setIsCloaked(true);
-      }
-    };
-    const timer = setInterval(check, 100);
-    return () => clearInterval(timer);
+    window.scrollTo({ top: 0 });
   }, []);
-
-  if (isCloaked) {
-    return null;
-  }
 
   const progress = useMemo(
     () => Math.round(((step + (selected !== null ? 1 : 0)) / QUESTIONS.length) * 100),

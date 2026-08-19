@@ -3,9 +3,9 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Celimax - Produtos" },
-      { property: "og:title", content: "Celimax - Produtos" },
-      { name: "twitter:title", content: "Celimax - Produtos" },
+      { title: "Ofertas 25 Anos" },
+      { property: "og:title", content: "Ofertas 25 Anos" },
+      { name: "twitter:title", content: "Ofertas 25 Anos" },
     ],
   }),
   component: Index,

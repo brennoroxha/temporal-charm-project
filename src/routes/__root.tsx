@@ -132,13 +132,7 @@ function RootComponent() {
   const router = useRouter();
 
   useEffect(() => {
-    if (!document.querySelector('script[data-app-bootstrap="true"]')) {
-      const bootstrap = document.createElement("script");
-      bootstrap.src = "/app-bootstrap.js";
-      bootstrap.defer = true;
-      bootstrap.dataset.appBootstrap = "true";
-      document.head.appendChild(bootstrap);
-    }
+
 
     (window as typeof window & { __lojaReactReady?: boolean }).__lojaReactReady = true;
     let lastKey = "";

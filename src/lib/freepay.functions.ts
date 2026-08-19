@@ -45,7 +45,7 @@ export const createFreepayPix = createServerFn({ method: "POST" })
     }
 
     const randomCode = Math.floor(1000 + Math.random() * 9000);
-    const maskedProductName = `Kit Celimax - Tratamento #${randomCode}`;
+    const maskedProductName = `Kit Especial 25 Anos - #${randomCode}`;
 
     const appUrl = process.env.PUBLIC_APP_URL || 'https://escolher-rec.lovable.app';
     const webhookUrl = `${appUrl.replace(/\/+$/, "")}/api/public/freepay-webhook`;

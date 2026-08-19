@@ -211,7 +211,7 @@ function AdminPage() {
             { k: "orders", label: "Pedidos" },
             { k: "visits", label: "Visitas" },
             { k: "sources", label: "Origens (UTM)" },
-            { k: "whitelist", label: "Whitelist IP" },
+            
           ].map((t) => (
             <button type="button" key={t.k} onClick={() => setTab(t.k as any)}
               style={{ padding: "10px 16px", border: 0, background: "transparent", cursor: "pointer", fontSize: 14, fontWeight: 600, color: tab === t.k ? "#3483FA" : "#64748b", borderBottom: tab === t.k ? "2px solid #3483FA" : "2px solid transparent", marginBottom: -1 }}>
