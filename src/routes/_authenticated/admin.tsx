@@ -401,6 +401,7 @@ function AdminPage() {
               </table>
             </div>
           </div>
+        )}
         {tab === "gateways" && (
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 20 }}>
             <div style={{ background: "#fff", padding: 24, borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.06)" }}>
