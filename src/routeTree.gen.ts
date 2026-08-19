@@ -22,6 +22,7 @@ import { Route as AuthenticatedAdminRouteImport } from './routes/_authenticated/
 import { Route as ApiPublicTrackEventRouteImport } from './routes/api/public/track-event'
 import { Route as ApiPublicTrackRouteImport } from './routes/api/public/track'
 import { Route as ApiPublicLogVisitRouteImport } from './routes/api/public/log-visit'
+import { Route as ApiPublicFreepayWebhookRouteImport } from './routes/api/public/freepay-webhook'
 
 const RoletaRoute = RoletaRouteImport.update({
   id: '/roleta',
@@ -87,6 +88,11 @@ const ApiPublicLogVisitRoute = ApiPublicLogVisitRouteImport.update({
   path: '/api/public/log-visit',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicFreepayWebhookRoute = ApiPublicFreepayWebhookRouteImport.update({
+  id: '/api/public/freepay-webhook',
+  path: '/api/public/freepay-webhook',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -98,6 +104,7 @@ export interface FileRoutesByFullPath {
   '/roleta': typeof RoletaRoute
   '/admin': typeof AuthenticatedAdminRoute
   '/produto/$slug': typeof ProdutoSlugRoute
+  '/api/public/freepay-webhook': typeof ApiPublicFreepayWebhookRoute
   '/api/public/log-visit': typeof ApiPublicLogVisitRoute
   '/api/public/track': typeof ApiPublicTrackRoute
   '/api/public/track-event': typeof ApiPublicTrackEventRoute
@@ -112,6 +119,7 @@ export interface FileRoutesByTo {
   '/roleta': typeof RoletaRoute
   '/admin': typeof AuthenticatedAdminRoute
   '/produto/$slug': typeof ProdutoSlugRoute
+  '/api/public/freepay-webhook': typeof ApiPublicFreepayWebhookRoute
   '/api/public/log-visit': typeof ApiPublicLogVisitRoute
   '/api/public/track': typeof ApiPublicTrackRoute
   '/api/public/track-event': typeof ApiPublicTrackEventRoute
@@ -128,6 +136,7 @@ export interface FileRoutesById {
   '/roleta': typeof RoletaRoute
   '/_authenticated/admin': typeof AuthenticatedAdminRoute
   '/produto/$slug': typeof ProdutoSlugRoute
+  '/api/public/freepay-webhook': typeof ApiPublicFreepayWebhookRoute
   '/api/public/log-visit': typeof ApiPublicLogVisitRoute
   '/api/public/track': typeof ApiPublicTrackRoute
   '/api/public/track-event': typeof ApiPublicTrackEventRoute
@@ -144,6 +153,7 @@ export interface FileRouteTypes {
     | '/roleta'
     | '/admin'
     | '/produto/$slug'
+    | '/api/public/freepay-webhook'
     | '/api/public/log-visit'
     | '/api/public/track'
     | '/api/public/track-event'
@@ -158,6 +168,7 @@ export interface FileRouteTypes {
     | '/roleta'
     | '/admin'
     | '/produto/$slug'
+    | '/api/public/freepay-webhook'
     | '/api/public/log-visit'
     | '/api/public/track'
     | '/api/public/track-event'
@@ -173,6 +184,7 @@ export interface FileRouteTypes {
     | '/roleta'
     | '/_authenticated/admin'
     | '/produto/$slug'
+    | '/api/public/freepay-webhook'
     | '/api/public/log-visit'
     | '/api/public/track'
     | '/api/public/track-event'
@@ -188,6 +200,7 @@ export interface RootRouteChildren {
   QuizRoute: typeof QuizRoute
   RoletaRoute: typeof RoletaRoute
   ProdutoSlugRoute: typeof ProdutoSlugRoute
+  ApiPublicFreepayWebhookRoute: typeof ApiPublicFreepayWebhookRoute
   ApiPublicLogVisitRoute: typeof ApiPublicLogVisitRoute
   ApiPublicTrackRoute: typeof ApiPublicTrackRoute
   ApiPublicTrackEventRoute: typeof ApiPublicTrackEventRoute
@@ -286,6 +299,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicLogVisitRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/freepay-webhook': {
+      id: '/api/public/freepay-webhook'
+      path: '/api/public/freepay-webhook'
+      fullPath: '/api/public/freepay-webhook'
+      preLoaderRoute: typeof ApiPublicFreepayWebhookRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -310,6 +330,7 @@ const rootRouteChildren: RootRouteChildren = {
   QuizRoute: QuizRoute,
   RoletaRoute: RoletaRoute,
   ProdutoSlugRoute: ProdutoSlugRoute,
+  ApiPublicFreepayWebhookRoute: ApiPublicFreepayWebhookRoute,
   ApiPublicLogVisitRoute: ApiPublicLogVisitRoute,
   ApiPublicTrackRoute: ApiPublicTrackRoute,
   ApiPublicTrackEventRoute: ApiPublicTrackEventRoute,

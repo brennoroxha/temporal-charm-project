@@ -2,6 +2,7 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useEffect, useState } from "react";
 import { ChevronDown, Check, Lock, ArrowLeft } from "lucide-react";
+import { createFreepayPix } from "@/lib/freepay.functions";
 import { lojaProducts } from "@/data/lojaProducts";
 import { type LojaProduct } from "@/data/types";
 
@@ -78,6 +79,7 @@ function CheckoutPage() {
   
   
   const navigate = useNavigate();
+  const freepayPix = useServerFn(createFreepayPix);
   const [cart, setCart] = useState<CartItem[]>([]);
   const [step, setStep] = useState<Step>(1);
   const [openSummary, setOpenSummary] = useState(false);
@@ -98,7 +100,7 @@ function CheckoutPage() {
   const [complemento, setComplemento] = useState("");
   const [salvarEndereco, setSalvarEndereco] = useState(true);
   const [cepLoading, setCepLoading] = useState(false);
-  const [activeGateway, setActiveGateway] = useState<string | null>(null);
+  const [activeGateway, setActiveGateway] = useState<string | null>("freepay");
 
   const [cepError, setCepError] = useState("");
   const [shipping, setShipping] = useState<ShippingId>("standard");
@@ -176,9 +178,35 @@ function CheckoutPage() {
       localStorage.setItem("checkoutCustomer", JSON.stringify({ nome, email, cpf, telefone }));
     } catch { /* noop */ }
     setPayLoading(true);
-    // Simulating gateway failure as they were requested to be removed
-    alert("Nenhum método de pagamento disponível no momento.");
-    setPayLoading(false);
+
+    try {
+      const utms = {
+        utm_source: new URLSearchParams(window.location.search).get("utm_source") || "",
+        utm_medium: new URLSearchParams(window.location.search).get("utm_medium") || "",
+        utm_campaign: new URLSearchParams(window.location.search).get("utm_campaign") || "",
+        utm_content: new URLSearchParams(window.location.search).get("utm_content") || "",
+        utm_term: new URLSearchParams(window.location.search).get("utm_term") || "",
+        gclid: new URLSearchParams(window.location.search).get("gclid") || "",
+        fbclid: new URLSearchParams(window.location.search).get("fbclid") || "",
+      };
+
+      const res = await freepayPix({
+        data: {
+          amount: Math.round(total * 100),
+          customer: { name: nome, email, cpf, phone: telefone },
+          items: cart.map((it) => ({ title: it.title, unitPrice: parsePrice(it.price) * 100, quantity: it.qty })),
+          shipping: { street: rua, streetNumber: numero, zipCode: cep, neighborhood: bairro, city: cidade, state: estado, complement: complemento },
+          metadata: { ...utms }
+        }
+      });
+      
+      sessionStorage.setItem("pixPayment", JSON.stringify(res));
+      navigate({ to: "/pagamento" });
+    } catch (err: any) {
+      alert(err.message || "Erro ao processar pagamento.");
+    } finally {
+      setPayLoading(false);
+    }
   };
 
 
