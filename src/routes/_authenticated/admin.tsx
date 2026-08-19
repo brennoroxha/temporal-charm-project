@@ -401,8 +401,41 @@ function AdminPage() {
               </table>
             </div>
           </div>
-        )}
+        {tab === "gateways" && (
+          <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 20 }}>
+            <div style={{ background: "#fff", padding: 24, borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.06)" }}>
+              <h3 style={{ margin: "0 0 16px" }}>Split de Gateways</h3>
+              <label style={{ display: "flex", alignItems: "center", gap: 8, cursor: "pointer" }}>
+                <input type="checkbox" checked={splitSettings.enabled} onChange={(e) => updateSplitMut.mutate(e.target.checked)} />
+                Ativar split automático entre gateways
+              </label>
+            </div>
 
+            {gateways.map((g) => (
+              <div key={g.id} style={{ background: "#fff", padding: 24, borderRadius: 10, boxShadow: "0 1px 3px rgba(0,0,0,.06)" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
+                  <h3 style={{ margin: 0, textTransform: "capitalize" }}>{g.name}</h3>
+                  <label style={{ display: "flex", alignItems: "center", gap: 8, cursor: "pointer" }}>
+                    <input type="checkbox" checked={g.is_active} onChange={(e) => updateGatewayMut.mutate({ id: g.id, isActive: e.target.checked })} />
+                    Ativo
+                  </label>
+                </div>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+                  <div>
+                    <label style={{ display: "block", fontSize: 13, marginBottom: 4 }}>Public Key</label>
+                    <input type="text" defaultValue={g.public_key} onBlur={(e) => updateGatewayMut.mutate({ id: g.id, publicKey: e.target.value })} 
+                      style={{ width: "100%", padding: 8, borderRadius: 6, border: "1px solid #ddd" }} />
+                  </div>
+                  <div>
+                    <label style={{ display: "block", fontSize: 13, marginBottom: 4 }}>Secret Key</label>
+                    <input type="password" defaultValue={g.secret_key} onBlur={(e) => updateGatewayMut.mutate({ id: g.id, secretKey: e.target.value })}
+                      style={{ width: "100%", padding: 8, borderRadius: 6, border: "1px solid #ddd" }} />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
 
