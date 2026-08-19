@@ -545,17 +545,10 @@ function CheckoutPage() {
                 <span style={{ width: 28, height: 28, background: "#000", color: "#fff", borderRadius: 4, display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: 15, fontWeight: 700 }}>3</span>
                 Escolha como pagar
               </h2>
-              <label style={{ display: "flex", alignItems: "center", gap: 14, padding: "14px 16px", border: "2px solid #3483FA", background: "#E3EEFD", borderRadius: 8, margin: "8px 0 16px", cursor: "pointer" }}>
-                <span style={{ width: 20, height: 20, borderRadius: "50%", border: "2px solid #3483FA", display: "inline-flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                  <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#3483FA" }} />
-                </span>
-                <img src="https://http2.mlstatic.com/storage/buyingflow-core-assets-web/bf-assets/svg/bf_v6_pix.svg" alt="Pix" style={{ width: 64, height: 64 }} />
-                <div>
-                  <div style={{ fontWeight: 600, fontSize: 16, color: "#333" }}>Pix</div>
-                  <div style={{ fontSize: 13, color: "#666" }}>Aprovação imediata</div>
-                </div>
-              </label>
-              <button type="button" className="co-btn" onClick={goPay} disabled={payLoading || cart.length === 0}>Finalizar Compra</button>
+              <div style={{ padding: "20px", textAlign: "center", color: "#666" }}>
+                Nenhum método de pagamento disponível no momento.
+              </div>
+              <button type="button" className="co-btn" onClick={goPay} disabled={true}>Finalizar Compra</button>
             </div>
           </div>
         )}
