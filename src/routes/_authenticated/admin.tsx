@@ -53,7 +53,7 @@ function AdminPage() {
   const [dateFilter, setDateFilter] = useState<"all" | "today" | "yesterday" | "custom">("all");
   const [customDates, setCustomDates] = useState({ start: "", end: "" });
   const [preview, setPreview] = useState<Order | null>(null);
-  const [tab, setTab] = useState<"orders" | "visits" | "sources" | "gateways" | "whitelist">("orders");
+  const [tab, setTab] = useState<"orders" | "visits" | "sources" | "gateways">("orders");
   const [stepsSession, setStepsSession] = useState<string | null>(null);
   const [newIp, setNewIp] = useState("");
   const [newIpDesc, setNewIpDesc] = useState("");
@@ -143,26 +143,8 @@ function AdminPage() {
     onSuccess: () => gatewaysQ.refetch(),
   });
 
-  const whitelistQ = useQuery({
-    queryKey: ["admin-whitelist"],
-    queryFn: () => fetchWhitelist(),
-    enabled: tab === "whitelist",
-  });
   const whitelisted: any[] = (whitelistQ.data ?? []) as any[];
 
-  const addWhitelistMut = useMutation({
-    mutationFn: (v: { ip: string; description?: string }) => doAddWhitelist({ data: v }),
-    onSuccess: () => {
-      qc.invalidateQueries({ queryKey: ["admin-whitelist"] });
-      setNewIp("");
-      setNewIpDesc("");
-    },
-  });
-
-  const removeWhitelistMut = useMutation({
-    mutationFn: (id: string) => doRemoveWhitelist({ data: { id } }),
-    onSuccess: () => qc.invalidateQueries({ queryKey: ["admin-whitelist"] }),
-  });
 
   const signOut = async () => {
     await supabase.auth.signOut();
@@ -433,21 +415,6 @@ function AdminPage() {
       {preview && <Modal order={preview} onClose={() => setPreview(null)} />}
       {stepsSession && <StepsModal sessionId={stepsSession} fetchEvents={fetchEvents} onClose={() => setStepsSession(null)} />}
       
-      {tab === "whitelist" && (
-        <div style={{ marginTop: 24 }}>
-          <WhitelistTab 
-            whitelisted={whitelisted}
-            isLoading={whitelistQ.isLoading}
-            onAdd={addWhitelistMut.mutate}
-            onRemove={removeWhitelistMut.mutate}
-            newIp={newIp}
-            setNewIp={setNewIp}
-            newIpDesc={newIpDesc}
-            setNewIpDesc={setNewIpDesc}
-            isPending={addWhitelistMut.isPending}
-          />
-        </div>
-      )}
     </div>
   );
 }
@@ -583,91 +550,4 @@ function StepsModal({ sessionId, fetchEvents, onClose }: { sessionId: string; fe
   );
 }
 
-function WhitelistTab({ 
-  whitelisted, 
-  isLoading, 
-  onAdd, 
-  onRemove, 
-  newIp, 
-  setNewIp, 
-  newIpDesc, 
-  setNewIpDesc,
-  isPending
-}: any) {
-  return (
-    <div style={{ background: "#fff", borderRadius: 10, padding: 24, boxShadow: "0 1px 3px rgba(0,0,0,.06)" }}>
-      <h2 style={{ fontSize: 18, marginBottom: 20 }}>Whitelist de IPs (Bypass Cloak)</h2>
-      <p style={{ fontSize: 14, color: "#64748b", marginBottom: 20 }}>
-        IPs adicionados aqui não serão redirecionados ou bloqueados pela função de cloak (Money Page/Desktop/Bots).
-      </p>
-
-      <div style={{ display: "flex", gap: 10, marginBottom: 24, alignItems: "flex-end" }}>
-        <div style={{ flex: 1 }}>
-          <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "#475569", marginBottom: 4 }}>Endereço IP</label>
-          <input 
-            type="text" 
-            value={newIp} 
-            onChange={e => setNewIp(e.target.value)}
-            placeholder="Ex: 177.100.200.50"
-            style={{ width: "100%", padding: "10px 12px", borderRadius: 8, border: "1px solid #e2e8f0" }} 
-          />
-        </div>
-        <div style={{ flex: 2 }}>
-          <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "#475569", marginBottom: 4 }}>Descrição (Opcional)</label>
-          <input 
-            type="text" 
-            value={newIpDesc} 
-            onChange={e => setNewIpDesc(e.target.value)}
-            placeholder="Ex: Meu PC Casa"
-            style={{ width: "100%", padding: "10px 12px", borderRadius: 8, border: "1px solid #e2e8f0" }} 
-          />
-        </div>
-        <button 
-          onClick={() => onAdd({ ip: newIp, description: newIpDesc })}
-          disabled={!newIp || isPending}
-          style={{ padding: "10px 24px", background: "#3483FA", color: "#fff", border: 0, borderRadius: 8, fontWeight: 600, cursor: "pointer" }}
-        >
-          {isPending ? "Adicionando..." : "Adicionar"}
-        </button>
-      </div>
-
-      <div style={{ overflow: "auto" }}>
-        <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
-          <thead style={{ background: "#f1f5f9", textAlign: "left" }}>
-            <tr>
-              <th style={{ padding: 12 }}>IP</th>
-              <th style={{ padding: 12 }}>Descrição</th>
-              <th style={{ padding: 12 }}>Data</th>
-              <th style={{ padding: 12 }}>Ações</th>
-            </tr>
-          </thead>
-          <tbody>
-            {whitelisted.map((item: any) => (
-              <tr key={item.id} style={{ borderTop: "1px solid #eef2f7" }}>
-                <td style={{ padding: 12, fontFamily: "monospace" }}>{item.ip}</td>
-                <td style={{ padding: 12 }}>{item.description || "—"}</td>
-                <td style={{ padding: 12, color: "#64748b", fontSize: 12 }}>
-                  {new Date(item.created_at).toLocaleString("pt-BR")}
-                </td>
-                <td style={{ padding: 12 }}>
-                  <button 
-                    onClick={() => onRemove(item.id)}
-                    style={{ background: "#fee2e2", color: "#b91c1c", border: 0, padding: "6px 12px", borderRadius: 6, fontSize: 12, cursor: "pointer" }}
-                  >
-                    Remover
-                  </button>
-                </td>
-              </tr>
-            ))}
-            {whitelisted.length === 0 && !isLoading && (
-              <tr>
-                <td colSpan={4} style={{ textAlign: "center", padding: 40, color: "#94a3b8" }}>Nenhum IP na whitelist.</td>
-              </tr>
-            )}
-          </tbody>
-        </table>
-      </div>
-    </div>
-  );
-}
 
