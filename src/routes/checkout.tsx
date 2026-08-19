@@ -98,7 +98,7 @@ function CheckoutPage() {
   const [complemento, setComplemento] = useState("");
   const [salvarEndereco, setSalvarEndereco] = useState(true);
   const [cepLoading, setCepLoading] = useState(false);
-  const [activeGateway, setActiveGateway] = useState<"freepay">("freepay");
+  const [activeGateway, setActiveGateway] = useState<string | null>(null);
 
   const [cepError, setCepError] = useState("");
   const [shipping, setShipping] = useState<ShippingId>("standard");
