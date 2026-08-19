@@ -5,7 +5,7 @@ import { useServerFn } from "@tanstack/react-start";
 import { listOrders, updateOrderStatus } from "@/lib/orders.functions";
 import { listGateways, updateGateway, updateSplitGateways } from "@/lib/gateways.functions";
 import { listPageViews, listSessionEvents, listVisitLogs } from "@/lib/analytics.functions";
-import { listWhitelistedIPs, addWhitelistedIP, removeWhitelistedIP } from "@/lib/whitelist.functions";
+
 import { supabase } from "@/integrations/supabase/client";
 
 export const Route = createFileRoute("/_authenticated/admin")({
@@ -44,9 +44,6 @@ function AdminPage() {
   const fetchGateways = useServerFn(listGateways);
   const doUpdateGateway = useServerFn(updateGateway);
   const doUpdateSplit = useServerFn(updateSplitGateways);
-  const fetchWhitelist = useServerFn(listWhitelistedIPs);
-  const doAddWhitelist = useServerFn(addWhitelistedIP);
-  const doRemoveWhitelist = useServerFn(removeWhitelistedIP);
 
   const [forbidden, setForbidden] = useState(false);
   const [filter, setFilter] = useState<string>("all");
@@ -55,8 +52,6 @@ function AdminPage() {
   const [preview, setPreview] = useState<Order | null>(null);
   const [tab, setTab] = useState<"orders" | "visits" | "sources" | "gateways">("orders");
   const [stepsSession, setStepsSession] = useState<string | null>(null);
-  const [newIp, setNewIp] = useState("");
-  const [newIpDesc, setNewIpDesc] = useState("");
 
   const { data, isLoading, error, refetch } = useQuery({
     queryKey: ["admin-orders", dateFilter, customDates],
@@ -143,7 +138,7 @@ function AdminPage() {
     onSuccess: () => gatewaysQ.refetch(),
   });
 
-  const whitelisted: any[] = (whitelistQ.data ?? []) as any[];
+  
 
 
   const signOut = async () => {
