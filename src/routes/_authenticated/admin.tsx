@@ -267,7 +267,10 @@ function AdminPage() {
                       </td>
                       <td style={td}>
                         {o.receipt_signed_url ? (
-                          <button type="button" onClick={() => setPreview(o)} style={btnSm}>Ver</button>
+                          <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                            <button type="button" onClick={() => setPreview(o)} style={btnSm}>Ver</button>
+                            <span style={{ fontSize: 10, color: "#00a650", fontWeight: 600 }}>Comprovante Anexado</span>
+                          </div>
                         ) : <span style={{ color: "#999" }}>—</span>}
                       </td>
                       <td style={td}>
