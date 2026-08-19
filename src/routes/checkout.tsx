@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { ChevronDown, Check, Lock, ArrowLeft } from "lucide-react";
 import { lojaProducts } from "@/data/lojaProducts";
 import { type LojaProduct } from "@/data/types";
-import { createFreepayPix } from "@/lib/freepay.functions";
+
 import { lojaImageSrc } from "@/lib/lojaImage";
 import { trackEvent, trackFieldOnce } from "@/lib/track";
 import mlDesktopLogo from "@/assets/ml-desktop-local.webp";
