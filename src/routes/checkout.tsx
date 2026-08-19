@@ -75,7 +75,7 @@ type Step = 1 | 2 | 3;
 type ShippingId = "standard" | "full";
 
 function CheckoutPage() {
-  const createFreepayPixFn = useServerFn(createFreepayPix);
+  
   
   const navigate = useNavigate();
   const [cart, setCart] = useState<CartItem[]>([]);
