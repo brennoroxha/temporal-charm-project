@@ -176,81 +176,9 @@ function CheckoutPage() {
       localStorage.setItem("checkoutCustomer", JSON.stringify({ nome, email, cpf, telefone }));
     } catch { /* noop */ }
     setPayLoading(true);
-    try {
-      const items = cart.map((i) => ({
-        title: i.title,
-        unitPrice: Math.round(parsePrice(i.price) * 100),
-        quantity: i.qty,
-        tangible: true,
-      }));
-      const amount = Math.round(total * 100);
-      let result;
-      let gatewayUsed: "freepay" = "freepay";
-      const storedUtms = (window as any).getStoredUtms?.() || {};
-      const fbData = (window as any).fbTracking?.() || {};
-      
-      const trackingData = {
-        ...storedUtms,
-        fbp: fbData.fbp || "",
-        fbc: fbData.fbc || "",
-        url: fbData.event_source_url || window.location.href,
-        user_agent: fbData.user_agent || navigator.userAgent
-      };
-
-      try {
-        result = await createFreepayPixFn({
-          data: {
-            amount,
-            metadata: { ...trackingData },
-            customer: {
-              name: nome,
-              email,
-              phone: telefone.replace(/\D/g, ""),
-              cpf: cpf.replace(/\D/g, ""),
-            },
-            items,
-            shipping: {
-              street: rua || "Não informado",
-              streetNumber: numero || "S/N",
-              zipCode: cep.replace(/\D/g, ""),
-              neighborhood: bairro || "Não informado",
-              city: cidade || "Não informado",
-              state: estado || "SP",
-              complement: complemento || "",
-            },
-          },
-        });
-      } catch (err) {
-        console.error("FreePay gateway failed", err);
-        throw err;
-      }
-
-      if (!result || !result.qrcode) throw new Error("QR code não retornado");
-      const payload = JSON.stringify({
-        transactionId: result.id,
-        qrcode: result.qrcode,
-        qrcodeImage: result.qrcodeImage,
-        amount: total,
-        expirationDate: (result as any).expirationDate || "",
-        customerName: nome,
-        items: cart.map((c) => ({
-          slug: c.slug,
-          title: c.title,
-          image: lojaImageSrc(c.img),
-          qty: c.qty,
-          unitPrice: parsePrice(c.price),
-        })),
-      });
-      try { sessionStorage.setItem("pixPayment", payload); } catch { /* noop */ }
-      try { localStorage.setItem("pixPayment", payload); } catch { /* noop */ }
-      trackEvent("pix_generated", { transactionId: String(result.id), amount: Math.round(total * 100) });
-      window.location.assign("/pagamento");
-    } catch (e) {
-      console.error(e);
-      trackEvent("pix_error", { message: String((e as Error)?.message ?? e) });
-      alert(`Erro ao gerar pagamento PIX: ${String((e as Error)?.message ?? e)}. Tente novamente.`);
-      setPayLoading(false);
-    }
+    // Simulating gateway failure as they were requested to be removed
+    alert("Nenhum método de pagamento disponível no momento.");
+    setPayLoading(false);
   };
 
 
