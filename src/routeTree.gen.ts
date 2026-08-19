@@ -22,7 +22,6 @@ import { Route as AuthenticatedAdminRouteImport } from './routes/_authenticated/
 import { Route as ApiPublicTrackEventRouteImport } from './routes/api/public/track-event'
 import { Route as ApiPublicTrackRouteImport } from './routes/api/public/track'
 import { Route as ApiPublicLogVisitRouteImport } from './routes/api/public/log-visit'
-import { Route as ApiPublicGeoRouteImport } from './routes/api/public/geo'
 
 const RoletaRoute = RoletaRouteImport.update({
   id: '/roleta',
@@ -88,11 +87,6 @@ const ApiPublicLogVisitRoute = ApiPublicLogVisitRouteImport.update({
   path: '/api/public/log-visit',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiPublicGeoRoute = ApiPublicGeoRouteImport.update({
-  id: '/api/public/geo',
-  path: '/api/public/geo',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -104,7 +98,6 @@ export interface FileRoutesByFullPath {
   '/roleta': typeof RoletaRoute
   '/admin': typeof AuthenticatedAdminRoute
   '/produto/$slug': typeof ProdutoSlugRoute
-  '/api/public/geo': typeof ApiPublicGeoRoute
   '/api/public/log-visit': typeof ApiPublicLogVisitRoute
   '/api/public/track': typeof ApiPublicTrackRoute
   '/api/public/track-event': typeof ApiPublicTrackEventRoute
@@ -119,7 +112,6 @@ export interface FileRoutesByTo {
   '/roleta': typeof RoletaRoute
   '/admin': typeof AuthenticatedAdminRoute
   '/produto/$slug': typeof ProdutoSlugRoute
-  '/api/public/geo': typeof ApiPublicGeoRoute
   '/api/public/log-visit': typeof ApiPublicLogVisitRoute
   '/api/public/track': typeof ApiPublicTrackRoute
   '/api/public/track-event': typeof ApiPublicTrackEventRoute
@@ -136,7 +128,6 @@ export interface FileRoutesById {
   '/roleta': typeof RoletaRoute
   '/_authenticated/admin': typeof AuthenticatedAdminRoute
   '/produto/$slug': typeof ProdutoSlugRoute
-  '/api/public/geo': typeof ApiPublicGeoRoute
   '/api/public/log-visit': typeof ApiPublicLogVisitRoute
   '/api/public/track': typeof ApiPublicTrackRoute
   '/api/public/track-event': typeof ApiPublicTrackEventRoute
@@ -153,7 +144,6 @@ export interface FileRouteTypes {
     | '/roleta'
     | '/admin'
     | '/produto/$slug'
-    | '/api/public/geo'
     | '/api/public/log-visit'
     | '/api/public/track'
     | '/api/public/track-event'
@@ -168,7 +158,6 @@ export interface FileRouteTypes {
     | '/roleta'
     | '/admin'
     | '/produto/$slug'
-    | '/api/public/geo'
     | '/api/public/log-visit'
     | '/api/public/track'
     | '/api/public/track-event'
@@ -184,7 +173,6 @@ export interface FileRouteTypes {
     | '/roleta'
     | '/_authenticated/admin'
     | '/produto/$slug'
-    | '/api/public/geo'
     | '/api/public/log-visit'
     | '/api/public/track'
     | '/api/public/track-event'
@@ -200,7 +188,6 @@ export interface RootRouteChildren {
   QuizRoute: typeof QuizRoute
   RoletaRoute: typeof RoletaRoute
   ProdutoSlugRoute: typeof ProdutoSlugRoute
-  ApiPublicGeoRoute: typeof ApiPublicGeoRoute
   ApiPublicLogVisitRoute: typeof ApiPublicLogVisitRoute
   ApiPublicTrackRoute: typeof ApiPublicTrackRoute
   ApiPublicTrackEventRoute: typeof ApiPublicTrackEventRoute
@@ -299,13 +286,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicLogVisitRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/geo': {
-      id: '/api/public/geo'
-      path: '/api/public/geo'
-      fullPath: '/api/public/geo'
-      preLoaderRoute: typeof ApiPublicGeoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -330,7 +310,6 @@ const rootRouteChildren: RootRouteChildren = {
   QuizRoute: QuizRoute,
   RoletaRoute: RoletaRoute,
   ProdutoSlugRoute: ProdutoSlugRoute,
-  ApiPublicGeoRoute: ApiPublicGeoRoute,
   ApiPublicLogVisitRoute: ApiPublicLogVisitRoute,
   ApiPublicTrackRoute: ApiPublicTrackRoute,
   ApiPublicTrackEventRoute: ApiPublicTrackEventRoute,

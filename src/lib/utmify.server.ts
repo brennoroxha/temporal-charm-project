@@ -5,7 +5,7 @@ const UTMIFY_TOKEN = "WuqEO5z75AaeoUGZ5TCU1htKPDn3jlNyMZRe";
 export async function notifyUtmifySale(order: any) {
   try {
     const items = Array.isArray(order.items) ? order.items : [];
-    const firstItemTitle = (items[0] as any)?.title || "Kit Celimax - Tratamento";
+    const firstItemTitle = (items[0] as any)?.title || "Kit Especial 25 Anos";
 
     const metadata = order.metadata || {};
     
