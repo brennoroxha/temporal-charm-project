@@ -202,8 +202,8 @@ function ProdutoPage() {
         .produto-breadcrumb a:hover{color:#3483fa}
         .produto-grid{display:grid;grid-template-columns:1fr 340px;gap:20px;align-items:start}
         .main-wrap{display:flex;flex-direction:column;gap:12px}
-        .slider{position:relative;width:100%;height:480px;background:#fff;border-radius:6px;overflow:hidden}
-        .slider-counter{position:absolute;top:10px;left:3px;background:#ededed;color:#000;font-size:12px;font-weight:500;padding:1px 6px;border-radius:10px;z-index:2;line-height:1.2}
+        .slider{position:relative;width:100%;height:480px;background:#fff;border-radius:0;overflow:hidden}
+        .slider-counter{position:absolute;top:10px;left:3px;background:#ededed;color:#000;font-size:12px;font-weight:500;padding:1px 6px;border-radius:0;z-index:2;line-height:1.2}
         .slider-track{display:flex;width:100%;height:100%;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none}
         .slider-track::-webkit-scrollbar{display:none}
         .slide{flex:0 0 100%;width:100%;height:100%;scroll-snap-align:center;scroll-snap-stop:always;display:flex;align-items:center;justify-content:center;padding:20px;background:#fff}
@@ -234,36 +234,36 @@ function ProdutoPage() {
         .info-price-old{font-size:16px;color:#666;margin-bottom:2px;display:flex;align-items:center;gap:8px}
         .info-price-old .old-value{text-decoration:line-through}
         .stock-info{margin-top:14px;font-size:15px;font-weight:600;color:#000}
-        .stock-info.out{color:#fff;background:#ff0000;padding:4px 10px;border-radius:4px;display:inline-block;font-weight:700;text-transform:uppercase}
-        .stock-info.low{color:#ff2e2e;background:#ffdcdc;padding:4px 8px;border-radius:4px;display:inline-block}
+        .stock-info.out{color:#fff;background:#ff0000;padding:4px 10px;border-radius:0;display:inline-block;font-weight:700;text-transform:uppercase}
+        .stock-info.low{color:#ff2e2e;background:#ffdcdc;padding:4px 8px;border-radius:0;display:inline-block}
         .stock-info + .stock-sub{font-size:13px;color:#555;margin-top:0;display:flex;align-items:center;gap:4px;flex-wrap:wrap}
-        .full-badge{display:inline-flex;align-items:center;background:#00a650;color:#fff;font-size:11px;font-weight:700;padding:2px 6px 2px 4px;border-radius:3px;letter-spacing:.3px}
+        .full-badge{display:inline-flex;align-items:center;background:#00a650;color:#fff;font-size:11px;font-weight:700;padding:2px 6px 2px 4px;border-radius:0;letter-spacing:.3px}
         .full-badge::before{content:"⚡";margin-right:2px;font-size:11px}
         .info-price{font-size:36px;font-weight:700;color:#000;line-height:1;margin-bottom:4px}
         .info-price .cents{font-size:13px;font-weight:500;display:inline-block;vertical-align:top;line-height:1;margin-left:0;position:relative;top:2px}
-        .info-price-off{background:#00a650;color:#fff;font-size:14px;font-weight:700;padding:2px 6px;border-radius:4px;text-decoration:none;line-height:1.2;display:inline-flex;align-items:center;justify-content:center;text-align:center;margin-left:8px}
-        .product-badge{display:inline-block;font-size:10.4px;font-weight:400;padding:2px 5px;border-radius:4px;margin-top:0;line-height:1.2}
+        .info-price-off{background:#00a650;color:#fff;font-size:14px;font-weight:700;padding:2px 6px;border-radius:0;text-decoration:none;line-height:1.2;display:inline-flex;align-items:center;justify-content:center;text-align:center;margin-left:8px}
+        .product-badge{display:inline-block;font-size:10.4px;font-weight:400;padding:2px 5px;border-radius:0;margin-top:0;line-height:1.2}
         .product-badge.best{background:#ff7733;color:#fff}
         .product-badge.official{background:#000;color:#fff}
         .product-badge.deal{background:#3483fa;color:#fff}
         .delivery-info b{font-weight:600}
         .info-installments{color:#00a650;font-size:15px;margin-bottom:16px}
-        .info-shipping{background:#f5f5f5;border-radius:6px;padding:12px;margin-bottom:16px;display:flex;gap:10px;align-items:flex-start}
+        .info-shipping{background:#f5f5f5;border-radius:0;padding:12px;margin-bottom:16px;display:flex;gap:10px;align-items:flex-start}
         .info-shipping .txt{font-size:13px;color:#333}
         .info-shipping .txt b{color:#00a650}
         .info-perks{display:flex;flex-direction:column;gap:10px;margin-bottom:16px}
         .info-perks div{display:flex;gap:8px;align-items:center;font-size:13px;color:#555}
-        .buy-col{background:#fff;border:1px solid #e6e6e6;border-radius:6px;padding:16px;position:sticky;top:16px}
+        .buy-col{background:#fff;border:1px solid #e6e6e6;border-radius:0;padding:16px;position:sticky;top:16px}
         .buy-title{font-size:14px;color:#666;margin-bottom:6px}
         .buy-price{font-size:28px;font-weight:400;color:#333;margin-bottom:4px}
         .buy-installments{color:#00a650;font-size:13px;margin-bottom:14px}
         .qty-row{display:flex;align-items:center;gap:12px;margin-bottom:14px}
         .qty-row label{font-size:14px;color:#333}
-        .qty-select{padding:6px 8px;border:1px solid #d1d1d1;border-radius:4px;font-size:14px;background:#fff;width:100%}
+        .qty-select{padding:6px 8px;border:1px solid #d1d1d1;border-radius:0;font-size:14px;background:#fff;width:100%}
         .voltagem-row{margin-bottom:14px}
         .voltagem-row label{display:block;font-size:14px;color:#333;margin-bottom:6px}
         .voltagem-options{display:flex;gap:8px}
-        .voltagem-btn{flex:1;padding:8px;border:1px solid #d1d1d1;border-radius:4px;font-size:14px;background:#fff;cursor:pointer;transition:all .15s;text-align:center}
+        .voltagem-btn{flex:1;padding:8px;border:1px solid #d1d1d1;border-radius:0;font-size:14px;background:#fff;cursor:pointer;transition:all .15s;text-align:center}
         .voltagem-btn.active{border-color:#3483fa;background:#e3edfb;color:#3483fa;font-weight:600}
         .delivery-info{margin:6px 0 14px;font-size:14px;line-height:1.35}
         .delivery-green{color:#00a650}
@@ -277,9 +277,9 @@ function ProdutoPage() {
         .fav-btn{display:flex;align-items:center;gap:8px;background:none;border:none;color:#3483fa;font-size:14px;padding:4px 0;cursor:pointer;text-align:left}
         .fav-btn svg{color:#3483fa}
 
-        .btn-buy{width:100%;padding:12px;background:#3483fa;color:#fff;border:none;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;margin-bottom:8px;transition:background .15s}
+        .btn-buy{width:100%;padding:12px;background:#3483fa;color:#fff;border:none;border-radius:0;font-size:15px;font-weight:600;cursor:pointer;margin-bottom:8px;transition:background .15s}
         .btn-buy:hover{background:#2968c8}
-        .btn-cart{width:100%;padding:12px;background:#e3edfb;color:#3483fa;border:none;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:background .15s;margin-bottom:20px}
+        .btn-cart{width:100%;padding:12px;background:#e3edfb;color:#3483fa;border:none;border-radius:0;font-size:15px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:background .15s;margin-bottom:20px}
         .btn-cart:hover{background:#d0e0f5}
         .btn-buy:disabled,.btn-cart:disabled{cursor:wait;opacity:.9}
         .prod-spin{animation:prodSpin 1s linear infinite}
@@ -310,11 +310,11 @@ function ProdutoPage() {
         .review-stars{display:inline-flex;gap:1px;color:#3483fa}
         .review-date{font-size:13px;color:#888}
         .review-images{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap}
-        .review-images img{width:110px;height:90px;object-fit:cover;border-radius:8px;border:1px solid #eee;cursor:pointer;transition:transform .15s}
+        .review-images img{width:110px;height:90px;object-fit:cover;border-radius:0;border:1px solid #eee;cursor:pointer;transition:transform .15s}
         .review-images img:hover{transform:scale(1.03)}
         .review-text{font-size:14px;color:#333;line-height:1.5;margin:8px 0}
         .review-actions{display:flex;gap:8px;margin-top:10px}
-        .review-btn{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;background:#fff;border:1px solid #d1d1d1;border-radius:20px;font-size:13px;color:#333;cursor:pointer;transition:background .15s,border-color .15s}
+        .review-btn{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;background:#fff;border:1px solid #d1d1d1;border-radius:0;font-size:13px;color:#333;cursor:pointer;transition:background .15s,border-color .15s}
         .review-btn:hover{border-color:#3483fa;color:#3483fa}
         .review-btn.icon-only{padding:6px 10px}
         .review-btn span{color:#666}
