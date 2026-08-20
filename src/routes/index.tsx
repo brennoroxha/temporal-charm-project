@@ -14,12 +14,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-/checkout
-
-em checkout, deixe Teléfono (WhatsApp)
-no formato do mexico quando preencher os numero.
-
-remova RFC do checkout
+fez a atualização ?
     </div>
   );
 }
