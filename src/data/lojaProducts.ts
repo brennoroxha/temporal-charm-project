@@ -413,7 +413,7 @@ export const lojaProducts: LojaProduct[] = [
   },
   {
     "id": "apple-iphone-15-pro-max-256gb-tit-nio-azul",
-    "title": "Apple iPhone 15 Pro Max 256GB Titânio Azul",
+    "title": "Apple iPhone 15 Pro Max 256GB Titanio Azul",
     "price": "$ 441,69",
     "img": "/loja/images/extracted/apple-iphone-15-pro-max-256-gb-titânio-azul.webp",
     "slug": "apple-iphone-15-pro-max-256gb-tit-nio-azul",
