@@ -99,7 +99,7 @@ function LojaPage() {
         .loja-price{color:#000;font-weight:600;font-size:22px;line-height:1.1;margin-top:0}
         .loja-discount{color:#fff;background:#00a650;font-size:12px;font-weight:700;padding:2px 4px;border-radius:0;display:inline-block;white-space:nowrap}
         .loja-stock{font-size:12px;padding:2px 6px;border-radius:0;width:fit-content;margin-top:0;font-weight:400}
-        .loja-stock.low{color:#ff2e2e;background:#ffdcdc;padding-left:6px;font-weight:600}
+        .loja-stock.low{color:#00a650;background:#e6f6ef;padding-left:6px;font-weight:400}
         .loja-stock.out{color:#fff;background:#ff0000;padding:2px 8px;font-weight:700;text-transform:uppercase;border-radius:0}
         .loja-stock.medium{color:#847900;background:#ffffc7}
         .loja-stock.high{color:#008412;background:#cbffc7}
