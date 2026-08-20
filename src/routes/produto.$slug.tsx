@@ -333,7 +333,7 @@ function ProdutoPage() {
 
       `}</style>
 
-      <div style={{ position: "sticky", top: 0, zIndex: 60 }}>
+      <div>
         <LojaHeader 
           cartCount={cartCount} 
           customMobileMenu={(
