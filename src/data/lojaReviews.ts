@@ -123,30 +123,53 @@ export const lojaReviews: Record<string, LojaReview[]> = {
       "useful": 17
     }
   ],
-  "smart-tv-tcl-65-qled-4k": [
+  "pantalla-65a400-pro-nxtvision-4k-mini-led-google-tv-tcl": [
     {
       "stars": 5,
       "date": "07 marzo 2024",
-      "images": [],
-      "text": "Experimente a calidad e a inovação da TCL com a Smart TV QLED 65P8K de 65 polegadas. Com uma impressionante resolução 4K UHD e a tecnologia QLED, você desfrutará de imagens vibrantes e cores intensas, elevando suas sessões de cinema e jogos a um novo patamarzo Esta TV é inteligente. Seu sistema operacional Android TV permite fácil acesso a uma variedade de aplicativos, incluindo Netflix, com controle de voz integrado através do Google Assistant, tornando sua navegação mais intuitiva e prática. A TCL 65P8K possui quatro portas HDMI e duas USB, garantindo espaço para todos os seus dispositivos. Seu design moderno e elegante combina perfeitamente com qualquer ambiente, enquanto a integração Wi-Fi e Bluetooth facilita a conexão com seus dispositivos móveis e sistemas de sonido. Com funcionalidades como HDR que melhora a calidad da imagem e um tempo de resposta de apenas 6.5 ms, esta TV é uma escolha ideal para os apaixonados por entretenimento em casa. Transforme sua sala em um verdadeiro cinema com a TCL QLED Smart TV.",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_807602-MLA113216780815_062026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_860403-MLA113216809753_062026-O.webp"
+      ],
+      "text": "Imagen: muy buen brillo. Sistema: muy rápido la navegacion. Una pantalla bonita, estética, no pesa a comparación de otras, fácil de usar, trae una app de canales gratis, muy recomendada.",
       "useful": 171
     },
     {
       "stars": 5,
       "date": "28 mayo 2024",
       "images": [
-        "loja/images/reviews/ref/smartv_tcl_65_prova-1-MLA100977106147.webp",
-        "loja/images/reviews/ref/smartv_tcl_65_prova-2-MLA100977106147.webp"
+        "https://http2.mlstatic.com/D_NQ_NP_2X_637379-MLA112886474319_062026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_900138-MLA111787401308_062026-O.webp"
       ],
-      "text": "Achei bem legal a tv. Tem vários recursos. Após umas calibrações na imagem, ela ficou bem legal. O sonido dela é um dos pontos fortes.",
+      "text": "Excelente televisión presentada en diciembre 2025 , el antireflejo y el brillo es muy bueno , de las características con la última tecnología.",
       "useful": 208
     },
     {
       "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Melhor compra que já fiz, vale cada centavo.",
-      "useful": 50
+      "date": "10 junio 2024",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_832005-MLA114228925885_072026-O.webp"
+      ],
+      "text": "Sonido: es muy buen sonido la descripción lo dice, son envolventes y fuertes. Imagen: perfecto, por eso quise la miniled son buenas para gaming. Es perfecta para jugar ver series películas alta calidad 144 hz es buenísima y buen tamaño aunque vino sin un tornillo en la carcaza pero no afecto en nada todo bien.",
+      "useful": 95
+    },
+    {
+      "stars": 5,
+      "date": "15 junio 2024",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_647880-MLA113220876588_072026-O.webp"
+      ],
+      "text": "Sistema: muy buena tenia dudas pero la e estado usando y me gusto. Sonido: buen volumen y buena imagen a detalle. Es una buena compra.",
+      "useful": 72
+    },
+    {
+      "stars": 5,
+      "date": "20 junio 2024",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_738283-MLA115541882279_082026-B.jpg"
+      ],
+      "text": "Imagen: buen color. Sistema: interfaz rapido.Útil",
+      "useful": 48
     }
   ],
   "caixa-de-sonido-jbl-boombox-4-bluetooth": [
