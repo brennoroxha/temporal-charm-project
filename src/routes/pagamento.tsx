@@ -136,7 +136,7 @@ function PagamentoPage() {
       trackEvent("pix_copied", { transactionId: String(pay.transactionId) });
       setTimeout(() => setCopied(false), 3000);
     } catch (err) {
-      console.error("Erro ao copiar PIX:", err);
+      console.error("Error al copiar PIX:", err);
       // Fallback final via prompt para garantir que o usuário consiga o código
       window.prompt("Pressione Ctrl+C ou mantenha pressionado para copiar o código PIX:", pay.qrcode);
     }
