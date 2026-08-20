@@ -125,7 +125,7 @@ export const lojaProducts: LojaProduct[] = [
     "id": "refrigerador-whirlpool-9-pies",
     "title": "Refrigerador Whirlpool 9 Pies Top Mount 2 Puertas Xpert Inve",
     "price": "$ 600,00",
-    "img": "https://http2.mlstatic.com/D_NQ_NP_824599-MLM74032540130_012024-O.webp",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_807816-MLA108912444686_032026-F.webp",
     "slug": "refrigerador-whirlpool-9-pies",
     "stock": 7,
     "voltagem": true,
