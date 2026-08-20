@@ -223,7 +223,7 @@ function CheckoutPage() {
         </div>
       )}
       <style>{`
-        .co-header{background:#fff058;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+        .co-header{background:#FFE600;box-shadow:0 1px 2px rgba(0,0,0,.08)}
         .co-header-inner{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
         .co-logo img{height:33px;width:auto;display:block}
         .co-secure{display:flex;align-items:center;gap:8px;text-transform:uppercase;font-size:13px;color:#000;line-height:1.2;text-align:right;letter-spacing:.3px;font-weight:500}
