@@ -7,7 +7,12 @@ export const lojaGallery: Record<string, string[]> = {
     "https://http2.mlstatic.com/D_NQ_NP_675353-MLA96671824167_102025-F.jpg",
     "https://http2.mlstatic.com/D_NQ_NP_2X_705123-MLM95596977805_102025-F.webp"
   ],
-  "bicicleta-absolute-nero-5-level-nova-12v-aro-29": ["/loja/images/extracted/bicicleta-absolute-nero5_2.webp", "/loja/images/extracted/bicicleta-absolute-nero5_3.webp", "/loja/images/extracted/bicicleta-absolute-nero5_4.webp"],
+  "bicicleta-alubike-kodiak-29-frenos-disco-hidraulico": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_777820-MLM112920186782_072026-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_677744-MLM114128517831_072026-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_692099-MLM114127304027_072026-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_720242-MLM114127304029_072026-F.webp"
+  ],
   "pantalla-65a400-pro-nxtvision-4k-mini-led-google-tv-tcl": [
     "https://http2.mlstatic.com/D_NQ_NP_2X_999419-MLA112179568033_052026-F.webp",
     "https://http2.mlstatic.com/D_NQ_NP_2X_833420-MLA108485572693_032026-F.webp",

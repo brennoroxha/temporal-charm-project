@@ -102,37 +102,15 @@ export const lojaReviews: Record<string, LojaReview[]> = {
       "useful": 37
     }
   ],
-  "bicicleta-absolute-nero-5-level-nova-12v-aro-29": [
+  "bicicleta-alubike-kodiak-29-frenos-disco-hidraulico": [
     {
       "stars": 5,
       "date": "08 mayo 2024",
-      "images": [],
-      "text": "Bike muito top, ótimas peças freio muito bom, porém já tive que levar para engraxar o central e apertar os raios. Mas tirando isso muito boa boa mesmo compren sin miedo.",
-      "useful": 208
-    },
-    {
-      "stars": 5,
-      "date": "23 marzo 2024",
       "images": [
-        "loja/images/reviews/ref/bicicleta_absolute_nero5_prov-1-sdaadsa.webp",
-        "loja/images/reviews/ref/bicicleta_absolute_nero5_prov-2-sdaadsa.webp"
+        "https://http2.mlstatic.com/D_NQ_NP_2X_925840-MLA115775942937_082026-O.webp"
       ],
-      "text": "Bicicleta excelente, tão de parabéns e o pós venda e ótimo não deixa falando dão toda atenção compre não vão se arrepender.",
-      "useful": 200
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Melhor compra que já fiz, vale cada centavo.",
-      "useful": 17
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Excelente relación calidad-precio, acabamento impecável.",
-      "useful": 17
+      "text": "Gran compra, gran bicicleta recomendable.",
+      "useful": 208
     }
   ],
   "pantalla-65a400-pro-nxtvision-4k-mini-led-google-tv-tcl": [
