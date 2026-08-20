@@ -14,9 +14,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-      agora ele gerou o pagamento certinho no gateway de pagamento em transações, mas nao exibiu o codigo de pagamento.
-
-voltou para o inicio do checkout
+      fundo da pagina checkout, pagamento deixe tambem branco, header deixe a mesma cor do loja
     </div>
   );
 }
