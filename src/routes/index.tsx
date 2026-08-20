@@ -14,7 +14,12 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-      retire upload de comprovante do pagamento spei
+/checkout
+
+em checkout, deixe Teléfono (WhatsApp)
+no formato do mexico quando preencher os numero.
+
+remova RFC do checkout
     </div>
   );
 }
