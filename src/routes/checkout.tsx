@@ -626,7 +626,7 @@ function CheckoutPage() {
 
 
       <footer className="ml-footer">
-        <p className="ml-footer-copy">© 1999-2026. Mercado Brasil Ltda.</p>
+        <p className="ml-footer-copy">© 1999-2026. Mercado Libre S. de R.L. de C.V.</p>
         <p className="ml-footer-legal">RFC n.º MER-990713-P88 / Av. Ejército Nacional 155, Ciudad de México - empresa del grupo Mercado Libre.</p>
       </footer>
 
