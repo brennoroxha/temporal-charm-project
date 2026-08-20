@@ -26,7 +26,12 @@ export const lojaGallery: Record<string, string[]> = {
     "https://http2.mlstatic.com/D_NQ_NP_876230-MLA112337284419_052026-F.jpg",
     "https://http2.mlstatic.com/D_NQ_NP_2X_888582-MLA86342933757_062025-F.webp"
   ],
-  "iphone-16-pro-max-1tb-tit-nio-preto": ["/loja/images/extracted/IPHONE16_2.webp", "/loja/images/extracted/IPHONE16_3.webp", "/loja/images/extracted/IPHONE16_4.webp"],
+  "apple-iphone-16-pro-max-1tb-titanio-negro": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_945370-MLA99925914983_112025-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_779610-MLU79115272055_092024-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_635600-MLU78878295680_092024-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_615888-MLU79115272071_092024-F.webp"
+  ],
   "tablet-samsung-galaxy-tab-a11-11-6gb-128gb-5g": ["/loja/images/extracted/samsung-tab-a11_2.webp", "/loja/images/extracted/samsung-tab-a11_3.webp"],
   "patinete-el-trico-honeywhale-m2-pro-500w": ["/loja/images/external/715sLZr8MxL._AC_SX679_.webp", "/loja/images/external/71Fx95Ap3uL._AC_SX679_.webp", "/loja/images/external/71LN9wieHjL._AC_SX679_.webp", "/loja/images/external/71RgpzFVStL._AC_SX679_.webp", "/loja/images/external/6174xedTG1L._AC_SL1500_.webp"],
   "aspirador-de-p-e-gua-wap-gtw-10-1400w": ["/loja/images/extracted/aspirador_unique_1.webp", "/loja/images/extracted/aspirador_unique_2.webp", "/loja/images/extracted/aspirador_unique_3.webp"],

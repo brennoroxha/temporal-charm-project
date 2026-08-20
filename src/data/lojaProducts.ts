@@ -72,14 +72,14 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 12.199,99"
   },
   {
-    "id": "iphone-16-pro-max-1tb-tit-nio-preto",
-    "title": "iPhone 16 Pro Max 1TB Titanio Negro",
-    "price": "$ 841,48",
-    "img": "/loja/images/iphone-16-pro-max-1tb-tit-nio-preto.webp",
-    "slug": "iphone-16-pro-max-1tb-tit-nio-preto",
+    "id": "apple-iphone-16-pro-max-1tb-titanio-negro",
+    "title": "Apple iPhone 16 Pro Max (1 TB) - Titanio negro",
+    "price": "$ 844,55",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_945370-MLA99925914983_112025-F.webp",
+    "slug": "apple-iphone-16-pro-max-1tb-titanio-negro",
     "stock": 3,
     "voltagem": false,
-    "oldPrice": "$ 16.829,53"
+    "oldPrice": "$ 16.891,00"
   },
   {
     "id": "tablet-samsung-galaxy-tab-a11-11-6gb-128gb-5g",

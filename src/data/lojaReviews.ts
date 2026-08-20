@@ -253,56 +253,56 @@ export const lojaReviews: Record<string, LojaReview[]> = {
       "useful": 48
     }
   ],
-  "iphone-16-pro-max-1tb-tit-nio-preto": [
+  "apple-iphone-16-pro-max-1tb-titanio-negro": [
     {
       "stars": 5,
       "date": "09 diciembre 2024",
       "images": [
-        "loja/images/reviews/ref/IPHONE16_H2oWUCEADZ3e.webp",
-        "loja/images/reviews/ref/IPHONE16_XOxTGAvYOaOV.webp"
+        "https://http2.mlstatic.com/D_NQ_NP_2X_823136-MLA85467402151_052025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_773779-MLA85467363743_052025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_919383-MLA85164148526_052025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_699019-MLA85467402153_052025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_705640-MLA85164157974_052025-O.webp"
       ],
-      "text": "Celular perfeito não exisó existe sim! E é esse! Designer Incrível, ele é muito bonito, a câmera é absurdamente ótima, roda qualquer jogo sem esforço nenhum. Sistema de vídeo é o mais impressionante, estabiliza 100%.",
+      "text": "Comprado con jd dep. Producto 100% original nuevo y sellado. No es chino, la caja viene en inglés. Acepto mi e-sim sin problema y aparte tiene su ranura física para sim. También dice wi-fi. Excelente compra me encanto 👌🏻💯.",
       "useful": 76
     },
     {
       "stars": 5,
       "date": "12 diciembre 2024",
       "images": [
-        "loja/images/reviews/ref/IPHONE16_dVoFZXnie971.webp"
+        "https://http2.mlstatic.com/D_NQ_NP_2X_708299-MLA84489896169_052025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_828048-MLA84192953816_052025-O.webp"
       ],
-      "text": "Excelente, batería carrega mais rápido que do 15 pro max, o sonido eu testei simultaneamente com o antigo aparelho; os graves sóo bem mais definidos e volume ficou perceptivelmente mais alto!!.",
+      "text": "Vengo de un samsung, muy lindo apple pero volvería con samsung!.Útil",
       "useful": 87
     },
     {
       "stars": 5,
       "date": "15 diciembre 2024",
       "images": [
-        "loja/images/reviews/ref/IPHONE16_0IrdYDTrJTtd.webp",
-        "loja/images/reviews/ref/IPHONE16_eFTlA688Osl9.webp"
+        "https://http2.mlstatic.com/D_NQ_NP_2X_766746-MLA83947364397_042025-O.webp"
       ],
-      "text": "Chegou super rapido! Produto original, gostei muito. está impecável ??.",
+      "text": "Le sugiero que cambie la descripción. En la descripción dice que tiene ranura para sim y no trae nada. Aparte que dice,ranura para dos sim. No trae nadaaáaaaaaaaaaaaaaaaaaaaaa.Útil",
       "useful": 185
     },
     {
       "stars": 5,
       "date": "10 enero 2025",
-      "images": [],
-      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_777960-MLA85254531225_052025-O.webp"
+      ],
+      "text": "Es original, lo llevé a macstore para hacer la migración del dispositivo que tenía antes y todo salió bien.",
       "useful": 36
     },
     {
       "stars": 5,
       "date": "10 enero 2025",
-      "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_799355-MLA80735206469_112024-O.webp"
+      ],
+      "text": "Espectacular.Útil",
       "useful": 31
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Melhor compra que já fiz, vale cada centavo.",
-      "useful": 48
     }
   ],
   "tablet-samsung-galaxy-tab-a11-11-6gb-128gb-5g": [
