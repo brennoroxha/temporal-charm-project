@@ -432,48 +432,52 @@ export const lojaReviews: Record<string, LojaReview[]> = {
       "useful": 10
     }
   ],
-  "geladeira-brastemp-frost-free-french-door-554l": [
+  "refrigerador-whirlpool-18-pies-side-by-side-xpert-in": [
     {
       "stars": 5,
       "date": "11 julio 2024",
       "images": [
-        "loja/images/reviews/ref/blastempflost_dreQYUCwgkfq.webp",
-        "loja/images/reviews/ref/blastempflost_BUBUwuJYbBVu.webp"
+        "https://http2.mlstatic.com/D_NQ_NP_2X_616245-MLA111198611409_052026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_985324-MLA110270766118_052026-O.webp"
       ],
-      "text": "Minha esposa amou, e para mim isso é o que importa. Chegou muito rapido também Gracias ml.",
+      "text": "Muy buen refrigerador la verdad tenia miedo de pedirlo por mercado libre por el tema del transporte y la entrega me daba miedo que llegara muy golpeado o sin funcionar pero la verdad que no, llego en perfecto estado ya que whirlpool gestiona sus propias entregas quiza un pequeño rayon pero la verdad ni se nota quede encantado la verdad muy buena compra y me encanta haberlo conseguido con descuento sin duda volveria a comprar.",
       "useful": 131
     },
     {
       "stars": 5,
       "date": "12 julio 2024",
       "images": [
-        "loja/images/reviews/ref/blastempflost_xVUdSVZmRGWV.webp",
-        "loja/images/reviews/ref/blastempflost_3SFMEoSXTB1j.webp",
-        "loja/images/reviews/ref/blastempflost_SVnN3vHkZlyl.webp",
-        "loja/images/reviews/ref/blastempflost_f1rxXExa38RT.webp"
+        "https://http2.mlstatic.com/D_NQ_NP_2X_898718-MLA100701063494_122025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_973095-MLA101197100913_122025-O.webp"
       ],
-      "text": "Gente que perfeiééo!!! não esperava que fossem téo lindo assim, nota mil amei..",
+      "text": "Se ve muy bien el producto apenas lo estamos instalando. Pronto subiré comentarios sobre su desempeño.",
       "useful": 156
     },
     {
       "stars": 5,
-      "date": "10 julio 2024",
-      "images": [],
-      "text": "O produto é bom, material de alta calidad tamanho ideal!!!.",
+      "date": "13 julio 2024",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_952366-MLA93432085967_092025-O.webp"
+      ],
+      "text": "Una belleza total! 😍 se podría decir que es una de las mejores compras del año que eh hecho.",
       "useful": 46
     },
     {
       "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Melhor compra que já fiz, vale cada centavo.",
+      "date": "14 julio 2024",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_696756-MLA104918842515_012026-O.webp"
+      ],
+      "text": "Hasta el momento todo bien, el refrigerador enfría muy bien y tiene buen tamaño.",
       "useful": 25
     },
     {
       "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
+      "date": "15 julio 2024",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_836727-MLA97665823045_112025-O.webp"
+      ],
+      "text": "Muy bueno el congelador exelente y la capacidad igual.",
       "useful": 31
     }
   ],
