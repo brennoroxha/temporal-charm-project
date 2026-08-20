@@ -40,9 +40,9 @@ export function LojaHeader({ cartCount = 0, onCartClick, initialQuery = "", cust
       .then((d) => {
         if (cancelled) return;
         const parts = [d.city, d.region].filter(Boolean);
-        setCity(parts.length ? parts.join(", ") : "Brasil");
+        setCity(parts.length ? parts.join(", ") : "México");
       })
-      .catch(() => !cancelled && setCity("Brasil"));
+      .catch(() => !cancelled && setCity("México"));
     return () => {
       cancelled = true;
     };
