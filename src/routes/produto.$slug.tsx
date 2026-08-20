@@ -452,8 +452,8 @@ function ProdutoPage() {
                   <span className="old-value">{product.oldPrice || formatMXN(priceOld)}</span>
                   {product.stock !== 0 && <span className="info-price-off">95% OFF</span>}
                 </div>
-                <div className="info-price">
-                  R$<span style={{ display: "inline-block", width: "5px" }} />{Math.floor(price).toLocaleString("es-MX")}<span className="cents">{Math.round((price - Math.floor(price)) * 100).toString().padStart(2, "0")}</span>
+                <div className="info-price" style={{ display: "flex", alignItems: "baseline", gap: 2 }}>
+                  $ {Math.floor(price).toLocaleString("es-MX")}<span className="cents">{Math.round((price - Math.floor(price)) * 100).toString().padStart(2, "0")}</span>
                 </div>
               </>
             )}
