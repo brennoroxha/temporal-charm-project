@@ -423,7 +423,7 @@ export const lojaProducts: LojaProduct[] = [
   },
   {
     "id": "apple-ipad-256gb-tit-nio-azul",
-    "title": "Apple iPad 256GB Titânio Azul",
+    "title": "Apple iPad 256GB Titanio Azul",
     "price": "$ 375,23",
     "img": "/loja/images/extracted/apple-ipad-256gb-titânio-azul.webp",
     "slug": "apple-ipad-256gb-tit-nio-azul",
