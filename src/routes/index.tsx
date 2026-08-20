@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-      fundo da pagina checkout, pagamento deixe tambem branco, header deixe a mesma cor do loja
+      cor do header esta errado no /pagamento-spei
     </div>
   );
 }
