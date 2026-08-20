@@ -558,7 +558,7 @@ function CheckoutPage() {
                           <div className="co-ship-title" style={{ display: "flex", alignItems: "center", gap: 6 }}>
                             <img src={iconeFull.url} alt="Full" style={{ height: 22, width: "auto" }} />
                           </div>
-                          <div className="co-ship-sub">Chegará amanhã</div>
+                          <div className="co-ship-sub">Llegará mañana</div>
                         </div>
                         <div className="co-ship-price">R$ 16,93</div>
                       </label>
