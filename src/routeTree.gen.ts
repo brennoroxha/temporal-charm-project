@@ -19,6 +19,7 @@ import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProdutoSlugRouteImport } from './routes/produto.$slug'
 import { Route as AuthenticatedAdminRouteImport } from './routes/_authenticated/admin'
+import { Route as ApiPublicXpagWebhookRouteImport } from './routes/api/public/xpag-webhook'
 import { Route as ApiPublicTrackEventRouteImport } from './routes/api/public/track-event'
 import { Route as ApiPublicTrackRouteImport } from './routes/api/public/track'
 import { Route as ApiPublicLogVisitRouteImport } from './routes/api/public/log-visit'
@@ -73,6 +74,11 @@ const AuthenticatedAdminRoute = AuthenticatedAdminRouteImport.update({
   path: '/admin',
   getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
+const ApiPublicXpagWebhookRoute = ApiPublicXpagWebhookRouteImport.update({
+  id: '/api/public/xpag-webhook',
+  path: '/api/public/xpag-webhook',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicTrackEventRoute = ApiPublicTrackEventRouteImport.update({
   id: '/api/public/track-event',
   path: '/api/public/track-event',
@@ -108,6 +114,7 @@ export interface FileRoutesByFullPath {
   '/api/public/log-visit': typeof ApiPublicLogVisitRoute
   '/api/public/track': typeof ApiPublicTrackRoute
   '/api/public/track-event': typeof ApiPublicTrackEventRoute
+  '/api/public/xpag-webhook': typeof ApiPublicXpagWebhookRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -123,6 +130,7 @@ export interface FileRoutesByTo {
   '/api/public/log-visit': typeof ApiPublicLogVisitRoute
   '/api/public/track': typeof ApiPublicTrackRoute
   '/api/public/track-event': typeof ApiPublicTrackEventRoute
+  '/api/public/xpag-webhook': typeof ApiPublicXpagWebhookRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -140,6 +148,7 @@ export interface FileRoutesById {
   '/api/public/log-visit': typeof ApiPublicLogVisitRoute
   '/api/public/track': typeof ApiPublicTrackRoute
   '/api/public/track-event': typeof ApiPublicTrackEventRoute
+  '/api/public/xpag-webhook': typeof ApiPublicXpagWebhookRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -157,6 +166,7 @@ export interface FileRouteTypes {
     | '/api/public/log-visit'
     | '/api/public/track'
     | '/api/public/track-event'
+    | '/api/public/xpag-webhook'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -172,6 +182,7 @@ export interface FileRouteTypes {
     | '/api/public/log-visit'
     | '/api/public/track'
     | '/api/public/track-event'
+    | '/api/public/xpag-webhook'
   id:
     | '__root__'
     | '/'
@@ -188,6 +199,7 @@ export interface FileRouteTypes {
     | '/api/public/log-visit'
     | '/api/public/track'
     | '/api/public/track-event'
+    | '/api/public/xpag-webhook'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -204,6 +216,7 @@ export interface RootRouteChildren {
   ApiPublicLogVisitRoute: typeof ApiPublicLogVisitRoute
   ApiPublicTrackRoute: typeof ApiPublicTrackRoute
   ApiPublicTrackEventRoute: typeof ApiPublicTrackEventRoute
+  ApiPublicXpagWebhookRoute: typeof ApiPublicXpagWebhookRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -278,6 +291,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedAdminRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
+    '/api/public/xpag-webhook': {
+      id: '/api/public/xpag-webhook'
+      path: '/api/public/xpag-webhook'
+      fullPath: '/api/public/xpag-webhook'
+      preLoaderRoute: typeof ApiPublicXpagWebhookRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/track-event': {
       id: '/api/public/track-event'
       path: '/api/public/track-event'
@@ -334,6 +354,7 @@ const rootRouteChildren: RootRouteChildren = {
   ApiPublicLogVisitRoute: ApiPublicLogVisitRoute,
   ApiPublicTrackRoute: ApiPublicTrackRoute,
   ApiPublicTrackEventRoute: ApiPublicTrackEventRoute,
+  ApiPublicXpagWebhookRoute: ApiPublicXpagWebhookRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
