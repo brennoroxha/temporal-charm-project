@@ -17,7 +17,12 @@ export const lojaGallery: Record<string, string[]> = {
     "https://http2.mlstatic.com/D_NQ_NP_2X_940940-MLU77295367570_072024-F.webp",
     "https://http2.mlstatic.com/D_NQ_NP_2X_746177-MLU77295367578_072024-F.webp"
   ],
-  "geladeira-brastemp-frost-free-french-door-554l": ["/loja/images/extracted/blastempflost_2.webp", "/loja/images/extracted/blastempflost_3.webp", "/loja/images/extracted/blastempflost_4.webp"],
+  "refrigerador-whirlpool-18-pies-side-by-side-xpert-in": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_938958-MLA95664130626_102025-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_616999-MLU77744128409_072024-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_961969-MLU77744128417_072024-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_931117-MLU77744176077_072024-F.webp"
+  ],
   "xiaomi-poco-x5-256gb-blue": ["/loja/images/extracted/POCO5X_1.webp", "/loja/images/extracted/POCO5X_2.webp", "/loja/images/extracted/POCO5X_3.webp"],
   "samsung-galaxy-s25-ultra-5g-512gb": ["/loja/images/extracted/GalaxyS25_1.webp", "/loja/images/extracted/GalaxyS25_2.webp", "/loja/images/extracted/GalaxyS25_3.webp", "/loja/images/extracted/GalaxyS25_4.webp"],
   "cocina-acros-afr2000g-color-gris": [

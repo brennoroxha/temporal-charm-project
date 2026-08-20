@@ -132,14 +132,14 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 12.200,24"
   },
   {
-    "id": "geladeira-brastemp-frost-free-french-door-554l",
-    "title": "Refrigerador Brastemp Frost Free French Door 554L",
-    "price": "$ 811,68",
-    "img": "/loja/images/geladeira-brastemp-frost-free-french-door-554l.webp",
-    "slug": "geladeira-brastemp-frost-free-french-door-554l",
+    "id": "refrigerador-whirlpool-18-pies-side-by-side-xpert-in",
+    "title": "Refrigerador Whirlpool 18 Pies Cúbicos Side By Side Xpert In",
+    "price": "$ 813,98",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_938958-MLA95664130626_102025-F.webp",
+    "slug": "refrigerador-whirlpool-18-pies-side-by-side-xpert-in",
     "stock": 16,
     "voltagem": true,
-    "oldPrice": "$ 16.233,62"
+    "oldPrice": "$ 16.279,56"
   },
   {
     "id": "xiaomi-poco-x5-256gb-blue",
