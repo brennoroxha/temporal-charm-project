@@ -492,7 +492,7 @@ function ProdutoPage() {
             </div>
             {product.stock !== 0 && product.stock !== undefined && (
               <div className="stock-info low" style={{ marginBottom: 0, marginTop: 4 }}>
-                Restam {product.stock} unidades
+                ÚLTIMAS {product.stock} UNIDADES
               </div>
             )}
             <div className="stock-sub" style={{ marginBottom: 20 }}>Armazenado e enviado pelo {product.stock !== 0 ? <img src={fullIcon.url} alt="FULL" style={{ height: 18, verticalAlign: "middle" }} /> : <b>Mercado Livre</b>}</div>
