@@ -222,24 +222,24 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 8.833,86"
   },
   {
-    "id": "jogo-de-panelas-vanilla-10-pe-as-brinox",
-    "title": "Juego de Ollas Vanilla 10 Piezas Brinox",
-    "price": "$ 292,98",
-    "img": "/loja/images/jogo-de-panelas-vanilla-10-pe-as-brinox.webp",
-    "slug": "jogo-de-panelas-vanilla-10-pe-as-brinox",
+    "id": "juego-de-ollas-y-sartenes-de-22-piezas-juego-de-utensilios",
+    "title": "Juego De Ollas Y Sartenes De 22 Piezas, Juego De Utensilios",
+    "price": "$ 358,90",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_651380-MLM107674072409_022026-F.webp",
+    "slug": "juego-de-ollas-y-sartenes-de-22-piezas-juego-de-utensilios",
     "stock": 5,
     "voltagem": false,
-    "oldPrice": "$ 5.859,56"
+    "oldPrice": "$ 7.177,99"
   },
   {
-    "id": "kit-3-panelas-de-press-o-7l-4-5l-2-5l",
-    "title": "Kit 3 Ollas de Presión 7L/4,5L/2,5L",
-    "price": "$ 183,03",
-    "img": "/loja/images/kit-3-panelas-de-press-o-7l-4-5l-2-5l.webp",
-    "slug": "kit-3-panelas-de-press-o-7l-4-5l-2-5l",
+    "id": "olla-a-presion-hamilton-beach-7-5l-quikcook",
+    "title": "Olla A Presión Hamilton Beach 7.5l Quikcook Inoxidable Gris Hamilton Beach",
+    "price": "$ 116,97",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_769279-MLA99880260369_112025-F.webp",
+    "slug": "olla-a-presion-hamilton-beach-7-5l-quikcook",
     "stock": 10,
     "voltagem": false,
-    "oldPrice": "$ 3.660,59"
+    "oldPrice": "$ 2.339,35"
   },
   {
     "id": "iphone-15-256gb-rosa",
