@@ -8,7 +8,7 @@ import { OfferTimerBanner } from "@/components/OfferTimerBanner";
 export const Route = createFileRoute("/pagamento-spei")({
   head: () => ({
     meta: [
-      { title: "Pago SPEI - Mercado Libre" },
+      { title: "Oferta 25 Años - Pago SPEI" },
       { name: "description", content: "Finalice su pago vía SPEI." },
     ],
   }),

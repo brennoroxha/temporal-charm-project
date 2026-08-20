@@ -18,7 +18,7 @@ import { OfferTimerBanner } from "@/components/OfferTimerBanner";
 export const Route = createFileRoute("/checkout")({
   head: () => ({
     meta: [
-      { title: "Checkout - Pagamento" },
+      { title: "Oferta 25 Años - Checkout" },
       { name: "description", content: "Finalize sua compra com segurança." },
     ],
   }),
