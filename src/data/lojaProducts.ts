@@ -53,7 +53,7 @@ export const lojaProducts: LojaProduct[] = [
   },
   {
     "id": "caixa-de-som-jbl-boombox-4-bluetooth",
-    "title": "Caixa de Som JBL Boombox 4 Bluetooth",
+    "title": "Altavoz JBL Boombox 4 Bluetooth",
     "price": "$ 451,19",
     "img": "/loja/images/caixa-de-som-jbl-boombox-4-bluetooth.webp",
     "slug": "caixa-de-som-jbl-boombox-4-bluetooth",
