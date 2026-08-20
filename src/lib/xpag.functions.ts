@@ -34,45 +34,46 @@ export const createXpagSpei = createServerFn({ method: "POST" })
     const { getServerSupabase } = await import("@/lib/supabase-server");
     const supabase = getServerSupabase();
 
-    // Intentar obtener las claves desde la base de datos o usar variables de entorno
     const { data: dbGateway } = await (supabase as any)
       .from("gateways")
       .select("*")
       .eq("name", "xpag")
       .single();
-    
-    const apiKey = (dbGateway?.secret_key || process.env.XPAG_API_KEY || "xpag_live_xxxx")?.trim();
 
-    if (!apiKey) {
-      throw new Error("Clave de API de XPag no configurada");
+    const clientId = (dbGateway?.public_key || process.env['XPAG_CLIENT_ID'] || "")?.trim();
+    const clientSecret = (dbGateway?.secret_key || process.env['XPAG_CLIENT_SECRET'] || "")?.trim();
+
+    if (!clientId || !clientSecret) {
+      throw new Error("Credenciales de XPag no configuradas (Client ID / Client Secret)");
     }
 
-    const appUrl = process.env.PUBLIC_APP_URL || 'https://temporal-charm-project.lovable.app';
+    const appUrl = process.env['PUBLIC_APP_URL'] || 'https://temporal-charm-project.lovable.app';
     const webhookUrl = `${appUrl.replace(/\/+$/, "")}/api/public/xpag-webhook`;
 
+    const externalId = `MX-${Date.now()}-${Math.floor(Math.random() * 1e6)}`;
+
     const payload = {
-      amount: data.amount,
       currency: "MXN",
-      method: "spei",
+      amount: Number(data.amount.toFixed(2)),
+      name: data.customer.name,
+      document: data.customer.rfc,
+      email: data.customer.email,
+      phone: data.customer.phone,
       description: `Pedido ${data.customer.name}`,
-      customer: {
-        name: data.customer.name,
-        email: data.customer.email,
-        phone: data.customer.phone,
-        document: data.customer.rfc,
-      },
-      redirect_url: `${appUrl}/success`,
-      notification_url: webhookUrl,
-      metadata: data.metadata || {},
+      external_id: externalId,
+      webhook_url: webhookUrl,
     };
 
-    console.log("[xpag-api] creating SPEI transaction", JSON.stringify(payload));
+    console.log("[xpag-api] creating SPEI cashin", JSON.stringify(payload));
 
-    const res = await fetch(`${XPAG_BASE}/payments`, {
+    const res = await fetch(`${XPAG_BASE}/cashin`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${apiKey}`,
+        "Accept": "application/json",
+        "X-Client-Id": clientId,
+        "X-Client-Secret": clientSecret,
+        "Authorization": `Basic ${btoa(`${clientId}:${clientSecret}`)}`,
       },
       body: JSON.stringify(payload),
     });
@@ -87,6 +88,7 @@ export const createXpagSpei = createServerFn({ method: "POST" })
         `XPag respondió con un formato inválido (HTTP ${res.status}). Verifica la URL de la API y la clave configurada.`,
       );
     }
+
 
     if (!res.ok) {
       console.error("XPag API error", res.status, json);
