@@ -42,7 +42,7 @@ export async function notifyFacebookPurchase(order: any) {
           user_data: userData,
           custom_data: {
             value: Number(order.amount) / 100,
-            currency: "BRL",
+            currency: "MXN",
             content_type: "product",
           },
         },

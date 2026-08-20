@@ -17,7 +17,7 @@ type Props = {
 };
 
 export function LojaHeader({ cartCount = 0, onCartClick, initialQuery = "", customMobileMenu }: Props) {
-  const [city, setCity] = useState<string>("Carregando...");
+  const [city, setCity] = useState<string>("Cargando...");
   const [q, setQ] = useState(initialQuery);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const cartEverOpened = useRef(false);
@@ -40,9 +40,9 @@ export function LojaHeader({ cartCount = 0, onCartClick, initialQuery = "", cust
       .then((d) => {
         if (cancelled) return;
         const parts = [d.city, d.region].filter(Boolean);
-        setCity(parts.length ? parts.join(", ") : "Brasil");
+        setCity(parts.length ? parts.join(", ") : "México");
       })
-      .catch(() => !cancelled && setCity("Brasil"));
+      .catch(() => !cancelled && setCity("México"));
     return () => {
       cancelled = true;
     };

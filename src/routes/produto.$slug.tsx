@@ -34,18 +34,18 @@ export const Route = createFileRoute("/produto/$slug")({
   component: ProdutoPage,
   errorComponent: ({ error }) => (
     <div style={{ padding: 40, fontFamily: "-apple-system, Segoe UI, Roboto, sans-serif" }}>
-      <h1>Erro ao carregar produto</h1>
+      <h1>Error al cargar producto</h1>
       <p>{error.message}</p>
-      <Link to="/loja">Voltar para a loja</Link>
+      <Link to="/loja">Volver a la tienda</Link>
     </div>
   ),
   notFoundComponent: () => {
     const { slug } = Route.useParams();
     return (
       <div style={{ padding: 40, fontFamily: "-apple-system, Segoe UI, Roboto, sans-serif" }}>
-        <h1>Produto não encontrado</h1>
+        <h1>Producto no encontrado</h1>
         <p>Slug: {slug}</p>
-        <Link to="/loja">Voltar para a loja</Link>
+        <Link to="/loja">Volver a la tienda</Link>
       </div>
     );
   },
@@ -56,8 +56,8 @@ function parsePrice(p: string): number {
   const n = parseFloat(cleaned);
   return isNaN(n) ? 0 : n;
 }
-function formatBRL(v: number): string {
-  return v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+function formatMXN(v: number): string {
+  return v.toLocaleString("es-MX", { style: "currency", currency: "MXN" });
 }
 function soldCount(slug: string): number {
   let h = 0;
@@ -83,10 +83,10 @@ function pickBadge(slug: string, title: string): { kind: "best" | "official" | "
   if (!brand && (t.includes("iphone") || t.includes("ipad") || t.includes("macbook") || t.includes("airpods"))) brand = "Apple";
   if (slug === "iphone17-pro") return { kind: "official", label: "LOJA OFICIAL APPLE" };
   const opts: Array<{ kind: "best" | "official" | "deal"; label: string }> = [
-    { kind: "best", label: "MAIS VENDIDO" },
-    { kind: "deal", label: "OFERTA DO DIA" },
+    { kind: "best", label: "MÁS VENDIDO" },
+    { kind: "deal", label: "OFERTA DEL DÍA" },
   ];
-  if (brand) opts.push({ kind: "official", label: `LOJA OFICIAL ${brand.toUpperCase()}` });
+  if (brand) opts.push({ kind: "official", label: `TIENDA OFICIAL ${brand.toUpperCase()}` });
   return opts[h % opts.length];
 }
 
@@ -125,7 +125,7 @@ function ProdutoPage() {
   const [voltagem, setVoltagem] = useState("Bivolt");
   const isGeladeira = product.title.toLowerCase().includes("geladeira");
   const { tomorrowLabel, nextBusinessLabel } = useMemo(() => {
-    const days = ["domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado"];
+    const days = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
     const now = new Date();
     const tomorrow = new Date(now); tomorrow.setDate(now.getDate() + 1);
     const nb = new Date(now); nb.setDate(now.getDate() + 1);
@@ -374,7 +374,7 @@ function ProdutoPage() {
                 );
               })()}
               <div className="prod-header-row">
-                <span className="sold">Novo | +{soldCount(product.slug).toLocaleString("pt-BR")} vendidos</span>
+                <span className="sold">Novo | +{soldCount(product.slug).toLocaleString("es-MX")} vendidos</span>
                 <span className="rating">
                   <span className="rating-num">{ratingFor(product.slug).toFixed(1).replace(".", ",")}</span>
                   <span className="stars">
@@ -394,7 +394,7 @@ function ProdutoPage() {
                       );
                     })}
                   </span>
-                  <span>({reviewCount(product.slug).toLocaleString("pt-BR")})</span>
+                  <span>({reviewCount(product.slug).toLocaleString("es-MX")})</span>
                 </span>
               </div>
               {(() => { const b = pickBadge(product.slug, product.title); return <div><span className={`product-badge ${b.kind}`}>{b.label}</span></div>; })()}
@@ -449,11 +449,11 @@ function ProdutoPage() {
             {product.stock !== 0 && (
               <>
                 <div className="info-price-old">
-                  <span className="old-value">{product.oldPrice || formatBRL(priceOld)}</span>
+                  <span className="old-value">{product.oldPrice || formatMXN(priceOld)}</span>
                   {product.stock !== 0 && <span className="info-price-off">95% OFF</span>}
                 </div>
                 <div className="info-price">
-                  R$<span style={{ display: "inline-block", width: "5px" }} />{Math.floor(price).toLocaleString("pt-BR")}<span className="cents">{Math.round((price - Math.floor(price)) * 100).toString().padStart(2, "0")}</span>
+                  R$<span style={{ display: "inline-block", width: "5px" }} />{Math.floor(price).toLocaleString("es-MX")}<span className="cents">{Math.round((price - Math.floor(price)) * 100).toString().padStart(2, "0")}</span>
                 </div>
               </>
             )}
@@ -617,7 +617,7 @@ function ReviewsBlock({ slug }: { slug: string }) {
               );
             })}
           </div>
-          <div className="reviews-count">{total.toLocaleString("pt-BR")} avaliações</div>
+          <div className="reviews-count">{total.toLocaleString("es-MX")} avaliações</div>
         </div>
       </div>
       <h3 className="reviews-subtitle">Opiniões em destaque</h3>

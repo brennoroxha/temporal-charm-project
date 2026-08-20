@@ -33,8 +33,8 @@ function parsePrice(p: string): number {
   const n = parseFloat(cleaned);
   return isNaN(n) ? 0 : n;
 }
-function formatBRL(v: number): string {
-  return v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+function formatMXN(v: number): string {
+  return v.toLocaleString("es-MX", { style: "currency", currency: "MXN" });
 }
 
 function maskCPF(v: string): string {
@@ -204,7 +204,7 @@ function CheckoutPage() {
       sessionStorage.setItem("pixPayment", JSON.stringify(res));
       navigate({ to: "/pagamento" });
     } catch (err: any) {
-      alert(err.message || "Erro ao processar pagamento.");
+      alert(err.message || "Error al procesar el pago.");
     } finally {
       setPayLoading(false);
     }
@@ -328,9 +328,9 @@ function CheckoutPage() {
       <div className="co-wrap">
         <div className="progress" role="list">
           {([
-            { n: 1, label: "Identificação", sub: "Seus dados" },
-            { n: 2, label: "Entrega", sub: "Endereço e frete" },
-            { n: 3, label: "Pagamento", sub: "Revisar e pagar" },
+            { n: 1, label: "Identificación", sub: "Tus datos" },
+            { n: 2, label: "Entrega", sub: "Dirección y envío" },
+            { n: 3, label: "Pago", sub: "Revisar y pagar" },
           ] as const).map((s) => {
             const state = step === s.n ? "active" : step > s.n ? "done" : "pending";
             const leadFill = step > s.n ? 1 : step === s.n ? 1 : 0;
@@ -351,9 +351,9 @@ function CheckoutPage() {
 
         <div className="co-card" style={{ boxShadow: "none", border: "1px solid #d5d5d5" }}>
           <div className="co-summary-head" onClick={() => setOpenSummary((v) => !v)}>
-            <h2>Resumo do pedido</h2>
+            <h2>Resumen del pedido</h2>
             <div className={`co-summary-right ${openSummary ? "open" : ""}`}>
-              <span>{formatBRL(total)}</span>
+              <span>{formatMXN(total)}</span>
               <ChevronDown size={16} />
             </div>
           </div>
@@ -367,11 +367,11 @@ function CheckoutPage() {
                     style={{ width: 48, height: 48, objectFit: "contain", background: "#fff", border: "1px solid #eee", borderRadius: 4, flexShrink: 0 }}
                   />
                   <span style={{ flex: 1, paddingRight: 10 }}>{it.title} × {it.qty}</span>
-                  <span style={{ whiteSpace: "nowrap" }}>{formatBRL(parsePrice(it.price) * it.qty)}</span>
+                  <span style={{ whiteSpace: "nowrap" }}>{formatMXN(parsePrice(it.price) * it.qty)}</span>
                 </div>
               ))}
               <div className="co-row"><span>Envios</span><span style={{ color: "#00a650", fontWeight: 600 }}>Grátis</span></div>
-              <div className="co-total"><span>Total</span><span>{formatBRL(total)}</span></div>
+              <div className="co-total"><span>Total</span><span>{formatMXN(total)}</span></div>
             </div>
           )}
         </div>

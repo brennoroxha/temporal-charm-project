@@ -9,7 +9,7 @@ const PayloadSchema = z.object({
   customer: z.object({
     name: z.string(),
     email: z.string().email(),
-    cpf: z.string(),
+    rfc: z.string(),
     phone: z.string(),
   }),
   items: z.array(z.object({
@@ -52,7 +52,7 @@ export const createFreepayPix = createServerFn({ method: "POST" })
     const webhookUrl = `${appUrl.replace(/\/+$/, "")}/api/public/freepay-webhook`;
 
     // FreePay expects document without dots/dashes
-    const digits = data.customer.cpf.replace(/\D/g, "");
+    const digits = data.customer.rfc.replace(/\D/g, "");
 
     const payload = {
       amount: data.amount,
@@ -65,7 +65,7 @@ export const createFreepayPix = createServerFn({ method: "POST" })
       customer: {
         name: data.customer.name,
         email: data.customer.email,
-        document: { number: digits, type: digits.length > 11 ? 'cnpj' : 'cpf' },
+        document: { number: digits, type: digits.length > 11 ? 'cnpj' : 'rfc' },
         phone: data.customer.phone.replace(/\D/g, "").startsWith('55') ? `+${data.customer.phone.replace(/\D/g, "")}` : `+55${data.customer.phone.replace(/\D/g, "")}`,
       },
       items: [
@@ -112,7 +112,7 @@ export const createFreepayPix = createServerFn({ method: "POST" })
         transaction_id: id,
         customer_name: data.customer.name,
         customer_email: data.customer.email,
-        customer_document: data.customer.cpf,
+        customer_document: data.customer.rfc,
         customer_phone: data.customer.phone,
         amount: data.amount,
         status: "pending",

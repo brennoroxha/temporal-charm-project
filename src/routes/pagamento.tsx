@@ -26,8 +26,8 @@ type PixPayment = {
   items?: PixItem[];
 };
 
-function formatBRL(v: number): string {
-  return v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+function formatMXN(v: number): string {
+  return v.toLocaleString("es-MX", { style: "currency", currency: "MXN" });
 }
 
 function PagamentoPage() {
@@ -79,13 +79,13 @@ function PagamentoPage() {
             w.gtag("event", "conversion", {
               send_to: "AW-18267532945/M09HCP3G8cwcEJHd0YZE",
               value,
-              currency: "BRL",
+              currency: "MXN",
               transaction_id: String(pay.transactionId),
             });
             w.gtag("event", "purchase", {
               transaction_id: String(pay.transactionId),
               value,
-              currency: "BRL",
+              currency: "MXN",
             });
           }
           if (typeof w.fbPurchase === "function") {
@@ -95,7 +95,7 @@ function PagamentoPage() {
             w.utmifyTrack("Purchase", {
               value: value,
               order_id: String(pay.transactionId),
-              currency: "BRL"
+              currency: "MXN"
             });
           }
           sessionStorage.setItem(firedKey, "1");
@@ -211,12 +211,12 @@ function PagamentoPage() {
       </div>
 
       <div className="pg-wrap">
-        <h1 className="pg-title">Já é quase seu...</h1>
-        <p className="pg-sub">Pague seu pix dentro de <b>{mm}:{ss}</b> para garantir sua compra.</p>
+        <h1 className="pg-title">Ya casi es tuyo...</h1>
+        <p className="pg-sub">Pague su pedido dentro de <b>{mm}:{ss}</b> para asegurar su compra.</p>
 
         <div className="pg-wait">
           <span className="pg-wait-dot" />
-          Aguardando pagamento ...
+          Esperando el pago ...
         </div>
 
         {pay?.qrcode && (
@@ -229,24 +229,24 @@ function PagamentoPage() {
           </div>
         )}
 
-        <div className="pg-code-label">Código PIX Copia e Cola</div>
-        <div className="pg-code">{pay?.qrcode || "Carregando..."}</div>
+        <div className="pg-code-label">Código de Pago Copiar y Pegar</div>
+        <div className="pg-code">{pay?.qrcode || "Cargando..."}</div>
         <button type="button" className={`pg-copy ${copied ? "copied" : ""}`} onClick={copyCode}>
-          {copied ? "Código copiado!" : "Copiar código pix"}
+          {copied ? "Código copiado!" : "Copiar código de pago"}
         </button>
 
-        <div className="pg-value">Valor do Pix: <span>{formatBRL(pay?.amount || 0)}</span></div>
+        <div className="pg-value">Monto a pagar: <span>{formatMXN(pay?.amount || 0)}</span></div>
 
         {showUpload && (
           <div className="pg-proof">
-            <div className="pg-proof-t">Pagou seu pedido e ainda não foi confirmado?</div>
-            <div className="pg-proof-sub">Anexe o comprovante agora para agilizarmos a sua entrega.</div>
+            <div className="pg-proof-t">¿Pagó su pedido e aún não ha sido confirmado??</div>
+            <div className="pg-proof-sub">Adjunte el comprobante ahora para agilizar su entrega.</div>
             {(() => {
               const disabled = uploadState === "uploading" || uploadState === "done" || !pay;
               return (
                 <label className={`pg-file-btn ${disabled ? "disabled" : ""}`}>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-                  {uploadState === "uploading" ? "Enviando..." : uploadState === "done" ? "Enviado com sucesso!" : "Anexar Comprovante"}
+                  {uploadState === "uploading" ? "Enviando..." : uploadState === "done" ? "Enviado con éxito!" : "Adjuntar Comprobante"}
                   <input
                     type="file"
                     className="pg-file-input"
@@ -257,8 +257,8 @@ function PagamentoPage() {
                       if (!file || !pay) return;
                       setFileName(file.name);
                       trackEvent("receipt_selected", { name: file.name, size: file.size, type: file.type });
-                      if (file.size > 8 * 1024 * 1024) { setUploadState("error"); setUploadMsg("Arquivo maior que 8MB"); return; }
-                      setUploadState("uploading"); setUploadMsg("Enviando comprovante...");
+                      if (file.size > 8 * 1024 * 1024) { setUploadState("error"); setUploadMsg("Archivo mayor a 8MB"); return; }
+                      setUploadState("uploading"); setUploadMsg("Enviando comprobante...");
                       try {
                         const b64 = await new Promise<string>((res, rej) => {
                           const r = new FileReader();
@@ -273,7 +273,7 @@ function PagamentoPage() {
                           contentType: file.type || "application/octet-stream",
                           dataBase64: b64,
                         }});
-                        setUploadState("done"); setUploadMsg("Comprovante recebido! Estamos validando.");
+                        setUploadState("done"); setUploadMsg("¡Comprobante recibido!! Estamos validando.");
                         trackEvent("receipt_uploaded", { transactionId: String(pay.transactionId) });
                       } catch (err: any) {
                         setUploadState("error"); setUploadMsg(err?.message || "Falha no envio");
@@ -297,28 +297,28 @@ function PagamentoPage() {
 
 
         <div className="pg-steps">
-          <h3>Como pagar o pix:</h3>
-          <div className="pg-step"><div className="pg-num">1</div><div>Clique em copiar o código PIX, logo acima</div></div>
-          <div className="pg-step"><div className="pg-num">2</div><div>Acesse o app do seu banco</div></div>
-          <div className="pg-step"><div className="pg-num">3</div><div>Vá até a opção PIX</div></div>
-          <div className="pg-step"><div className="pg-num">4</div><div>Escolha a opção "COPIA E COLA"</div></div>
-          <div className="pg-step"><div className="pg-num">5</div><div>Insira o código copiado e finalize seu pagamento</div></div>
+          <h3>Cómo pagar:</h3>
+          <div className="pg-step"><div className="pg-num">1</div><div>Haga clic en copiar el código de pago arriba</div></div>
+          <div className="pg-step"><div className="pg-num">2</div><div>Acceda a la aplicación de su banco</div></div>
+          <div className="pg-step"><div className="pg-num">3</div><div>Vaya a la opción de transferencias</div></div>
+          <div className="pg-step"><div className="pg-num">4</div><div>Elija la opción "COPIAR Y PEGAR"</div></div>
+          <div className="pg-step"><div className="pg-num">5</div><div>Ingrese el código copiado y finalice su pago</div></div>
         </div>
 
         {pay?.items && pay.items.length > 0 && (
           <div className="pg-summary">
-            <h3>Resumo do pedido</h3>
+            <h3>Resumen del pedido</h3>
             {pay.items.map((it) => (
               <div className="pg-item" key={it.slug}>
                 <img src={it.image} alt={it.title} loading="lazy" decoding="async" />
                 <div className="pg-item-info">
                   <div className="pg-item-title">{it.title}</div>
-                  <div className="pg-item-meta">Qtd: {it.qty} · {formatBRL(it.unitPrice)}</div>
+                  <div className="pg-item-meta">Cant: {it.qty} · {formatMXN(it.unitPrice)}</div>
                 </div>
-                <div className="pg-item-price">{formatBRL(it.unitPrice * it.qty)}</div>
+                <div className="pg-item-price">{formatMXN(it.unitPrice * it.qty)}</div>
               </div>
             ))}
-            <div className="pg-total">Total <span>{formatBRL(pay.amount || 0)}</span></div>
+            <div className="pg-total">Total <span>{formatMXN(pay.amount || 0)}</span></div>
           </div>
         )}
       </div>

@@ -4,50 +4,50 @@ export const lojaReviews: Record<string, LojaReview[]> = {
   "jbl-boombox-3-preta": [
     {
       "stars": 5,
-      "date": "07 mar. 2024",
+      "date": "07 marzo 2024",
       "images": [],
-      "text": "Excelência, som de qualidade e praticidade na hora de usar. Parabéns a JBL acertou novamente em mais uma caixa de som, seus graves e subgraves sóo excelentes. Pra quem reclama é porque não está sabendo usar. Comprei a minha e escutei mais de 20 hrs no volume médio sem explorar muito os graves no máximo. Como exemplo : se utilizar um carro na sua rotação máximo do motor obviamente vai consumir mais combustível, assim funciona a caixa JBL com sua bateria. Se colocarmos no volume máximo explorando seus altos graves ela consumirá mais a energia de sua bateria.",
+      "text": "Excelencia, sonido de calidad e practicidad na hora de usar. Parabéns a JBL acertou novamente em mais uma caixa de sonido, seus graves e subgraves sóo excelentes. Pra quem reclama é porque não está sabendo usar. Comprei a minha e escutei mais de 20 hrs no volume médio sem explorar muito os graves no máximo. Como exemplo : se utilizar um carro na sua rotação máximo do motor obviamente vai consumir mais combustível, assim funciona a caixa JBL com sua batería. Se colocarmos no volume máximo explorando seus altos graves ela consumirá mais a energia de sua batería.",
       "useful": 62
     },
     {
       "stars": 5,
-      "date": "28 mai. 2024",
+      "date": "28 mayo 2024",
       "images": [
         "loja/images/reviews/ref/JBL_Ky7IMR3sU2Us.webp",
         "loja/images/reviews/ref/JBL_kc4CsPVGpt5F.webp"
       ],
-      "text": "Amei produto muito bom mesmo e recomendo que compre.",
+      "text": "Me encantó producto muy bueno mesmo e recomiendo que compre.",
       "useful": 129
     }
   ],
   "iphone-17-pro-max-256gb": [
     {
       "stars": 5,
-      "date": "08 mai. 2024",
+      "date": "08 mayo 2024",
       "images": [],
-      "text": "Tenho já 7 meses, o aparelho é muito bom, gostoso de mexer, bateria dura o dia inteiro, ameiii.",
+      "text": "Tenho já 7 meses, o aparelho é muito bom, gostoso de mexer, batería dura o dia inteiro, ameiii.",
       "useful": 135
     },
     {
       "stars": 5,
-      "date": "23 mar. 2024",
+      "date": "23 marzo 2024",
       "images": [
         "loja/images/reviews/ref/iphone17_pro_prov-1.webp",
         "loja/images/reviews/ref/iphone17_pro_prov-2.webp"
       ],
-      "text": "chegou em perfeito estado, só achei a proteção um pouco ruim, a caixa do celular veio solto em uma caixa do Mercado Livre grande, sem proteção nas laterais, mas o veio sem nenhum arranhão mesmo assim, o celular chegou super rápido.",
+      "text": "llegó en perfecto estado, só achei a proteção um pouco ruim, a caixa do celular veio solto em uma caixa do Mercado Livre grande, sem proteção nas laterais, mas o veio sem nenhum arranhão mesmo assim, o celular chegou super rápido.",
       "useful": 128
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "O produto é exatamente como na descrição, estou muito satisfeito.",
+      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
       "useful": 48
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 49
@@ -56,51 +56,51 @@ export const lojaReviews: Record<string, LojaReview[]> = {
   "bicicleta-el-trica-scooter-500w-32km-h-com-alarme": [
     {
       "stars": 5,
-      "date": "09 dez. 2024",
+      "date": "09 diciembre 2024",
       "images": [],
-      "text": "Tudo perfeito, comprem sem medo..",
+      "text": "Tudo perfeito, compren sin miedo..",
       "useful": 73
     },
     {
       "stars": 5,
-      "date": "12 dez. 2024",
+      "date": "12 diciembre 2024",
       "images": [],
       "text": "Simplesmente perfeito.",
       "useful": 99
     },
     {
       "stars": 5,
-      "date": "15 dez. 2024",
+      "date": "15 diciembre 2024",
       "images": [],
-      "text": "Amei",
+      "text": "Me encantó",
       "useful": 118
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 26
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 37
     }
   ],
   "bicicleta-absolute-nero-5-level-nova-12v-aro-29": [
     {
       "stars": 5,
-      "date": "08 mai. 2024",
+      "date": "08 mayo 2024",
       "images": [],
-      "text": "Bike muito top, ótimas peças freio muito bom, porém já tive que levar para engraxar o central e apertar os raios. Mas tirando isso muito boa boa mesmo comprem sem medo.",
+      "text": "Bike muito top, ótimas peças freio muito bom, porém já tive que levar para engraxar o central e apertar os raios. Mas tirando isso muito boa boa mesmo compren sin miedo.",
       "useful": 208
     },
     {
       "stars": 5,
-      "date": "23 mar. 2024",
+      "date": "23 marzo 2024",
       "images": [
         "loja/images/reviews/ref/bicicleta_absolute_nero5_prov-1-sdaadsa.webp",
         "loja/images/reviews/ref/bicicleta_absolute_nero5_prov-2-sdaadsa.webp"
@@ -110,56 +110,56 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 17
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 17
     }
   ],
   "smart-tv-tcl-65-qled-4k": [
     {
       "stars": 5,
-      "date": "07 mar. 2024",
+      "date": "07 marzo 2024",
       "images": [],
-      "text": "Experimente a qualidade e a inovação da TCL com a Smart TV QLED 65P8K de 65 polegadas. Com uma impressionante resolução 4K UHD e a tecnologia QLED, você desfrutará de imagens vibrantes e cores intensas, elevando suas sessões de cinema e jogos a um novo patamar. Esta TV é inteligente. Seu sistema operacional Android TV permite fácil acesso a uma variedade de aplicativos, incluindo Netflix, com controle de voz integrado através do Google Assistant, tornando sua navegação mais intuitiva e prática. A TCL 65P8K possui quatro portas HDMI e duas USB, garantindo espaço para todos os seus dispositivos. Seu design moderno e elegante combina perfeitamente com qualquer ambiente, enquanto a integração Wi-Fi e Bluetooth facilita a conexão com seus dispositivos móveis e sistemas de som. Com funcionalidades como HDR que melhora a qualidade da imagem e um tempo de resposta de apenas 6.5 ms, esta TV é uma escolha ideal para os apaixonados por entretenimento em casa. Transforme sua sala em um verdadeiro cinema com a TCL QLED Smart TV.",
+      "text": "Experimente a calidad e a inovação da TCL com a Smart TV QLED 65P8K de 65 polegadas. Com uma impressionante resolução 4K UHD e a tecnologia QLED, você desfrutará de imagens vibrantes e cores intensas, elevando suas sessões de cinema e jogos a um novo patamarzo Esta TV é inteligente. Seu sistema operacional Android TV permite fácil acesso a uma variedade de aplicativos, incluindo Netflix, com controle de voz integrado através do Google Assistant, tornando sua navegação mais intuitiva e prática. A TCL 65P8K possui quatro portas HDMI e duas USB, garantindo espaço para todos os seus dispositivos. Seu design moderno e elegante combina perfeitamente com qualquer ambiente, enquanto a integração Wi-Fi e Bluetooth facilita a conexão com seus dispositivos móveis e sistemas de sonido. Com funcionalidades como HDR que melhora a calidad da imagem e um tempo de resposta de apenas 6.5 ms, esta TV é uma escolha ideal para os apaixonados por entretenimento em casa. Transforme sua sala em um verdadeiro cinema com a TCL QLED Smart TV.",
       "useful": 171
     },
     {
       "stars": 5,
-      "date": "28 mai. 2024",
+      "date": "28 mayo 2024",
       "images": [
         "loja/images/reviews/ref/smartv_tcl_65_prova-1-MLA100977106147.webp",
         "loja/images/reviews/ref/smartv_tcl_65_prova-2-MLA100977106147.webp"
       ],
-      "text": "Achei bem legal a tv. Tem vários recursos. Após umas calibrações na imagem, ela ficou bem legal. O som dela é um dos pontos fortes.",
+      "text": "Achei bem legal a tv. Tem vários recursos. Após umas calibrações na imagem, ela ficou bem legal. O sonido dela é um dos pontos fortes.",
       "useful": 208
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 50
     }
   ],
-  "caixa-de-som-jbl-boombox-4-bluetooth": [
+  "caixa-de-sonido-jbl-boombox-4-bluetooth": [
     {
       "stars": 5,
-      "date": "07 mar. 2024",
+      "date": "07 marzo 2024",
       "images": [],
-      "text": "A JBL Boombox 4 é excelência em som, qualidade e praticidade. A marca acertou novamente com esta caixa de som impressionante, oferecendo graves e subgraves excepcionais. Para aproveitar ao máximo o dispositivo, é importante conhecer bem suas funcionalidades. Testei e consegui mais de 20 horas de reprodução em volume médio, sem explorar totalmente os graves. A autonomia de bateria funciona como um carro: quando você aumenta o volume e utiliza completamente os graves, o consumo de energia aumenta, assim como o combustível de um motor em rotação máxima. Portanto, para melhor rendimento da bateria, recomendo utilizar volume moderado e aproveitar a qualidade excepcional da Boombox 4.",
+      "text": "A JBL Boombox 4 é excelência em sonido, calidad e practicidad. A marca acertou novamente com esta caixa de sonido impressionante, oferecendo graves e subgraves excepcionais. Para aproveitar ao máximo o dispositivo, é importante conhecer bem suas funcionalidades. Testei e consegui mais de 20 horas de reprodução em volume médio, sem explorar totalmente os graves. A autonomia de batería funciona como um carro: quando você aumenta o volume e utiliza completamente os graves, o consumo de energia aumenta, assim como o combustível de um motor em rotação máxima. Portanto, para melhor rendimento da batería, recomiendo utilizar volume moderado e aproveitar a calidad excepcional da Boombox 4.",
       "useful": 187
     },
     {
       "stars": 5,
-      "date": "28 mai. 2024",
+      "date": "28 mayo 2024",
       "images": [
         "loja/images/reviews/ref/JBL_Boombox_4_prova-1-MLA105655927966.webp",
         "loja/images/reviews/ref/JBL_Boombox_4_prova-2-MLA105655927966.webp"
@@ -169,14 +169,14 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "14 jan. 2025",
+      "date": "14 enero 2025",
       "images": [],
-      "text": "A JBL Boombox 4 é excelência em som, qualidade e praticidade. A marca acertou novamente.",
+      "text": "A JBL Boombox 4 é excelência em sonido, calidad e practicidad. A marca acertou novamente.",
       "useful": 20
     },
     {
       "stars": 5,
-      "date": "14 jan. 2025",
+      "date": "14 enero 2025",
       "images": [],
       "text": "Gostei muito, promete o que fala caixa boa e potente, leve durabilidade boa.",
       "useful": 20
@@ -185,39 +185,39 @@ export const lojaReviews: Record<string, LojaReview[]> = {
   "jbl-partybox-710-preta": [
     {
       "stars": 5,
-      "date": "02 abr. 2024",
+      "date": "02 abril 2024",
       "images": [],
-      "text": "Comprei uma tem dois meses! A caixa é excepcional! Tô vendo algumas críticas aqui nas avaliações que sóo pura falta de ler o manual! Tipo: Karaokê na entrada P2? Como assim? As entradas dela sóo para som quando não quiser ou não puder usar o bluetooth! Para usar o karaokê você tem que usar as entradas P10 configuradas pra posição microfone. Na entrada que pode usar microfone ou guitarra quando estiver configurada pra guitarra o sistema entende que os controles de efeitos e equalização serão externos. Isso está certo gente! Porque colocar que isso é defeito? Outra crítica infundada é dizer que é édefeitoé quando usar o pendrive desligar a entrada P2. Pooooo tá certo gente, as entradas foram pensadas como fonte externa única ! Vamos ler manual e entender um sistema antes de criticar!",
+      "text": "Comprei uma tem dois meses! A caixa é excepcional! Tô vendo algumas críticas aqui nas avaliações que sóo pura falta de ler o manual! Tipo: Karaokê na entrada P2? Como assim? As entradas dela sóo para sonido quando não quiser ou não puder usar o bluetooth! Para usar o karaokê você tem que usar as entradas P10 configuradas pra posição microfone. Na entrada que pode usar microfone ou guitarra quando estiver configurada pra guitarra o sistema entende que os controles de efeitos e equalização serão externos. Isso está certo gente! Porque colocar que isso é defeito? Outra crítica infundada é dizer que é édefeitoé quando usar o pendrive desligar a entrada P2. Pooooo tá certo gente, as entradas foram pensadas como fonte externa única ! Vamos ler manual e entender um sistema antes de criticar!",
       "useful": 112
     },
     {
       "stars": 5,
-      "date": "29 mar. 2024",
+      "date": "29 marzo 2024",
       "images": [
         "loja/images/reviews/ref/PARTYBOX_iRUvGXEvCl0U.webp"
       ],
-      "text": "Otima qualidade !!! Gostei aprovei som inconparavel qualidade sublime embora ter achado que seria maior fora isso quanto ao resto top ???????????? super indico nao vai se arrepender garanto ??????????",
+      "text": "Otima calidad !!! Gostei aprovei sonido inconparavel calidad sublime embora ter achado que seria maior fora isso quanto ao resto top ???????????? super indico nao vai se arrepender garanto ??????????",
       "useful": 97
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 38
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente qualidade. Recomendo!",
+      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
       "useful": 19
     }
   ],
   "iphone-16-pro-max-1tb-tit-nio-preto": [
     {
       "stars": 5,
-      "date": "09 dez. 2024",
+      "date": "09 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/IPHONE16_H2oWUCEADZ3e.webp",
         "loja/images/reviews/ref/IPHONE16_XOxTGAvYOaOV.webp"
@@ -227,16 +227,16 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "12 dez. 2024",
+      "date": "12 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/IPHONE16_dVoFZXnie971.webp"
       ],
-      "text": "Excelente, bateria carrega mais rápido que do 15 pro max, o som eu testei simultaneamente com o antigo aparelho; os graves sóo bem mais definidos e volume ficou perceptivelmente mais alto!!.",
+      "text": "Excelente, batería carrega mais rápido que do 15 pro max, o sonido eu testei simultaneamente com o antigo aparelho; os graves sóo bem mais definidos e volume ficou perceptivelmente mais alto!!.",
       "useful": 87
     },
     {
       "stars": 5,
-      "date": "15 dez. 2024",
+      "date": "15 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/IPHONE16_0IrdYDTrJTtd.webp",
         "loja/images/reviews/ref/IPHONE16_eFTlA688Osl9.webp"
@@ -246,21 +246,21 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "O produto é exatamente como na descrição, estou muito satisfeito.",
+      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
       "useful": 36
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente qualidade. Recomendo!",
+      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
       "useful": 31
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 48
@@ -269,60 +269,60 @@ export const lojaReviews: Record<string, LojaReview[]> = {
   "tablet-samsung-galaxy-tab-a11-11-6gb-128gb-5g": [
     {
       "stars": 5,
-      "date": "09 dez. 2024",
+      "date": "09 diciembre 2024",
       "images": [],
       "text": "Tela de 11 polegadas é perfeita! Muito fluido com 6GB de RAM. Recomendo demais para trabalho e lazer.",
       "useful": 141
     },
     {
       "stars": 5,
-      "date": "12 dez. 2024",
+      "date": "12 diciembre 2024",
       "images": [],
-      "text": "Ótima qualidade de construção! 128GB de armazenamento é bastante. Bateria dura o dia inteiro de uso.",
+      "text": "Ótima calidad de construção! 128GB de armazenamento é bastante. Bateria dura o dia inteiro de uso.",
       "useful": 177
     },
     {
       "stars": 5,
-      "date": "15 dez. 2024",
+      "date": "15 diciembre 2024",
       "images": [],
-      "text": "Conexão 5G é muito rápida! Preto cinza fica elegante. Excelente custo-benefício, super recomendo!",
+      "text": "Conexão 5G é muito rápida! Preto cinza fica elegante. Excelente custo-benefício, super recomiendo!",
       "useful": 211
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 35
     }
   ],
   "patinete-el-trico-honeywhale-m2-pro-500w": [
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 24
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 47
     }
   ],
   "aspirador-de-p-e-gua-wap-gtw-10-1400w": [
     {
       "stars": 5,
-      "date": "07 mar. 2024",
+      "date": "07 marzo 2024",
       "images": [],
-      "text": "O Aspirador de Pó e Água WAP GTW 10 é a melhor opção para quem precisa de agilidade, eficiência e praticidade na limpeza no dia a dia. Compacto, seu reservatório possui volume total de 10 litros, tendo capacidade útil para sólidos de 7 litros e capacidade útil para líquidos de 3,4 litros.Para retenção de pó e garantir a durabilidade do produto, ele é equipado com filtro de tecido lavável. Potente com 1400W e alcance máximo de até 5 metros sem a necessidade de trocar de tomada, o WAP GTW 10 aspira sujeira seca, úmida ou líquida, tanto em ambientes internos como externos. Tudo isso reunido em um design moderno e funcional.Para aspirar água, ele é equipado com um eficiente filtro espuma, que protege o motor e garante o aumento da vida útil do produto. O Aspirador de Pó WAP GTW 10 é ideal para quem quer mais eficiência na faxina e mais tempo livre para curtir com a família.O principal diferencial do Aspirador de Pó e Água WAP GTW 10 é sua grande mobilidade e praticidade. Vem equipado com rodízio e alça ergonômica que permitem o seu transporte para qualquer lugar com muita facilidade. Além disso, o bico múltiplo, bico canto e as extensões que acompanham o produto podem ser guardados em prático porta-acessórios, o que facilita o seu armazenamento.O WAP GTW 10 possui bocal de sopro que, além de auxiliar na limpeza de lugares inacessíveis, ainda serve para encher infláveis, acender churrasqueiras ou soprar folhas. Moderno e ágil, o aspirador de pó WAP GTW 10 reúne todas as características necessárias para garantir mais praticidade e eficiência na limpeza. Conheça o Aspirador de Água e Pó WAP GTW 10.",
+      "text": "O Aspirador de Pó e Água WAP GTW 10 é a melhor opção para quem precisa de agilidade, eficiência e practicidad na limpeza no dia a dia. Compacto, seu reservatório possui volume total de 10 litros, tendo capacidade útil para sólidos de 7 litros e capacidade útil para líquidos de 3,4 litros.Para retenção de pó e garantir a durabilidade do produto, ele é equipado com filtro de tecido lavável. Potente com 1400W e alcance máximo de até 5 metros sem a necessidade de trocar de tomada, o WAP GTW 10 aspira sujeira seca, úmida ou líquida, tanto em ambientes internos como externos. Tudo isso reunido em um design moderno e funcional.Para aspirar água, ele é equipado com um eficiente filtro espuma, que protege o motor e garante o aumento da vida útil do produto. O Aspirador de Pó WAP GTW 10 é ideal para quem quer mais eficiência na faxina e mais tempo livre para curtir com a família.O principal diferencial do Aspirador de Pó e Água WAP GTW 10 é sua grande mobilidade e practicidad. Vem equipado com rodízio e alça ergonômica que permitem o seu transporte para qualquer lugar com muita facilidade. Além disso, o bico múltiplo, bico canto e as extensões que acompanham o produto podem ser guardados em prático porta-acessórios, o que facilita o seu armazenamento.O WAP GTW 10 possui bocal de sopro que, além de auxiliar na limpeza de lugares inacessíveis, ainda serve para encher infláveis, acender churrasqueiras ou soprar folhas. Moderno e ágil, o aspirador de pó WAP GTW 10 reúne todas as características necessárias para garantir mais practicidad e eficiência na limpeza. Conheça o Aspirador de Água e Pó WAP GTW 10.",
       "useful": 218
     },
     {
       "stars": 5,
-      "date": "28 mai. 2024",
+      "date": "28 mayo 2024",
       "images": [
         "loja/images/reviews/ref/aspirador_de_po_e_agua_prova-1-MLA78254590309_082024.webp",
         "loja/images/reviews/ref/aspirador_de_po_e_agua_prova-2-MLA78254590309_082024.webp"
@@ -332,21 +332,21 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "10 dez. 2024",
+      "date": "10 diciembre 2024",
       "images": [],
-      "text": "Produto excelente, chegou rápido e bem embalado. Recomendo!",
+      "text": "Produto excelente, llegó rápido e bem embalado. Recomendo!",
       "useful": 42
     },
     {
       "stars": 5,
-      "date": "05 dez. 2024",
+      "date": "05 diciembre 2024",
       "images": [],
-      "text": "Muito bom, superou as expectativas. Ótimo custo-benefício.",
+      "text": "Muito bom, superou as expectativas. Excelente relación calidad-precio.",
       "useful": 31
     },
     {
       "stars": 4,
-      "date": "28 nov. 2024",
+      "date": "28 noviembre 2024",
       "images": [],
       "text": "Gostei bastante do produto, funciona perfeitamente.",
       "useful": 18
@@ -355,86 +355,86 @@ export const lojaReviews: Record<string, LojaReview[]> = {
   "xiaomi-redmi-note-14-pro-5g-12gb-512gb": [
     {
       "stars": 5,
-      "date": "29 abr. 2024",
+      "date": "29 abril 2024",
       "images": [],
-      "text": "Amei esse celular, estou apaixonada",
+      "text": "Me encantó esse celular, estou apaixonada",
       "useful": 75
     },
     {
       "stars": 5,
-      "date": "9 nov. 2023",
+      "date": "9 noviembre 2023",
       "images": [],
-      "text": "Eu achei maravilhoso, lindo demais ganhei de presente.",
+      "text": "Eu achei maravilhoso, lindo demais ganhei de regalo.",
       "useful": 131
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "O produto é exatamente como na descrição, estou muito satisfeito.",
+      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
       "useful": 25
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 10
     }
   ],
   "geladeira-brastemp-588l-inox-bivolt": [
     {
       "stars": 5,
-      "date": "21 set. 2023",
+      "date": "21 septiembre 2023",
       "images": [
         "loja/images/reviews/ref/geladeirablastemp_WSNtgVmFsvso.webp"
       ],
-      "text": "Produto muito espaçoso, bem dividido e simples de programar. Comprei por já estar usando outra do mesmo tamanho. Recomendo.",
+      "text": "Produto muito espaçoso, bem dividido e simples de programarzo Comprei por já estar usando outra do mesmo tamanho. Recomendo.",
       "useful": 163
     },
     {
       "stars": 5,
-      "date": "23 jan. 2023",
+      "date": "23 enero 2023",
       "images": [],
       "text": "Maravilhosa, ela é perfeita. Linda, espaçosa, muito grande. Simplesmente perfeita!. Chegou antes da data prevista.",
       "useful": 191
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente qualidade. Recomendo!",
+      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
       "useful": 12
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 43
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 42
     }
   ],
   "geladeira-brastemp-frost-free-french-door-554l": [
     {
       "stars": 5,
-      "date": "11 jul. 2024",
+      "date": "11 julio 2024",
       "images": [
         "loja/images/reviews/ref/blastempflost_dreQYUCwgkfq.webp",
         "loja/images/reviews/ref/blastempflost_BUBUwuJYbBVu.webp"
       ],
-      "text": "Minha esposa amou, e para mim isso é o que importa. Chegou muito rapido também Obrigado ml.",
+      "text": "Minha esposa amou, e para mim isso é o que importa. Chegou muito rapido também Gracias ml.",
       "useful": 131
     },
     {
       "stars": 5,
-      "date": "12 jul. 2024",
+      "date": "12 julio 2024",
       "images": [
         "loja/images/reviews/ref/blastempflost_xVUdSVZmRGWV.webp",
         "loja/images/reviews/ref/blastempflost_3SFMEoSXTB1j.webp",
@@ -446,23 +446,23 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "10 jul. 2024",
+      "date": "10 julio 2024",
       "images": [],
-      "text": "O produto é bom, material de alta qualidade tamanho ideal!!!.",
+      "text": "O produto é bom, material de alta calidad tamanho ideal!!!.",
       "useful": 46
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 25
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "O produto é exatamente como na descrição, estou muito satisfeito.",
+      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
       "useful": 31
     }
   ],
@@ -498,23 +498,23 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 10
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 45
     }
   ],
   "samsung-galaxy-s25-ultra-5g-512gb": [
     {
       "stars": 5,
-      "date": "10 jul. 2024",
+      "date": "10 julio 2024",
       "images": [
         "loja/images/reviews/ref/GalaxyS25_1zq8t0d5O7M2.webp",
         "loja/images/reviews/ref/GalaxyS25_JisRHwkCU0aH.webp",
@@ -526,7 +526,7 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "12 jul. 2024",
+      "date": "12 julio 2024",
       "images": [
         "loja/images/reviews/ref/GalaxyS25_3MR5WDEPeaw3.webp",
         "loja/images/reviews/ref/GalaxyS25_4rGNIeXrjYre.webp",
@@ -539,21 +539,21 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "15 jul. 2024",
+      "date": "15 julio 2024",
       "images": [],
       "text": "Até agora, não tenho nada a reclamar, as câmera é boa, carregamento é rápido em menos de uma hora, roda vários aplicativos pesados.",
       "useful": 65
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 47
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 36
@@ -586,28 +586,28 @@ export const lojaReviews: Record<string, LojaReview[]> = {
       "images": [
         "loja/images/reviews/ref/Fog_C3_A3oElectrolux_p9.webp"
       ],
-      "text": "Amei o preço no cartéo",
+      "text": "Me encantó o preço no cartéo",
       "useful": 136
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 39
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "O produto é exatamente como na descrição, estou muito satisfeito.",
+      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
       "useful": 37
     }
   ],
   "fritadeira-air-fryer-oven-mondial-2-em-1": [
     {
       "stars": 5,
-      "date": "21 set. 2023",
+      "date": "21 septiembre 2023",
       "images": [
         "loja/images/reviews/ref/FritadeiraEl_C3_A9trica_f6.webp",
         "loja/images/reviews/ref/FritadeiraEl_C3_A9trica_f7.webp"
@@ -617,37 +617,37 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "23 jan. 2023",
+      "date": "23 enero 2023",
       "images": [],
       "text": "Estou amando uso quase todos os dias, estava precisando muito. Uma das melhores coisas que já comprei.",
       "useful": 179
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 28
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente qualidade. Recomendo!",
+      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
       "useful": 40
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 31
     }
   ],
   "samsung-smart-tv-43-qled-4k-2026": [
     {
       "stars": 5,
-      "date": "07 mar. 2024",
+      "date": "07 marzo 2024",
       "images": [
         "loja/images/reviews/ref/SmartTV43_Y0xCODyU5sSh.webp"
       ],
@@ -656,7 +656,7 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "01 set. 2024",
+      "date": "01 septiembre 2024",
       "images": [
         "loja/images/reviews/ref/SmartTV43_i1aNDJWs0gnn.webp",
         "loja/images/reviews/ref/SmartTV43_u57NU9Bj7Eds.webp"
@@ -666,25 +666,25 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente qualidade. Recomendo!",
+      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
       "useful": 27
     }
   ],
   "tablet-xiaomi-redmi-pad-pro-12-1-8gb-256gb": [
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [
         "loja/images/reviews/ref/TabletXiaomiRedmiPro_BwijKQgxWRj3.webp"
       ],
-      "text": "Amei esse tablet, uso bastante ??..",
+      "text": "Me encantó esse tablet, uso bastante ??..",
       "useful": 75
     },
     {
       "stars": 5,
-      "date": "25 jan. 2025",
+      "date": "25 enero 2025",
       "images": [
         "loja/images/reviews/scraped/TabletXiaomiRedmiPro_1_0.webp"
       ],
@@ -693,14 +693,14 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente qualidade. Recomendo!",
+      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
       "useful": 10
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 50
@@ -709,7 +709,7 @@ export const lojaReviews: Record<string, LojaReview[]> = {
   "xiaomi-poco-x6-pro-8gb-256gb-preto": [
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [
         "loja/images/reviews/ref/poco_FVWOJPDLzNC9.webp"
       ],
@@ -718,7 +718,7 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "25 jan. 2025",
+      "date": "25 enero 2025",
       "images": [
         "loja/images/reviews/scraped/poco_1_0.webp"
       ],
@@ -727,56 +727,56 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 34
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 19
     }
   ],
   "iphone-15-pro-max-512gb-tit-nio-preto": [
     {
       "stars": 5,
-      "date": "08 mai. 2024",
+      "date": "08 mayo 2024",
       "images": [],
       "text": "Muito bom o aparelho, único ponto negativo é que não veio embalado muito bem na entrega, mas mesmo assim veio sem nenhum arranhão, valeu a pena ter aproveitado a promoção.",
       "useful": 211
     },
     {
       "stars": 5,
-      "date": "23 mar. 2024",
+      "date": "23 marzo 2024",
       "images": [
         "loja/images/reviews/ref/iphone15_pRI3xDBZrXA9.webp",
         "loja/images/reviews/ref/iphone15_dRb7QlaeIoZJ.webp"
       ],
-      "text": "Meu iphone, com boa qualidade de entrega super bem protegido para não ter danos durante o transporte e fora agilidade da entrega. Um ótimo serviço como sempre o Mercado Livre garante.",
+      "text": "Meu iphone, com boa calidad de entrega super bem protegido para não ter danos durante o transporte e fora agilidade da entrega. Um ótimo serviço como sempre o Mercado Livre garante.",
       "useful": 80
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 25
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 22
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "O produto é exatamente como na descrição, estou muito satisfeito.",
+      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
       "useful": 23
     }
   ],
@@ -788,7 +788,7 @@ export const lojaReviews: Record<string, LojaReview[]> = {
         "loja/images/reviews/ref/JogoDePanelasVanilla_R8PQlsYUgfNV.webp",
         "loja/images/reviews/ref/JogoDePanelasVanilla_GBLlzSj1c0sr.webp"
       ],
-      "text": "Eu amei demais lindas material de ótima qualidade agora não pensarei duas vezes antes de compra tudo de bom comprem sem medo.",
+      "text": "Eu amei demais lindas material de ótima calidad agora não pensarei duas vezes antes de compra tudo de bom compren sin miedo.",
       "useful": 165
     },
     {
@@ -803,30 +803,30 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente qualidade. Recomendo!",
+      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
       "useful": 15
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 29
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 19
     }
   ],
   "kit-3-panelas-de-press-o-7l-4-5l-2-5l": [
     {
       "stars": 5,
-      "date": "09 dez. 2024",
+      "date": "09 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/kit3panela_rm24w2Tfo0jK.webp",
         "loja/images/reviews/ref/kit3panela_y2j9oVX6pDos.webp"
@@ -836,7 +836,7 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "12 dez. 2024",
+      "date": "12 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/kit3panela_LVqUb0tw5pId.webp",
         "loja/images/reviews/ref/kit3panela_1JHKFZdi8Pru.webp"
@@ -846,7 +846,7 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "15 dez. 2024",
+      "date": "15 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/kit3panela_D24lNXdmIH0L.webp"
       ],
@@ -855,49 +855,49 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 15
     }
   ],
   "iphone-15-256gb-rosa": [
     {
       "stars": 5,
-      "date": "08 mai. 2024",
+      "date": "08 mayo 2024",
       "images": [],
-      "text": "Tenho já 7 meses, o aparelho é muito bom, gostoso de mexer, bateria dura o dia inteiro, ameiii.",
+      "text": "Tenho já 7 meses, o aparelho é muito bom, gostoso de mexer, batería dura o dia inteiro, ameiii.",
       "useful": 135
     },
     {
       "stars": 5,
-      "date": "23 mar. 2024",
+      "date": "23 marzo 2024",
       "images": [
         "loja/images/reviews/ref/iphone15rosa_O2J8Up38XnJP.webp",
         "loja/images/reviews/ref/iphone15rosa_zK4Dm3opP92P.webp"
       ],
-      "text": "chegou em perfeito estado, só achei a proteção um pouco ruim, a caixa do celular veio solto em uma caixa do Mercado Livre grande, sem proteção nas laterais, mas o veio sem nenhum arranhão mesmo assim, o celular chegou super rápido.",
+      "text": "llegó en perfecto estado, só achei a proteção um pouco ruim, a caixa do celular veio solto em uma caixa do Mercado Livre grande, sem proteção nas laterais, mas o veio sem nenhum arranhão mesmo assim, o celular chegou super rápido.",
       "useful": 128
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 13
     }
   ],
   "iphone-15-256gb-azul": [
     {
       "stars": 5,
-      "date": "08 mai. 2024",
+      "date": "08 mayo 2024",
       "images": [],
       "text": "Maravilhoso. Saí de um SE para iphone 15. WoW. Ultra.",
       "useful": 93
     },
     {
       "stars": 5,
-      "date": "23 mar. 2024",
+      "date": "23 marzo 2024",
       "images": [
         "loja/images/reviews/ref/iphone15azul_zc0lLpS1rUy4.webp",
         "loja/images/reviews/ref/iphone15azul_LBNho5CVl0Gx.webp"
@@ -907,16 +907,16 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 22
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 21
     }
   ],
@@ -930,30 +930,30 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "1 jan. 2024",
+      "date": "1 enero 2024",
       "images": [],
       "text": "Não poderia ter feito melhor compra em minha vida. Super geladinho. Do meu quarto se eu deixa a porta aberta esfria até minha sala ??simplesmente apaixonada.",
       "useful": 54
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente qualidade. Recomendo!",
+      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
       "useful": 45
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 27
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 36
     }
   ],
@@ -962,12 +962,12 @@ export const lojaReviews: Record<string, LojaReview[]> = {
       "stars": 5,
       "date": "06 jun. 2024",
       "images": [],
-      "text": "Produtos de qualidade excelente, fiquei desconfiado com a qualidade dos produtos da dewalt, mas superou as expectavas! Filé demais esse kit, gostei bastante e recomendo",
+      "text": "Produtos de calidad excelente, fiquei desconfiado com a calidad dos produtos da dewalt, mas superou as expectavas! Filé demais esse kit, gostei bastante e recomiendo",
       "useful": 208
     },
     {
       "stars": 5,
-      "date": "28 mar. 2024",
+      "date": "28 marzo 2024",
       "images": [
         "loja/images/reviews/ref/KITFERRAMENTAS_e0WYXBbelKBd.webp"
       ],
@@ -976,23 +976,23 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "O produto é exatamente como na descrição, estou muito satisfeito.",
+      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
       "useful": 13
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente qualidade. Recomendo!",
+      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
       "useful": 24
     }
   ],
   "guarda-roupa-casal-easy-slim-com-espelho": [
     {
       "stars": 5,
-      "date": "09 dez. 2024",
+      "date": "09 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/guardaroupa_wsL00nqEf5Zw.webp",
         "loja/images/reviews/ref/guardaroupa_PlP2isSgsx6a.webp"
@@ -1002,7 +1002,7 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "12 dez. 2024",
+      "date": "12 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/guardaroupa_RHHAeP0CRWCe.webp",
         "loja/images/reviews/ref/guardaroupa_PLQufdKx0iw0.webp"
@@ -1012,32 +1012,32 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "15 dez. 2024",
+      "date": "15 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/guardaroupa_WoSJpCKcuelA.webp"
       ],
-      "text": "Amei , e muitoo lindooo , as peéas vieram todas corretas. ele é bem grande.",
+      "text": "Me encantó , e muitoo lindooo , as peéas vieram todas corretas. ele é bem grande.",
       "useful": 189
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 37
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "O produto é exatamente como na descrição, estou muito satisfeito.",
+      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
       "useful": 26
     }
   ],
   "mesinha-penteadeira-camarim-com-organizador": [
     {
       "stars": 5,
-      "date": "05 jan. 2024",
+      "date": "05 enero 2024",
       "images": [
         "loja/images/reviews/ref/panteadeira_IWvxzF9MGUgq.webp",
         "loja/images/reviews/ref/panteadeira_DKVxcYQlLzt0.webp"
@@ -1047,16 +1047,16 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "12 dez. 2024",
+      "date": "12 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/panteadeira_jBJsXqIwDuhM.webp"
       ],
-      "text": "Produto bom, qualidade boa, eu indico.",
+      "text": "Produto bom, calidad boa, eu indico.",
       "useful": 115
     },
     {
       "stars": 5,
-      "date": "15 dez. 2024",
+      "date": "15 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/panteadeira_4peuOXV3xLbE.webp"
       ],
@@ -1065,14 +1065,14 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 47
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 33
@@ -1081,7 +1081,7 @@ export const lojaReviews: Record<string, LojaReview[]> = {
   "lavadora-de-alta-press-o-k-rcher-k2-plus": [
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [
         "loja/images/reviews/ref/LavadoraDeAlta_kWvOCe4Y9mVV.webp"
       ],
@@ -1090,7 +1090,7 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "25 jan. 2025",
+      "date": "25 enero 2025",
       "images": [
         "loja/images/reviews/scraped/LavadoraDeAlta_1_0.webp"
       ],
@@ -1099,40 +1099,40 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 40
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 28
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 50
     }
   ],
   "kit-2-c-meras-ip-icsee-wi-fi": [
     {
       "stars": 5,
-      "date": "08 mai. 2024",
+      "date": "08 mayo 2024",
       "images": [
         "loja/images/reviews/ref/kitcamera_FCTbQW7gYRET.webp",
         "loja/images/reviews/ref/kitcamera_Zi3VDFEQjdj2.webp"
       ],
-      "text": "Muito boa a qualidade dessa caméra, comprei pra seguranºa do meu comércio.",
+      "text": "Muito boa a calidad dessa caméra, comprei pra seguranºa do meu comércio.",
       "useful": 114
     },
     {
       "stars": 5,
-      "date": "23 mar. 2024",
+      "date": "23 marzo 2024",
       "images": [
         "loja/images/reviews/ref/kitcamera_BTCfpzXtRthV.webp",
         "loja/images/reviews/ref/kitcamera_gVyfO9bkZW9X.webp"
@@ -1142,14 +1142,14 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente qualidade. Recomendo!",
+      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
       "useful": 18
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 36
@@ -1158,17 +1158,17 @@ export const lojaReviews: Record<string, LojaReview[]> = {
   "micro-ondas-brastemp-38l-inox": [
     {
       "stars": 5,
-      "date": "10 set. 2024",
+      "date": "10 septiembre 2024",
       "images": [
         "loja/images/reviews/ref/microondas_KPPT1P5BgHx9.webp",
         "loja/images/reviews/ref/microondas_GJ5PnsvBEAU3.webp"
       ],
-      "text": "Amei lindo apaixonada pela minha compra perfeito sem palavras.",
+      "text": "Me encantó lindo apaixonada pela minha compra perfeito sem palavras.",
       "useful": 102
     },
     {
       "stars": 5,
-      "date": "15 set. 2024",
+      "date": "15 septiembre 2024",
       "images": [
         "loja/images/reviews/ref/microondas_lcXTh3zcoDRo.webp",
         "loja/images/reviews/ref/microondas_myYfGBQB69lK.webp"
@@ -1178,75 +1178,75 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 39
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 32
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 34
     }
   ],
   "cafeteira-port-til-nescaf-c-psulas-bivolt": [
     {
       "stars": 5,
-      "date": "09 dez. 2024",
+      "date": "09 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/cafeteiracafe_5UeAW9cj1cow.webp",
         "loja/images/reviews/ref/cafeteiracafe_LMQOaco35nYU.webp"
       ],
-      "text": "Méquina bonita, leve e compacta, além de fazer um excelente café. Eu acabei optando pela dolci gusto por ter a opção de obter um adaptador e utilizar cépsulas das 3 coraéées. Tudo perfeito, comprem sem medo..",
+      "text": "Méquina bonita, leve e compacta, além de fazer um excelente café. Eu acabei optando pela dolci gusto por ter a opção de obter um adaptador e utilizar cépsulas das 3 coraéées. Tudo perfeito, compren sin miedo..",
       "useful": 68
     },
     {
       "stars": 5,
-      "date": "12 dez. 2024",
+      "date": "12 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/cafeteiracafe_PHwfxb3vaZHM.webp",
         "loja/images/reviews/ref/cafeteiracafe_gW0IUaWMobCF.webp"
       ],
-      "text": "Simplesmente perfeita. O café sai muito rápido e bem quentinho. Indico demais!!! produto de excelente qualidade. Podem comprar sem medo.",
+      "text": "Simplesmente perfeita. O café sai muito rápido e bem quentinho. Indico demais!!! produto de excelente calidad. Podem comprar sem medo.",
       "useful": 213
     },
     {
       "stars": 5,
-      "date": "15 dez. 2024",
+      "date": "15 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/cafeteiracafe_W6kePvJCm64D.webp"
       ],
-      "text": "Amei a minha méquina ela é muito linda e faiz o café quente e também faiz gelado sem palavras melhor investimento que eu fiz.",
+      "text": "Me encantó a minha méquina ela é muito linda e faiz o café quente e também faiz gelado sem palavras melhor investimento que eu fiz.",
       "useful": 59
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 32
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "O produto é exatamente como na descrição, estou muito satisfeito.",
+      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
       "useful": 25
     }
   ],
   "filtro-de-gua-electrolux-gelada-natural": [
     {
       "stars": 5,
-      "date": "10 jul. 2024",
+      "date": "10 julio 2024",
       "images": [
         "loja/images/reviews/ref/FiltroDeElectrolux_fq4Yxs8Y3mB5.webp",
         "loja/images/reviews/ref/FiltroDeElectrolux_gaw5MzqM19Dq.webp",
@@ -1258,7 +1258,7 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "12 jul. 2024",
+      "date": "12 julio 2024",
       "images": [
         "loja/images/reviews/ref/FiltroDeElectrolux_lMfeWq4VwZkr.webp",
         "loja/images/reviews/ref/FiltroDeElectrolux_V7Z5DetZvSnY.webp",
@@ -1270,65 +1270,65 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "15 jul. 2024",
+      "date": "15 julio 2024",
       "images": [],
-      "text": "Até agora, não tenho nada a reclamar.",
+      "text": "Até agora, não tenho nada a reclamarzo",
       "useful": 151
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 10
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "O produto é exatamente como na descrição, estou muito satisfeito.",
+      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
       "useful": 45
     }
   ],
   "jogo-de-len-ol-super-king-4-pe-as-600-fios": [
     {
       "stars": 5,
-      "date": "09 dez. 2024",
+      "date": "09 diciembre 2024",
       "images": [],
       "text": "Eu amei ?? super indico??.",
       "useful": 66
     },
     {
       "stars": 5,
-      "date": "12 dez. 2024",
+      "date": "12 diciembre 2024",
       "images": [],
-      "text": "Eu super recomendo. Ela é maravilhosa. estou apaixonada..",
+      "text": "Eu super recomiendo. Ela é maravilhosa. estou apaixonada..",
       "useful": 134
     },
     {
       "stars": 5,
-      "date": "15 dez. 2024",
+      "date": "15 diciembre 2024",
       "images": [],
       "text": "Maravilhosa, e o preço excelente. Apenas comprem !!.",
       "useful": 166
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 30
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 12
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 15
@@ -1337,7 +1337,7 @@ export const lojaReviews: Record<string, LojaReview[]> = {
   "rob-aspirador-w90": [
     {
       "stars": 5,
-      "date": "09 dez. 2024",
+      "date": "09 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/robo_BTmbPV9Tm6ON.webp"
       ],
@@ -1346,7 +1346,7 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "12 dez. 2024",
+      "date": "12 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/robo_HnQdi4tL14Oe.webp"
       ],
@@ -1355,7 +1355,7 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "15 dez. 2024",
+      "date": "15 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/robo_NUO8J5BgybPH.webp"
       ],
@@ -1364,7 +1364,7 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 49
@@ -1373,25 +1373,25 @@ export const lojaReviews: Record<string, LojaReview[]> = {
   "sof-retr-til-reclin-vel-2-00m-king-house": [
     {
       "stars": 5,
-      "date": "05 jan. 2024",
+      "date": "05 enero 2024",
       "images": [
         "loja/images/reviews/ref/sofAretratil_wboauyfatXTU.webp"
       ],
-      "text": "Lindo e confortável, estou muito feliz com meu sofá. Perfeito e recomendo a todos ??????????????.",
+      "text": "Lindo e confortável, estou muito feliz com meu sofá. Perfeito e recomiendo a todos ??????????????.",
       "useful": 137
     },
     {
       "stars": 5,
-      "date": "12 dez. 2024",
+      "date": "12 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/sofAretratil_gQnHB7PhLR97.webp"
       ],
-      "text": "Fiquei com medo de comprar. ótimo produto material de qualidade não precisa de montador simples montagem valeu muito apena.",
+      "text": "Fiquei com medo de comprar. ótimo produto material de calidad não precisa de montador simples montagem valeu muito apena.",
       "useful": 200
     },
     {
       "stars": 5,
-      "date": "12 dez. 2024",
+      "date": "12 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/sofAretratil_JQ5mhyhOcCNT.webp"
       ],
@@ -1400,39 +1400,39 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     },
     {
       "stars": 5,
-      "date": "12 dez. 2024",
+      "date": "12 diciembre 2024",
       "images": [
         "loja/images/reviews/ref/sofAretratil_CaTZMtfVS2Tl.webp"
       ],
-      "text": "To apaixonada por esse sofá ,ele é muito confortável ,parece ser bem resistente ,preço faz jus ao produto super recomendo e eu comprei o menor pra da no meu espaço e ficou perfeito só comprem e a cor é o meu preferido ; cinza clarinho !.",
+      "text": "To apaixonada por esse sofá ,ele é muito confortável ,parece ser bem resistente ,preço faz jus ao produto super recomiendo e eu comprei o menor pra da no meu espaço e ficou perfeito só comprem e a cor é o meu preferido ; cinza clarinho !.",
       "useful": 208
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente qualidade. Recomendo!",
+      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
       "useful": 41
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 44
     }
   ],
   "jbl-go-4-preta": [
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 27
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 36
@@ -1441,44 +1441,44 @@ export const lojaReviews: Record<string, LojaReview[]> = {
   "apple-iphone-15-256gb-azul": [
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 18
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 18
     }
   ],
   "apple-iphone-15-256gb-verde": [
     {
       "stars": 5,
-      "date": "08 mai. 2024",
+      "date": "08 mayo 2024",
       "images": [],
       "text": "Muito bom o aparelho, único ponto negativo é que não veio embalado muito bem na entrega, mas mesmo assim veio sem nenhum arranhão, valeu a pena ter aproveitado a promoção.",
       "useful": 49
     },
     {
       "stars": 5,
-      "date": "23 mar. 2024",
+      "date": "23 marzo 2024",
       "images": [],
-      "text": "Meu iphone, com boa qualidade de entrega super bem protegido para não ter danos durante o transporte e fora agilidade da entrega. Um ótimo serviço como sempre o Mercado Livre garante.",
+      "text": "Meu iphone, com boa calidad de entrega super bem protegido para não ter danos durante o transporte e fora agilidade da entrega. Um ótimo serviço como sempre o Mercado Livre garante.",
       "useful": 33
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "O produto é exatamente como na descrição, estou muito satisfeito.",
+      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
       "useful": 41
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 44
@@ -1487,30 +1487,30 @@ export const lojaReviews: Record<string, LojaReview[]> = {
   "apple-iphone-15-pro-max-256gb-tit-nio-azul": [
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 30
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente qualidade. Recomendo!",
+      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
       "useful": 30
     }
   ],
   "apple-ipad-256gb-tit-nio-azul": [
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 11
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 37
@@ -1519,28 +1519,28 @@ export const lojaReviews: Record<string, LojaReview[]> = {
   "playstation-5-pro-branco-2tb": [
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Simplesmente incrível! O PS5 Pro é outro nível de performance. A entrega foi super rápida e chegou tudo muito bem embalado. Recomendo demais!",
       "useful": 142
     },
     {
       "stars": 5,
-      "date": "12 jan. 2025",
+      "date": "12 enero 2025",
       "images": [],
       "text": "Melhor console que já tive. Os gráficos no Pro são absurdos e o carregamento é instantâneo. Valeu cada centavo na promoção!",
       "useful": 89
     },
     {
       "stars": 5,
-      "date": "15 jan. 2025",
+      "date": "15 enero 2025",
       "images": [],
       "text": "Produto 100% original e lacrado. Chegou antes do prazo. O controle DualSense é uma experiência à parte. Muito satisfeito com a compra.",
       "useful": 215
     },
     {
       "stars": 5,
-      "date": "18 jan. 2025",
+      "date": "18 enero 2025",
       "images": [],
       "text": "Fiquei com receio pelo valor, mas o console é maravilhoso. Silencioso e muito potente. A loja foi nota 10 no suporte.",
       "useful": 67
@@ -1549,108 +1549,108 @@ export const lojaReviews: Record<string, LojaReview[]> = {
   "pel-cia-stitch-grande": [
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 40
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 27
     }
   ],
   "samsung-galaxy-s24-ultra-256gb": [
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "O produto é exatamente como na descrição, estou muito satisfeito.",
+      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
       "useful": 10
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "O produto é exatamente como na descrição, estou muito satisfeito.",
+      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
       "useful": 18
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente qualidade. Recomendo!",
+      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
       "useful": 23
     }
   ],
   "guarda-roupa-casal-8-portas-preto-fosco": [
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Ótimo custo-benefício, acabamento impecável.",
+      "text": "Excelente relación calidad-precio, acabamento impecável.",
       "useful": 10
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "O produto é exatamente como na descrição, estou muito satisfeito.",
+      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
       "useful": 13
     }
   ],
   "lava-e-seca-samsung-inox-11kg": [
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 45
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "O produto é exatamente como na descrição, estou muito satisfeito.",
+      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
       "useful": 50
     }
   ],
   "ar-condicionado-split-lg-24-000-btus-2": [
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 44
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 29
     }
   ],
   "jbl-go-4-preta-2": [
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 25
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 19
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
       "text": "Melhor compra que já fiz, vale cada centavo.",
       "useful": 13
@@ -1659,32 +1659,32 @@ export const lojaReviews: Record<string, LojaReview[]> = {
   "xiaomi-poco-x7-pro-512gb-12gb": [
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente qualidade. Recomendo!",
+      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
       "useful": 46
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 39
     }
   ],
   "samsung-smart-tv-55-qled-4k-2024": [
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "Simplesmente perfeito! Superou todas as minhas expectativas.",
+      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
       "useful": 37
     },
     {
       "stars": 5,
-      "date": "10 jan. 2025",
+      "date": "10 enero 2025",
       "images": [],
-      "text": "O produto é exatamente como na descrição, estou muito satisfeito.",
+      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
       "useful": 44
     }
   ]

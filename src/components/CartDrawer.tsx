@@ -16,8 +16,8 @@ function parsePrice(p: string): number {
   return isNaN(n) ? 0 : n;
 }
 
-function formatBRL(v: number): string {
-  return v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+function formatMXN(v: number): string {
+  return v.toLocaleString("es-MX", { style: "currency", currency: "MXN" });
 }
 
 interface CartDrawerProps {
@@ -81,7 +81,7 @@ export function CartDrawer({ open, onOpenChange }: CartDrawerProps) {
         <SheetHeader className="p-4 bg-[#FFE600] border-b border-black/5 flex-row items-center justify-between space-y-0">
           <SheetTitle className="text-lg font-bold flex items-center gap-2">
             <ShoppingCart size={20} />
-            Carrinho ({cartCount})
+            Carrito ({cartCount})
           </SheetTitle>
         </SheetHeader>
 
@@ -89,7 +89,7 @@ export function CartDrawer({ open, onOpenChange }: CartDrawerProps) {
           {cart.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full p-8 text-center text-muted-foreground gap-4">
               <ShoppingCart size={48} strokeWidth={1.5} className="opacity-20" />
-              <p>Seu carrinho está vazio.</p>
+              <p>Tu carrito está vacío.</p>
               <button
                 type="button"
                 onClick={() => onOpenChange(false)}
@@ -102,7 +102,7 @@ export function CartDrawer({ open, onOpenChange }: CartDrawerProps) {
             <div className="p-4 space-y-4">
               <div className="bg-white rounded-lg shadow-sm border border-black/5 overflow-hidden">
                 <div className="p-3 border-b border-gray-100 flex items-center gap-2">
-                  <span className="font-bold text-sm">Produtos</span>
+                  <span className="font-bold text-sm">Productos</span>
                   <img src={fullIcon.url} alt="FULL" className="h-4" loading="lazy" decoding="async" />
                 </div>
                 {cart.map((it) => (
@@ -142,7 +142,7 @@ export function CartDrawer({ open, onOpenChange }: CartDrawerProps) {
                         <div className="text-right">
                           <div className="flex flex-col items-end">
                              <span className="text-base font-bold text-[#00a650]">
-                               {formatBRL(parsePrice(it.price) * it.qty)}
+                               {formatMXN(parsePrice(it.price) * it.qty)}
                              </span>
                           </div>
                           <button
@@ -166,16 +166,16 @@ export function CartDrawer({ open, onOpenChange }: CartDrawerProps) {
           <div className="bg-white border-t border-gray-200 p-4 shadow-[0_-4px_10px_rgba(0,0,0,0.05)]">
             <div className="space-y-2 mb-4">
               <div className="flex justify-between text-sm text-gray-600">
-                <span>Produtos ({cartCount})</span>
-                <span>{formatBRL(total)}</span>
+                <span>Productos ({cartCount})</span>
+                <span>{formatMXN(total)}</span>
               </div>
               <div className="flex justify-between text-sm text-gray-600">
-                <span>Envio</span>
-                <span className="text-[#00a650] font-bold">Grátis</span>
+                <span>Envío</span>
+                <span className="text-[#00a650] font-bold">Gratis</span>
               </div>
               <div className="flex justify-between text-lg font-bold text-[#00a650] border-t border-gray-100 pt-2">
                 <span>Total</span>
-                <span>{formatBRL(total)}</span>
+                <span>{formatMXN(total)}</span>
               </div>
             </div>
             <button
