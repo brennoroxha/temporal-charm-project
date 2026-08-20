@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-no projeto publicado, ta dando este erro
+por favor , corrija o erro na hora de gerar o pagamento, esta dando erro de credenciais , Client ID e Client Secret
     </div>
   );
 }
