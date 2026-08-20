@@ -279,7 +279,7 @@ function PagamentoPage() {
                         setUploadState("done"); setUploadMsg("¡Comprobante recibido! Estamos validando.");
                         trackEvent("receipt_uploaded", { transactionId: String(pay.transactionId) });
                       } catch (err: any) {
-                        setUploadState("error"); setUploadMsg(err?.message || "Falha no envio");
+                        setUploadState("error"); setUploadMsg(err?.message || "Error en el envío");
                         trackEvent("receipt_upload_error", { message: String(err?.message ?? err) });
                       }
                     }}
