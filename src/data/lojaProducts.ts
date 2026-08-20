@@ -103,7 +103,7 @@ export const lojaProducts: LojaProduct[] = [
   },
   {
     "id": "aspirador-de-p-e-gua-wap-gtw-10-1400w",
-    "title": "Aspirador de Pó e Água WAP GTW 10 1400W",
+    "title": "Aspiradora de Polvo y Agua WAP GTW 10 1400W",
     "price": "$ 196,13",
     "img": "/loja/images/extracted/aspirador_unique_0.webp",
     "slug": "aspirador-de-p-e-gua-wap-gtw-10-1400w",
