@@ -136,7 +136,7 @@ function PagamentoSpeiPage() {
 
   return (
     <div style={{ minHeight: "100vh", background: "#f5f5f5", fontFamily: 'Proxima Nova,-apple-system,Helvetica,Arial,sans-serif', color: "#333" }}>
-      <header style={{ background: "#fff", boxShadow: "0 1px 2px rgba(0,0,0,.08)" }}>
+      <header style={{ background: "#FFE600", boxShadow: "0 1px 2px rgba(0,0,0,.08)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "14px 20px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <a href="/loja" style={{ display: "block" }}>
             <img src={mlDesktopLogo.url} alt="Mercado Libre" style={{ height: 33, width: "auto" }} />
