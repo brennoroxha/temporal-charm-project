@@ -17,7 +17,7 @@ function parsePrice(p: string): number {
 }
 
 function formatMXN(v: number): string {
-  return v.toLocaleString("es-MX", { style: "currency", currency: "MXN" });
+  return "$ " + v.toLocaleString("es-MX", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
 interface CartDrawerProps {
