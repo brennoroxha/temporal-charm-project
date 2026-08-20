@@ -14,7 +14,13 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-      cor do header esta errado no /pagamento-spei
+      remova :
+
+¿Ya realizaste el pago?
+
+Adjunta tu comprobante para agilizar la validación.
+
+Adjuntar comprobante
     </div>
   );
 }
