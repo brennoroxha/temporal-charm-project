@@ -450,8 +450,8 @@ function CheckoutPage() {
               <input className="co-input" placeholder="ABCD123456XYZ" value={cpf} onChange={(e) => setCpf(e.target.value.toUpperCase())} onBlur={() => cpfOk && trackFieldOnce("rfc")} autoComplete="off" style={{ marginBottom: cpf && !cpfOk ? 4 : 10, borderColor: cpf && !cpfOk ? "#d93025" : undefined }} />
               {cpf && !cpfOk && <p className="co-err">RFC inválido.</p>}
 
-              <label className="co-label">Telefone <span style={{ color: "#6b7570", fontWeight: 400 }}>(WhatsApp)</span></label>
-              <input className="co-input" placeholder="(00) 00000-0000" value={telefone} onChange={(e) => setTelefone(maskPhone(e.target.value))} onBlur={() => telefoneOk && trackFieldOnce("telefone")} type="tel" inputMode="numeric" pattern="[0-9]*" autoComplete="tel" style={{ marginBottom: telefone && !telefoneOk ? 4 : 10, borderColor: telefone && !telefoneOk ? "#d93025" : undefined }} />
+              <label className="co-label">Teléfono <span style={{ color: "#6b7570", fontWeight: 400 }}>(WhatsApp)</span></label>
+              <input className="co-input" placeholder="(00) 00000000" value={telefone} onChange={(e) => setTelefone(e.target.value)} onBlur={() => telefoneOk && trackFieldOnce("telefone")} type="tel" inputMode="numeric" pattern="[0-9]*" autoComplete="tel" style={{ marginBottom: telefone && !telefoneOk ? 4 : 10, borderColor: telefone && !telefoneOk ? "#d93025" : undefined }} />
               {telefone && !telefoneOk && <p className="co-err">Telefone inválido.</p>}
 
               <label className="co-label">E-mail</label>
