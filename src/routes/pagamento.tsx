@@ -47,7 +47,7 @@ function PagamentoPage() {
 
   useEffect(() => {
     try {
-      const raw = sessionStorage.getItem("pixPayment") || localStorage.getItem("pixPayment");
+      const raw = sessionStorage.getItem("pixPayment");
       if (!raw) { window.location.href = "/checkout"; return; }
       const parsed = JSON.parse(raw);
       setPay(parsed);
