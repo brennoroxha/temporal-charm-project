@@ -346,9 +346,11 @@ function ProdutoPage() {
             <ArrowLeft size={14} strokeWidth={2.5} color="#000" style={{ width: "14px", height: "14px" }} />
             <span style={{ fontWeight: 500, fontSize: "17px", color: "#000" }}>Voltar</span>
           </button>
-
         )}
       />
+      <div style={{ position: "sticky", top: 55, zIndex: 40 }}>
+        <OfferTimerBanner />
+      </div>
 
       
 
