@@ -87,8 +87,8 @@ function LojaPage() {
         @media (max-width:480px){.loja-strip-title{font-size:20px}.loja-strip-sub{font-size:16px}}
         .loja-main{max-width:1200px;margin:16px auto;padding:0 12px}
         .loja-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-        .loja-card{background:#fff;border-radius:0;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;height:100%;box-shadow:0 1px 2px rgba(0,0,0,.08);transition:transform .15s,box-shadow .15s}
-        .loja-card:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.12)}
+        .loja-card{background:#fff;border-radius:0;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;height:100%;box-shadow:0 2px 8px rgba(0,0,0,.12);transition:transform .15s,box-shadow .15s}
+        .loja-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.15)}
         .loja-img-wrap{height:200px;background:#fff;display:flex;align-items:center;justify-content:center;padding:12px;border-bottom:1px solid #e6e6e6}
         .loja-img-wrap img{width:180px;height:180px;object-fit:contain;display:block}
 
