@@ -19,25 +19,45 @@ export function OfferTimerBanner() {
   const seconds = remaining % 60;
 
   return (
-    <div
-      style={{
-        width: "90%",
-        margin: "10px auto",
-        borderRadius: 8,
-        background: "linear-gradient(to right, #011E51, #a52aad)",
-        padding: "5px 10px",
-        color: "#fff",
-        textAlign: "center",
-        fontSize: 13,
-        fontWeight: 600,
-        lineHeight: 1.25,
-      }}
-    >
-      Oferta Disponível
-      <span style={{ fontSize: 11, fontWeight: 500 }}>
-        {" "}
-        Tempo restante: <span>{pad(hours)}:{pad(minutes)}:{pad(seconds)} </span>
-      </span>
-    </div>
+    <>
+      <div
+        style={{
+          width: "100%",
+          background: "#E6CF00",
+          padding: "5px",
+          color: "#fff",
+          textAlign: "center",
+          fontSize: "13px",
+          fontWeight: 600,
+          lineHeight: 1.2,
+        }}
+      >
+        Aproveite 95% de desconto aplicado automaticamente
+      </div>
+      <div
+        style={{
+          width: "100%",
+          background: "#FFE600",
+          padding: "15px 0 10px 10px",
+          color: "#000",
+          textAlign: "center",
+          fontSize: "16px",
+          fontWeight: 400,
+          lineHeight: 1.25,
+          boxShadow: "inset 0 6px 6px -4px rgba(0,0,0,.18)",
+        }}
+      >
+        <div style={{ fontSize: "21px", color: "#111", marginBottom: "2px" }}>
+          Oferta Disponível
+        </div>
+        <div style={{ fontSize: "17px", color: "#333" }}>
+          Tempo restante:{" "}
+          <span style={{ fontWeight: 600 }}>
+            {pad(hours)}:{pad(minutes)}:{pad(seconds)}
+          </span>
+        </div>
+      </div>
+    </>
   );
 }
+

@@ -333,22 +333,24 @@ function ProdutoPage() {
 
       `}</style>
 
-      <LojaHeader 
-        cartCount={cartCount} 
-        customMobileMenu={(
-          <button 
-            className="ml-icon-btn" 
-            aria-label="Voltar" 
-            type="button" 
-            onClick={() => navigate({ to: "/loja" })}
-            style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "17px", width: "auto", padding: "4px 8px 4px 0" }}
-          >
-            <ArrowLeft size={14} strokeWidth={2.5} color="#000" style={{ width: "14px", height: "14px" }} />
-            <span style={{ fontWeight: 500, fontSize: "17px", color: "#000" }}>Voltar</span>
-          </button>
-
-        )}
-      />
+      <div style={{ position: "sticky", top: 0, zIndex: 60 }}>
+        <LojaHeader 
+          cartCount={cartCount} 
+          customMobileMenu={(
+            <button 
+              className="ml-icon-btn" 
+              aria-label="Voltar" 
+              type="button" 
+              onClick={() => navigate({ to: "/loja" })}
+              style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "17px", width: "auto", padding: "4px 8px 4px 0" }}
+            >
+              <ArrowLeft size={14} strokeWidth={2.5} color="#000" style={{ width: "14px", height: "14px" }} />
+              <span style={{ fontWeight: 500, fontSize: "17px", color: "#000" }}>Voltar</span>
+            </button>
+          )}
+        />
+        <OfferTimerBanner />
+      </div>
 
       
 

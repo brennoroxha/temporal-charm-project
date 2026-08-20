@@ -4,6 +4,7 @@ import { Lock } from "lucide-react";
 import { trackEvent } from "@/lib/track";
 import mlDesktopLogo from "@/assets/ml-desktop-local.webp";
 import pixHand from "@/assets/pix-hand.png.asset.json";
+import { OfferTimerBanner } from "@/components/OfferTimerBanner";
 
 export const Route = createFileRoute("/pagamento")({
   head: () => ({
@@ -191,20 +192,23 @@ function PagamentoPage() {
         .pg-total span{color:#00a650;font-size:18px}
       `}</style>
 
-      <header className="pg-header">
-        <div className="pg-header-inner">
-          <a href="/loja" className="pg-logo" aria-label="Mercado Livre">
-            <img src={mlDesktopLogo} alt="Mercado Livre" />
-          </a>
-          <div className="pg-secure">
-            <Lock size={22} strokeWidth={2.2} color="#000" />
-            <div>
-              <div className="top">PAGAMENTO</div>
-              <div>100% SEGURO</div>
+      <div style={{ position: "sticky", top: 0, zIndex: 60 }}>
+        <header className="pg-header">
+          <div className="pg-header-inner">
+            <a href="/loja" className="pg-logo" aria-label="Mercado Livre">
+              <img src={mlDesktopLogo} alt="Mercado Livre" />
+            </a>
+            <div className="pg-secure">
+              <Lock size={22} strokeWidth={2.2} color="#000" />
+              <div>
+                <div className="top">PAGAMENTO</div>
+                <div>100% SEGURO</div>
+              </div>
             </div>
           </div>
-        </div>
-      </header>
+        </header>
+        <OfferTimerBanner />
+      </div>
 
       <div className="pg-wrap">
         <h1 className="pg-title">Já é quase seu...</h1>
