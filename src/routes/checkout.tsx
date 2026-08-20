@@ -2,7 +2,7 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useEffect, useState } from "react";
 import { ChevronDown, Check, Lock, ArrowLeft } from "lucide-react";
-import { createFreepayPix } from "@/lib/freepay.functions";
+import { createXpagSpei } from "@/lib/xpag.functions";
 import { lojaProducts } from "@/data/lojaProducts";
 import { type LojaProduct } from "@/data/types";
 
