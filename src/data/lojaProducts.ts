@@ -213,7 +213,7 @@ export const lojaProducts: LojaProduct[] = [
   },
   {
     "id": "iphone-15-pro-max-512gb-tit-nio-preto",
-    "title": "iPhone 15 Pro Max 512GB Titânio Negro",
+    "title": "iPhone 15 Pro Max 512GB Titanio Negro",
     "price": "$ 441,69",
     "img": "/loja/images/extracted/iphone-15-pro-max-512gb-titânio-preto.webp",
     "slug": "iphone-15-pro-max-512gb-tit-nio-preto",
