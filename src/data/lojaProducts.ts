@@ -32,14 +32,14 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 16.665,00"
   },
   {
-    "id": "bicicleta-absolute-nero-5-level-nova-12v-aro-29",
-    "title": "Bicicleta Absolute Nero 5 Level Nova 12V Aro 29",
-    "price": "$ 647,31",
-    "img": "/loja/images/bicicleta-absolute-nero-5-level-nova-12v-aro-29.webp",
-    "slug": "bicicleta-absolute-nero-5-level-nova-12v-aro-29",
+    "id": "bicicleta-alubike-kodiak-29-frenos-disco-hidraulico",
+    "title": "Bicicleta Alubike Kodiak 29 Frenos Disco Hidraulico",
+    "price": "$ 584,96",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_777820-MLM112920186782_072026-F.webp",
+    "slug": "bicicleta-alubike-kodiak-29-frenos-disco-hidraulico",
     "stock": 5,
     "voltagem": false,
-    "oldPrice": "$ 12.946,29"
+    "oldPrice": "$ 11.699,10"
   },
   {
     "id": "pantalla-65a400-pro-nxtvision-4k-mini-led-google-tv-tcl",
