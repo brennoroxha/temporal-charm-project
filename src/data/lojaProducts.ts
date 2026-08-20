@@ -93,7 +93,7 @@ export const lojaProducts: LojaProduct[] = [
   },
   {
     "id": "patinete-el-trico-honeywhale-m2-pro-500w",
-    "title": "Patinete Elétrico Honeywhale M2 Pro 500W",
+    "title": "Patinete Eléctrico Honeywhale M2 Pro 500W",
     "price": "$ 484,26",
     "img": "/loja/images/external/61_danGOjvL._AC_SX679_.webp",
     "slug": "patinete-el-trico-honeywhale-m2-pro-500w",
