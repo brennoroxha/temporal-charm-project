@@ -382,43 +382,27 @@ export const lojaReviews: Record<string, LojaReview[]> = {
       "useful": 10
     }
   ],
-  "geladeira-brastemp-588l-inox-bivolt": [
+  "refrigerador-whirlpool-9-pies": [
     {
       "stars": 5,
-      "date": "21 septiembre 2023",
-      "images": [
-        "loja/images/reviews/ref/geladeirablastemp_WSNtgVmFsvso.webp"
-      ],
-      "text": "Produto muito espaçoso, bem dividido e simples de programarzo Comprei por já estar usando outra do mesmo tamanho. Recomendo.",
-      "useful": 163
+      "date": "15 de enero de 2024",
+      "images": ["https://http2.mlstatic.com/D_NQ_NP_2X_659852-MLM74032470768_012024-F.webp"],
+      "text": "Excelente refrigerador, enfría muy rápido y el diseño es muy elegante. El tamaño es perfecto para mi cocina pequeña.",
+      "useful": 45
     },
     {
       "stars": 5,
-      "date": "23 enero 2023",
-      "images": [],
-      "text": "Maravilhosa, ela é perfeita. Linda, espaçosa, muito grande. Simplesmente perfeita!. Chegou antes da data prevista.",
-      "useful": 191
+      "date": "02 de febrero de 2024",
+      "images": ["https://http2.mlstatic.com/D_NQ_NP_2X_754123-MLM74123456789_022024-F.webp"],
+      "text": "Muy buen espacio interior, los compartimentos son muy útiles. Llegó antes de lo esperado y sin un solo rasguño.",
+      "useful": 32
     },
     {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
-      "useful": 12
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
-      "useful": 43
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Excelente relación calidad-precio, acabamento impecável.",
-      "useful": 42
+      "stars": 4,
+      "date": "20 de marzo de 2024",
+      "images": ["https://http2.mlstatic.com/D_NQ_NP_2X_841852-MLM74589632147_032024-F.webp"],
+      "text": "Funciona perfectamente y el color acero inoxidable se ve increíble. Hace un poco de ruido al arrancar pero es normal.",
+      "useful": 28
     }
   ],
   "geladeira-brastemp-frost-free-french-door-554l": [

@@ -11,7 +11,11 @@ export const lojaGallery: Record<string, string[]> = {
   "patinete-el-trico-honeywhale-m2-pro-500w": ["/loja/images/external/715sLZr8MxL._AC_SX679_.webp", "/loja/images/external/71Fx95Ap3uL._AC_SX679_.webp", "/loja/images/external/71LN9wieHjL._AC_SX679_.webp", "/loja/images/external/71RgpzFVStL._AC_SX679_.webp", "/loja/images/external/6174xedTG1L._AC_SL1500_.webp"],
   "aspirador-de-p-e-gua-wap-gtw-10-1400w": ["/loja/images/extracted/aspirador_unique_1.webp", "/loja/images/extracted/aspirador_unique_2.webp", "/loja/images/extracted/aspirador_unique_3.webp"],
   "xiaomi-redmi-note-14-pro-5g-12gb-512gb": ["/loja/images/extracted/XIAOMI14NOTE_1.webp", "/loja/images/extracted/XIAOMI14NOTE_2.webp"],
-  "geladeira-brastemp-588l-inox-bivolt": ["/loja/images/extracted/geladeirablastemp_1.webp", "/loja/images/extracted/geladeirablastemp_2.webp", "/loja/images/extracted/geladeirablastemp_3.webp", "/loja/images/extracted/geladeirablastemp_4.webp"],
+  "refrigerador-whirlpool-9-pies": [
+    "https://http2.mlstatic.com/D_NQ_NP_967347-MLM74032646014_012024-O.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_725946-MLM74032646020_012024-O.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_842359-MLM74032540134_012024-O.webp"
+  ],
   "geladeira-brastemp-frost-free-french-door-554l": ["/loja/images/extracted/blastempflost_2.webp", "/loja/images/extracted/blastempflost_3.webp", "/loja/images/extracted/blastempflost_4.webp"],
   "xiaomi-poco-x5-256gb-blue": ["/loja/images/extracted/POCO5X_1.webp", "/loja/images/extracted/POCO5X_2.webp", "/loja/images/extracted/POCO5X_3.webp"],
   "samsung-galaxy-s25-ultra-5g-512gb": ["/loja/images/extracted/GalaxyS25_1.webp", "/loja/images/extracted/GalaxyS25_2.webp", "/loja/images/extracted/GalaxyS25_3.webp", "/loja/images/extracted/GalaxyS25_4.webp"],
