@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-      testa dando erro para gerar o pagamento via SPEI
+      Implementa una validación en el frontend para verificar que la URL de la API y la clave de XPag estén configuradas antes de intentar generar el pago.
     </div>
   );
 }
