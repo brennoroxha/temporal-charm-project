@@ -124,12 +124,12 @@ export const lojaProducts: LojaProduct[] = [
   {
     "id": "refrigerador-whirlpool-9-pies",
     "title": "Refrigerador Whirlpool 9 Pies Top Mount 2 Puertas Xpert Inve",
-    "price": "$ 245,51",
+    "price": "$ 600,00",
     "img": "https://http2.mlstatic.com/D_NQ_NP_824599-MLM74032540130_012024-O.webp",
     "slug": "refrigerador-whirlpool-9-pies",
     "stock": 7,
     "voltagem": true,
-    "oldPrice": "$ 4.910,20"
+    "oldPrice": "$ 12.000,00"
   },
   {
     "id": "geladeira-brastemp-frost-free-french-door-554l",
