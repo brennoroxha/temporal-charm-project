@@ -108,7 +108,7 @@ function CheckoutPage() {
 
   useEffect(() => {
     const d = cep.replace(/\D/g, "");
-    if (d.length !== 8) { setCepError(""); return; }
+    if (d.length !== 5) { setCepError(""); return; }
     let cancelled = false;
     setCepLoading(true);
     setCepError("");
