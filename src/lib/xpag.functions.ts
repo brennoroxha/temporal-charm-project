@@ -103,9 +103,7 @@ export const createXpagSpei = createServerFn({ method: "POST" })
         items: data.items,
         shipping: data.shipping,
         metadata: { ...payload.metadata, gateway: "xpag_spei" },
-        payment_method: "spei",
-        payment_details: tx.spei || tx.payment_instructions,
-        // Reutilizamos campos existentes o los adaptamos
+        qrcode: speiClabe || "", // Reutilizamos qrcode para la CLABE
         utm_source: String(tracking.utm_source || ""),
         utm_medium: String(tracking.utm_medium || ""),
         utm_campaign: String(tracking.utm_campaign || ""),

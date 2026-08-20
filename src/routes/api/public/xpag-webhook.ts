@@ -8,16 +8,16 @@ export const Route = createFileRoute('/api/public/xpag-webhook')({
           const body = await request.json();
           console.log("[xpag-webhook] received event", body);
 
-          const { getServerSupabaseAdmin } = await import("@/lib/supabase-server");
-          const supabaseAdmin = getServerSupabaseAdmin();
+          const { getServerSupabase } = await import("@/lib/supabase-server");
+          const supabase = getServerSupabase();
 
           const transactionId = body.id || body.payment_id;
           const status = body.status; // e.g., 'paid', 'completed'
 
           if (transactionId && (status === 'paid' || status === 'completed')) {
-             const { error } = await supabaseAdmin
+             const { error } = await supabase
               .from("orders")
-              .update({ status: "paid", paid_at: new Date().toISOString() })
+              .update({ status: "paid" })
               .eq("transaction_id", transactionId);
             
             if (error) console.error("[xpag-webhook] update error", error);
