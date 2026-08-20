@@ -586,10 +586,36 @@ function CheckoutPage() {
                 <span style={{ width: 28, height: 28, background: "#000", color: "#fff", borderRadius: 4, display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: 15, fontWeight: 700 }}>3</span>
                 Escolha como pagar
               </h2>
-              <div style={{ padding: "20px", textAlign: "center", color: "#666" }}>
-                Nenhum método de pagamento disponível no momento.
+              <div role="radiogroup" aria-label="Método de pago">
+                <label 
+                  className={`co-ship ${activeGateway === "xpag_spei" ? "sel" : ""}`}
+                  onClick={() => setActiveGateway("xpag_spei")}
+                  style={{ cursor: "pointer", marginBottom: 16 }}
+                >
+                  <input 
+                    type="radio" 
+                    name="payment" 
+                    value="xpag_spei" 
+                    checked={activeGateway === "xpag_spei"} 
+                    onChange={() => setActiveGateway("xpag_spei")} 
+                  />
+                  <div className="co-ship-body">
+                    <div className="co-ship-title">SPEI</div>
+                    <div className="co-ship-sub">Transferencia electrónica inmediata 24/7</div>
+                  </div>
+                  <div style={{ display: "flex", gap: 4 }}>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Spei_logo.png" alt="SPEI" style={{ height: 20, objectFit: "contain" }} />
+                  </div>
+                </label>
               </div>
-              <button type="button" className="co-btn" onClick={goPay} disabled={true}>Finalizar Compra</button>
+              <button 
+                type="button" 
+                className="co-btn" 
+                onClick={goPay} 
+                disabled={!activeGateway || payLoading}
+              >
+                {payLoading ? "Procesando..." : "Finalizar Compra"}
+              </button>
             </div>
           </div>
         )}
