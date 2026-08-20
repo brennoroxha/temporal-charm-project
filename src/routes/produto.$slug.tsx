@@ -486,9 +486,9 @@ function ProdutoPage() {
             <div className={`stock-info ${product.stock === 0 ? 'out' : ''}`} style={{ marginBottom: 0 }}>
               {product.stock === 0 ? (
                 <span style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-                  X SEM ESTOQUE
+                  X SIN STOCK
                 </span>
-              ) : 'Estoque disponível'}
+              ) : 'Stock disponible'}
             </div>
             {product.stock !== 0 && product.stock !== undefined && (
               <div className="stock-info low" style={{ marginBottom: 0, marginTop: 4 }}>
