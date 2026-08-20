@@ -169,7 +169,7 @@ function CheckoutPage() {
   const cpfOk = cpf.trim().length >= 10; // RFC básico validación
   const telefoneOk = isValidPhone(telefone);
   const step1Ok = nomeOk && emailOk && cpfOk && telefoneOk;
-  const step2Ok = cep.replace(/\D/g, "").length === 8 && rua && numero && bairro && cidade && estado;
+  const step2Ok = cep.replace(/\D/g, "").length === 5 && rua && numero && bairro && cidade && estado;
 
   const goPay = async () => {
     trackEvent("checkout_pay_click", { amount: Math.round(total * 100), items: cart.length });
