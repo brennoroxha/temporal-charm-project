@@ -89,7 +89,7 @@ function CheckoutPage() {
 
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
-  const [cpf, setCpf] = useState("");
+  const [cpf, setCpf] = useState(""); // RFC en México
   const [telefone, setTelefone] = useState("");
 
   const [cep, setCep] = useState("");
