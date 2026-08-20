@@ -12,5 +12,10 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  return null;
+  return (
+    <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
+      Client ID: brennoroxha_31818844{"\n"}
+      Client Secret: mmx16m3ayl821kzig382197o
+    </div>
+  );
 }
