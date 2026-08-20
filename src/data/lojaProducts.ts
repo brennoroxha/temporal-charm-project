@@ -42,14 +42,14 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 12.946,29"
   },
   {
-    "id": "smart-tv-tcl-65-qled-4k",
-    "title": "Smart TV TCL 65\" QLED 4K",
-    "price": "$ 818,13",
-    "img": "/loja/images/smart-tv-tcl-65-qled-4k.webp",
-    "slug": "smart-tv-tcl-65-qled-4k",
+    "id": "pantalla-65a400-pro-nxtvision-4k-mini-led-google-tv-tcl",
+    "title": "Pantalla 65a400 Pro Nxtvision 4k Mini Led Google Tv Tcl",
+    "price": "$ 840,02",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_999419-MLA112179568033_052026-F.webp",
+    "slug": "pantalla-65a400-pro-nxtvision-4k-mini-led-google-tv-tcl",
     "stock": 14,
     "voltagem": false,
-    "oldPrice": "$ 16.362,62"
+    "oldPrice": "$ 16.800,33"
   },
   {
     "id": "caixa-de-som-jbl-boombox-4-bluetooth",

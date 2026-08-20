@@ -3,7 +3,12 @@ export const lojaGallery: Record<string, string[]> = {
   "iphone-17-pro-max-256gb": ["/loja/images/extracted/iphone17-pro_2.webp", "/loja/images/extracted/iphone17-pro_3.webp", "/loja/images/extracted/iphone17-pro_4.webp"],
   "bicicleta-el-trica-scooter-500w-32km-h-com-alarme": ["/loja/images/extracted/scooter_2.webp", "/loja/images/extracted/scooter_3.webp", "/loja/images/extracted/scooter_4.webp", "/loja/images/extracted/scooter_5.webp"],
   "bicicleta-absolute-nero-5-level-nova-12v-aro-29": ["/loja/images/extracted/bicicleta-absolute-nero5_2.webp", "/loja/images/extracted/bicicleta-absolute-nero5_3.webp", "/loja/images/extracted/bicicleta-absolute-nero5_4.webp"],
-  "smart-tv-tcl-65-qled-4k": ["/loja/images/extracted/smartv-tcl-65_2.webp", "/loja/images/extracted/smartv-tcl-65_3.webp", "/loja/images/extracted/smartv-tcl-65_4.webp"],
+  "pantalla-65a400-pro-nxtvision-4k-mini-led-google-tv-tcl": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_999419-MLA112179568033_052026-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_833420-MLA108485572693_032026-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_882750-MLA110741506614_052026-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_905351-MLA111699296199_052026-F.webp"
+  ],
   "caixa-de-som-jbl-boombox-4-bluetooth": ["/loja/images/extracted/JBL-Boombox-4_2.webp", "/loja/images/extracted/JBL-Boombox-4_3.webp", "/loja/images/extracted/JBL-Boombox-4_4.webp"],
   "jbl-partybox-710-preta": ["/loja/images/extracted/PARTYBOX_1.webp", "/loja/images/extracted/PARTYBOX_2.webp", "/loja/images/extracted/PARTYBOX_3.webp", "/loja/images/extracted/PARTYBOX_4.webp"],
   "iphone-16-pro-max-1tb-tit-nio-preto": ["/loja/images/extracted/IPHONE16_2.webp", "/loja/images/extracted/IPHONE16_3.webp", "/loja/images/extracted/IPHONE16_4.webp"],
