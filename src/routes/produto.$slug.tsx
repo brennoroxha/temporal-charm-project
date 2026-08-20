@@ -351,7 +351,6 @@ function ProdutoPage() {
             </button>
           )}
         />
-        <OfferTimerBanner />
       </div>
 
       
