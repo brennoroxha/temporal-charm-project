@@ -117,7 +117,9 @@ function LojaPage() {
       `}</style>
 
       <LojaHeader cartCount={cartCount} initialQuery={q} />
-      <OfferTimerBanner />
+      <div style={{ position: "sticky", top: 55, zMount: 40 }}>
+        <OfferTimerBanner />
+      </div>
 
 
 
