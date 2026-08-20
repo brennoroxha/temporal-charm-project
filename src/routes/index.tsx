@@ -14,8 +14,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-em Teléfono (WhatsApp)
-deixe o campo, no formato de telefone do mexico
+em entrega, mude o valor R$ 16,93 para $ 51,28
     </div>
   );
 }

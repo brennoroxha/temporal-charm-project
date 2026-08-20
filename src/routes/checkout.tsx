@@ -559,7 +559,7 @@ function CheckoutPage() {
                           </div>
                           <div className="co-ship-sub">Llegará mañana</div>
                         </div>
-                        <div className="co-ship-price">R$ 16,93</div>
+                        <div className="co-ship-price">$ 51.28</div>
                       </label>
                     </div>
                 </>
