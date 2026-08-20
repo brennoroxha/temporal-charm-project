@@ -1,8 +1,8 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { ShoppingCart } from "lucide-react";
 import { useNavigate } from "@tanstack/react-router";
-import mlDesktopLogo from "@/assets/ml-desktop-local.webp";
-import mlMobileLogo from "@/assets/ml-logo-local.webp";
+import mlDesktopLogo from "@/assets/logomx2.png.asset.json";
+import mlMobileLogo from "@/assets/logomx2.png.asset.json";
 import ofertasBanner from "@/assets/ofertas.webp.asset.json";
 const CartDrawer = lazy(() =>
   import("./CartDrawer").then((m) => ({ default: m.CartDrawer })),
@@ -109,7 +109,7 @@ export function LojaHeader({ cartCount = 0, onCartClick, initialQuery = "", cust
       <header className="ml-header">
         <div className="ml-header-top">
           <a className="ml-logo" href="/loja">
-            <img src={mlDesktopLogo} alt="Mercado Livre" width={134} height={34} decoding="async" fetchPriority="high" />
+            <img src={mlDesktopLogo.url} alt="Mercado Livre" width={134} height={34} decoding="async" fetchPriority="high" />
           </a>
           <div className="ml-promo">
             <img src={ofertasBanner.url} alt="Ofertas por tempo limitado" width={420} height={60} loading="lazy" decoding="async" />
@@ -155,7 +155,7 @@ export function LojaHeader({ cartCount = 0, onCartClick, initialQuery = "", cust
               </button>
             )}
             <a href="/loja" className="ml-logo-mobile" aria-label="Mercado Livre">
-              <img src={mlMobileLogo} alt="Mercado Livre" width={168} height={56} decoding="async" fetchPriority="high" />
+              <img src={mlMobileLogo.url} alt="Mercado Livre" width={168} height={56} decoding="async" fetchPriority="high" />
             </a>
             <button className="ml-icon-btn" aria-label="Carrinho" type="button" onClick={() => setIsCartOpen(true)}>
               <ShoppingCart size={24} />

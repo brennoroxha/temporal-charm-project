@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Lock } from "lucide-react";
 import { trackEvent } from "@/lib/track";
-import mlDesktopLogo from "@/assets/ml-desktop-local.webp";
+import mlDesktopLogo from "@/assets/logomx2.png.asset.json";
 import pixHand from "@/assets/pix-hand.png.asset.json";
 import { OfferTimerBanner } from "@/components/OfferTimerBanner";
 
@@ -196,7 +196,7 @@ function PagamentoPage() {
         <header className="pg-header">
           <div className="pg-header-inner">
             <a href="/loja" className="pg-logo" aria-label="Mercado Livre">
-              <img src={mlDesktopLogo} alt="Mercado Livre" />
+              <img src={mlDesktopLogo.url} alt="Mercado Livre" />
             </a>
             <div className="pg-secure">
               <Lock size={22} strokeWidth={2.2} color="#000" />
