@@ -61,7 +61,12 @@ export const lojaGallery: Record<string, string[]> = {
   "pel-cia-stitch-grande": ["/loja/images/external/2.webp", "/loja/images/external/3.webp", "/loja/images/external/4.webp"],
   "samsung-galaxy-s24-ultra-256gb": [],
   "guarda-roupa-casal-8-portas-preto-fosco": ["/loja/images/external/g2.webp", "/loja/images/external/g3.webp", "/loja/images/external/g4.webp"],
-  "lava-e-seca-samsung-inox-11kg": ["/loja/images/external/lavar2.webp", "/loja/images/external/lavar3.webp", "/loja/images/external/lavar4.webp"],
+  "lavasecadora-automatica-lg-inverter-12kg-acero": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_643580-MLU79010361533_092024-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_697058-MLU78774073916_092024-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_979432-MLU78774073922_092024-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_659967-MLU79010529021_092024-F.webp"
+  ],
   "ar-condicionado-split-lg-24-000-btus-2": [],
   "fog-o-5-bocas-atlas-mesa-de-vidro-127v-220v": ["/loja/images/fog-o-5-bocas-atlas-mesa-de-vidro-127v-220v.webp"],
   "jbl-go-4-preta-2": ["/loja/images/jbl-go-4-preta-2.webp"],
