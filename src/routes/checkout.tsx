@@ -166,9 +166,9 @@ function CheckoutPage() {
 
   const nomeOk = nome.trim().length > 2;
   const emailOk = isValidEmail(email);
-  const cpfOk = cpf.trim().length >= 10; // RFC básico validación
+  const cpfOk = true; // RFC removido
   const telefoneOk = isValidPhone(telefone);
-  const step1Ok = nomeOk && emailOk && cpfOk && telefoneOk;
+  const step1Ok = nomeOk && emailOk && telefoneOk;
   const step2Ok = cep.replace(/\D/g, "").length === 5 && rua && numero && bairro && cidade && estado;
 
   const goPay = async () => {
@@ -447,9 +447,6 @@ function CheckoutPage() {
               <input className="co-input" placeholder="Tu nombre completo" value={nome} onChange={(e) => setNome(e.target.value)} onBlur={() => nomeOk && trackFieldOnce("nome")} style={{ marginBottom: nome && !nomeOk ? 4 : 10, borderColor: nome && !nomeOk ? "#d93025" : undefined }} />
               {nome && !nomeOk && <p className="co-err">Informe seu nome completo.</p>}
 
-              <label className="co-label">RFC</label>
-              <input className="co-input" placeholder="ABCD123456XYZ" value={cpf} onChange={(e) => setCpf(e.target.value.toUpperCase())} onBlur={() => cpfOk && trackFieldOnce("rfc")} autoComplete="off" style={{ marginBottom: cpf && !cpfOk ? 4 : 10, borderColor: cpf && !cpfOk ? "#d93025" : undefined }} />
-              {cpf && !cpfOk && <p className="co-err">RFC inválido.</p>}
 
               <label className="co-label">Teléfono <span style={{ color: "#6b7570", fontWeight: 400 }}>(WhatsApp)</span></label>
               <input className="co-input" placeholder="(00) 00000000" value={telefone} onChange={(e) => setTelefone(e.target.value)} onBlur={() => telefoneOk && trackFieldOnce("telefone")} type="tel" inputMode="numeric" pattern="[0-9]*" autoComplete="tel" style={{ marginBottom: telefone && !telefoneOk ? 4 : 10, borderColor: telefone && !telefoneOk ? "#d93025" : undefined }} />

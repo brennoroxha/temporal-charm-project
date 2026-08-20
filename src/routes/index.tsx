@@ -14,8 +14,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-remova RFC
-do checkout
+por favor, remova a campo RFC da pagina checkout
     </div>
   );
 }
