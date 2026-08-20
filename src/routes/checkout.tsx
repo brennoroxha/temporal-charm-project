@@ -539,7 +539,7 @@ function CheckoutPage() {
 
                     <label style={{ display: "flex", alignItems: "center", gap: 8, margin: "4px 0 18px", fontSize: 13, color: "#333", cursor: "pointer" }}>
                       <input type="checkbox" checked={salvarEndereco} onChange={(e) => setSalvarEndereco(e.target.checked)} style={{ width: 16, height: 16, accentColor: "#146356" }} />
-                      Salvar este endereço para próximas compras.
+                      Guardar esta dirección para próximas compras.
                     </label>
 
                     <p className="co-section-title">Forma de envio</p>
