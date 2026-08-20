@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as RoletaRouteImport } from './routes/roleta'
 import { Route as QuizRouteImport } from './routes/quiz'
+import { Route as PagamentoSpeiRouteImport } from './routes/pagamento-spei'
 import { Route as PagamentoRouteImport } from './routes/pagamento'
 import { Route as LojaRouteImport } from './routes/loja'
 import { Route as CheckoutRouteImport } from './routes/checkout'
@@ -33,6 +34,11 @@ const RoletaRoute = RoletaRouteImport.update({
 const QuizRoute = QuizRouteImport.update({
   id: '/quiz',
   path: '/quiz',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PagamentoSpeiRoute = PagamentoSpeiRouteImport.update({
+  id: '/pagamento-spei',
+  path: '/pagamento-spei',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PagamentoRoute = PagamentoRouteImport.update({
@@ -106,6 +112,7 @@ export interface FileRoutesByFullPath {
   '/checkout': typeof CheckoutRoute
   '/loja': typeof LojaRoute
   '/pagamento': typeof PagamentoRoute
+  '/pagamento-spei': typeof PagamentoSpeiRoute
   '/quiz': typeof QuizRoute
   '/roleta': typeof RoletaRoute
   '/admin': typeof AuthenticatedAdminRoute
@@ -122,6 +129,7 @@ export interface FileRoutesByTo {
   '/checkout': typeof CheckoutRoute
   '/loja': typeof LojaRoute
   '/pagamento': typeof PagamentoRoute
+  '/pagamento-spei': typeof PagamentoSpeiRoute
   '/quiz': typeof QuizRoute
   '/roleta': typeof RoletaRoute
   '/admin': typeof AuthenticatedAdminRoute
@@ -140,6 +148,7 @@ export interface FileRoutesById {
   '/checkout': typeof CheckoutRoute
   '/loja': typeof LojaRoute
   '/pagamento': typeof PagamentoRoute
+  '/pagamento-spei': typeof PagamentoSpeiRoute
   '/quiz': typeof QuizRoute
   '/roleta': typeof RoletaRoute
   '/_authenticated/admin': typeof AuthenticatedAdminRoute
@@ -158,6 +167,7 @@ export interface FileRouteTypes {
     | '/checkout'
     | '/loja'
     | '/pagamento'
+    | '/pagamento-spei'
     | '/quiz'
     | '/roleta'
     | '/admin'
@@ -174,6 +184,7 @@ export interface FileRouteTypes {
     | '/checkout'
     | '/loja'
     | '/pagamento'
+    | '/pagamento-spei'
     | '/quiz'
     | '/roleta'
     | '/admin'
@@ -191,6 +202,7 @@ export interface FileRouteTypes {
     | '/checkout'
     | '/loja'
     | '/pagamento'
+    | '/pagamento-spei'
     | '/quiz'
     | '/roleta'
     | '/_authenticated/admin'
@@ -209,6 +221,7 @@ export interface RootRouteChildren {
   CheckoutRoute: typeof CheckoutRoute
   LojaRoute: typeof LojaRoute
   PagamentoRoute: typeof PagamentoRoute
+  PagamentoSpeiRoute: typeof PagamentoSpeiRoute
   QuizRoute: typeof QuizRoute
   RoletaRoute: typeof RoletaRoute
   ProdutoSlugRoute: typeof ProdutoSlugRoute
@@ -233,6 +246,13 @@ declare module '@tanstack/react-router' {
       path: '/quiz'
       fullPath: '/quiz'
       preLoaderRoute: typeof QuizRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pagamento-spei': {
+      id: '/pagamento-spei'
+      path: '/pagamento-spei'
+      fullPath: '/pagamento-spei'
+      preLoaderRoute: typeof PagamentoSpeiRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/pagamento': {
@@ -347,6 +367,7 @@ const rootRouteChildren: RootRouteChildren = {
   CheckoutRoute: CheckoutRoute,
   LojaRoute: LojaRoute,
   PagamentoRoute: PagamentoRoute,
+  PagamentoSpeiRoute: PagamentoSpeiRoute,
   QuizRoute: QuizRoute,
   RoletaRoute: RoletaRoute,
   ProdutoSlugRoute: ProdutoSlugRoute,
