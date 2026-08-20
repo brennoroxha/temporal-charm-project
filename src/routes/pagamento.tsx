@@ -9,8 +9,8 @@ import { OfferTimerBanner } from "@/components/OfferTimerBanner";
 export const Route = createFileRoute("/pagamento")({
   head: () => ({
     meta: [
-      { title: "Pagamento PIX - Mercado Livre" },
-      { name: "description", content: "Finalize seu pagamento via PIX." },
+      { title: "Pago PIX - Mercado Libre" },
+      { name: "description", content: "Finalice su pago vía PIX." },
     ],
   }),
   component: PagamentoPage,
