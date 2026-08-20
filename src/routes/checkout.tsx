@@ -367,11 +367,20 @@ function CheckoutPage() {
                     style={{ width: 48, height: 48, objectFit: "contain", background: "#fff", border: "1px solid #eee", borderRadius: 4, flexShrink: 0 }}
                   />
                   <span style={{ flex: 1, paddingRight: 10 }}>{it.title} × {it.qty}</span>
-                  <span style={{ whiteSpace: "nowrap" }}>{formatMXN(parsePrice(it.price) * it.qty)}</span>
+                  <span style={{ whiteSpace: "nowrap", display: "flex", alignItems: "flex-start", fontWeight: 600 }}>
+                    {formatMXN(parsePrice(it.price) * it.qty).split(',')[0]}
+                    <span style={{ fontSize: "0.6em", marginTop: 2, marginLeft: 1 }}>{formatMXN(parsePrice(it.price) * it.qty).split(',')[1] || '00'}</span>
+                  </span>
                 </div>
               ))}
               <div className="co-row"><span>Envios</span><span style={{ color: "#00a650", fontWeight: 600 }}>Grátis</span></div>
-              <div className="co-total"><span>Total</span><span>{formatMXN(total)}</span></div>
+              <div className="co-total">
+                <span>Total</span>
+                <span style={{ display: "flex", alignItems: "flex-start" }}>
+                  {formatMXN(total).split(',')[0]}
+                  <span style={{ fontSize: "0.6em", marginTop: 3, marginLeft: 1 }}>{formatMXN(total).split(',')[1] || '00'}</span>
+                </span>
+              </div>
             </div>
           )}
         </div>
