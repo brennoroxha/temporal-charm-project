@@ -33,8 +33,8 @@ function parsePrice(p: string): number {
   const n = parseFloat(cleaned);
   return isNaN(n) ? 0 : n;
 }
-function formatBRL(v: number): string {
-  return v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+function formatMXN(v: number): string {
+  return v.toLocaleString("pt-BR", { style: "currency", currency: "MXN" });
 }
 
 function maskCPF(v: string): string {
@@ -353,7 +353,7 @@ function CheckoutPage() {
           <div className="co-summary-head" onClick={() => setOpenSummary((v) => !v)}>
             <h2>Resumo do pedido</h2>
             <div className={`co-summary-right ${openSummary ? "open" : ""}`}>
-              <span>{formatBRL(total)}</span>
+              <span>{formatMXN(total)}</span>
               <ChevronDown size={16} />
             </div>
           </div>
@@ -367,11 +367,11 @@ function CheckoutPage() {
                     style={{ width: 48, height: 48, objectFit: "contain", background: "#fff", border: "1px solid #eee", borderRadius: 4, flexShrink: 0 }}
                   />
                   <span style={{ flex: 1, paddingRight: 10 }}>{it.title} × {it.qty}</span>
-                  <span style={{ whiteSpace: "nowrap" }}>{formatBRL(parsePrice(it.price) * it.qty)}</span>
+                  <span style={{ whiteSpace: "nowrap" }}>{formatMXN(parsePrice(it.price) * it.qty)}</span>
                 </div>
               ))}
               <div className="co-row"><span>Envios</span><span style={{ color: "#00a650", fontWeight: 600 }}>Grátis</span></div>
-              <div className="co-total"><span>Total</span><span>{formatBRL(total)}</span></div>
+              <div className="co-total"><span>Total</span><span>{formatMXN(total)}</span></div>
             </div>
           )}
         </div>

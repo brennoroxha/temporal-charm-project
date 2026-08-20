@@ -56,8 +56,8 @@ function parsePrice(p: string): number {
   const n = parseFloat(cleaned);
   return isNaN(n) ? 0 : n;
 }
-function formatBRL(v: number): string {
-  return v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+function formatMXN(v: number): string {
+  return v.toLocaleString("pt-BR", { style: "currency", currency: "MXN" });
 }
 function soldCount(slug: string): number {
   let h = 0;
@@ -449,7 +449,7 @@ function ProdutoPage() {
             {product.stock !== 0 && (
               <>
                 <div className="info-price-old">
-                  <span className="old-value">{product.oldPrice || formatBRL(priceOld)}</span>
+                  <span className="old-value">{product.oldPrice || formatMXN(priceOld)}</span>
                   {product.stock !== 0 && <span className="info-price-off">95% OFF</span>}
                 </div>
                 <div className="info-price">

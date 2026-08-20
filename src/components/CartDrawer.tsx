@@ -16,8 +16,8 @@ function parsePrice(p: string): number {
   return isNaN(n) ? 0 : n;
 }
 
-function formatBRL(v: number): string {
-  return v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+function formatMXN(v: number): string {
+  return v.toLocaleString("pt-BR", { style: "currency", currency: "MXN" });
 }
 
 interface CartDrawerProps {
@@ -142,7 +142,7 @@ export function CartDrawer({ open, onOpenChange }: CartDrawerProps) {
                         <div className="text-right">
                           <div className="flex flex-col items-end">
                              <span className="text-base font-bold text-[#00a650]">
-                               {formatBRL(parsePrice(it.price) * it.qty)}
+                               {formatMXN(parsePrice(it.price) * it.qty)}
                              </span>
                           </div>
                           <button
@@ -167,7 +167,7 @@ export function CartDrawer({ open, onOpenChange }: CartDrawerProps) {
             <div className="space-y-2 mb-4">
               <div className="flex justify-between text-sm text-gray-600">
                 <span>Produtos ({cartCount})</span>
-                <span>{formatBRL(total)}</span>
+                <span>{formatMXN(total)}</span>
               </div>
               <div className="flex justify-between text-sm text-gray-600">
                 <span>Envio</span>
@@ -175,7 +175,7 @@ export function CartDrawer({ open, onOpenChange }: CartDrawerProps) {
               </div>
               <div className="flex justify-between text-lg font-bold text-[#00a650] border-t border-gray-100 pt-2">
                 <span>Total</span>
-                <span>{formatBRL(total)}</span>
+                <span>{formatMXN(total)}</span>
               </div>
             </div>
             <button

@@ -26,8 +26,8 @@ type PixPayment = {
   items?: PixItem[];
 };
 
-function formatBRL(v: number): string {
-  return v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+function formatMXN(v: number): string {
+  return v.toLocaleString("pt-BR", { style: "currency", currency: "MXN" });
 }
 
 function PagamentoPage() {
@@ -79,13 +79,13 @@ function PagamentoPage() {
             w.gtag("event", "conversion", {
               send_to: "AW-18267532945/M09HCP3G8cwcEJHd0YZE",
               value,
-              currency: "BRL",
+              currency: "MXN",
               transaction_id: String(pay.transactionId),
             });
             w.gtag("event", "purchase", {
               transaction_id: String(pay.transactionId),
               value,
-              currency: "BRL",
+              currency: "MXN",
             });
           }
           if (typeof w.fbPurchase === "function") {
@@ -95,7 +95,7 @@ function PagamentoPage() {
             w.utmifyTrack("Purchase", {
               value: value,
               order_id: String(pay.transactionId),
-              currency: "BRL"
+              currency: "MXN"
             });
           }
           sessionStorage.setItem(firedKey, "1");
@@ -235,7 +235,7 @@ function PagamentoPage() {
           {copied ? "Código copiado!" : "Copiar código pix"}
         </button>
 
-        <div className="pg-value">Valor do Pix: <span>{formatBRL(pay?.amount || 0)}</span></div>
+        <div className="pg-value">Valor do Pix: <span>{formatMXN(pay?.amount || 0)}</span></div>
 
         {showUpload && (
           <div className="pg-proof">
@@ -313,12 +313,12 @@ function PagamentoPage() {
                 <img src={it.image} alt={it.title} loading="lazy" decoding="async" />
                 <div className="pg-item-info">
                   <div className="pg-item-title">{it.title}</div>
-                  <div className="pg-item-meta">Qtd: {it.qty} · {formatBRL(it.unitPrice)}</div>
+                  <div className="pg-item-meta">Qtd: {it.qty} · {formatMXN(it.unitPrice)}</div>
                 </div>
-                <div className="pg-item-price">{formatBRL(it.unitPrice * it.qty)}</div>
+                <div className="pg-item-price">{formatMXN(it.unitPrice * it.qty)}</div>
               </div>
             ))}
-            <div className="pg-total">Total <span>{formatBRL(pay.amount || 0)}</span></div>
+            <div className="pg-total">Total <span>{formatMXN(pay.amount || 0)}</span></div>
           </div>
         )}
       </div>
