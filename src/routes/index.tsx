@@ -12,11 +12,5 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  return (
-    <div className="p-4">
-      vamos integrar o metodo de pagamento SPEI do mexico.
-      <br /><br />
-      Segue a documentação: https://xpag.global/pt/docs/cash-in-spei
-    </div>
-  );
+  return null;
 }
