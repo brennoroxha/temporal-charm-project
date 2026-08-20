@@ -122,14 +122,14 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 6.279,97"
   },
   {
-    "id": "geladeira-brastemp-588l-inox-bivolt",
-    "title": "Refrigerador Brastemp 588L Inox Bivolt",
-    "price": "$ 549,48",
-    "img": "/loja/images/geladeira-brastemp-588l-inox-bivolt.webp",
-    "slug": "geladeira-brastemp-588l-inox-bivolt",
-    "stock": 17,
+    "id": "refrigerador-whirlpool-9-pies",
+    "title": "Refrigerador Whirlpool 9 Pies Top Mount 2 Puertas Xpert Inve",
+    "price": "$ 245,51",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_824599-MLM74032540130_012024-O.webp",
+    "slug": "refrigerador-whirlpool-9-pies",
+    "stock": 7,
     "voltagem": true,
-    "oldPrice": "$ 10.989,62"
+    "oldPrice": "$ 4.910,20"
   },
   {
     "id": "geladeira-brastemp-frost-free-french-door-554l",
