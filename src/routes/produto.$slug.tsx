@@ -57,7 +57,8 @@ function parsePrice(p: string): number {
   return isNaN(n) ? 0 : n;
 }
 function formatMXN(v: number): string {
-  return v.toLocaleString("es-MX", { style: "currency", currency: "MXN" });
+  return "$ " + v.toLocaleString("es-MX", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+});
 }
 function soldCount(slug: string): number {
   let h = 0;
