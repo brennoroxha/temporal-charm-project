@@ -372,7 +372,7 @@ function CheckoutPage() {
                   </span>
                 </div>
               ))}
-              <div className="co-row"><span>Envios</span><span style={{ color: "#00a650", fontWeight: 600 }}>Grátis</span></div>
+              <div className="co-row"><span>Envío</span><span style={{ color: "#00a650", fontWeight: 600 }}>Gratis</span></div>
               <div className="co-total">
                 <span>Total</span>
                 <span style={{ display: "flex", alignItems: "flex-start" }}>
