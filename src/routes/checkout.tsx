@@ -489,7 +489,7 @@ function CheckoutPage() {
               <form noValidate onSubmit={(e) => { e.preventDefault(); if (step2Ok) setStep(3); }}>
                 <p className="co-section-title" style={{ display: "flex", alignItems: "center", gap: 10 }}>
                   <span style={{ width: 28, height: 28, background: "#000", color: "#fff", borderRadius: 4, display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: 15, fontWeight: 700 }}>2</span>
-                  Endereço de entrega
+                  Dirección de envío
                 </p>
 
                 <div className="co-field">
