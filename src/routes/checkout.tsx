@@ -69,8 +69,7 @@ function isValidEmail(v: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim());
 }
 function maskCEP(v: string): string {
-  const d = v.replace(/\D/g, "").slice(0, 8);
-  return d.replace(/(\d{5})(\d)/, "$1-$2");
+  return v.replace(/\D/g, "").slice(0, 5);
 }
 
 type Step = 1 | 2 | 3;
