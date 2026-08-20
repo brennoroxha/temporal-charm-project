@@ -80,7 +80,7 @@ function CheckoutPage() {
   
   
   const navigate = useNavigate();
-  const freepayPix = useServerFn(createFreepayPix);
+  const xpagSpei = useServerFn(createXpagSpei);
   const [cart, setCart] = useState<CartItem[]>([]);
   const [step, setStep] = useState<Step>(1);
   const [openSummary, setOpenSummary] = useState(false);
