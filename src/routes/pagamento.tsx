@@ -242,7 +242,7 @@ function PagamentoPage() {
 
         {showUpload && (
           <div className="pg-proof">
-            <div className="pg-proof-t">¿Pagó su pedido e aún não ha sido confirmado??</div>
+            <div className="pg-proof-t">¿Pagó su pedido e aún no ha sido confirmado?</div>
             <div className="pg-proof-sub">Adjunte el comprobante ahora para agilizar su entrega.</div>
             {(() => {
               const disabled = uploadState === "uploading" || uploadState === "done" || !pay;
