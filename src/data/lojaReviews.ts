@@ -1,56 +1,156 @@
 // Auto-gerado a partir de https://matriculapm.site (opinioes e fotos reais, conferidas produto por produto)
 export type LojaReview = { stars: number; date: string; images: string[]; text: string; useful: number };
 export const lojaReviews: Record<string, LojaReview[]> = {
-  "jbl-boombox-3-preta": [
+  "bocina-jbl-partybox-encore-2-plus-negra": [
     {
       "stars": 5,
-      "date": "07 marzo 2024",
-      "images": [],
-      "text": "Excelencia, sonido de calidad e practicidad na hora de usar. Parabéns a JBL acertou novamente em mais uma caixa de sonido, seus graves e subgraves sóo excelentes. Pra quem reclama é porque não está sabendo usar. Comprei a minha e escutei mais de 20 hrs no volume médio sem explorar muito os graves no máximo. Como exemplo : se utilizar um carro na sua rotação máximo do motor obviamente vai consumir mais combustível, assim funciona a caixa JBL com sua batería. Se colocarmos no volume máximo explorando seus altos graves ela consumirá mais a energia de sua batería.",
-      "useful": 62
+      "date": "12 julio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_629747-MLA113984358555_072026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_612682-MLA112790091914_072026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_950093-MLA112789894914_072026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_775653-MLA113984612535_072026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_862629-MLA113984351643_072026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_604169-MLA113984727473_072026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_948355-MLA112790091964_072026-O.webp"
+      ],
+      "text": "Diseño: me gusto por lo compacto fácil de transportar y el asa suave retractil. Materiales: se ve de buena calidad, aunq es plástico duro. Recomiendo la bocina, muy buen sonido y funciones y llamativo con las luces. Incluye 2 microfonos recaegables inalambricos con la funcion de remover la voz de las canciones con ia",
+      "useful": 142
     },
     {
       "stars": 5,
-      "date": "28 mayo 2024",
+      "date": "28 junio 2026",
       "images": [
-        "loja/images/reviews/ref/JBL_Ky7IMR3sU2Us.webp",
-        "loja/images/reviews/ref/JBL_kc4CsPVGpt5F.webp"
+        "https://http2.mlstatic.com/D_NQ_NP_980793-MLA113548002976_072026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_664708-MLA113548637538_072026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_859720-MLA114819461095_072026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_909381-MLA114819903993_072026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_640802-MLA114819461105_072026-O.webp"
       ],
-      "text": "Me encantó producto muy bueno mesmo e recomiendo que compre.",
-      "useful": 129
+      "text": "Llego en dos días muy rápido, muy bien embalado con doble caja, el parlante con excelente sonido, la función de eliminar la voz es muy buena",
+      "useful": 98
+    },
+    {
+      "stars": 5,
+      "date": "05 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_719067-MLA114064475019_072026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_849441-MLA114063815101_072026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_971837-MLA112861233226_072026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_969785-MLA114063672147_072026-O.webp"
+      ],
+      "text": "Conectividad: bluetooth, inalámbrica, con ia. Sonido: excelentes bajos y distintos niveles de bajos, es buenisima para su tamaño. La mejor bocina / karaoke que he tenido en mi vida. Todo el mundo que me la ve la quiere. No tengo ni un mes con ella y ya hice 2 fiestas buenisimas y amenicé una boda con ella. Me encanta que la puedo llevar a todos lados y la bocina y los 2 micrófonos son recargables. Si aprieto el botón de ia a la bocina o los micrófonos le quita la voz a cualquier canción o video que no sean de karaoke para cantar sobre la pista original",
+      "useful": 76
+    },
+    {
+      "stars": 5,
+      "date": "19 mayo 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_971241-MLA111084689028_052026-O.webp"
+      ],
+      "text": "Sonido: original perfecto super bien. Materiales: excelentes acabados. Es un producto completamente original y excelente servicio",
+      "useful": 54
+    },
+    {
+      "stars": 5,
+      "date": "02 abril 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_859423-MLA111398461130_052026-O.webp"
+      ],
+      "text": "Muy bien producto llegó a tiempo para la fiesta !!",
+      "useful": 31
     }
   ],
-  "iphone-17-pro-max-256gb": [
+  "bocina-jbl-boombox-3-portatil-bluetooth-waterproof-black": [
     {
       "stars": 5,
-      "date": "08 mayo 2024",
-      "images": [],
-      "text": "Tenho já 7 meses, o aparelho é muito bom, gostoso de mexer, batería dura o dia inteiro, ameiii.",
-      "useful": 135
-    },
-    {
-      "stars": 5,
-      "date": "23 marzo 2024",
+      "date": "12 julio 2026",
       "images": [
-        "loja/images/reviews/ref/iphone17_pro_prov-1.webp",
-        "loja/images/reviews/ref/iphone17_pro_prov-2.webp"
+        "https://http2.mlstatic.com/D_NQ_NP_2X_637669-MLA73328556471_122023-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_613423-MLA73242206414_122023-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_742368-MLA73241813494_122023-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_756099-MLA73241813512_122023-O.webp"
       ],
-      "text": "llegó en perfecto estado, só achei a proteção um pouco ruim, a caixa do celular veio solto em uma caixa do Mercado Livre grande, sem proteção nas laterais, mas o veio sem nenhum arranhão mesmo assim, o celular chegou super rápido.",
-      "useful": 128
+      "text": "¡El producto es excelente! No deja nada que desear. Llegaron muchos comentarios quejándose de que la batería no dura 24 horas, pero la gente quiere que dure 24 horas con el volumen al máximo, y eso es imposible, ningún tipo de producto electrónico portátil va a durar tanto tiempo usándose al volumen máximo. Ella duró esas 24 horas conmigo, pero en volumen medio, y puedo asegurar que estaba en un volumen bastante alto para el ambiente. En fin, estoy muy satisfecho con el producto, sin duda la mejor caja portátil del mercado. Para no decir que es “perfecta”, solo dejó que desear en su peso. (Es pesada en comparación con las anteriores). Creo que la boombox 3 es más pesada porque la fuente del cargador está dentro de ella",
+      "useful": 142
     },
     {
       "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
-      "useful": 48
+      "date": "28 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_875631-MLA74444626691_022024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_967625-MLA74327186960_022024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_809864-MLA74444587533_022024-O.webp"
+      ],
+      "text": "Hay que admitir que la caja no es muy buena en relación calidad-precio; actualmente en el mercado, las opciones más económicas son la Encore Esencial. Sin embargo, la Boombox 3 la supera en todos los aspectos, excepto en costo-beneficio... sonido de calidad surrealista, subgrave, grave y agudos y medios perfectos que dejan boquiabierto. En cuanto a la batería, en mi primer uso vino con menos del 50% de carga, la actualicé y la dejé sonando al 70% del volumen. Tuve un tiempo de batería de 4 horas hasta que empezó a parpadear en rojo. La dejé cargando y en la segunda ocasión la escuché con volumen entre 60/70/80 en una playlist de Spotify con diversos estilos musicales. El tiempo de batería fue de entre 8:30 y 9 horas... en sonido. Estoy muy satisfecho con la compra; veo que mucha gente dice que la batería no dura 3 horas al 100%, pero quien aguante escuchar en los oídos al 100% durante tanto tiempo debe tener algún problema auditivo... o debe dejar la caja en el fondo y estar más cerca. Aquí donde vivo, las llevo a un bar, a la plaza de la ciudad, a volumen medio para no molestar a nadie, solo para que la disfrute la gente que está conmigo. Para quienes tengan dudas sobre el consumo de batería, he subido bastantes videos en YouTube. Traducir la caja y saber usarla no sirve de nada si compras pensando en ir al Carnaval y crees que vas a cubrir el sonido del show o que la batería es infinita... Compra tu caja sin miedo y disfruta del sorprendente sonido de calidad de la marca",
+      "useful": 98
     },
     {
       "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Melhor compra que já fiz, vale cada centavo.",
-      "useful": 49
+      "date": "05 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_991476-MLA73171799974_122023-O.webp"
+      ],
+      "text": "JBL es incomparable, calidad superior a la Boombox 2, ya tuve la 2 y puedo decir que la 3 tiene mejor calidad de sonido. ¡Y la batería no decepciona, para mí está más que perfecta!",
+      "useful": 76
+    },
+    {
+      "stars": 5,
+      "date": "19 mayo 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_763637-MLA70079941792_062023-O.webp"
+      ],
+      "text": "Producto de calidad, total confianza, pueden comprar sin miedo, no se arrepentirán 💭🔥",
+      "useful": 54
+    },
+    {
+      "stars": 5,
+      "date": "02 abril 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_757699-MLA70104862782_062023-O.webp"
+      ],
+      "text": "Excelente caja JBL, me encantó que me regalaran un producto tan bueno",
+      "useful": 31
+    }
+  ],
+  "apple-iphone-17-pro-max-256gb-naranja-cosmico": [
+    {
+      "stars": 5,
+      "date": "12 julio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_736201-MLA115266391599_072026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_903368-MLA115266332109_072026-B.jpg"
+      ],
+      "text": "Batería: dura mucho la batería. Cámara: fotos y video muy bonito. Recomendado al 100 viene sellado y es completamente original",
+      "useful": 142
+    },
+    {
+      "stars": 5,
+      "date": "28 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_689729-MLA113527999331_062026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_773938-MLA112370691316_062026-O.webp"
+      ],
+      "text": "¡Tienda seria! Pueden comprar sin ningún miedo, original y con garantía APPLE y factura",
+      "useful": 98
+    },
+    {
+      "stars": 5,
+      "date": "05 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_864366-MLA114017101219_072026-B.jpg"
+      ],
+      "text": "Carísimo, carísimo. Pero fue un regalo para mi hijo. Iphone es un teléfono de buena calidad",
+      "useful": 76
+    },
+    {
+      "stars": 5,
+      "date": "19 mayo 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_940840-MLA98139356999_112025-O.webp"
+      ],
+      "text": "Llegó rápido y todo en orden",
+      "useful": 54
     }
   ],
   "scooter-electrica-500w-48v-10ah-80km-con-asiento-c3": [
@@ -305,120 +405,204 @@ export const lojaReviews: Record<string, LojaReview[]> = {
       "useful": 31
     }
   ],
-  "tablet-samsung-galaxy-tab-a11-11-6gb-128gb-5g": [
+  "tablet-galaxy-tab-a11-plus-plata-128gb-6gb-samsung": [
     {
       "stars": 5,
-      "date": "09 diciembre 2024",
-      "images": [],
-      "text": "Tela de 11 polegadas é perfeita! Muito fluido com 6GB de RAM. Recomendo demais para trabalho e lazer.",
-      "useful": 141
-    },
-    {
-      "stars": 5,
-      "date": "12 diciembre 2024",
-      "images": [],
-      "text": "Ótima calidad de construção! 128GB de armazenamento é bastante. Bateria dura o dia inteiro de uso.",
-      "useful": 177
-    },
-    {
-      "stars": 5,
-      "date": "15 diciembre 2024",
-      "images": [],
-      "text": "Conexão 5G é muito rápida! Preto cinza fica elegante. Excelente custo-benefício, super recomiendo!",
-      "useful": 211
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Excelente relación calidad-precio, acabamento impecável.",
-      "useful": 35
-    }
-  ],
-  "patinete-el-trico-honeywhale-m2-pro-500w": [
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Melhor compra que já fiz, vale cada centavo.",
-      "useful": 24
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Excelente relación calidad-precio, acabamento impecável.",
-      "useful": 47
-    }
-  ],
-  "aspirador-de-p-e-gua-wap-gtw-10-1400w": [
-    {
-      "stars": 5,
-      "date": "07 marzo 2024",
-      "images": [],
-      "text": "O Aspirador de Pó e Água WAP GTW 10 é a melhor opção para quem precisa de agilidade, eficiência e practicidad na limpeza no dia a dia. Compacto, seu reservatório possui volume total de 10 litros, tendo capacidade útil para sólidos de 7 litros e capacidade útil para líquidos de 3,4 litros.Para retenção de pó e garantir a durabilidade do produto, ele é equipado com filtro de tecido lavável. Potente com 1400W e alcance máximo de até 5 metros sem a necessidade de trocar de tomada, o WAP GTW 10 aspira sujeira seca, úmida ou líquida, tanto em ambientes internos como externos. Tudo isso reunido em um design moderno e funcional.Para aspirar água, ele é equipado com um eficiente filtro espuma, que protege o motor e garante o aumento da vida útil do produto. O Aspirador de Pó WAP GTW 10 é ideal para quem quer mais eficiência na faxina e mais tempo livre para curtir com a família.O principal diferencial do Aspirador de Pó e Água WAP GTW 10 é sua grande mobilidade e practicidad. Vem equipado com rodízio e alça ergonômica que permitem o seu transporte para qualquer lugar com muita facilidade. Além disso, o bico múltiplo, bico canto e as extensões que acompanham o produto podem ser guardados em prático porta-acessórios, o que facilita o seu armazenamento.O WAP GTW 10 possui bocal de sopro que, além de auxiliar na limpeza de lugares inacessíveis, ainda serve para encher infláveis, acender churrasqueiras ou soprar folhas. Moderno e ágil, o aspirador de pó WAP GTW 10 reúne todas as características necessárias para garantir mais practicidad e eficiência na limpeza. Conheça o Aspirador de Água e Pó WAP GTW 10.",
-      "useful": 218
-    },
-    {
-      "stars": 5,
-      "date": "28 mayo 2024",
+      "date": "12 julio 2026",
       "images": [
-        "loja/images/reviews/ref/aspirador_de_po_e_agua_prova-1-MLA78254590309_082024.webp",
-        "loja/images/reviews/ref/aspirador_de_po_e_agua_prova-2-MLA78254590309_082024.webp"
+        "https://http2.mlstatic.com/D_NQ_NP_695786-MLA111944593080_062026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_941123-MLA113072036913_062026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_906467-MLA113070681599_062026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_954094-MLA113070710855_062026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_725711-MLA113070915967_062026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_642544-MLA113071035675_062026-O.webp"
       ],
-      "text": "Nossa é muito bom já testei e gostei muito e bem potente me surpreende ,apesar de ser pequeno mas é muito potente gostei muito ,e pelo tamanho é bem compacto.",
-      "useful": 55
+      "text": "Está súper exelente combiene mucho",
+      "useful": 142
     },
     {
       "stars": 5,
-      "date": "10 diciembre 2024",
-      "images": [],
-      "text": "Produto excelente, llegó rápido e bem embalado. Recomendo!",
-      "useful": 42
+      "date": "28 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_720924-MLA110345233899_042026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_726825-MLA110345056111_042026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_837170-MLA109477849690_042026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_894961-MLA110345544899_042026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_956570-MLA110345490179_042026-O.webp"
+      ],
+      "text": "Si es muy buena la tablet. Se puede jugar fornite y ya con eso es buena. No se queda pegada y funciona fluido. Me la compre en oferta a 160 lucas y valió la pena. Llevo usándola como 1 mes y ha funcionado perfecto la bateria le dura harto y para jugar ha funcionado super bien y lo otro es que los parlantes suenan fuerte y es agradable. Lo otro que agrego es que la tablet es muy delgada y liviana. Es mas delgada de un ipad air y tiene mejor cámara para video llamadas",
+      "useful": 98
     },
     {
       "stars": 5,
-      "date": "05 diciembre 2024",
-      "images": [],
-      "text": "Muito bom, superou as expectativas. Excelente relación calidad-precio.",
-      "useful": 31
+      "date": "05 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_644348-MLA98841145640_112025-O.webp"
+      ],
+      "text": "Está de lujo, es una tableta que por su precio ofrece muchísimo. Rápida y eficaz, y ese color gris está bastante bueno. Creo que es una tab que está hecha para entretenimiento principalmente, ya que si necesitas algo más potente yo me iría por una tab de la serie f. Pero para entretenimiento o para tareas simples está muy bien",
+      "useful": 76
     },
     {
-      "stars": 4,
-      "date": "28 noviembre 2024",
-      "images": [],
-      "text": "Gostei bastante do produto, funciona perfeitamente.",
-      "useful": 18
+      "stars": 5,
+      "date": "19 mayo 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_873030-MLA99268115204_112025-O.webp"
+      ],
+      "text": "Excelente calidad samsung galaxy tab funciona al 100 cumple con los estándares requeridos",
+      "useful": 54
     }
   ],
-  "xiaomi-redmi-note-14-pro-5g-12gb-512gb": [
+  "honey-whale-e9t-scooter-patin-electrico-32-kmh-negro": [
     {
       "stars": 5,
-      "date": "29 abril 2024",
-      "images": [],
-      "text": "Me encantó esse celular, estou apaixonada",
-      "useful": 75
+      "date": "12 julio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_850393-MLA108886008847_032026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_894248-MLA108886367623_032026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_650781-MLA108110102114_032026-O.webp"
+      ],
+      "text": "Excelente calidad. Es ligero y fácil de transportar",
+      "useful": 142
     },
     {
       "stars": 5,
-      "date": "9 noviembre 2023",
-      "images": [],
-      "text": "Eu achei maravilhoso, lindo demais ganhei de regalo.",
-      "useful": 131
+      "date": "28 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_945092-MLA99009643325_112025-O.webp"
+      ],
+      "text": "Me encanto, cuando paso topes se siente tan cómodo, las luces tienen excelente alcance, es muy bonito estéticamente y me encanta la velocidad que alcanza",
+      "useful": 98
     },
     {
       "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
-      "useful": 25
+      "date": "05 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_649975-MLA108253306386_032026-O.webp"
+      ],
+      "text": "Muy bueno y justo para ir al trabajo, lo combino con el trasporte público",
+      "useful": 76
     },
     {
       "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Excelente relación calidad-precio, acabamento impecável.",
-      "useful": 10
+      "date": "19 mayo 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_698057-MLA105710152765_012026-O.webp"
+      ],
+      "text": "Excelente, tanto en resistencia y calidad muy buena velocidad",
+      "useful": 54
+    },
+    {
+      "stars": 5,
+      "date": "02 abril 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_965814-MLA99034013505_112025-O.webp"
+      ],
+      "text": "Súper!!",
+      "useful": 31
+    }
+  ],
+  "aspiradora-agua-y-solidos-3700-watts-truper-naranja": [
+    {
+      "stars": 5,
+      "date": "12 julio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_896895-MLA104387339945_012026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_861181-MLA104387340079_012026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_711224-MLA103853957190_012026-O.webp"
+      ],
+      "text": "Ruido: un poco de ruido conforme a su nivel de potencia. Accesorios: de plástico rígido y resistentes. Es enorme se nota inmediatamente su gran fuerza",
+      "useful": 142
+    },
+    {
+      "stars": 5,
+      "date": "28 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_625525-MLA105805653240_022026-O.webp"
+      ],
+      "text": "Muy buen producto la usan en un autolavado y funciona perfectamente exigiéndole buen lapso de trabajo",
+      "useful": 98
+    },
+    {
+      "stars": 5,
+      "date": "05 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_890033-MLA103015097311_122025-O.webp"
+      ],
+      "text": "Muy silenciosa y con buena suction en solids y liquids. La recomiendo",
+      "useful": 76
+    },
+    {
+      "stars": 5,
+      "date": "19 mayo 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_888249-MLA114159230543_072026-O.webp"
+      ],
+      "text": "Lo recomiendo",
+      "useful": 54
+    },
+    {
+      "stars": 5,
+      "date": "02 abril 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_905017-MLA100608199681_122025-O.webp"
+      ],
+      "text": "Encantada",
+      "useful": 31
+    }
+  ],
+  "xiaomi-redmi-note-14-pro-plus-5g-12gb-256gb-azul": [
+    {
+      "stars": 5,
+      "date": "12 julio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_958985-MLA92223937279_092025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_726423-MLA92223847587_092025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_709670-MLA92223609681_092025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_679525-MLA91822276068_092025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_776711-MLA92223758475_092025-O.webp"
+      ],
+      "text": "Es una chulada! su pantalla, los colores, el tamaño de la pantalla es perfecto. Quedé enamorada de este móvil!! si es liberado, tiene nfc y en 5g va que vuela. Para mí uso personal está excelente. Los anuncios se pueden desactivar al igual que la app que instala otras apps automáticamente, sin códigos raros ni uso de pc o movimientos riesgosos, es sencillo. Respecto a la cámara, es buena para lo que sirve, si quieres fotos profesionales mejor cómprate una cámara profesional. El sonido igual me encantó. En fin yo sí recomiendo este equipo",
+      "useful": 142
+    },
+    {
+      "stars": 5,
+      "date": "28 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_865076-MLA89670653351_082025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_738496-MLA89304304282_082025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_832822-MLA89670653353_082025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_675233-MLA89304314100_082025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_677395-MLA89670840901_082025-O.webp"
+      ],
+      "text": "Pues me acaba de llegar semira muy bonito y cuenta con su cargador voy a esperar a usarlo en lo duradero el tiempo lo dirá está en las caracteristicas que te piden opinión esa no debería de estár pero exelente producto",
+      "useful": 98
+    },
+    {
+      "stars": 5,
+      "date": "05 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_651906-MLA93971750563_102025-O.webp"
+      ],
+      "text": "Excelente celu. Pros: la camara es increíble, es rápido, carga al 100% en menos de una hora, tiene buena calidad de imagen y velocidad de descarga para los juegos, el brillo está bien ajustado tanto para ael. Que gusta con mucho iluminacion, como par aq lo usa casi sin brillo; además viene con modo oscuro, tiene nfc, tiene buen sonido, viene con atajos de : nfc, captura y filmación de pantalla, billeteras virtuales, bluetooth, modo avión, y te deja personalizar todos los atajos. La linterna tiene la opción de apagado con la tecla de desbloqueo. Contras: viene con muchas apps de fabrica, pero se pueden borrar. A veces si lo usas mucho tiende a emanar calor, como todo celu. Pd es un celu q recomiendo mucho.",
+      "useful": 76
+    },
+    {
+      "stars": 5,
+      "date": "19 mayo 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_984890-MLA87008396303_062025-O.webp"
+      ],
+      "text": "Excelente celular. Ya lo estoy usando, increíble la carga rápida, 10 minutos y se completa de 1% a 100%, la velocidad del sistema es óptima y las fotos que saca me parecen acordes a su precio. Tuve 3 años un note10 pro, este aparato es la evolución, me dejó súper conforme en todo sentido. Tiene un zoom muy bueno y el modo noche es espectacular",
+      "useful": 54
+    },
+    {
+      "stars": 5,
+      "date": "02 abril 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_772829-MLA84130112729_042025-O.webp"
+      ],
+      "text": "Exactamente lo que se ofrece, viene con cargador normal para méxico. Muy bien producto, todo en orden",
+      "useful": 31
     }
   ],
   "refrigerador-whirlpool-9-pies": [
@@ -655,43 +839,50 @@ export const lojaReviews: Record<string, LojaReview[]> = {
       "useful": 15
     }
   ],
-  "fritadeira-air-fryer-oven-mondial-2-em-1": [
+  "freidora-de-aire-flex-2-zonas-11-litros-ckstaf11mcddf-oster": [
     {
       "stars": 5,
-      "date": "21 septiembre 2023",
+      "date": "12 julio 2026",
       "images": [
-        "loja/images/reviews/ref/FritadeiraEl_C3_A9trica_f6.webp",
-        "loja/images/reviews/ref/FritadeiraEl_C3_A9trica_f7.webp"
+        "https://http2.mlstatic.com/D_NQ_NP_2X_994431-MLA112957025055_062026-O.webp"
       ],
-      "text": "Muito boa e bem grande supero minhas expectativas ??",
-      "useful": 92
+      "text": "Diseño: es grande, incluye todo lo que dice en la publicacion. Limpieza: después de cada uso. Antes de darle su primer uso tienes que poner la funcionar pero si nada, es una excelente compra, si quieres tener una alimentación buena, me gusta que deja las cosas crujientes y bien cocidas",
+      "useful": 142
     },
     {
       "stars": 5,
-      "date": "23 enero 2023",
-      "images": [],
-      "text": "Estou amando uso quase todos os dias, estava precisando muito. Uma das melhores coisas que já comprei.",
-      "useful": 179
+      "date": "28 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_919503-MLA108383352200_032026-O.webp"
+      ],
+      "text": "Cocción: rapidez, uniformidad. Limpieza: fácil de limpiar. Excelente funcionamiento, su doble canasta es una maravilla, puedo cocinar dos alimentos diferentes a la vez",
+      "useful": 98
     },
     {
       "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Melhor compra que já fiz, vale cada centavo.",
-      "useful": 28
+      "date": "05 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_847014-MLA108444248119_032026-O.webp"
+      ],
+      "text": "Cocción: bastante buena. Capacidad: amplia. Altamente recomendable, no la hemos dejado de usar desde que llegó. Falta ver que tanto aumenta el recibo de la luz…",
+      "useful": 76
     },
     {
       "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
-      "useful": 40
+      "date": "19 mayo 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_993167-MLA109326340840_042026-O.webp"
+      ],
+      "text": "Super, no jala mucha luz como yo creía",
+      "useful": 54
     },
     {
       "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
+      "date": "02 abril 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_770982-MLA108125208237_032026-O.webp"
+      ],
+      "text": "Al cien",
       "useful": 31
     }
   ],
