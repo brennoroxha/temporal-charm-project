@@ -112,7 +112,7 @@ function CheckoutPage() {
     let cancelled = false;
     setCepLoading(true);
     setCepError("");
-    fetch(`https://viacep.com.br/ws/${d}/json/`)
+    fetch(`https://api.zippopotam.us/mx/${d}`)
       .then((r) => r.json())
       .then((j) => {
         if (cancelled) return;
