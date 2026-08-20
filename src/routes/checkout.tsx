@@ -57,13 +57,14 @@ function isValidCPF(v: string): boolean {
   return d2 === parseInt(c[10]);
 }
 function maskPhone(v: string): string {
-  const d = v.replace(/\D/g, "").slice(0, 11);
-  if (d.length <= 10) return d.replace(/(\d{2})(\d)/, "($1) $2").replace(/(\d{4})(\d)/, "$1-$2");
-  return d.replace(/(\d{2})(\d)/, "($1) $2").replace(/(\d{5})(\d)/, "$1-$2");
+  const d = v.replace(/\D/g, "").slice(0, 10);
+  if (d.length <= 2) return d;
+  if (d.length <= 6) return d.replace(/(\d{2})(\d+)/, "$1 $2");
+  return d.replace(/(\d{2})(\d{4})(\d+)/, "$1 $2 $3");
 }
 function isValidPhone(v: string): boolean {
   const d = v.replace(/\D/g, "");
-  return d.length === 10 || d.length === 11;
+  return d.length === 10;
 }
 function isValidEmail(v: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim());
@@ -449,7 +450,7 @@ function CheckoutPage() {
 
 
               <label className="co-label">Teléfono <span style={{ color: "#6b7570", fontWeight: 400 }}>(WhatsApp)</span></label>
-              <input className="co-input" placeholder="(00) 00000000" value={telefone} onChange={(e) => setTelefone(e.target.value)} onBlur={() => telefoneOk && trackFieldOnce("telefone")} type="tel" inputMode="numeric" pattern="[0-9]*" autoComplete="tel" style={{ marginBottom: telefone && !telefoneOk ? 4 : 10, borderColor: telefone && !telefoneOk ? "#d93025" : undefined }} />
+              <input className="co-input" placeholder="00 0000 0000" value={telefone} onChange={(e) => setTelefone(maskPhone(e.target.value))} onBlur={() => telefoneOk && trackFieldOnce("telefone")} type="tel" inputMode="numeric" pattern="[0-9]*" autoComplete="tel" style={{ marginBottom: telefone && !telefoneOk ? 4 : 10, borderColor: telefone && !telefoneOk ? "#d93025" : undefined }} />
               {telefone && !telefoneOk && <p className="co-err">Telefone inválido.</p>}
 
               <label className="co-label">E-mail</label>

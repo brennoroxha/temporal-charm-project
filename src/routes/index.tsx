@@ -14,7 +14,8 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-por favor, remova a campo RFC da pagina checkout
+em Teléfono (WhatsApp)
+deixe o campo, no formato de telefone do mexico
     </div>
   );
 }
