@@ -521,8 +521,8 @@ function CheckoutPage() {
                       <input id="numero" className="co-input" placeholder="123" value={numero} onChange={(e) => setNumero(e.target.value)} />
                     </div>
                     <div className="co-field">
-                      <label className="co-label" htmlFor="complemento">Complemento <span style={{ color: "#8B948F", fontWeight: 400 }}>(opcional)</span></label>
-                      <input id="complemento" className="co-input" placeholder="Apto, bloco, referência..." autoComplete="address-line2" value={complemento} onChange={(e) => setComplemento(e.target.value)} />
+                      <label className="co-label" htmlFor="complemento">Número interior / Referencias <span style={{ color: "#8B948F", fontWeight: 400 }}>(opcional)</span></label>
+                      <input id="complemento" className="co-input" placeholder="Apto, piso, entre calles..." autoComplete="address-line2" value={complemento} onChange={(e) => setComplemento(e.target.value)} />
                     </div>
                     <div className="co-field">
                       <label className="co-label" htmlFor="bairro">Bairro</label>
