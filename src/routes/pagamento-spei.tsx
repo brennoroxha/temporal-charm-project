@@ -71,6 +71,23 @@ function PagamentoSpeiPage() {
         const r = await getOrderStatus({ data: { transactionId: String(pay.transactionId) } });
         if (stopped) return;
         if (r.status === "paid" || r.status === "receipt_uploaded") {
+          // Add notification message
+          const msgContainer = document.createElement("div");
+          msgContainer.style.position = "fixed";
+          msgContainer.style.top = "20px";
+          msgContainer.style.left = "50%";
+          msgContainer.style.transform = "translateX(-50%)";
+          msgContainer.style.background = "#00a650";
+          msgContainer.style.color = "white";
+          msgContainer.style.padding = "16px 24px";
+          msgContainer.style.borderRadius = "8px";
+          msgContainer.style.boxShadow = "0 4px 12px rgba(0,0,0,0.15)";
+          msgContainer.style.zIndex = "9999";
+          msgContainer.style.fontWeight = "bold";
+          msgContainer.style.textAlign = "center";
+          msgContainer.innerHTML = "¡PAGO CONFIRMADO!<br/>Redirigiendo...";
+          document.body.appendChild(msgContainer);
+
           const value = Number(r.amount ?? pay.amount ?? 0);
           const w = window as any;
           if (typeof w.gtag === "function") {
@@ -98,6 +115,11 @@ function PagamentoSpeiPage() {
           }
           sessionStorage.setItem(firedKey, "1");
           stopped = true;
+          
+          // Redirect to a success page or store after a short delay
+          setTimeout(() => {
+            window.location.href = "/loja";
+          }, 3000);
         }
       } catch { /* ignore */ }
     };
