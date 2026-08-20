@@ -145,7 +145,7 @@ function PagamentoPage() {
   return (
     <div style={{ minHeight: "100vh", background: "#f5f5f5", fontFamily: '-apple-system,"Segoe UI",Roboto,Arial,sans-serif', color: "#333" }}>
       <style>{`
-        .pg-header{background:#efcf05;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+        .pg-header{background:#fff058;box-shadow:0 1px 2px rgba(0,0,0,.08)}
         .pg-header-inner{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
         .pg-logo img{height:33px;width:auto;display:block}
         .pg-secure{display:flex;align-items:center;gap:8px;text-transform:uppercase;font-size:13px;color:#000;text-align:right;font-weight:500}
