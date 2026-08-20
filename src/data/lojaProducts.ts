@@ -129,13 +129,7 @@ export const lojaProducts: LojaProduct[] = [
     "slug": "refrigerador-whirlpool-9-pies",
     "stock": 7,
     "voltagem": true,
-    "oldPrice": "$ 4.910,20",
-    "gallery": [
-      "https://http2.mlstatic.com/D_NQ_NP_824599-MLM74032540130_012024-O.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_967347-MLM74032646014_012024-O.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_725946-MLM74032646020_012024-O.webp",
-      "https://http2.mlstatic.com/D_NQ_NP_842359-MLM74032540134_012024-O.webp"
-    ]
+    "oldPrice": "$ 4.910,20"
   },
   {
     "id": "geladeira-brastemp-frost-free-french-door-554l",
