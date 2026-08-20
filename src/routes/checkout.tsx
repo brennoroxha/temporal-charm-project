@@ -602,7 +602,7 @@ function CheckoutPage() {
                     <div className="co-ship-sub">Transferencia electrónica inmediata 24/7</div>
                   </div>
                   <div style={{ display: "flex", gap: 4 }}>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Spei_logo.png" alt="SPEI" style={{ height: 20, objectFit: "contain" }} />
+                    <img src="https://cdn.worldvectorlogo.com/logos/spei-1.svg" alt="SPEI" style={{ height: 20, objectFit: "contain" }} />
                   </div>
                 </label>
               </div>
