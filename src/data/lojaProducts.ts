@@ -463,7 +463,7 @@ export const lojaProducts: LojaProduct[] = [
   },
   {
     "id": "guarda-roupa-casal-8-portas-preto-fosco",
-    "title": "Armario Matrimonial 8 Portas Negro Fosco",
+    "title": "Armario Matrimonial 8 Puertas Negro Mate",
     "price": "$ 382,76",
     "img": "/loja/images/external/g1.webp",
     "slug": "guarda-roupa-casal-8-portas-preto-fosco",
