@@ -49,7 +49,6 @@ export function OfferTimerBanner() {
         }}
       >
         <div style={{ fontSize: "17px", color: "#333" }}>
-          Tempo restante:{" "}
           <span style={{ fontWeight: 600 }}>
             {pad(hours)}:{pad(minutes)}:{pad(seconds)}
           </span>
