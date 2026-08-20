@@ -1,7 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 
-const XPAG_BASE = 'https://api.xpag.global/v1';
+const XPAG_BASE = 'https://api.xpag.global';
 
 const PayloadSchema = z.object({
   amount: z.number().positive(),
@@ -34,45 +34,46 @@ export const createXpagSpei = createServerFn({ method: "POST" })
     const { getServerSupabase } = await import("@/lib/supabase-server");
     const supabase = getServerSupabase();
 
-    // Intentar obtener las claves desde la base de datos o usar variables de entorno
     const { data: dbGateway } = await (supabase as any)
       .from("gateways")
       .select("*")
       .eq("name", "xpag")
       .single();
-    
-    const apiKey = (dbGateway?.secret_key || process.env.XPAG_API_KEY || "xpag_live_xxxx")?.trim();
 
-    if (!apiKey) {
-      throw new Error("Clave de API de XPag no configurada");
+    const clientId = (dbGateway?.public_key || process.env['XPAG_CLIENT_ID'] || "")?.trim();
+    const clientSecret = (dbGateway?.secret_key || process.env['XPAG_CLIENT_SECRET'] || "")?.trim();
+
+    if (!clientId || !clientSecret) {
+      throw new Error("Credenciales de XPag no configuradas (Client ID / Client Secret)");
     }
 
-    const appUrl = process.env.PUBLIC_APP_URL || 'https://temporal-charm-project.lovable.app';
+    const appUrl = process.env['PUBLIC_APP_URL'] || 'https://temporal-charm-project.lovable.app';
     const webhookUrl = `${appUrl.replace(/\/+$/, "")}/api/public/xpag-webhook`;
 
+    const externalId = `MX-${Date.now()}-${Math.floor(Math.random() * 1e6)}`;
+
     const payload = {
-      amount: data.amount,
       currency: "MXN",
-      method: "spei",
+      amount: Number(data.amount.toFixed(2)),
+      name: data.customer.name,
+      document: data.customer.rfc,
+      email: data.customer.email,
+      phone: data.customer.phone,
       description: `Pedido ${data.customer.name}`,
-      customer: {
-        name: data.customer.name,
-        email: data.customer.email,
-        phone: data.customer.phone,
-        document: data.customer.rfc,
-      },
-      redirect_url: `${appUrl}/success`,
-      notification_url: webhookUrl,
-      metadata: data.metadata || {},
+      external_id: externalId,
+      webhook_url: webhookUrl,
     };
 
-    console.log("[xpag-api] creating SPEI transaction", JSON.stringify(payload));
+    console.log("[xpag-api] creating SPEI cashin", JSON.stringify(payload));
 
-    const res = await fetch(`${XPAG_BASE}/payments`, {
+    const res = await fetch(`${XPAG_BASE}/cashin`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${apiKey}`,
+        "Accept": "application/json",
+        "X-Client-Id": clientId,
+        "X-Client-Secret": clientSecret,
+        "Authorization": `Basic ${btoa(`${clientId}:${clientSecret}`)}`,
       },
       body: JSON.stringify(payload),
     });
@@ -88,16 +89,17 @@ export const createXpagSpei = createServerFn({ method: "POST" })
       );
     }
 
-    if (!res.ok) {
+
+    if (!res.ok || json?.ok === false) {
       console.error("XPag API error", res.status, json);
-      throw new Error(json?.message || `XPag API Error ${res.status}`);
+      throw new Error(json?.error || json?.message || `XPag API Error ${res.status}`);
     }
 
 
     const tx = json.data || json;
-    const transactionId = tx.id;
+    const transactionId = tx.transaction_id || tx.request_number || tx.id;
     // SPEI suele devolver una CLABE o instrucciones
-    const speiClabe = tx.spei?.clabe || tx.payment_instructions?.clabe;
+    const speiClabe = tx.clabe || tx.spei?.clabe || tx.payment_instructions?.clabe;
 
     // Guardar el pedido en Supabase
     try {
@@ -112,7 +114,7 @@ export const createXpagSpei = createServerFn({ method: "POST" })
         status: "pending",
         items: data.items,
         shipping: data.shipping,
-        metadata: { ...payload.metadata, gateway: "xpag_spei" },
+        metadata: { ...(data.metadata || {}), external_id: externalId, bank_name: tx.bank_name, beneficiary: tx.beneficiary, reference: tx.reference, gateway: "xpag_spei" },
         qrcode: speiClabe || "", // Reutilizamos qrcode para la CLABE
         utm_source: String(tracking.utm_source || ""),
         utm_medium: String(tracking.utm_medium || ""),
@@ -126,7 +128,7 @@ export const createXpagSpei = createServerFn({ method: "POST" })
     return {
       id: transactionId,
       clabe: speiClabe,
-      instructions: tx.payment_instructions || tx.spei,
+      instructions: { bank_name: tx.bank_name, beneficiary: tx.beneficiary, reference: tx.reference },
       amount: data.amount,
     };
   });
