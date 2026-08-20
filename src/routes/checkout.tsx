@@ -10,6 +10,7 @@ import { lojaImageSrc } from "@/lib/lojaImage";
 import { trackEvent, trackFieldOnce } from "@/lib/track";
 import mlDesktopLogo from "@/assets/ml-desktop-local.webp";
 import iconeFull from "@/assets/iconefull.png.asset.json";
+import { OfferTimerBanner } from "@/components/OfferTimerBanner";
 
 
 
