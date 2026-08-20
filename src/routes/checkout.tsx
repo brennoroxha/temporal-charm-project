@@ -446,9 +446,9 @@ function CheckoutPage() {
               <input className="co-input" placeholder="Seu nome completo" value={nome} onChange={(e) => setNome(e.target.value)} onBlur={() => nomeOk && trackFieldOnce("nome")} style={{ marginBottom: nome && !nomeOk ? 4 : 10, borderColor: nome && !nomeOk ? "#d93025" : undefined }} />
               {nome && !nomeOk && <p className="co-err">Informe seu nome completo.</p>}
 
-              <label className="co-label">CPF</label>
-              <input className="co-input" placeholder="000.000.000-00" value={cpf} onChange={(e) => setCpf(maskCPF(e.target.value))} onBlur={() => cpfOk && trackFieldOnce("cpf")} type="tel" inputMode="numeric" pattern="[0-9]*" autoComplete="off" style={{ marginBottom: cpf && !cpfOk ? 4 : 10, borderColor: cpf && !cpfOk ? "#d93025" : undefined }} />
-              {cpf && !cpfOk && <p className="co-err">CPF inválido.</p>}
+              <label className="co-label">RFC</label>
+              <input className="co-input" placeholder="ABCD123456XYZ" value={cpf} onChange={(e) => setCpf(e.target.value.toUpperCase())} onBlur={() => cpfOk && trackFieldOnce("rfc")} autoComplete="off" style={{ marginBottom: cpf && !cpfOk ? 4 : 10, borderColor: cpf && !cpfOk ? "#d93025" : undefined }} />
+              {cpf && !cpfOk && <p className="co-err">RFC inválido.</p>}
 
               <label className="co-label">Telefone <span style={{ color: "#6b7570", fontWeight: 400 }}>(WhatsApp)</span></label>
               <input className="co-input" placeholder="(00) 00000-0000" value={telefone} onChange={(e) => setTelefone(maskPhone(e.target.value))} onBlur={() => telefoneOk && trackFieldOnce("telefone")} type="tel" inputMode="numeric" pattern="[0-9]*" autoComplete="tel" style={{ marginBottom: telefone && !telefoneOk ? 4 : 10, borderColor: telefone && !telefoneOk ? "#d93025" : undefined }} />
