@@ -77,7 +77,7 @@ function LojaPage() {
     <div className="loja-page">
       <style>{`
         html,body,#root{margin:0;padding:0}
-        .loja-page{background:#ededed;color:#333;min-height:100vh;font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+        .loja-page{background:#fff;color:#333;min-height:100vh;font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
         .loja-page *{box-sizing:border-box}
 
         .loja-banner{background:linear-gradient(90deg,#00a650,#3483FA);color:#fff;text-align:center;padding:10px 16px;font-weight:700;font-size:14px}
