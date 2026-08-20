@@ -458,11 +458,11 @@ function CheckoutPage() {
               <input className="co-input" placeholder="voce@email.com" type="email" value={email} onChange={(e) => setEmail(e.target.value)} onBlur={() => emailOk && trackFieldOnce("email")} style={{ marginBottom: 6, borderColor: email && !emailOk ? "#d93025" : undefined }} />
               {email && !emailOk
                 ? <p className="co-err" style={{ marginBottom: 14 }}>E-mail inválido.</p>
-                : <p style={{ margin: "0 0 14px", color: "#8B948F", fontSize: 12 }}>Enviaremos a confirmação do pedido para este e-mail.</p>}
+                : <p style={{ margin: "0 0 14px", color: "#8B948F", fontSize: 12 }}>Enviaremos la confirmación del pedido a este e-mail.</p>}
 
               <label style={{ display: "flex", alignItems: "center", gap: 8, margin: "0 0 18px", fontSize: 13, color: "#333", cursor: "pointer" }}>
                 <input type="checkbox" style={{ width: 16, height: 16, accentColor: "#146356" }} />
-                Quero receber ofertas e novidades por e-mail.
+                Quiero recibir ofertas y novedades por e-mail.
               </label>
 
               <button
