@@ -438,9 +438,9 @@ function CheckoutPage() {
             <div className="co-card-body">
               <h2 style={{ fontSize: 20, fontWeight: 700, color: "#16211D", marginBottom: 4, display: "flex", alignItems: "center", gap: 10 }}>
                 <span style={{ width: 28, height: 28, background: "#000", color: "#fff", borderRadius: 4, display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: 15, fontWeight: 700 }}>1</span>
-                Identificação
+                Identificación
               </h2>
-              <p style={{ margin: "0 0 18px", color: "#6b7570", fontSize: 14 }}>Informe seus dados para continuar a compra.</p>
+              <p style={{ margin: "0 0 18px", color: "#6b7570", fontSize: 14 }}>Ingresa tus datos para continuar la compra.</p>
 
               <label className="co-label">Nome completo</label>
               <input className="co-input" placeholder="Seu nome completo" value={nome} onChange={(e) => setNome(e.target.value)} onBlur={() => nomeOk && trackFieldOnce("nome")} style={{ marginBottom: nome && !nomeOk ? 4 : 10, borderColor: nome && !nomeOk ? "#d93025" : undefined }} />
