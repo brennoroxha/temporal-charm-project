@@ -216,7 +216,7 @@ function CheckoutPage() {
         <div style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,.55)", zIndex: 9999, display: "flex", alignItems: "center", justifyContent: "center" }}>
           <div style={{ background: "#fff", padding: "28px 32px", borderRadius: 10, textAlign: "center", maxWidth: 320, boxShadow: "0 8px 24px rgba(0,0,0,.2)" }}>
             <div style={{ width: 44, height: 44, margin: "0 auto 14px", border: "4px solid #E3EEFD", borderTopColor: "#3483FA", borderRadius: "50%", animation: "co-spin 1s linear infinite" }} />
-            <div style={{ fontSize: 15, fontWeight: 600, color: "#333" }}>Aguarde enquanto geramos seu pagamento...</div>
+            <div style={{ fontSize: 15, fontWeight: 600, color: "#333" }}>Espere mientras generamos su pago...</div>
           </div>
           <style>{`@keyframes co-spin{to{transform:rotate(360deg)}}`}</style>
         </div>
