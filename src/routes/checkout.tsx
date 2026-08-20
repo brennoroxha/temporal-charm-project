@@ -167,7 +167,7 @@ function CheckoutPage() {
 
   const nomeOk = nome.trim().length > 2;
   const emailOk = isValidEmail(email);
-  const cpfOk = isValidCPF(cpf);
+  const cpfOk = cpf.trim().length >= 10; // RFC básico validación
   const telefoneOk = isValidPhone(telefone);
   const step1Ok = nomeOk && emailOk && cpfOk && telefoneOk;
   const step2Ok = cep.replace(/\D/g, "").length === 8 && rua && numero && bairro && cidade && estado;
