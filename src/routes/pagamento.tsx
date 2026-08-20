@@ -4,6 +4,7 @@ import { Lock } from "lucide-react";
 import { trackEvent } from "@/lib/track";
 import mlDesktopLogo from "@/assets/ml-desktop-local.webp";
 import pixHand from "@/assets/pix-hand.png.asset.json";
+import { OfferTimerBanner } from "@/components/OfferTimerBanner";
 
 export const Route = createFileRoute("/pagamento")({
   head: () => ({
