@@ -14,12 +14,12 @@ const BANNER_25_ANOS = banner25Anos;
 export const Route = createFileRoute("/quiz")({
   head: () => ({
     meta: [
-      { title: "Bem-vindo" },
-      { name: "description", content: "Responda e ganhe!" },
+      { title: "Bienvenido" },
+      { name: "description", content: "¡Responde y gana!" },
       { name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" },
       { name: "theme-color", content: "#FFE600" },
-      { property: "og:title", content: "Bem-vindo" },
-      { property: "og:description", content: "Responda e ganhe!" },
+      { property: "og:title", content: "Bienvenido" },
+      { property: "og:description", content: "¡Responde y gana!" },
     ],
     links: [
       { rel: "apple-touch-icon", href: "data:," },
@@ -44,29 +44,29 @@ type Question = {
 
 const QUESTIONS: Question[] = [
   {
-    text: "Com que frequência você compra no Mercado Livre?",
+    text: "¿Con qué frecuencia compras en Mercado Libre?",
     image: promo1,
-    options: ["Toda semana", "Todo mês", "Poucas vezes", "Primeira vez"],
+    options: ["Cada semana", "Cada mes", "Pocas veces", "Primera vez"],
   },
   {
-    text: "Qual categoria você mais compra?",
+    text: "¿Qué categoría compras más?",
     image: promo2,
-    options: ["Eletrônicos", "Moda", "Casa", "Beleza"],
+    options: ["Electrónicos", "Moda", "Hogar", "Belleza"],
   },
   {
-    text: "Você usa o Mercado Pago?",
+    text: "¿Usas Mercado Pago?",
     image: promo3,
-    options: ["Sempre", "Às vezes", "Raramente", "Nunca"],
+    options: ["Siempre", "A veces", "Raramente", "Nunca"],
   },
   {
-    text: "Como avalia a entrega?",
+    text: "¿Cómo evalúas la entrega?",
     image: promo4,
-    options: ["Excelente", "Boa", "Regular", "Ruim"],
+    options: ["Excelente", "Buena", "Regular", "Mala"],
   },
   {
-    text: "Recomendaria a um amigo?",
+    text: "¿Lo recomendarías a un amigo?",
     image: promo5,
-    options: ["Com certeza", "Provavelmente", "Talvez", "Não"],
+    options: ["Con seguridad", "Probablemente", "Tal vez", "No"],
   },
 ];
 
