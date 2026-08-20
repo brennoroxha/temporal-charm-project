@@ -106,30 +106,18 @@ export const lojaGallery: Record<string, string[]> = {
   "iphone-15-256gb-rosa": ["/loja/images/iphone-15-256gb-rosa.webp"],
   "iphone-15-256gb-azul": ["/loja/images/iphone-15-256gb-azul.webp"],
   "ar-condicionado-split-lg-24-000-btus": [],
-  "kit-combinado-de-7-ferramentas-dewalt": ["/loja/images/extracted/KITFERRAMENTAS_1.webp", "/loja/images/extracted/KITFERRAMENTAS_2.webp", "/loja/images/extracted/KITFERRAMENTAS_3.webp", "/loja/images/extracted/KITFERRAMENTAS_4.webp", "/loja/images/extracted/KITFERRAMENTAS_9.webp", "/loja/images/extracted/KITFERRAMENTAS_10.webp", "/loja/images/extracted/KITFERRAMENTAS_11.webp", "/loja/images/extracted/KITFERRAMENTAS_12.webp"],
-  "guarda-roupa-casal-easy-slim-com-espelho": ["/loja/images/guarda-roupa-casal-easy-slim-com-espelho.webp"],
-  "mesinha-penteadeira-camarim-com-organizador": [],
-  "lavadora-de-alta-press-o-k-rcher-k2-plus": ["/loja/images/lavadora-de-alta-press-o-k-rcher-k2-plus.webp"],
-  "kit-2-c-meras-ip-icsee-wi-fi": ["/loja/images/external/FtITsk5vesbw.webp", "/loja/images/external/IQCUuIIT2fvJ.webp", "/loja/images/external/OXBLwJ7HBvBj.webp"],
   "horno-microondas-whirlpool-wm1807d-plata": [
     "https://http2.mlstatic.com/D_NQ_NP_2X_613856-MLA99466441300_112025-F.webp",
     "https://http2.mlstatic.com/D_NQ_NP_2X_804606-MLA99466490618_112025-F.webp",
     "https://http2.mlstatic.com/D_NQ_NP_2X_650351-MLA99950928131_112025-F.webp",
     "https://http2.mlstatic.com/D_NQ_NP_2X_607937-MLA99950868471_112025-F.webp"
   ],
-  "cafeteira-port-til-nescaf-c-psulas-bivolt": [],
-  "filtro-de-gua-electrolux-gelada-natural": ["/loja/images/filtro-de-gua-electrolux-gelada-natural.webp"],
-  "jogo-de-len-ol-super-king-4-pe-as-600-fios": [],
-  "rob-aspirador-w90": [],
   "sof-retr-til-reclin-vel-2-00m-king-house": ["/loja/images/sof-retr-til-reclin-vel-2-00m-king-house.webp"],
   "jbl-go-4-preta": [],
   "apple-iphone-15-256gb-azul": ["/loja/images/rJsADVtOtl6a.webp"],
   "apple-iphone-15-256gb-verde": ["/loja/images/8XDCkS5XRfWM.webp"],
   "apple-iphone-15-pro-max-256gb-tit-nio-azul": ["/loja/images/t65bxVtcAs4T.webp"],
   "apple-ipad-256gb-tit-nio-azul": ["/loja/images/GVzfHbKRyCwl.webp"],
-  "playstation-5-pro-branco-2tb": ["/loja/images/external/s2.webp", "/loja/images/external/s4.webp", "/loja/images/external/s3.webp"],
-  "pel-cia-stitch-grande": ["/loja/images/external/2.webp", "/loja/images/external/3.webp", "/loja/images/external/4.webp"],
-  "samsung-galaxy-s24-ultra-256gb": [],
   "guarda-roupa-casal-8-portas-preto-fosco": ["/loja/images/external/g2.webp", "/loja/images/external/g3.webp", "/loja/images/external/g4.webp"],
   "lavasecadora-automatica-lg-inverter-12kg-acero": [
     "https://http2.mlstatic.com/D_NQ_NP_2X_643580-MLU79010361533_092024-F.webp",
@@ -142,4 +130,76 @@ export const lojaGallery: Record<string, string[]> = {
   "jbl-go-4-preta-2": ["/loja/images/jbl-go-4-preta-2.webp"],
   "xiaomi-poco-x7-pro-512gb-12gb": ["/loja/images/external/x2.webp", "/loja/images/external/x3.webp", "/loja/images/external/x4.webp"],
   "samsung-smart-tv-55-qled-4k-2024": [],
+  "kit-combinado-dewalt-20v-7-herramientas": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_909268-CBT111647264805_052026-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_755417-CBT111646793695_052026-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_801781-CBT111647759591_052026-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_651764-CBT111647730059_052026-F.webp"
+  ],
+  "armario-doble-con-espejo-3-corredizos-3-cajones-blanco": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_731204-MLA96714274925_102025-F.webp",
+    "https://http2.mlstatic.com/frontend-assets/vpp-frontend/picture-play.svg",
+    "https://http2.mlstatic.com/D_NQ_NP_689427-MLA112248652331_052026-F.jpg",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_658377-MLU77663546045_072024-F.webp"
+  ],
+  "tocador-maquillaje-moderno-led-5-cajones-silla-espejo": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_628651-MLM110647458879_042026-F.webp",
+    "https://http2.mlstatic.com/frontend-assets/vpp-frontend/picture-play.svg",
+    "https://http2.mlstatic.com/D_NQ_NP_759816-MLA109797129638_042026-F.jpg",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_936917-MLM107512498904_032026-F.webp"
+  ],
+  "hidrolavadora-karcher-k3-car-16018320-120bar": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_943750-MLA99981602837_112025-F.webp",
+    "https://http2.mlstatic.com/frontend-assets/vpp-frontend/picture-play.svg",
+    "https://http2.mlstatic.com/D_NQ_NP_739422-MLA84055463662_052025-F.jpg",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_816574-MLA95959121016_102025-F.webp"
+  ],
+  "kit-camaras-videovigilancia-2nlf-20m-5005-blanco": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_982419-MLA107079656656_022026-F.webp",
+    "https://http2.mlstatic.com/frontend-assets/vpp-frontend/picture-play.svg",
+    "https://http2.mlstatic.com/D_NQ_NP_743719-MLA86943585588_072025-F.jpg",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_684324-MLA90936350811_082025-F.webp"
+  ],
+  "cafetera-ninja-espresso-cafe-2-en-1-cfn601": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_971681-MLA116372354729_082026-F.webp",
+    "https://http2.mlstatic.com/frontend-assets/vpp-frontend/picture-play.svg",
+    "https://http2.mlstatic.com/D_NQ_NP_649528-MLA110403214244_052026-F.jpg",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_746570-MLA116373325397_082026-F.webp"
+  ],
+  "despachador-agua-whirlpool-wk5915bd-garrafon-oculto-gris": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_726970-MLA112594313612_062026-F.webp",
+    "https://http2.mlstatic.com/frontend-assets/vpp-frontend/picture-play.svg",
+    "https://http2.mlstatic.com/D_NQ_NP_898731-MLA71785939755_092023-F.jpg",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_861121-MLA108916993456_032026-F.webp"
+  ],
+  "edredon-con-sabanas-king-size-rojo-grafito-rayas": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_747851-MLA95972392173_102025-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_854174-MLA79835198895_102024-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_894598-MLM50483437807_062022-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_815101-MLA79835140757_102024-F.webp"
+  ],
+  "robot-aspirador-xiaomi-h50-10000pa-2026-blanco": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_954651-MLA115021472432_082026-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_884086-MLA116408033561_082026-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_858270-MLA115020911394_082026-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_824921-MLA116408033585_082026-F.webp"
+  ],
+  "consola-playstation-5-pro-digital-ps5": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_910237-MLM93633883003_092025-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_895893-MLM83062885577_032025-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_755253-MLM82775042090_032025-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_876243-MLA81819505254_012025-F.webp"
+  ],
+  "amazon-echo-show-8-3era-gen-audio-espacial-negro": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_963108-MLA99964648373_112025-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_717029-MLA91650769966_092025-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_995401-MLA92050837119_092025-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_975956-MLA92050807535_092025-F.webp"
+  ],
+  "samsung-galaxy-s24-ultra-5g-256gb-amarillo-titanio": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_803699-MLA99525182340_122025-F.webp",
+    "https://http2.mlstatic.com/frontend-assets/vpp-frontend/picture-play.svg",
+    "https://http2.mlstatic.com/D_NQ_NP_629866-MLA80836059722_122024-F.jpg",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_665634-MLA99525719642_122025-F.webp"
+  ],
 };

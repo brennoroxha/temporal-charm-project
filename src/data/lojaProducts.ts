@@ -272,54 +272,54 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 10.095,10"
   },
   {
-    "id": "kit-combinado-de-7-ferramentas-dewalt",
-    "title": "Kit Combinado de 7 Herramientas DEWALT",
-    "price": "$ 274,94",
-    "img": "/loja/images/extracted/kit-combinado-de-7-ferramentas-dewalt.webp",
-    "slug": "kit-combinado-de-7-ferramentas-dewalt",
+    "id": "kit-combinado-dewalt-20v-7-herramientas",
+    "title": "Kit Combinado Dewalt De 20 V Como Máximo, 7 Herramientas Con",
+    "price": "$ 791,44",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_909268-CBT111647264805_052026-F.webp",
+    "slug": "kit-combinado-dewalt-20v-7-herramientas",
     "stock": 9,
     "voltagem": false,
-    "oldPrice": "$ 5.498,74"
+    "oldPrice": "$ 15.828,88"
   },
   {
-    "id": "guarda-roupa-casal-easy-slim-com-espelho",
-    "title": "Armario Matrimonial Easy Slim con Espejo",
-    "price": "$ 375,23",
-    "img": "/loja/images/extracted/guarda-roupa-casal-easy-slim-com-espelho.webp",
-    "slug": "guarda-roupa-casal-easy-slim-com-espelho",
+    "id": "armario-doble-con-espejo-3-corredizos-3-cajones-blanco",
+    "title": "Armario doble con espejo, 3 asientos corredizos, 3 cajones, blanco",
+    "price": "$ 621,96",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_731204-MLA96714274925_102025-F.webp",
+    "slug": "armario-doble-con-espejo-3-corredizos-3-cajones-blanco",
     "stock": 4,
     "voltagem": false,
-    "oldPrice": "$ 7.504,53"
+    "oldPrice": "$ 12.439,27"
   },
   {
-    "id": "mesinha-penteadeira-camarim-com-organizador",
-    "title": "Mesinha Tocador Camarim con Organizador",
-    "price": "$ 189,58",
-    "img": "/loja/images/mesinha-penteadeira-camarim-com-organizador.webp",
-    "slug": "mesinha-penteadeira-camarim-com-organizador",
+    "id": "tocador-maquillaje-moderno-led-5-cajones-silla-espejo",
+    "title": "Tocador Maquillaje Moderno Con Led 5 Cajones Silla Espejo",
+    "price": "$ 153,41",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_628651-MLM110647458879_042026-F.webp",
+    "slug": "tocador-maquillaje-moderno-led-5-cajones-silla-espejo",
     "stock": 3,
     "voltagem": false,
-    "oldPrice": "$ 3.791,55"
+    "oldPrice": "$ 3.068,16"
   },
   {
-    "id": "lavadora-de-alta-press-o-k-rcher-k2-plus",
-    "title": "Hidrolavadora Kärcher K2 Plus",
-    "price": "$ 291,08",
-    "img": "/loja/images/extracted/lavadora-de-alta-pressão-kärcher-k2-plus.webp",
-    "slug": "lavadora-de-alta-press-o-k-rcher-k2-plus",
+    "id": "hidrolavadora-karcher-k3-car-16018320-120bar",
+    "title": "Hidrolavadora eléctrica Kärcher Home & Garden K3 Car 16018320 amarilla/negro de 1.6kW con 120bar de presión máxima - 60Hz",
+    "price": "$ 255,69",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_943750-MLA99981602837_112025-F.webp",
+    "slug": "hidrolavadora-karcher-k3-car-16018320-120bar",
     "stock": 12,
     "voltagem": true,
-    "oldPrice": "$ 5.821,58"
+    "oldPrice": "$ 5.113,87"
   },
   {
-    "id": "kit-2-c-meras-ip-icsee-wi-fi",
-    "title": "Kit 2 Cámaras IP iCSee Wi-Fi",
-    "price": "$ 228,87",
-    "img": "/loja/images/external/n7QHo3HRLq69.webp",
-    "slug": "kit-2-c-meras-ip-icsee-wi-fi",
+    "id": "kit-camaras-videovigilancia-2nlf-20m-5005-blanco",
+    "title": "Kit De Camaras Videovigilancia 2NLF 20m 5005 Color Blanco",
+    "price": "$ 190,74",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_982419-MLA107079656656_022026-F.webp",
+    "slug": "kit-camaras-videovigilancia-2nlf-20m-5005-blanco",
     "stock": 17,
     "voltagem": false,
-    "oldPrice": "$ 4.577,37"
+    "oldPrice": "$ 3.814,72"
   },
   {
     "id": "horno-microondas-whirlpool-wm1807d-plata",
@@ -332,44 +332,44 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 3.749,82"
   },
   {
-    "id": "cafeteira-port-til-nescaf-c-psulas-bivolt",
-    "title": "Cafetera Portátil Nescafé Cápsulas Bivolt",
-    "price": "$ 287,80",
-    "img": "/loja/images/cafeteira-port-til-nescaf-c-psulas-bivolt.webp",
-    "slug": "cafeteira-port-til-nescaf-c-psulas-bivolt",
+    "id": "cafetera-ninja-espresso-cafe-2-en-1-cfn601",
+    "title": "Cafetera Ninja Espresso y Café 2 en 1 Compatible Cápsulas Nespresso Cafetera 12 Tazas Espumador Integrado Cappuccino y Latte Coloe Negro y Plateado CFN601",
+    "price": "$ 237,45",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_971681-MLA116372354729_082026-F.webp",
+    "slug": "cafetera-ninja-espresso-cafe-2-en-1-cfn601",
     "stock": 5,
     "voltagem": true,
-    "oldPrice": "$ 5.756,09"
+    "oldPrice": "$ 4.749,06"
   },
   {
-    "id": "filtro-de-gua-electrolux-gelada-natural",
-    "title": "Filtro de Agua Electrolux Fría/Natural",
-    "price": "$ 291,08",
-    "img": "/loja/images/extracted/filtro-de-água-electrolux-geladanatural.webp",
-    "slug": "filtro-de-gua-electrolux-gelada-natural",
+    "id": "despachador-agua-whirlpool-wk5915bd-garrafon-oculto-gris",
+    "title": "Despachador Agua Whirlpool Wk5915bd Garrafon Oculto Gris",
+    "price": "$ 239,94",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_726970-MLA112594313612_062026-F.webp",
+    "slug": "despachador-agua-whirlpool-wk5915bd-garrafon-oculto-gris",
     "stock": 8,
     "voltagem": false,
-    "oldPrice": "$ 5.821,58"
+    "oldPrice": "$ 4.798,87"
   },
   {
-    "id": "jogo-de-len-ol-super-king-4-pe-as-600-fios",
-    "title": "Juego de Sábanas Super King 4 Piezas 600 Hilos",
-    "price": "$ 130,64",
-    "img": "/loja/images/jogo-de-len-ol-super-king-4-pe-as-600-fios.webp",
-    "slug": "jogo-de-len-ol-super-king-4-pe-as-600-fios",
+    "id": "edredon-con-sabanas-king-size-rojo-grafito-rayas",
+    "title": "Edredón Con Sábanas King Size Rojo Dos Vistas Grafito Diseño de la tela Rayas",
+    "price": "$ 105,27",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_747851-MLA95972392173_102025-F.webp",
+    "slug": "edredon-con-sabanas-king-size-rojo-grafito-rayas",
     "stock": 7,
     "voltagem": false,
-    "oldPrice": "$ 2.612,83"
+    "oldPrice": "$ 2.105,33"
   },
   {
-    "id": "rob-aspirador-w90",
-    "title": "Robot Aspirador W90",
-    "price": "$ 309,74",
-    "img": "/loja/images/rob-aspirador-w90.webp",
-    "slug": "rob-aspirador-w90",
+    "id": "robot-aspirador-xiaomi-h50-10000pa-2026-blanco",
+    "title": "Robot aspirador Xiaomi H50 10000pa 2026 - Blanco 220",
+    "price": "$ 319,95",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_954651-MLA115021472432_082026-F.webp",
+    "slug": "robot-aspirador-xiaomi-h50-10000pa-2026-blanco",
     "stock": 15,
     "voltagem": true,
-    "oldPrice": "$ 6.194,84"
+    "oldPrice": "$ 6.399,03"
   },
   {
     "id": "sof-retr-til-reclin-vel-2-00m-king-house",
@@ -432,34 +432,34 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 7.504,53"
   },
   {
-    "id": "playstation-5-pro-branco-2tb",
-    "title": "PlayStation 5 Pro Blanco 2TB",
-    "price": "$ 354,17",
-    "img": "/loja/images/external/s1-1.webp",
-    "slug": "playstation-5-pro-branco-2tb",
+    "id": "consola-playstation-5-pro-digital-ps5",
+    "title": "..:: Consola Playstation 5 Pro ::.. Digital Ps5",
+    "price": "$ 1.149,97",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_910237-MLM93633883003_092025-F.webp",
+    "slug": "consola-playstation-5-pro-digital-ps5",
     "stock": 12,
     "voltagem": false,
-    "oldPrice": "$ 7.083,46"
+    "oldPrice": "$ 22.999,33"
   },
   {
-    "id": "pel-cia-stitch-grande",
-    "title": "Pelúcia Stitch Grande",
-    "price": "$ 259,61",
-    "img": "/loja/images/external/1-1.webp",
-    "slug": "pel-cia-stitch-grande",
+    "id": "amazon-echo-show-8-3era-gen-audio-espacial-negro",
+    "title": "Amazon Echo Show 8 3era Gen con audio espacial Negro",
+    "price": "$ 139,96",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_963108-MLA99964648373_112025-F.webp",
+    "slug": "amazon-echo-show-8-3era-gen-audio-espacial-negro",
     "stock": 13,
     "voltagem": false,
-    "oldPrice": "$ 5.192,27"
+    "oldPrice": "$ 2.799,29"
   },
   {
-    "id": "samsung-galaxy-s24-ultra-256gb",
-    "title": "Samsung Galaxy S24 Ultra 256GB",
-    "price": "$ 350,34",
-    "img": "/loja/images/samsung-galaxy-s24-ultra-256gb.webp",
-    "slug": "samsung-galaxy-s24-ultra-256gb",
+    "id": "samsung-galaxy-s24-ultra-5g-256gb-amarillo-titanio",
+    "title": "Samsung Galaxy S24 Ultra 5G Dual SIM 256 GB amarillo titanio 12 GB RAM",
+    "price": "$ 881,14",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_803699-MLA99525182340_122025-F.webp",
+    "slug": "samsung-galaxy-s24-ultra-5g-256gb-amarillo-titanio",
     "stock": 5,
     "voltagem": false,
-    "oldPrice": "$ 7.006,85"
+    "oldPrice": "$ 17.622,80"
   },
   {
     "id": "guarda-roupa-casal-8-portas-preto-fosco",

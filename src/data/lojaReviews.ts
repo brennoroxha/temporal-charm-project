@@ -1199,204 +1199,6 @@ export const lojaReviews: Record<string, LojaReview[]> = {
       "useful": 36
     }
   ],
-  "kit-combinado-de-7-ferramentas-dewalt": [
-    {
-      "stars": 5,
-      "date": "06 jun. 2024",
-      "images": [],
-      "text": "Produtos de calidad excelente, fiquei desconfiado com a calidad dos produtos da dewalt, mas superou as expectavas! Filé demais esse kit, gostei bastante e recomiendo",
-      "useful": 208
-    },
-    {
-      "stars": 5,
-      "date": "28 marzo 2024",
-      "images": [
-        "loja/images/reviews/ref/KITFERRAMENTAS_e0WYXBbelKBd.webp"
-      ],
-      "text": "Trabalho com estes equipamentos e sóo os melhores para investir, garanti meu kit e estou trabalhando até mais feliz agora!, a entrega atrasou 1 dia mas chegou certinho, top demais pessoal!",
-      "useful": 85
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
-      "useful": 13
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
-      "useful": 24
-    }
-  ],
-  "guarda-roupa-casal-easy-slim-com-espelho": [
-    {
-      "stars": 5,
-      "date": "09 diciembre 2024",
-      "images": [
-        "loja/images/reviews/ref/guardaroupa_wsL00nqEf5Zw.webp",
-        "loja/images/reviews/ref/guardaroupa_PlP2isSgsx6a.webp"
-      ],
-      "text": "O guarda roupa é muito bonito,podem comprar sem medo. O pessoal e muito educado e antecioso com os clientes. Estao de nota 10.",
-      "useful": 166
-    },
-    {
-      "stars": 5,
-      "date": "12 diciembre 2024",
-      "images": [
-        "loja/images/reviews/ref/guardaroupa_RHHAeP0CRWCe.webp",
-        "loja/images/reviews/ref/guardaroupa_PLQufdKx0iw0.webp"
-      ],
-      "text": "Olha mercado livre té di parabéns muito lindo resistente.",
-      "useful": 134
-    },
-    {
-      "stars": 5,
-      "date": "15 diciembre 2024",
-      "images": [
-        "loja/images/reviews/ref/guardaroupa_WoSJpCKcuelA.webp"
-      ],
-      "text": "Me encantó , e muitoo lindooo , as peéas vieram todas corretas. ele é bem grande.",
-      "useful": 189
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Excelente relación calidad-precio, acabamento impecável.",
-      "useful": 37
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
-      "useful": 26
-    }
-  ],
-  "mesinha-penteadeira-camarim-com-organizador": [
-    {
-      "stars": 5,
-      "date": "05 enero 2024",
-      "images": [
-        "loja/images/reviews/ref/panteadeira_IWvxzF9MGUgq.webp",
-        "loja/images/reviews/ref/panteadeira_DKVxcYQlLzt0.webp"
-      ],
-      "text": "Minha filha amou.",
-      "useful": 57
-    },
-    {
-      "stars": 5,
-      "date": "12 diciembre 2024",
-      "images": [
-        "loja/images/reviews/ref/panteadeira_jBJsXqIwDuhM.webp"
-      ],
-      "text": "Produto bom, calidad boa, eu indico.",
-      "useful": 115
-    },
-    {
-      "stars": 5,
-      "date": "15 diciembre 2024",
-      "images": [
-        "loja/images/reviews/ref/panteadeira_4peuOXV3xLbE.webp"
-      ],
-      "text": "Achei de um tamanho muito bom, deu pra mim e pro meu namorado tranquilo. O montador demorou 1h pra montar. Vale o preço que paguei. cabe bastante coisa e o design dele é lindo.",
-      "useful": 110
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
-      "useful": 47
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Melhor compra que já fiz, vale cada centavo.",
-      "useful": 33
-    }
-  ],
-  "lavadora-de-alta-press-o-k-rcher-k2-plus": [
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [
-        "loja/images/reviews/ref/LavadoraDeAlta_kWvOCe4Y9mVV.webp"
-      ],
-      "text": "Muito bom e potente..",
-      "useful": 61
-    },
-    {
-      "stars": 5,
-      "date": "25 enero 2025",
-      "images": [
-        "loja/images/reviews/scraped/LavadoraDeAlta_1_0.webp"
-      ],
-      "text": "Fera demais, uso diariamente",
-      "useful": 127
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Excelente relación calidad-precio, acabamento impecável.",
-      "useful": 40
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Melhor compra que já fiz, vale cada centavo.",
-      "useful": 28
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
-      "useful": 50
-    }
-  ],
-  "kit-2-c-meras-ip-icsee-wi-fi": [
-    {
-      "stars": 5,
-      "date": "08 mayo 2024",
-      "images": [
-        "loja/images/reviews/ref/kitcamera_FCTbQW7gYRET.webp",
-        "loja/images/reviews/ref/kitcamera_Zi3VDFEQjdj2.webp"
-      ],
-      "text": "Muito boa a calidad dessa caméra, comprei pra seguranºa do meu comércio.",
-      "useful": 114
-    },
-    {
-      "stars": 5,
-      "date": "23 marzo 2024",
-      "images": [
-        "loja/images/reviews/ref/kitcamera_BTCfpzXtRthV.webp",
-        "loja/images/reviews/ref/kitcamera_gVyfO9bkZW9X.webp"
-      ],
-      "text": "Não tem muito a dizer, é excelente!A entrega foi antes do previsto, tudo muito seguro e tranquilo!",
-      "useful": 175
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
-      "useful": 18
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Melhor compra que já fiz, vale cada centavo.",
-      "useful": 36
-    }
-  ],
   "horno-microondas-whirlpool-wm1807d-plata": [
     {
       "stars": 5,
@@ -1445,178 +1247,6 @@ export const lojaReviews: Record<string, LojaReview[]> = {
       ],
       "text": "Me cumple con mis nesecidades trabaja muy bien y calienta perfecto quedé muy satisfecho gracias.",
       "useful": 58
-    }
-  ],
-  "cafeteira-port-til-nescaf-c-psulas-bivolt": [
-    {
-      "stars": 5,
-      "date": "09 diciembre 2024",
-      "images": [
-        "loja/images/reviews/ref/cafeteiracafe_5UeAW9cj1cow.webp",
-        "loja/images/reviews/ref/cafeteiracafe_LMQOaco35nYU.webp"
-      ],
-      "text": "Méquina bonita, leve e compacta, além de fazer um excelente café. Eu acabei optando pela dolci gusto por ter a opção de obter um adaptador e utilizar cépsulas das 3 coraéées. Tudo perfeito, compren sin miedo..",
-      "useful": 68
-    },
-    {
-      "stars": 5,
-      "date": "12 diciembre 2024",
-      "images": [
-        "loja/images/reviews/ref/cafeteiracafe_PHwfxb3vaZHM.webp",
-        "loja/images/reviews/ref/cafeteiracafe_gW0IUaWMobCF.webp"
-      ],
-      "text": "Simplesmente perfeita. O café sai muito rápido e bem quentinho. Indico demais!!! produto de excelente calidad. Podem comprar sem medo.",
-      "useful": 213
-    },
-    {
-      "stars": 5,
-      "date": "15 diciembre 2024",
-      "images": [
-        "loja/images/reviews/ref/cafeteiracafe_W6kePvJCm64D.webp"
-      ],
-      "text": "Me encantó a minha méquina ela é muito linda e faiz o café quente e também faiz gelado sem palavras melhor investimento que eu fiz.",
-      "useful": 59
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
-      "useful": 32
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
-      "useful": 25
-    }
-  ],
-  "filtro-de-gua-electrolux-gelada-natural": [
-    {
-      "stars": 5,
-      "date": "10 julio 2024",
-      "images": [
-        "loja/images/reviews/ref/FiltroDeElectrolux_fq4Yxs8Y3mB5.webp",
-        "loja/images/reviews/ref/FiltroDeElectrolux_gaw5MzqM19Dq.webp",
-        "loja/images/reviews/ref/FiltroDeElectrolux_6zCAlUvWRX1f.webp",
-        "loja/images/reviews/ref/FiltroDeElectrolux_TegoCN3kvYAr.webp"
-      ],
-      "text": "Muito bonito e bom.",
-      "useful": 59
-    },
-    {
-      "stars": 5,
-      "date": "12 julio 2024",
-      "images": [
-        "loja/images/reviews/ref/FiltroDeElectrolux_lMfeWq4VwZkr.webp",
-        "loja/images/reviews/ref/FiltroDeElectrolux_V7Z5DetZvSnY.webp",
-        "loja/images/reviews/ref/FiltroDeElectrolux_evYGGb7KLPJJ.webp",
-        "loja/images/reviews/ref/FiltroDeElectrolux_x89t0gFdq8Mt.webp"
-      ],
-      "text": "Excelente gela bem demais",
-      "useful": 102
-    },
-    {
-      "stars": 5,
-      "date": "15 julio 2024",
-      "images": [],
-      "text": "Até agora, não tenho nada a reclamarzo",
-      "useful": 151
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Excelente relación calidad-precio, acabamento impecável.",
-      "useful": 10
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
-      "useful": 45
-    }
-  ],
-  "jogo-de-len-ol-super-king-4-pe-as-600-fios": [
-    {
-      "stars": 5,
-      "date": "09 diciembre 2024",
-      "images": [],
-      "text": "Eu amei ?? super indico??.",
-      "useful": 66
-    },
-    {
-      "stars": 5,
-      "date": "12 diciembre 2024",
-      "images": [],
-      "text": "Eu super recomiendo. Ela é maravilhosa. estou apaixonada..",
-      "useful": 134
-    },
-    {
-      "stars": 5,
-      "date": "15 diciembre 2024",
-      "images": [],
-      "text": "Maravilhosa, e o preço excelente. Apenas comprem !!.",
-      "useful": 166
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Excelente relación calidad-precio, acabamento impecável.",
-      "useful": 30
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
-      "useful": 12
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Melhor compra que já fiz, vale cada centavo.",
-      "useful": 15
-    }
-  ],
-  "rob-aspirador-w90": [
-    {
-      "stars": 5,
-      "date": "09 diciembre 2024",
-      "images": [
-        "loja/images/reviews/ref/robo_BTmbPV9Tm6ON.webp"
-      ],
-      "text": "Pelo preço, se comparado a outros produtos, vale a pena. Não é barulhento, da pra deixar trabalhando à noite tranquilamente. Limpa muito bem, uso todo dia e todo dia sai um pé que a gente não consegue tirar com a vassoura, levando em consideração pra quem tem rinite, é excelente. No mais, faz um bom serviço e te poupa um bom tempo.",
-      "useful": 193
-    },
-    {
-      "stars": 5,
-      "date": "12 diciembre 2024",
-      "images": [
-        "loja/images/reviews/ref/robo_HnQdi4tL14Oe.webp"
-      ],
-      "text": "Simplismente apaixonada pelo meu robô, tenho 2 gatos e ele limpa tudo, liga ele e deixe ele fazer o serviço. Perfeito ??????.",
-      "useful": 202
-    },
-    {
-      "stars": 5,
-      "date": "15 diciembre 2024",
-      "images": [
-        "loja/images/reviews/ref/robo_NUO8J5BgybPH.webp"
-      ],
-      "text": "Eu achei ótimo, ele desvia das cadeiras, aspira meu tapete, embaixo dos móveis, silencioso, prático e funcional, deixo 30 minutos em cada ambiente, recolhe muita poeira, me surpreendeu, casa muito mais limpa, vale a pena, excelente custo benefício. Aprovado!.",
-      "useful": 193
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Melhor compra que já fiz, vale cada centavo.",
-      "useful": 49
     }
   ],
   "sof-retr-til-reclin-vel-2-00m-king-house": [
@@ -1765,75 +1395,6 @@ export const lojaReviews: Record<string, LojaReview[]> = {
       "useful": 37
     }
   ],
-  "playstation-5-pro-branco-2tb": [
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Simplesmente incrível! O PS5 Pro é outro nível de performance. A entrega foi super rápida e chegou tudo muito bem embalado. Recomendo demais!",
-      "useful": 142
-    },
-    {
-      "stars": 5,
-      "date": "12 enero 2025",
-      "images": [],
-      "text": "Melhor console que já tive. Os gráficos no Pro são absurdos e o carregamento é instantâneo. Valeu cada centavo na promoção!",
-      "useful": 89
-    },
-    {
-      "stars": 5,
-      "date": "15 enero 2025",
-      "images": [],
-      "text": "Produto 100% original e lacrado. Chegou antes do prazo. O controle DualSense é uma experiência à parte. Muito satisfeito com a compra.",
-      "useful": 215
-    },
-    {
-      "stars": 5,
-      "date": "18 enero 2025",
-      "images": [],
-      "text": "Fiquei com receio pelo valor, mas o console é maravilhoso. Silencioso e muito potente. A loja foi nota 10 no suporte.",
-      "useful": 67
-    }
-  ],
-  "pel-cia-stitch-grande": [
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
-      "useful": 40
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
-      "useful": 27
-    }
-  ],
-  "samsung-galaxy-s24-ultra-256gb": [
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
-      "useful": 10
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
-      "useful": 18
-    },
-    {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
-      "useful": 23
-    }
-  ],
   "guarda-roupa-casal-8-portas-preto-fosco": [
     {
       "stars": 5,
@@ -1977,4 +1538,479 @@ export const lojaReviews: Record<string, LojaReview[]> = {
       "useful": 44
     }
   ]
+  "armario-doble-con-espejo-3-corredizos-3-cajones-blanco": [
+    {
+      "stars": 5,
+      "date": "14 agosto 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_692617-MLA115092921724_082026-O.webp"
+      ],
+      "text": "Todavía no lo pude armar por falta de tiempo por lo que vi parece estar todo en buenas condiciones",
+      "useful": 87
+    },
+    {
+      "stars": 5,
+      "date": "26 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_924666-MLA113932496343_062026-O.webp"
+      ],
+      "text": "Muy lindo estéticamente. Pero muy pocos estantes",
+      "useful": 64
+    },
+    {
+      "stars": 5,
+      "date": "18 mayo 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_685134-MLA112256192507_052026-O.webp"
+      ],
+      "text": "Hermoso mi hija quedo re feliz",
+      "useful": 41
+    },
+    {
+      "stars": 5,
+      "date": "30 abril 2026",
+      "images": [],
+      "text": "Hermoso facil de armar",
+      "useful": 28
+    }
+  ],
+  "hidrolavadora-karcher-k3-car-16018320-120bar": [
+    {
+      "stars": 5,
+      "date": "10 agosto 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_973870-MLA72166639261_102023-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_865602-MLA72106516564_102023-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_906465-MLA72166541737_102023-O.webp"
+      ],
+      "text": "La hidrolavadora funciona a la perfección, los materiales se sienten algo sencillos para ser de la marca karcher, es muy para lavar el carro, paredes o pisos solo que siento que le falta un poco más de potencia, tenia una de la misma capacidad de presión y se sentía más potente",
+      "useful": 156
+    },
+    {
+      "stars": 5,
+      "date": "22 julio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_884511-MLA83952219508_042025-O.webp"
+      ],
+      "text": "Buen producto, cumple con su trabajo, es más caro que otros con más psi y también de buena marca, pero en general no tengo quejas, lo usamos para limpiar una casa de dos pisos por unas 5 horas y funcionó bien",
+      "useful": 102
+    },
+    {
+      "stars": 5,
+      "date": "09 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_644214-MLA110136832786_042026-O.webp"
+      ],
+      "text": "Me parece bueno el producto, pero la grapa para manguera de alta presión que se fija en la pistola se me rompió cuando quise desmontar la manguera de la pistola",
+      "useful": 73
+    },
+    {
+      "stars": 5,
+      "date": "15 mayo 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_751911-MLA98539304344_112025-O.webp"
+      ],
+      "text": "Ya casi un año de uso, lo recomiendo",
+      "useful": 48
+    },
+    {
+      "stars": 5,
+      "date": "27 abril 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_653193-MLA112933699723_062026-O.webp"
+      ],
+      "text": "Es buen equipo para limpieza",
+      "useful": 31
+    }
+  ],
+  "kit-camaras-videovigilancia-2nlf-20m-5005-blanco": [
+    {
+      "stars": 5,
+      "date": "12 agosto 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_695628-MLA111294843838_052026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_851356-MLA111294843846_052026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_700850-MLA111294400842_052026-O.webp"
+      ],
+      "text": "Funciones: disco duro malo. Imagen: equipó exelente, solo el disco venía malo. Les mandé mensajes para ver solución y nada",
+      "useful": 64
+    },
+    {
+      "stars": 5,
+      "date": "25 julio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_701198-MLA77420070938_072024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_960739-MLA77663546375_072024-O.webp"
+      ],
+      "text": "Me gustó mucho el producto, fácil de conectar y configurar. Las cámaras son de buena calidad y viene con todo lo necesario para realizar la conexión. El software para el celular funciona bien y me sorprendió que puedo ver las cámaras estando fuera de la casa. Tuve algunas dudas y me las resolvieron muy rápido por medio de mensajes. La conexión con las cámaras es muy estable y la grabación y detección de personas funciona muy bien",
+      "useful": 138
+    },
+    {
+      "stars": 5,
+      "date": "11 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_765231-MLA76519756625_052024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_864828-MLA76328007614_052024-O.webp"
+      ],
+      "text": "Lo instale yo mismo, y no se requiere hacer mucho para verlo funcionando. Excelente calidad de imagen, se distingue la cara. Placas etc. El audio es bueno, pero en lugares muy ruidosos se distorsiona. Recomendado",
+      "useful": 95
+    },
+    {
+      "stars": 5,
+      "date": "20 mayo 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_823237-MLA77799447269_072024-O.webp"
+      ],
+      "text": "El producto es extremadamente bueno, la calidad es muy superior a otras marcas que e probado, la conexión es facil y la instalación también, lo recomiendo al 100% volveré a comprar nuevamente",
+      "useful": 57
+    },
+    {
+      "stars": 5,
+      "date": "06 abril 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_689009-MLA80339243032_112024-O.webp"
+      ],
+      "text": "Me gustó mucho el producto por precio y funcionalidad, ya que en otras márcas las capacidades de este equipo habria sido el doble o triple el costo. Excelente marca gracias",
+      "useful": 39
+    }
+  ],
+  "cafetera-ninja-espresso-cafe-2-en-1-cfn601": [
+    {
+      "stars": 5,
+      "date": "15 agosto 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_838153-MLA111480260630_052026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_808435-MLA111479741900_052026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_626727-MLA111479857168_052026-O.webp"
+      ],
+      "text": "Me gusto mucho la cafetera, se ve muy elegante y manejarla es muy sencilla; el único detalle es que trae un cable de alimentación a la corriente eléctrica muy corta y en el manual dice que es por seguridad para evitar enredos pero también dice que no se debe izar extensiones (obvio que en algunos caso como el mio se tiene que izar una extensión)",
+      "useful": 121
+    },
+    {
+      "stars": 5,
+      "date": "29 julio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_677393-MLA111135947658_052026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_981508-MLA112132486673_052026-O.webp"
+      ],
+      "text": "Compré esta cafetera ninja para poder comenzar con mi emprendimiento junto a otra máquina de ninja y todo al 100% funcional y recomendable muy buena máquina y muy fácil de usar el único detalle es que usa cápsulas de nesspresso y son difíciles y conseguir filtros reizables también",
+      "useful": 88
+    },
+    {
+      "stars": 5,
+      "date": "13 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_880954-MLA88176191934_072025-O.webp"
+      ],
+      "text": "Sí pudiera darle más estrellas se las daba. Excelente cafetera, la mejor compra que he hecho este año por mucho",
+      "useful": 66
+    },
+    {
+      "stars": 5,
+      "date": "21 mayo 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_753080-MLA97935249852_112025-O.webp"
+      ],
+      "text": "Excelente producto",
+      "useful": 34
+    }
+  ],
+  "despachador-agua-whirlpool-wk5915bd-garrafon-oculto-gris": [
+    {
+      "stars": 5,
+      "date": "09 agosto 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_927226-MLA76129449389_052024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_751409-MLA75952427384_052024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_603672-MLA76129184391_052024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_965569-MLA76129675815_052024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_869353-MLA76129184393_052024-O.webp"
+      ],
+      "text": "Cabe muy bien el garrafón de 20 litros, muy buena calidad",
+      "useful": 147
+    },
+    {
+      "stars": 5,
+      "date": "24 julio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_693951-MLA77151066478_072024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_723249-MLA77363592477_072024-O.webp"
+      ],
+      "text": "Excelente dispensador de agua se ve muy elegante por sus materiales de muy buena calidad y su pantalla digital y su luz les azul es muy bueno funciona excelente, en la parte de atrás trae dos apagadores por si no requieren una u otra se pueden apagar o prender tanto fría como caliente y eso esta excelente y la caliente si sale muy caliente y fría si esta fría y el botn del medio sale fresca buena marca estoy contento muy buena compra",
+      "useful": 109
+    },
+    {
+      "stars": 5,
+      "date": "16 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_927812-MLA76422922648_052024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_768757-MLA76618024245_052024-O.webp"
+      ],
+      "text": "Es muy práctico, no tienes que cargar el garrafón ,tiene 3 despachadores, enfría 2l de agua ,5lt para caliente y agua al tiempo , enfría y calienta muy rápido , te muéstra la temperatura la que está el agua , y tiene interruptores para apagar el modo de agua caliente que en mi caso no lo ocupo",
+      "useful": 84
+    },
+    {
+      "stars": 5,
+      "date": "28 mayo 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_727431-MLA76113873958_052024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_984193-MLA76298742335_052024-O.webp"
+      ],
+      "text": "Muy buen producto calentaba y enfriaba perfecto pero tuve que devolverlo porque se le salía el agua sin control, seguramente una manguera floja o algo así que yo no podía arreglar",
+      "useful": 52
+    },
+    {
+      "stars": 5,
+      "date": "07 abril 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_833232-MLA72619202149_112023-O.webp"
+      ],
+      "text": "Estoy encantada es más de lo que esperaba, por las mañanas me hago un café agua super caliente, la fría super bien, 100% recomendado!",
+      "useful": 37
+    }
+  ],
+  "edredon-con-sabanas-king-size-rojo-grafito-rayas": [
+    {
+      "stars": 5,
+      "date": "11 agosto 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_968974-MLA84012228122_052025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_824920-MLA84012081538_052025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_726435-MLA84012228118_052025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_710067-MLA84012150090_052025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_689539-MLA84012081532_052025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_780153-MLA84012081534_052025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_843354-MLA84012258000_052025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_678514-MLA84012081524_052025-O.webp"
+      ],
+      "text": "Bueno. En precio y calidad, solo la descripción dice que la composición es algodón y poliéster ,y en realidad es puro poliéster",
+      "useful": 96
+    },
+    {
+      "stars": 5,
+      "date": "23 julio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_615105-MLA93313755485_092025-O.webp"
+      ],
+      "text": "Buen producto, la calidad es buena solo trae algunos hilos sueltos pero nada de otro mundo",
+      "useful": 71
+    },
+    {
+      "stars": 5,
+      "date": "14 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_840368-MLA106325387687_012026-O.webp"
+      ],
+      "text": "Hermoso! es muy pachoncito y calientito de muy buena calidad",
+      "useful": 58
+    },
+    {
+      "stars": 5,
+      "date": "29 mayo 2026",
+      "images": [],
+      "text": "Llevo dos años con el y sigue luciendo espectacular",
+      "useful": 33
+    },
+    {
+      "stars": 5,
+      "date": "12 abril 2026",
+      "images": [],
+      "text": "Hermosa colcha",
+      "useful": 21
+    }
+  ],
+  "robot-aspirador-xiaomi-h50-10000pa-2026-blanco": [
+    {
+      "stars": 5,
+      "date": "16 agosto 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_996706-MLA112671346476_062026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_951461-MLA112670943078_062026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_828400-MLA112671032174_062026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_917607-MLA113855858021_062026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_862379-MLA112671026642_062026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_873475-MLA112671227722_062026-O.webp"
+      ],
+      "text": "Producto excelente Ayer fue la prueba de uso Y es muy bueno, la aspiradora funciona muy bien Pasa la mopa muy bien Punto hiper positivo, aspira y luego pasa la mopa Se puede ver todo el mapa del apartamento con facilidad Producto excelente",
+      "useful": 163
+    },
+    {
+      "stars": 5,
+      "date": "30 julio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_806363-MLA114487231849_072026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_987676-MLA114487112435_072026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_629362-MLA114487106763_072026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_734750-MLA114487076823_072026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_744680-MLA114487106765_072026-O.webp"
+      ],
+      "text": "Ahora es difícil vivir sin este robot. Merece todas las estrellas del cielo. Llegó mucho antes de lo previsto. Esto es un ejemplo de compromiso. Estos detalles marcan la diferencia. Felicitaciones. En cuanto al producto, me ha sorprendido en cada momento. Pensé que sería difícil de configurar y finalmente lo logré, todo está perfecto. Cambié el idioma, ya lo emparejé con Alexa. Vale cada centavo invertido",
+      "useful": 118
+    },
+    {
+      "stars": 5,
+      "date": "17 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_873371-MLA111086302350_052026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_920117-MLA112072899611_052026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_991539-MLA111086477206_052026-O.webp"
+      ],
+      "text": "Excelente producto y excelente vendedor. Envío a tiempo, el producto cumple con lo prometido y ayuda en el mantenimiento de la limpieza de la casa, con bajo nivel de ruido. Nota: el enchufe es modelo americano, es importante comprar un adaptador para conectarlo",
+      "useful": 92
+    },
+    {
+      "stars": 5,
+      "date": "31 mayo 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_820964-MLA110803043214_052026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_918178-MLA111764325643_052026-O.webp"
+      ],
+      "text": "Excelente producto, con una relación calidad-precio muy adecuada… aunque el precio es más alto, es un robot que se maneja prácticamente solo, ¡valió mucho la pena la inversión adicional!",
+      "useful": 67
+    },
+    {
+      "stars": 5,
+      "date": "13 abril 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_944412-MLA111571665510_062026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_792842-MLA112637036923_062026-O.webp"
+      ],
+      "text": "¡La mejor inversión de mi vida!",
+      "useful": 45
+    }
+  ],
+  "consola-playstation-5-pro-digital-ps5": [
+    {
+      "stars": 5,
+      "date": "08 agosto 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_943427-MLA108761964207_032026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_606933-MLA108761964205_032026-O.webp"
+      ],
+      "text": "Chulada",
+      "useful": 132
+    },
+    {
+      "stars": 5,
+      "date": "21 julio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_851469-MLA109919723307_042026-O.webp"
+      ],
+      "text": "Muy bonito y hermoso ps5 pro muy agradable y recomendable",
+      "useful": 97
+    },
+    {
+      "stars": 5,
+      "date": "18 junio 2026",
+      "images": [],
+      "text": "Muy buen producto, me vino en muy buen estado",
+      "useful": 61
+    },
+    {
+      "stars": 5,
+      "date": "02 mayo 2026",
+      "images": [],
+      "text": "10/10 potencia y elegancia",
+      "useful": 43
+    }
+  ],
+  "amazon-echo-show-8-3era-gen-audio-espacial-negro": [
+    {
+      "stars": 5,
+      "date": "13 agosto 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_918598-MLA103361909895_012026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_844131-MLA103361701929_012026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_844008-MLA102847801382_012026-O.webp"
+      ],
+      "text": "Pros: tela más grande, bordes más finos que no dejan marca en los dedos y es elegante. Contras: la calidad de sonido es inferior a la generación anterior y el sonido es menos potente también. Ahora el peor defecto de todos: ya no se puede girar hacia los lados ni hacia arriba o abajo, ahora la Alexa es fija, a menos que compres una base giratoria vendida por separado",
+      "useful": 104
+    },
+    {
+      "stars": 5,
+      "date": "27 julio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_735010-MLA100109971484_122025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_931386-MLA100110069258_122025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_667456-MLA100110148070_122025-O.webp"
+      ],
+      "text": "Maravilloso el producto. ¡Lo recomiendo!",
+      "useful": 79
+    },
+    {
+      "stars": 5,
+      "date": "19 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_837937-MLA103838869676_012026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_679459-MLA104371796833_012026-O.webp"
+      ],
+      "text": "Me gustó mucho, la pantalla tiene un tamaño bueno y el sonido también, no gira",
+      "useful": 56
+    },
+    {
+      "stars": 5,
+      "date": "03 mayo 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_794497-MLA99269563534_112025-O.webp"
+      ],
+      "text": "Estoy enamorada, hermosa",
+      "useful": 38
+    }
+  ],
+  "samsung-galaxy-s24-ultra-5g-256gb-amarillo-titanio": [
+    {
+      "stars": 5,
+      "date": "17 agosto 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_884011-MLA78597785936_082024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_979325-MLA78597354152_082024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_872626-MLA78597785938_082024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_657348-MLA78831589567_082024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_877441-MLA78831836831_082024-O.webp"
+      ],
+      "text": "Ordené este móvil y después de un día de uso entero les digo que es de gran calidad en cámara, trae un zoom genial, capturé unas fotos a bastante lejanía y se ve muy clara la imágen. La batería dura 1 día y medio viendo y editando videos, en cuanto a la red funciona bastante bien en wifi y datos red 5g. Buen comerciante, lo recomiendo ampliamente",
+      "useful": 174
+    },
+    {
+      "stars": 5,
+      "date": "01 agosto 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_678227-MLA74999470408_032024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_619756-MLA75140797705_032024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_881894-MLA74999470406_032024-O.webp"
+      ],
+      "text": "El mejor teléfono inteligente que he comprado. Increíble, estoy encantada con este dispositivo. Me encantó el diseño, el acabado de titanio en los bordes, la parte trasera de vidrio, las cámaras, el procesador y la batería. En fin, ¡es un modelo de gama alta sin defectos! Simplemente me encantó",
+      "useful": 128
+    },
+    {
+      "stars": 5,
+      "date": "15 julio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_750643-MLA83163239788_042025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_928442-MLA83163239790_042025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_773166-MLA83163239786_042025-O.webp"
+      ],
+      "text": "La cámara es genial, estas son fotos que he tomado. Mi esposa tiene un iphone 15 pro max y se lo lleva de calle en cuanto a la cámara y video",
+      "useful": 91
+    },
+    {
+      "stars": 5,
+      "date": "20 junio 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_678217-MLA74470825583_022024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_759637-MLA74352405462_022024-O.webp"
+      ],
+      "text": "Basado en mi experiencia, en el primer día de uso, hasta ahora cumple perfectamente con las expectativas. Muy satisfecho",
+      "useful": 62
+    },
+    {
+      "stars": 5,
+      "date": "04 mayo 2026",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_781294-MLA74557619899_022024-O.webp"
+      ],
+      "text": "El mejor celular del mundo. Vengo del S20, S22 Ultra. Ya pasé al S24 Ultra. Es inexplicable... para quienes tienen las condiciones, es la mejor compra",
+      "useful": 47
+    }
+  ],
 };
