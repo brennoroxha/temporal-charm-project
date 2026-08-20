@@ -30,7 +30,7 @@ type Order = {
   created_at: string;
 };
 
-const mxn = (v: number) => (v / 100).toLocaleString("es-MX", { style: "currency", currency: "MXN" });
+const mxn = (v: number) => "$ " + (v / 100).toLocaleString("es-MX", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const STATUS = ["pending", "receipt_uploaded", "paid", "rejected", "canceled"];
 
 function AdminPage() {
