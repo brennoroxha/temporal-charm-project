@@ -627,7 +627,7 @@ function CheckoutPage() {
 
       <footer className="ml-footer">
         <p className="ml-footer-copy">© 1999-2026. Mercado Brasil Ltda.</p>
-        <p className="ml-footer-legal">CNPJ n.º 03.007.771/0001-41 / Av. das Nações Unidas, nº 3.003, Bonfim, Osasco/SP - CEP 06233-903 - empresa do grupo Mercado Brasil.</p>
+        <p className="ml-footer-legal">RFC n.º MER-990713-P88 / Av. Ejército Nacional 155, Ciudad de México - empresa del grupo Mercado Libre.</p>
       </footer>
 
     </div>
