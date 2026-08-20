@@ -34,18 +34,18 @@ export const Route = createFileRoute("/produto/$slug")({
   component: ProdutoPage,
   errorComponent: ({ error }) => (
     <div style={{ padding: 40, fontFamily: "-apple-system, Segoe UI, Roboto, sans-serif" }}>
-      <h1>Erro ao carregar produto</h1>
+      <h1>Error al cargar producto</h1>
       <p>{error.message}</p>
-      <Link to="/loja">Voltar para a loja</Link>
+      <Link to="/loja">Volver a la tienda</Link>
     </div>
   ),
   notFoundComponent: () => {
     const { slug } = Route.useParams();
     return (
       <div style={{ padding: 40, fontFamily: "-apple-system, Segoe UI, Roboto, sans-serif" }}>
-        <h1>Produto não encontrado</h1>
+        <h1>Producto no encontrado</h1>
         <p>Slug: {slug}</p>
-        <Link to="/loja">Voltar para a loja</Link>
+        <Link to="/loja">Volver a la tienda</Link>
       </div>
     );
   },
@@ -83,10 +83,10 @@ function pickBadge(slug: string, title: string): { kind: "best" | "official" | "
   if (!brand && (t.includes("iphone") || t.includes("ipad") || t.includes("macbook") || t.includes("airpods"))) brand = "Apple";
   if (slug === "iphone17-pro") return { kind: "official", label: "LOJA OFICIAL APPLE" };
   const opts: Array<{ kind: "best" | "official" | "deal"; label: string }> = [
-    { kind: "best", label: "MAIS VENDIDO" },
-    { kind: "deal", label: "OFERTA DO DIA" },
+    { kind: "best", label: "MÁS VENDIDO" },
+    { kind: "deal", label: "OFERTA DEL DÍA" },
   ];
-  if (brand) opts.push({ kind: "official", label: `LOJA OFICIAL ${brand.toUpperCase()}` });
+  if (brand) opts.push({ kind: "official", label: `TIENDA OFICIAL ${brand.toUpperCase()}` });
   return opts[h % opts.length];
 }
 
@@ -125,7 +125,7 @@ function ProdutoPage() {
   const [voltagem, setVoltagem] = useState("Bivolt");
   const isGeladeira = product.title.toLowerCase().includes("geladeira");
   const { tomorrowLabel, nextBusinessLabel } = useMemo(() => {
-    const days = ["domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado"];
+    const days = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
     const now = new Date();
     const tomorrow = new Date(now); tomorrow.setDate(now.getDate() + 1);
     const nb = new Date(now); nb.setDate(now.getDate() + 1);
