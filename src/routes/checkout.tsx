@@ -583,7 +583,7 @@ function CheckoutPage() {
             <div className="co-card-body">
               <h2 style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <span style={{ width: 28, height: 28, background: "#000", color: "#fff", borderRadius: 4, display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: 15, fontWeight: 700 }}>3</span>
-                Escolha como pagar
+                Elige cómo pagar
               </h2>
               <div role="radiogroup" aria-label="Método de pago">
                 <label 
