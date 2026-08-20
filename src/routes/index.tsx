@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-      logo SPEI https://brandlogos.net/wp-content/uploads/2025/09/spei-logo_brandlogos.net_xlhsk.png
+      retire upload de comprovante do pagamento spei
     </div>
   );
 }
