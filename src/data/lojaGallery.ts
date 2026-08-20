@@ -12,10 +12,10 @@ export const lojaGallery: Record<string, string[]> = {
   "aspirador-de-p-e-gua-wap-gtw-10-1400w": ["/loja/images/extracted/aspirador_unique_1.webp", "/loja/images/extracted/aspirador_unique_2.webp", "/loja/images/extracted/aspirador_unique_3.webp"],
   "xiaomi-redmi-note-14-pro-5g-12gb-512gb": ["/loja/images/extracted/XIAOMI14NOTE_1.webp", "/loja/images/extracted/XIAOMI14NOTE_2.webp"],
   "refrigerador-whirlpool-9-pies": [
-    "https://http2.mlstatic.com/D_NQ_NP_824599-MLM74032540130_012024-O.webp",
-    "https://http2.mlstatic.com/D_NQ_NP_967347-MLM74032646014_012024-O.webp",
-    "https://http2.mlstatic.com/D_NQ_NP_725946-MLM74032646020_012024-O.webp",
-    "https://http2.mlstatic.com/D_NQ_NP_842359-MLM74032540134_012024-O.webp"
+    "https://http2.mlstatic.com/D_NQ_NP_2X_807816-MLA108912444686_032026-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_807109-MLU77295253206_072024-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_940940-MLU77295367570_072024-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_746177-MLU77295367578_072024-F.webp"
   ],
   "geladeira-brastemp-frost-free-french-door-554l": ["/loja/images/extracted/blastempflost_2.webp", "/loja/images/extracted/blastempflost_3.webp", "/loja/images/extracted/blastempflost_4.webp"],
   "xiaomi-poco-x5-256gb-blue": ["/loja/images/extracted/POCO5X_1.webp", "/loja/images/extracted/POCO5X_2.webp", "/loja/images/extracted/POCO5X_3.webp"],

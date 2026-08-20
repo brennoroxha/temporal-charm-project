@@ -386,23 +386,50 @@ export const lojaReviews: Record<string, LojaReview[]> = {
     {
       "stars": 5,
       "date": "15 de enero de 2024",
-      "images": ["https://http2.mlstatic.com/D_NQ_NP_2X_659852-MLM74032470768_012024-F.webp"],
-      "text": "Excelente refrigerador, enfría muy rápido y el diseño es muy elegante. El tamaño es perfecto para mi cocina pequeña.",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_973436-MLA96180420682_102025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_936315-MLA96625776691_102025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_762126-MLA96625280441_102025-O.webp"
+      ],
+      "text": "Excelente producto. Silencioso y moderno.",
       "useful": 45
     },
     {
       "stars": 5,
       "date": "02 de febrero de 2024",
-      "images": ["https://http2.mlstatic.com/D_NQ_NP_2X_754123-MLM74123456789_022024-F.webp"],
-      "text": "Muy buen espacio interior, los compartimentos son muy útiles. Llegó antes de lo esperado y sin un solo rasguño.",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_877473-MLA107890988629_032026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_893357-MLA107891605111_032026-O.webp"
+      ],
+      "text": "El refrigerador esta super bien, enfría increíble, y tiene el tamaño perfecto para mi cocina pequeña y para mi que soy sola.",
       "useful": 32
     },
     {
-      "stars": 4,
+      "stars": 5,
       "date": "20 de marzo de 2024",
-      "images": ["https://http2.mlstatic.com/D_NQ_NP_2X_841852-MLM74589632147_032024-F.webp"],
-      "text": "Funciona perfectamente y el color acero inoxidable se ve increíble. Hace un poco de ruido al arrancar pero es normal.",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_768259-MLA107602799828_032026-O.webp"
+      ],
+      "text": "Mi refrigerador es el primer de pakete. En 30años de casados feliz con el producto.",
       "useful": 28
+    },
+    {
+      "stars": 5,
+      "date": "05 de abril de 2024",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_751306-MLA105886551512_022026-O.webp"
+      ],
+      "text": "Muy bien producto.",
+      "useful": 15
+    },
+    {
+      "stars": 5,
+      "date": "10 de abril de 2024",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_624125-MLA97673820389_112025-O.webp"
+      ],
+      "text": "Excelente.",
+      "useful": 10
     }
   ],
   "geladeira-brastemp-frost-free-french-door-554l": [

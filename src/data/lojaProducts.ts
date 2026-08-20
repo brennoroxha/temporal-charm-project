@@ -129,7 +129,7 @@ export const lojaProducts: LojaProduct[] = [
     "slug": "refrigerador-whirlpool-9-pies",
     "stock": 7,
     "voltagem": true,
-    "oldPrice": "$ 12.000,00"
+    "oldPrice": "$ 12.200,24"
   },
   {
     "id": "geladeira-brastemp-frost-free-french-door-554l",
