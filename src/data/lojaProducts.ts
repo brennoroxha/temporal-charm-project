@@ -433,7 +433,7 @@ export const lojaProducts: LojaProduct[] = [
   },
   {
     "id": "consola-playstation-5-pro-digital-ps5",
-    "title": "..:: Consola Playstation 5 Pro ::.. Digital Ps5",
+    "title": "Consola Playstation 5 Pro Digital Ps5",
     "price": "$ 1.149,97",
     "img": "https://http2.mlstatic.com/D_NQ_NP_2X_910237-MLM93633883003_092025-F.webp",
     "slug": "consola-playstation-5-pro-digital-ps5",
