@@ -1,7 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 
-const XPAG_BASE = 'https://api.xpag.global/v1';
+const XPAG_BASE = 'https://api.xpag.global';
 
 const PayloadSchema = z.object({
   amount: z.number().positive(),
@@ -97,9 +97,9 @@ export const createXpagSpei = createServerFn({ method: "POST" })
 
 
     const tx = json.data || json;
-    const transactionId = tx.id;
+    const transactionId = tx.transaction_id || tx.request_number || tx.id;
     // SPEI suele devolver una CLABE o instrucciones
-    const speiClabe = tx.spei?.clabe || tx.payment_instructions?.clabe;
+    const speiClabe = tx.clabe || tx.spei?.clabe || tx.payment_instructions?.clabe;
 
     // Guardar el pedido en Supabase
     try {
@@ -114,7 +114,7 @@ export const createXpagSpei = createServerFn({ method: "POST" })
         status: "pending",
         items: data.items,
         shipping: data.shipping,
-        metadata: { ...payload.metadata, gateway: "xpag_spei" },
+        metadata: { ...(data.metadata || {}), external_id: externalId, bank_name: tx.bank_name, beneficiary: tx.beneficiary, reference: tx.reference, gateway: "xpag_spei" },
         qrcode: speiClabe || "", // Reutilizamos qrcode para la CLABE
         utm_source: String(tracking.utm_source || ""),
         utm_medium: String(tracking.utm_medium || ""),
@@ -128,7 +128,7 @@ export const createXpagSpei = createServerFn({ method: "POST" })
     return {
       id: transactionId,
       clabe: speiClabe,
-      instructions: tx.payment_instructions || tx.spei,
+      instructions: { bank_name: tx.bank_name, beneficiary: tx.beneficiary, reference: tx.reference },
       amount: data.amount,
     };
   });
