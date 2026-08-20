@@ -14,7 +14,8 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-fez a atualização ?
+remova RFC
+do checkout
     </div>
   );
 }
