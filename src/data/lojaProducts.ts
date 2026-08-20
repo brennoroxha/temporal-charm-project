@@ -162,14 +162,14 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 9.685,16"
   },
   {
-    "id": "fog-o-5-quemadores-atlas-m-naco-mesa-de-vidro",
-    "title": "Estufa 5 Bocas Atlas Mônaco Mesa de Vidro",
-    "price": "$ 327,39",
-    "img": "/loja/images/fog-o-5-quemadores-atlas-m-naco-mesa-de-vidro.webp",
-    "slug": "fog-o-5-quemadores-atlas-m-naco-mesa-de-vidro",
+    "id": "cocina-acros-afr2000g-color-gris",
+    "title": "Cocina Acros AFR2000G color gris",
+    "price": "$ 314,99",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_724671-MLA99445670086_112025-F.webp",
+    "slug": "cocina-acros-afr2000g-color-gris",
     "stock": 8,
     "voltagem": true,
-    "oldPrice": "$ 6.547,80"
+    "oldPrice": "$ 6.299,93"
   },
   {
     "id": "fritadeira-air-fryer-oven-mondial-2-em-1",

@@ -20,7 +20,12 @@ export const lojaGallery: Record<string, string[]> = {
   "geladeira-brastemp-frost-free-french-door-554l": ["/loja/images/extracted/blastempflost_2.webp", "/loja/images/extracted/blastempflost_3.webp", "/loja/images/extracted/blastempflost_4.webp"],
   "xiaomi-poco-x5-256gb-blue": ["/loja/images/extracted/POCO5X_1.webp", "/loja/images/extracted/POCO5X_2.webp", "/loja/images/extracted/POCO5X_3.webp"],
   "samsung-galaxy-s25-ultra-5g-512gb": ["/loja/images/extracted/GalaxyS25_1.webp", "/loja/images/extracted/GalaxyS25_2.webp", "/loja/images/extracted/GalaxyS25_3.webp", "/loja/images/extracted/GalaxyS25_4.webp"],
-  "fog-o-5-bocas-atlas-m-naco-mesa-de-vidro": ["/loja/images/extracted/Fog%C3%A3oElectrolux_1.webp", "/loja/images/extracted/Fog%C3%A3oElectrolux_2.webp", "/loja/images/extracted/Fog%C3%A3oElectrolux_3.webp", "/loja/images/extracted/Fog%C3%A3oElectrolux_4.webp"],
+  "cocina-acros-afr2000g-color-gris": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_724671-MLA99445670086_112025-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_870196-MLU78865500891_092024-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_955237-MLU78631645442_092024-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_780813-MLU78865500907_092024-F.webp"
+  ],
   "fritadeira-air-fryer-oven-mondial-2-em-1": ["/loja/images/extracted/FritadeiraEl%C3%A9trica_1.webp", "/loja/images/extracted/FritadeiraEl%C3%A9trica_2.webp", "/loja/images/extracted/FritadeiraEl%C3%A9trica_3.webp", "/loja/images/extracted/FritadeiraEl%C3%A9trica_4.webp"],
   "samsung-smart-tv-43-qled-4k-2026": ["/loja/images/extracted/SmartTV43_1.webp", "/loja/images/extracted/SmartTV43_2.webp", "/loja/images/extracted/SmartTV43_3.webp", "/loja/images/extracted/SmartTV43_4.webp"],
   "tablet-xiaomi-redmi-pad-pro-12-1-8gb-256gb": ["/loja/images/extracted/TabletXiaomiRedmiPro_1.webp", "/loja/images/extracted/TabletXiaomiRedmiPro_2.webp", "/loja/images/extracted/TabletXiaomiRedmiPro_3.webp"],

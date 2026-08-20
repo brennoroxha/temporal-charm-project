@@ -570,49 +570,46 @@ export const lojaReviews: Record<string, LojaReview[]> = {
       "useful": 36
     }
   ],
-  "fog-o-5-bocas-atlas-m-naco-mesa-de-vidro": [
+  "cocina-acros-afr2000g-color-gris": [
     {
       "stars": 5,
-      "date": "21 ago. 2024",
+      "date": "12 diciembre 2024",
       "images": [
-        "loja/images/reviews/ref/Fog_C3_A3oElectrolux_p5.webp",
-        "loja/images/reviews/ref/Fog_C3_A3oElectrolux_p6.webp"
+        "https://http2.mlstatic.com/D_NQ_NP_2X_900301-MLA81284657528_122024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_715810-MLA81553485967_122024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_758381-MLA81553505031_122024-O.webp"
       ],
-      "text": "Estava precisando trocar, gostei demais.",
-      "useful": 80
+      "text": "Excelente producto, muy recomendable, muy buen material y su estética es muy bonita. Si existiese un pero, sería que no es de encendido electrónico.",
+      "useful": 45
     },
     {
       "stars": 5,
-      "date": "23 ago. 2024",
+      "date": "15 julio 2024",
       "images": [
-        "loja/images/reviews/ref/Fog_C3_A3oElectrolux_p7.webp",
-        "loja/images/reviews/ref/Fog_C3_A3oElectrolux_p8.webp"
+        "https://http2.mlstatic.com/D_NQ_NP_2X_945043-MLA77175817108_072024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_837852-MLA77175629464_072024-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_749434-MLA77175817110_072024-O.webp"
       ],
-      "text": "Recomendo preço té ótimo e vem tudo certinho.",
-      "useful": 122
-    },
-    {
-      "stars": 5,
-      "date": "30 ago. 2024",
-      "images": [
-        "loja/images/reviews/ref/Fog_C3_A3oElectrolux_p9.webp"
-      ],
-      "text": "Me encantó o preço no cartéo",
-      "useful": 136
+      "text": "Me encantó bonita estufa solo que no es encendió eléctrico, pero gusto.",
+      "useful": 32
     },
     {
       "stars": 5,
       "date": "10 enero 2025",
-      "images": [],
-      "text": "Excelente relación calidad-precio, acabamento impecável.",
-      "useful": 39
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_987809-MLA81817674313_012025-O.webp"
+      ],
+      "text": "Excelente producto, cumplió mis expectativas, la recomiendo ampliamente.",
+      "useful": 28
     },
     {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
-      "useful": 37
+      "stars": 4,
+      "date": "05 junio 2024",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_793734-MLA77120538916_062024-O.webp"
+      ],
+      "text": "Es bueno.",
+      "useful": 15
     }
   ],
   "fritadeira-air-fryer-oven-mondial-2-em-1": [
