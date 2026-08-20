@@ -513,8 +513,8 @@ function CheckoutPage() {
                 <>
                   <></>
                     <div className="co-field">
-                      <label className="co-label" htmlFor="rua">Endereço</label>
-                      <input id="rua" className="co-input" placeholder="Rua, avenida..." autoComplete="address-line1" value={rua} onChange={(e) => setRua(e.target.value)} />
+                      <label className="co-label" htmlFor="rua">Calle y número</label>
+                      <input id="rua" className="co-input" placeholder="Calle, avenida..." autoComplete="address-line1" value={rua} onChange={(e) => setRua(e.target.value)} />
                     </div>
                     <div className="co-field">
                       <label className="co-label" htmlFor="numero">Número</label>
