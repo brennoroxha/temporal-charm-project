@@ -141,11 +141,12 @@ export function CartDrawer({ open, onOpenChange }: CartDrawerProps) {
                         
                         <div className="text-right">
                           <div className="flex flex-col items-end">
-                             <div className="flex items-baseline gap-2">
-                               <span className="text-base font-bold text-[#00a650] whitespace-nowrap">
-                                 {formatMXN(parsePrice(it.price) * it.qty)}
+                             <div className="flex items-start gap-2">
+                               <span className="text-base font-bold text-[#00a650] whitespace-nowrap flex items-start">
+                                 {formatMXN(parsePrice(it.price) * it.qty).split(',')[0]}
+                                 <span className="text-[0.6em] leading-none mt-0.5 ml-0.5 font-bold">{formatMXN(parsePrice(it.price) * it.qty).split(',')[1] || '00'}</span>
                                </span>
-                               <span className="bg-[#00a650] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-none whitespace-nowrap">
+                               <span className="bg-[#00a650] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-none whitespace-nowrap mt-0.5">
                                  95% OFF
                                </span>
                              </div>
