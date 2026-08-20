@@ -34,7 +34,7 @@ function parsePrice(p: string): number {
   return isNaN(n) ? 0 : n;
 }
 function formatMXN(v: number): string {
-  return v.toLocaleString("pt-BR", { style: "currency", currency: "MXN" });
+  return v.toLocaleString("es-MX", { style: "currency", currency: "MXN" });
 }
 
 function maskCPF(v: string): string {
