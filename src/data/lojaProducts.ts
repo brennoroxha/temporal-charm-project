@@ -73,7 +73,7 @@ export const lojaProducts: LojaProduct[] = [
   },
   {
     "id": "iphone-16-pro-max-1tb-tit-nio-preto",
-    "title": "iPhone 16 Pro Max 1TB Titânio Negro",
+    "title": "iPhone 16 Pro Max 1TB Titanio Negro",
     "price": "$ 841,48",
     "img": "/loja/images/iphone-16-pro-max-1tb-tit-nio-preto.webp",
     "slug": "iphone-16-pro-max-1tb-tit-nio-preto",
