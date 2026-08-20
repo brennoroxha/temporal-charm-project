@@ -151,7 +151,7 @@ function PagamentoSpeiPage() {
         </div>
       </header>
 
-      <OfferTimerBanner />
+      {/* OfferTimerBanner removido */}
 
       <div style={{ width: "95%", maxWidth: 520, margin: "20px auto", background: "#fff", padding: 24, boxShadow: "0 1px 3px rgba(0,0,0,.1)" }}>
         <h1 style={{ fontSize: 22, fontWeight: 700, textAlign: "center", marginBottom: 8 }}>Ya casi es tuyo...</h1>
@@ -204,63 +204,7 @@ function PagamentoSpeiPage() {
           </div>
         </div>
 
-        {showUpload && (
-          <div style={{ background: "#f5f5f5", padding: 20, borderRadius: 8, textAlign: "center", marginBottom: 24 }}>
-            <h3 style={{ fontSize: 15, fontWeight: 700, marginBottom: 4 }}>¿Ya realizaste el pago?</h3>
-            <p style={{ fontSize: 12, color: "#666", marginBottom: 16 }}>Adjunta tu comprobante para agilizar la validación.</p>
-            
-            <label style={{ 
-              display: "inline-flex", 
-              alignItems: "center", 
-              gap: 8, 
-              background: uploadState === "done" ? "#00a650" : "#3483fa", 
-              color: "#fff", 
-              padding: "12px 24px", 
-              borderRadius: 6, 
-              fontWeight: 600, 
-              fontSize: 14, 
-              cursor: uploadState === "uploading" ? "default" : "pointer",
-              opacity: uploadState === "uploading" ? 0.7 : 1
-            }}>
-              {uploadState === "uploading" ? <Loader2 className="animate-spin" size={18} /> : uploadState === "done" ? <Check size={18} /> : <Upload size={18} />}
-              {uploadState === "uploading" ? "Enviando..." : uploadState === "done" ? "¡Comprobante enviado!" : "Adjuntar comprobante"}
-              <input 
-                type="file" 
-                style={{ display: "none" }} 
-                accept="image/*,application/pdf"
-                disabled={uploadState === "uploading" || uploadState === "done"}
-                onChange={async (e) => {
-                  const file = e.target.files?.[0];
-                  if (!file || !pay) return;
-                  setFileName(file.name);
-                  if (file.size > 8 * 1024 * 1024) { setUploadState("error"); setUploadMsg("Archivo muy grande (máx 8MB)"); return; }
-                  
-                  setUploadState("uploading");
-                  try {
-                    const b64 = await new Promise<string>((res) => {
-                      const r = new FileReader();
-                      r.onload = () => res(String(r.result).split(",")[1] || "");
-                      r.readAsDataURL(file);
-                    });
-                    const { uploadReceipt } = await import("@/lib/orders.functions");
-                    await uploadReceipt({ data: {
-                      transactionId: String(pay.transactionId),
-                      filename: file.name,
-                      contentType: file.type || "application/octet-stream",
-                      dataBase64: b64,
-                    }});
-                    setUploadState("done");
-                    setUploadMsg("Recibido. Estamos validando su pago.");
-                  } catch (err) {
-                    setUploadState("error");
-                    setUploadMsg("Error al enviar. Intente de nuevo.");
-                  }
-                }}
-              />
-            </label>
-            {uploadMsg && <div style={{ marginTop: 10, fontSize: 12, color: uploadState === "error" ? "#d93025" : "#00a650" }}>{uploadMsg}</div>}
-          </div>
-        )}
+        {/* Seção de upload de comprovante removida conforme solicitado */}
 
         <div style={{ borderTop: "1px solid #eee", paddingTop: 20 }}>
           <h3 style={{ fontSize: 16, fontWeight: 700, marginBottom: 16 }}>Pasos a seguir:</h3>
