@@ -20,7 +20,12 @@ export const lojaGallery: Record<string, string[]> = {
     "https://http2.mlstatic.com/D_NQ_NP_2X_905351-MLA111699296199_052026-F.webp"
   ],
   "caixa-de-som-jbl-boombox-4-bluetooth": ["/loja/images/extracted/JBL-Boombox-4_2.webp", "/loja/images/extracted/JBL-Boombox-4_3.webp", "/loja/images/extracted/JBL-Boombox-4_4.webp"],
-  "jbl-partybox-710-preta": ["/loja/images/extracted/PARTYBOX_1.webp", "/loja/images/extracted/PARTYBOX_2.webp", "/loja/images/extracted/PARTYBOX_3.webp", "/loja/images/extracted/PARTYBOX_4.webp"],
+  "jbl-partybox-520-potencia-y-fiesta-sin-limites": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_799688-MLA96098741703_102025-F.webp",
+    "https://http2.mlstatic.com/frontend-assets/vpp-frontend/picture-play.svg",
+    "https://http2.mlstatic.com/D_NQ_NP_876230-MLA112337284419_052026-F.jpg",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_888582-MLA86342933757_062025-F.webp"
+  ],
   "iphone-16-pro-max-1tb-tit-nio-preto": ["/loja/images/extracted/IPHONE16_2.webp", "/loja/images/extracted/IPHONE16_3.webp", "/loja/images/extracted/IPHONE16_4.webp"],
   "tablet-samsung-galaxy-tab-a11-11-6gb-128gb-5g": ["/loja/images/extracted/samsung-tab-a11_2.webp", "/loja/images/extracted/samsung-tab-a11_3.webp"],
   "patinete-el-trico-honeywhale-m2-pro-500w": ["/loja/images/external/715sLZr8MxL._AC_SX679_.webp", "/loja/images/external/71Fx95Ap3uL._AC_SX679_.webp", "/loja/images/external/71LN9wieHjL._AC_SX679_.webp", "/loja/images/external/71RgpzFVStL._AC_SX679_.webp", "/loja/images/external/6174xedTG1L._AC_SL1500_.webp"],

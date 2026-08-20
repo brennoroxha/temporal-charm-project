@@ -195,36 +195,62 @@ export const lojaReviews: Record<string, LojaReview[]> = {
       "useful": 20
     }
   ],
-  "jbl-partybox-710-preta": [
+  "jbl-partybox-520-potencia-y-fiesta-sin-limites": [
     {
       "stars": 5,
       "date": "02 abril 2024",
-      "images": [],
-      "text": "Comprei uma tem dois meses! A caixa é excepcional! Tô vendo algumas críticas aqui nas avaliações que sóo pura falta de ler o manual! Tipo: Karaokê na entrada P2? Como assim? As entradas dela sóo para sonido quando não quiser ou não puder usar o bluetooth! Para usar o karaokê você tem que usar as entradas P10 configuradas pra posição microfone. Na entrada que pode usar microfone ou guitarra quando estiver configurada pra guitarra o sistema entende que os controles de efeitos e equalização serão externos. Isso está certo gente! Porque colocar que isso é defeito? Outra crítica infundada é dizer que é édefeitoé quando usar o pendrive desligar a entrada P2. Pooooo tá certo gente, as entradas foram pensadas como fonte externa única ! Vamos ler manual e entender um sistema antes de criticar!",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_759728-MLA113886760557_062026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_980098-MLA113886732231_062026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_921590-MLA112699620358_062026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_705026-MLA113886724867_062026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_645370-MLA112699612452_062026-O.webp"
+      ],
+      "text": "Conectividad: perfecta conexión alcanza gran distancia. Diseño: está de buen tamaño, pesa un como más de lo que se ve pero excelente. La recomiendo 💯 llama mucho la atención y si se compran otra botería de lujo.",
       "useful": 112
     },
     {
       "stars": 5,
       "date": "29 marzo 2024",
       "images": [
-        "loja/images/reviews/ref/PARTYBOX_iRUvGXEvCl0U.webp"
+        "https://http2.mlstatic.com/D_NQ_NP_2X_737452-MLA87782849040_072025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_991931-MLA88117784423_072025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_737133-MLA87782897708_072025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_613901-MLA87782829378_072025-O.webp"
       ],
-      "text": "Otima calidad !!! Gostei aprovei sonido inconparavel calidad sublime embora ter achado que seria maior fora isso quanto ao resto top ???????????? super indico nao vai se arrepender garanto ??????????",
+      "text": "Buen producto.",
       "useful": 97
     },
     {
       "stars": 5,
       "date": "10 enero 2025",
-      "images": [],
-      "text": "Excelente relación calidad-precio, acabamento impecável.",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_615380-MLA97238857737_112025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_716264-MLA96783199394_112025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_830179-MLA96783209746_112025-O.webp"
+      ],
+      "text": "Espectacular sonido como se espera de cualquier jbl. Es pesado grande para una casa es una banda de sonido. Único punto en contra precio demasiado elevado.Útil",
       "useful": 38
     },
     {
       "stars": 5,
       "date": "10 enero 2025",
-      "images": [],
-      "text": "Chegou muito rápido e o produto é de excelente calidad. Recomendo!",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_797831-MLA102382935816_122025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_866085-MLA102892528205_122025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_659348-MLA102892528203_122025-O.webp"
+      ],
+      "text": "Materiales: muy buena construcción. Conectividad: excelente conectividad. Excelente producto.",
       "useful": 19
+    },
+    {
+      "stars": 5,
+      "date": "10 enero 2025",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_792228-MLA88991896809_072025-O.webp"
+      ],
+      "text": "De lo mejor como siempre, vengo de la partybox 320 y en realidad se nota la diferencia de potencia general.",
+      "useful": 48
     }
   ],
   "iphone-16-pro-max-1tb-tit-nio-preto": [
