@@ -314,7 +314,7 @@ function CheckoutPage() {
             <div className="co-secure">
               <Lock size={22} strokeWidth={2.2} color="#000" />
               <div>
-                <div className="top">PAGAMENTO</div>
+                <div className="top">PAGO</div>
                 <div className="bot">100% SEGURO</div>
               </div>
             </div>
