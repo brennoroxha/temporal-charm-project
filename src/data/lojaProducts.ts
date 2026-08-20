@@ -322,14 +322,14 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 4.577,37"
   },
   {
-    "id": "micro-ondas-brastemp-38l-inox",
-    "title": "Microondas Brastemp 38L Inox",
-    "price": "$ 334,50",
-    "img": "/loja/images/extracted/microondas-brastemp-38l-inox.webp",
-    "slug": "micro-ondas-brastemp-38l-inox",
+    "id": "horno-microondas-whirlpool-wm1807d-plata",
+    "title": "Horno de Microondas Whirlpool WM1807D Plata 0.7 ft3 20L Electrico De Mesa Plato Estante",
+    "price": "$ 187,49",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_613856-MLA99466441300_112025-F.webp",
+    "slug": "horno-microondas-whirlpool-wm1807d-plata",
     "stock": 16,
     "voltagem": true,
-    "oldPrice": "$ 6.689,90"
+    "oldPrice": "$ 3.749,82"
   },
   {
     "id": "cafeteira-port-til-nescaf-c-psulas-bivolt",
