@@ -35,25 +35,6 @@ export function OfferTimerBanner() {
           style={{ width: "100%", maxWidth: "1200px", height: "auto", display: "inline-block" }} 
         />
       </div>
-      <div
-        style={{
-          width: "100%",
-          background: "#FFE600",
-          padding: "10px 0 10px 0",
-          color: "#000",
-          textAlign: "center",
-          fontSize: "16px",
-          fontWeight: 400,
-          lineHeight: 1.25,
-          boxShadow: "inset 0 6px 6px -4px rgba(0,0,0,.18)",
-        }}
-      >
-        <div style={{ fontSize: "17px", color: "#333" }}>
-          <span style={{ fontWeight: 600 }}>
-            {pad(hours)}:{pad(minutes)}:{pad(seconds)}
-          </span>
-        </div>
-      </div>
     </>
   );
 }
