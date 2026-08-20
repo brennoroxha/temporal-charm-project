@@ -547,8 +547,8 @@ function CheckoutPage() {
                       <label className={`co-ship ${shipping === "standard" ? "sel" : ""}`}>
                         <input type="radio" name="frete" value="standard" checked={shipping === "standard"} onChange={() => setShipping("standard")} />
                         <div className="co-ship-body">
-                          <div className="co-ship-title">Frete Grátis</div>
-                          <div className="co-ship-sub">Chega em 4 a 7 dias úteis</div>
+                          <div className="co-ship-title">Envío Gratis</div>
+                          <div className="co-ship-sub">Llega en 4 a 7 días hábiles</div>
                         </div>
                         <div className="co-ship-price" style={{ color: "#00a650" }}>Grátis</div>
                       </label>
