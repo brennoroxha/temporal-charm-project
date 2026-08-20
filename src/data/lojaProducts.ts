@@ -462,14 +462,14 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 17.622,80"
   },
   {
-    "id": "guarda-roupa-casal-8-portas-preto-fosco",
-    "title": "Armario Matrimonial 8 Puertas Negro Mate",
-    "price": "$ 382,76",
-    "img": "/loja/images/external/g1.webp",
-    "slug": "guarda-roupa-casal-8-portas-preto-fosco",
+    "id": "ropero-closet-madesa-monaco-3-puertas-negro-marron",
+    "title": "Ropero Closet Madesa Monaco 3 Puertas Negro/Marron",
+    "price": "$ 399,96",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_706796-MLA96664952806_112025-F.webp",
+    "slug": "ropero-closet-madesa-monaco-3-puertas-negro-marron",
     "stock": 7,
     "voltagem": false,
-    "oldPrice": "$ 7.655,14"
+    "oldPrice": "$ 7.999,27"
   },
   {
     "id": "lavasecadora-automatica-lg-inverter-12kg-acero",
@@ -492,11 +492,11 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 3.267,68"
   },
   {
-    "id": "xiaomi-poco-x7-pro-512gb-12gb",
-    "title": "Xiaomi Poco X7 Pro 512GB + 12GB",
+    "id": "xiaomi-poco-x7-pro-amarillo-512gb-12gb",
+    "title": "Xiaomi Poco X7 Pro Amarillo 512 Gb 12 Gb 6.67 120 Hz 90w Carga Rápida",
     "price": "$ 487,50",
     "img": "/loja/images/external/x1-1.webp",
-    "slug": "xiaomi-poco-x7-pro-512gb-12gb",
+    "slug": "xiaomi-poco-x7-pro-amarillo-512gb-12gb",
     "stock": 11,
     "voltagem": false,
     "oldPrice": "$ 9.749,99"

@@ -118,7 +118,7 @@ export const lojaGallery: Record<string, string[]> = {
   "apple-iphone-15-256gb-verde": ["/loja/images/8XDCkS5XRfWM.webp"],
   "apple-iphone-15-pro-max-256gb-tit-nio-azul": ["/loja/images/t65bxVtcAs4T.webp"],
   "apple-ipad-256gb-tit-nio-azul": ["/loja/images/GVzfHbKRyCwl.webp"],
-  "guarda-roupa-casal-8-portas-preto-fosco": ["/loja/images/external/g2.webp", "/loja/images/external/g3.webp", "/loja/images/external/g4.webp"],
+  "ropero-closet-madesa-monaco-3-puertas-negro-marron": ["https://http2.mlstatic.com/D_NQ_NP_2X_706796-MLA96664952806_112025-F.webp", "https://http2.mlstatic.com/frontend-assets/vpp-frontend/picture-play.svg", "https://http2.mlstatic.com/D_NQ_NP_703161-MLA93505667178_102025-F.jpg", "https://http2.mlstatic.com/D_NQ_NP_2X_644407-MLU72700315875_112023-F.webp"],
   "lavasecadora-automatica-lg-inverter-12kg-acero": [
     "https://http2.mlstatic.com/D_NQ_NP_2X_643580-MLU79010361533_092024-F.webp",
     "https://http2.mlstatic.com/D_NQ_NP_2X_697058-MLU78774073916_092024-F.webp",
@@ -128,7 +128,7 @@ export const lojaGallery: Record<string, string[]> = {
   "ar-condicionado-split-lg-24-000-btus-2": [],
   "fog-o-5-bocas-atlas-mesa-de-vidro-127v-220v": ["/loja/images/fog-o-5-bocas-atlas-mesa-de-vidro-127v-220v.webp"],
   "jbl-go-4-preta-2": ["/loja/images/jbl-go-4-preta-2.webp"],
-  "xiaomi-poco-x7-pro-512gb-12gb": ["/loja/images/external/x2.webp", "/loja/images/external/x3.webp", "/loja/images/external/x4.webp"],
+  "xiaomi-poco-x7-pro-amarillo-512gb-12gb": ["https://http2.mlstatic.com/D_NQ_NP_2X_949138-MLA99997913209_112025-F.webp", "https://http2.mlstatic.com/frontend-assets/vpp-frontend/picture-play.svg", "https://http2.mlstatic.com/D_NQ_NP_712502-MLA82869283491_032025-F.jpg", "https://http2.mlstatic.com/D_NQ_NP_2X_793505-MLA87434962007_072025-F.webp"],
   "samsung-smart-tv-55-qled-4k-2024": [],
   "kit-combinado-dewalt-20v-7-herramientas": [
     "https://http2.mlstatic.com/D_NQ_NP_2X_909268-CBT111647264805_052026-F.webp",
