@@ -151,7 +151,7 @@ function PagamentoSpeiPage() {
         </div>
       </header>
 
-      <OfferTimerBanner />
+      {/* OfferTimerBanner removido */}
 
       <div style={{ width: "95%", maxWidth: 520, margin: "20px auto", background: "#fff", padding: 24, boxShadow: "0 1px 3px rgba(0,0,0,.1)" }}>
         <h1 style={{ fontSize: 22, fontWeight: 700, textAlign: "center", marginBottom: 8 }}>Ya casi es tuyo...</h1>
