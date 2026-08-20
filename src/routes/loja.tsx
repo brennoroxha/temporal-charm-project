@@ -162,7 +162,7 @@ function LojaPage() {
                       {p.oldPrice && <div className="loja-old-price">{p.oldPrice}</div>}
                       <div className="loja-price-row">
                         <div className="loja-price" style={{ whiteSpace: "nowrap" }}>{p.price}</div>
-                        <div className="loja-discount">95% OFF</div>
+                        <div className="loja-discount">5% OFF</div>
                       </div>
                       {p.stock !== undefined && (
                         <div className={`loja-stock ${p.stock <= 6 ? 'low' : p.stock <= 10 ? 'medium' : 'high'}`}>
