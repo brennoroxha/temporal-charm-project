@@ -1537,7 +1537,7 @@ export const lojaReviews: Record<string, LojaReview[]> = {
       "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
       "useful": 44
     }
-  ]
+  ],
   "armario-doble-con-espejo-3-corredizos-3-cajones-blanco": [
     {
       "stars": 5,
