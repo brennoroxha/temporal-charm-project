@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-garanta que o sistema, reconehça o pagamento e retorna a m ensagem de pago para o checkout pagamento-spei em nossa pagina
+no projeto publicado, ta dando este erro
     </div>
   );
 }
