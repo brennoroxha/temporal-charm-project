@@ -442,8 +442,8 @@ function CheckoutPage() {
               </h2>
               <p style={{ margin: "0 0 18px", color: "#6b7570", fontSize: 14 }}>Ingresa tus datos para continuar la compra.</p>
 
-              <label className="co-label">Nome completo</label>
-              <input className="co-input" placeholder="Seu nome completo" value={nome} onChange={(e) => setNome(e.target.value)} onBlur={() => nomeOk && trackFieldOnce("nome")} style={{ marginBottom: nome && !nomeOk ? 4 : 10, borderColor: nome && !nomeOk ? "#d93025" : undefined }} />
+              <label className="co-label">Nombre completo</label>
+              <input className="co-input" placeholder="Tu nombre completo" value={nome} onChange={(e) => setNome(e.target.value)} onBlur={() => nomeOk && trackFieldOnce("nome")} style={{ marginBottom: nome && !nomeOk ? 4 : 10, borderColor: nome && !nomeOk ? "#d93025" : undefined }} />
               {nome && !nomeOk && <p className="co-err">Informe seu nome completo.</p>}
 
               <label className="co-label">RFC</label>
