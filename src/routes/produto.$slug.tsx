@@ -345,7 +345,7 @@ function ProdutoPage() {
               style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "17px", width: "auto", padding: "4px 8px 4px 0" }}
             >
               <ArrowLeft size={14} strokeWidth={2.5} color="#000" style={{ width: "14px", height: "14px" }} />
-              <span style={{ fontWeight: 500, fontSize: "17px", color: "#000" }}>Voltar</span>
+              <span style={{ fontWeight: 500, fontSize: "17px", color: "#000" }}>Volver</span>
             </button>
           )}
         />
@@ -368,13 +368,13 @@ function ProdutoPage() {
                 const brandTitle = brand.charAt(0) + brand.slice(1).toLowerCase();
                 return (
                   <div className="official-note">
-                    <div className="official-note-title">Compre produtos novos e certificados</div>
-                    <div className="official-note-sub">Produto certificado pela {brandTitle} em Brasil</div>
+                    <div className="official-note-title">Compra productos nuevos e certificados</div>
+                    <div className="official-note-sub">Producto certificado por {brandTitle} en México</div>
                   </div>
                 );
               })()}
               <div className="prod-header-row">
-                <span className="sold">Novo | +{soldCount(product.slug).toLocaleString("es-MX")} vendidos</span>
+                <span className="sold">Nuevo | +{soldCount(product.slug).toLocaleString("es-MX")} vendidos</span>
                 <span className="rating">
                   <span className="rating-num">{ratingFor(product.slug).toFixed(1).replace(".", ",")}</span>
                   <span className="stars">
@@ -460,7 +460,7 @@ function ProdutoPage() {
 
 
             <div className="info-price-old" style={{ marginTop: 20, marginBottom: 20 }}>
-              <span className="info-price-off">FRETE GRÁTIS ACIMA DE R$ 19</span>
+              <span className="info-price-off">ENVÍO GRATIS POR ENCIMA DE $ 19</span>
             </div>
 
 
@@ -495,26 +495,26 @@ function ProdutoPage() {
                 ÚLTIMAS {product.stock} UNIDADES
               </div>
             )}
-            <div className="stock-sub" style={{ marginBottom: 20 }}>Armazenado e enviado pelo {product.stock !== 0 ? <img src={fullIcon.url} alt="FULL" style={{ height: 18, verticalAlign: "middle" }} /> : <b>Mercado Livre</b>}</div>
+            <div className="stock-sub" style={{ marginBottom: 20 }}>Almacenado y enviado por {product.stock !== 0 ? <img src={fullIcon.url} alt="FULL" style={{ height: 18, verticalAlign: "middle" }} /> : <b>Mercado Libre</b>}</div>
 
 
             <button type="button" className="btn-buy" onClick={(event) => addToCartAndGo(event, "buy")} disabled={!!adding} style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 8 }}>
-              {adding === "buy" ? <Loader2 size={18} className="prod-spin" /> : "Comprar agora"}
+              {adding === "buy" ? <Loader2 size={18} className="prod-spin" /> : "Comprar ahora"}
             </button>
             <button type="button" className="btn-cart" onClick={(event) => addToCartAndGo(event, "cart")} disabled={!!adding} style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 8 }}>
-              {adding === "cart" ? <Loader2 size={18} className="prod-spin" /> : <><ShoppingCart size={16} /> Adicionar ao carrinho</>}
+              {adding === "cart" ? <Loader2 size={18} className="prod-spin" /> : <><ShoppingCart size={16} /> Agregar al carrito</>}
             </button>
 
 
 
             <div className="benefits-list">
-              <div><RotateCcw size={16} color="#888" /> <span><span style={{ color: "#3483fa" }}>Devolução grátis.</span> <span style={{ color: "#888" }}>Você tem 30 dias a partir da data de recebimento.</span></span></div>
-              <div><ShieldCheck size={16} color="#888" /> <span><span style={{ color: "#3483fa" }}>Compra Garantida.</span> <span style={{ color: "#888" }}>Receba o produto que está esperando ou devolvemos o dinheiro.</span></span></div>
-              <div><Award size={16} color="#888" /> <span>12 meses de garantia de fábrica.</span></div>
+              <div><RotateCcw size={16} color="#888" /> <span><span style={{ color: "#3483fa" }}>Devolución gratis.</span> <span style={{ color: "#888" }}>Tienes 30 días desde que lo recibes.</span></span></div>
+              <div><ShieldCheck size={16} color="#888" /> <span><span style={{ color: "#3483fa" }}>Compra Protegida.</span> <span style={{ color: "#888" }}>Recibe el producto que esperabas o te devolvemos tu dinero.</span></span></div>
+              <div><Award size={16} color="#888" /> <span>12 meses de garantía de fábrica.</span></div>
             </div>
 
             <div className="fav-share-row">
-              <button type="button" className="fav-btn"><Heart size={16} /> Adicionar aos favoritos</button>
+              <button type="button" className="fav-btn"><Heart size={16} /> Agregar a favoritos</button>
               <button
                 type="button"
                 className="fav-btn"
@@ -523,7 +523,7 @@ function ProdutoPage() {
                   window.setTimeout(() => setShared(false), 2000);
                 }}
               >
-                <Share2 size={16} /> {shared ? "Link pronto" : "Compartilhar"}
+                <Share2 size={16} /> {shared ? "Link copiado" : "Compartir"}
               </button>
             </div>
 
@@ -534,9 +534,9 @@ function ProdutoPage() {
               const brandNice = brand.charAt(0) + brand.slice(1).toLowerCase();
               return (
                 <div className="seller-box">
-                  <div className="seller-official"><span style={{ color: "#000" }}>Loja oficial </span><span style={{ color: "#000", fontWeight: 600 }}>{brandNice}</span> <BadgeCheck size={14} color="#fff" fill="#3483fa" style={{ display: "inline-block", verticalAlign: "middle" }} /></div>
-                  <div style={{ marginTop: 6, color: "#000" }}>Vendido por <span style={{ color: "#3483fa" }}>Mercado Livre Eletronicos</span></div>
-                  <div style={{ color: "#000", fontWeight: 600 }}>+1 M vendas</div>
+                  <div className="seller-official"><span style={{ color: "#000" }}>Tienda oficial </span><span style={{ color: "#000", fontWeight: 600 }}>{brandNice}</span> <BadgeCheck size={14} color="#fff" fill="#3483fa" style={{ display: "inline-block", verticalAlign: "middle" }} /></div>
+                  <div style={{ marginTop: 6, color: "#000" }}>Vendido por <span style={{ color: "#3483fa" }}>Mercado Libre Electrónicos</span></div>
+                  <div style={{ color: "#000", fontWeight: 600 }}>+1 M ventas</div>
                 </div>
               );
             })()}
@@ -544,10 +544,10 @@ function ProdutoPage() {
         </div>
 
         <div className="desc-block">
-          <h2>Descrição</h2>
+          <h2>Descripción</h2>
           <p>
-            {product.title}. Produto novo, original e com garantia. Envio imediato para todo o
-            Brasil com frete grátis. Confira as fotos e demais informações desta oferta especial.
+            {product.title}. Producto nuevo, original y con garantía. Envío inmediato a todo
+            México con envío gratis. Revisa las fotos y demás información de esta oferta especial.
           </p>
         </div>
 
@@ -557,10 +557,10 @@ function ProdutoPage() {
       <footer className="ml-footer">
         <div className="ml-footer-app">
           <img src={mlMobileLogo.url} alt="Mercado Livre" />
-          <span>Compre e venda com o app!</span>
+          <span>¡Compra y vende con la app!</span>
         </div>
-        <p className="ml-footer-copy">© 1999-2026. Mercado Brasil Ltda.</p>
-        <p className="ml-footer-legal">CNPJ n.º 03.007.771/0001-41 / Av. das Nações Unidas, nº 3.003, Bonfim, Osasco/SP - CEP 06233-903 - empresa do grupo Mercado Brasil.</p>
+        <p className="ml-footer-copy">© 1999-2026. Mercado Libre S. de R.L. de C.V.</p>
+        <p className="ml-footer-legal">RFC: MLE010101AAA / Av. de los Insurgentes Sur 1602, Crédito Constructor, Benito Juárez, Ciudad de México, CDMX - empresa del grupo Mercado Libre.</p>
       </footer>
       {addedOpen && (
         <Suspense fallback={null}>
@@ -580,9 +580,9 @@ function ProdutoPage() {
 
 function ReviewsBlock({ slug }: { slug: string }) {
   const reviews = lojaReviews[slug] ?? [
-    { stars: 5, date: "10 dez. 2024", images: [], text: "Produto excelente, chegou rápido e bem embalado. Recomendo!", useful: 42 },
-    { stars: 5, date: "05 dez. 2024", images: [], text: "Muito bom, superou as expectativas. Ótimo custo-benefício.", useful: 31 },
-    { stars: 4, date: "28 nov. 2024", images: [], text: "Gostei bastante do produto, funciona perfeitamente.", useful: 18 },
+    { stars: 5, date: "10 dic. 2024", images: [], text: "Excelente producto, llegó rápido y bien empacado. ¡Lo recomiendo!", useful: 42 },
+    { stars: 5, date: "05 dic. 2024", images: [], text: "Muy bueno, superó mis expectativas. Gran relación calidad-precio.", useful: 31 },
+    { stars: 4, date: "28 nov. 2024", images: [], text: "Me gustó mucho el producto, funciona perfectamente.", useful: 18 },
   ];
   const months = ["jan.", "fev.", "mar.", "abr.", "mai.", "jun.", "jul.", "ago.", "set.", "out.", "nov.", "dez."];
   const recentDate = (idx: number) => {
@@ -597,7 +597,7 @@ function ReviewsBlock({ slug }: { slug: string }) {
   const total = reviewCount(slug);
   return (
     <div className="reviews-block">
-      <h2>Opiniões do produto</h2>
+      <h2>Opiniones del producto</h2>
       <div className="reviews-summary">
         <div className="reviews-avg">{avg.toFixed(1)}</div>
         <div>
@@ -617,10 +617,10 @@ function ReviewsBlock({ slug }: { slug: string }) {
               );
             })}
           </div>
-          <div className="reviews-count">{total.toLocaleString("es-MX")} avaliações</div>
+          <div className="reviews-count">{total.toLocaleString("es-MX")} calificaciones</div>
         </div>
       </div>
-      <h3 className="reviews-subtitle">Opiniões em destaque</h3>
+      <h3 className="reviews-subtitle">Opiniones destacadas</h3>
       <div className="reviews-list">
         {reviews.map((r, idx) => (
           <div key={idx} className="review">
@@ -635,14 +635,14 @@ function ReviewsBlock({ slug }: { slug: string }) {
             {r.images.length > 0 && (
               <div className="review-images">
                 {r.images.map((src) => (
-                  <img key={src} src={lojaImageSrc(src)} alt="Foto da avaliação" loading="lazy" />
+                  <img key={src} src={lojaImageSrc(src)} alt="Foto de la calificación" loading="lazy" />
                 ))}
               </div>
             )}
             <p className="review-text">{r.text}</p>
             <div className="review-actions">
-              <button type="button" className="review-btn"><ThumbsUp size={14} /> É útil <span>{r.useful}</span></button>
-              <button type="button" className="review-btn icon-only" aria-label="Não é útil"><ThumbsDown size={14} /></button>
+              <button type="button" className="review-btn"><ThumbsUp size={14} /> Es útil <span>{r.useful}</span></button>
+              <button type="button" className="review-btn icon-only" aria-label="No es útil"><ThumbsDown size={14} /></button>
             </div>
           </div>
         ))}
