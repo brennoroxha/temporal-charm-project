@@ -328,9 +328,9 @@ function CheckoutPage() {
       <div className="co-wrap">
         <div className="progress" role="list">
           {([
-            { n: 1, label: "Identificação", sub: "Seus dados" },
-            { n: 2, label: "Entrega", sub: "Endereço e frete" },
-            { n: 3, label: "Pagamento", sub: "Revisar e pagar" },
+            { n: 1, label: "Identificación", sub: "Tus datos" },
+            { n: 2, label: "Entrega", sub: "Dirección y envío" },
+            { n: 3, label: "Pago", sub: "Revisar y pagar" },
           ] as const).map((s) => {
             const state = step === s.n ? "active" : step > s.n ? "done" : "pending";
             const leadFill = step > s.n ? 1 : step === s.n ? 1 : 0;
@@ -351,7 +351,7 @@ function CheckoutPage() {
 
         <div className="co-card" style={{ boxShadow: "none", border: "1px solid #d5d5d5" }}>
           <div className="co-summary-head" onClick={() => setOpenSummary((v) => !v)}>
-            <h2>Resumo do pedido</h2>
+            <h2>Resumen del pedido</h2>
             <div className={`co-summary-right ${openSummary ? "open" : ""}`}>
               <span>{formatMXN(total)}</span>
               <ChevronDown size={16} />
