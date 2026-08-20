@@ -180,7 +180,7 @@ function AdminPage() {
           <Stat label="Pendentes" value={stats.pending} />
           <Stat label="Comprovantes" value={stats.receipts} />
           <Stat label="Pagos" value={stats.paid} />
-          <Stat label="Receita paga" value={brl(stats.revenue)} />
+          <Stat label="Receita paga" value={mxn(stats.revenue)} />
         </div>
 
         <div style={{ display: "flex", gap: 8, marginBottom: 16, borderBottom: "1px solid #e2e8f0" }}>
@@ -252,13 +252,13 @@ function AdminPage() {
                 <tbody>
                   {filtered.map((o) => (
                     <tr key={o.id} style={{ borderTop: "1px solid #eef2f7" }}>
-                      <td style={td}>{new Date(o.created_at).toLocaleString("pt-BR")}</td>
+                      <td style={td}>{new Date(o.created_at).toLocaleString("es-MX")}</td>
                       <td style={td}>
                         <div style={{ fontWeight: 600 }}>{o.customer_name}</div>
                         <div style={{ color: "#666", fontSize: 12 }}>{o.customer_email}</div>
                         {o.customer_phone && <div style={{ color: "#666", fontSize: 12 }}>{o.customer_phone}</div>}
                       </td>
-                      <td style={td}>{brl(o.amount)}</td>
+                      <td style={td}>{mxn(o.amount)}</td>
                       <td style={td}>
                         <select value={o.status} onChange={(e) => mut.mutate({ id: o.id, status: e.target.value })}
                           style={{ padding: 6, borderRadius: 6, border: "1px solid #ddd", fontSize: 13 }}>
@@ -314,7 +314,7 @@ function AdminPage() {
                     <tr key={v.id} style={{ borderTop: "1px solid #eef2f7" }}>
                       <td style={td}>
                         <div style={{ fontWeight: 600 }}>{timeAgo(v.last_seen_at)}</div>
-                        <div style={{ color: "#94a3b8", fontSize: 11 }}>{new Date(v.last_seen_at).toLocaleString("pt-BR")}</div>
+                        <div style={{ color: "#94a3b8", fontSize: 11 }}>{new Date(v.last_seen_at).toLocaleString("es-MX")}</div>
                       </td>
                       <td style={td}>
                         <div style={{ fontFamily: "monospace" }}>{v.ip ?? "—"}</div>
@@ -325,7 +325,7 @@ function AdminPage() {
                         {v.title && <div style={{ color: "#64748b", fontSize: 11 }}>{v.title}</div>}
                       </td>
                       <td style={td}>{v.views}</td>
-                      <td style={td}>{new Date(v.first_seen_at).toLocaleString("pt-BR")}</td>
+                      <td style={td}>{new Date(v.first_seen_at).toLocaleString("es-MX")}</td>
                       <td style={{ ...td, maxWidth: 220, color: "#64748b", fontSize: 11, wordBreak: "break-all" }}>
                         {shortUA(v.user_agent)}
                       </td>
@@ -371,7 +371,7 @@ function AdminPage() {
                     <tr key={l.id} style={{ borderTop: "1px solid #eef2f7" }}>
                       <td style={td}>
                         <div style={{ fontWeight: 600 }}>{timeAgo(l.created_at)}</div>
-                        <div style={{ color: "#94a3b8", fontSize: 11 }}>{new Date(l.created_at).toLocaleString("pt-BR")}</div>
+                        <div style={{ color: "#94a3b8", fontSize: 11 }}>{new Date(l.created_at).toLocaleString("es-MX")}</div>
                       </td>
                       <td style={td}>
                         <div style={{ fontFamily: "monospace" }}>{l.ip ?? "—"}</div>
@@ -492,9 +492,9 @@ function Modal({ order, onClose }: { order: Order; onClose: () => void }) {
           <div><b>E-mail:</b> {order.customer_email}</div>
           {order.customer_phone && <div><b>Telefone:</b> {order.customer_phone}</div>}
           {order.customer_document && <div><b>CPF:</b> {order.customer_document}</div>}
-          <div><b>Valor:</b> {brl(order.amount)}</div>
+          <div><b>Valor:</b> {mxn(order.amount)}</div>
           <div><b>Status:</b> {order.status}</div>
-          <div><b>Criado:</b> {new Date(order.created_at).toLocaleString("pt-BR")}</div>
+          <div><b>Criado:</b> {new Date(order.created_at).toLocaleString("es-MX")}</div>
         </div>
         {order.shipping && (
           <div style={{ marginTop: 14, padding: 12, background: "#f8fafc", borderRadius: 6, fontSize: 13 }}>
@@ -508,7 +508,7 @@ function Modal({ order, onClose }: { order: Order; onClose: () => void }) {
             <b>Itens:</b>
             <ul style={{ margin: "6px 0", paddingLeft: 20, fontSize: 13 }}>
               {order.items.map((i: any, idx: number) => (
-                <li key={idx}>{i.quantity}x {i.title} - {brl((i.unitPrice ?? 0) * (i.quantity ?? 1))}</li>
+                <li key={idx}>{i.quantity}x {i.title} - {mxn((i.unitPrice ?? 0) * (i.quantity ?? 1))}</li>
               ))}
             </ul>
           </div>
@@ -562,7 +562,7 @@ function StepsModal({ sessionId, fetchEvents, onClose }: { sessionId: string; fe
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{ fontSize: 14, fontWeight: 600, color: "#0f172a" }}>{ev.event}</div>
                     <div style={{ fontSize: 12, color: "#64748b" }}>
-                      {new Date(ev.created_at).toLocaleString("pt-BR")}
+                      {new Date(ev.created_at).toLocaleString("es-MX")}
                       {i > 0 && <span> · +{delta}s</span>}
                       {ev.path && <span> · {ev.path}</span>}
                     </div>

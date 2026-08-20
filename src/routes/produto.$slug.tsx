@@ -374,7 +374,7 @@ function ProdutoPage() {
                 );
               })()}
               <div className="prod-header-row">
-                <span className="sold">Novo | +{soldCount(product.slug).toLocaleString("pt-BR")} vendidos</span>
+                <span className="sold">Novo | +{soldCount(product.slug).toLocaleString("es-MX")} vendidos</span>
                 <span className="rating">
                   <span className="rating-num">{ratingFor(product.slug).toFixed(1).replace(".", ",")}</span>
                   <span className="stars">
@@ -394,7 +394,7 @@ function ProdutoPage() {
                       );
                     })}
                   </span>
-                  <span>({reviewCount(product.slug).toLocaleString("pt-BR")})</span>
+                  <span>({reviewCount(product.slug).toLocaleString("es-MX")})</span>
                 </span>
               </div>
               {(() => { const b = pickBadge(product.slug, product.title); return <div><span className={`product-badge ${b.kind}`}>{b.label}</span></div>; })()}
@@ -453,7 +453,7 @@ function ProdutoPage() {
                   {product.stock !== 0 && <span className="info-price-off">95% OFF</span>}
                 </div>
                 <div className="info-price">
-                  R$<span style={{ display: "inline-block", width: "5px" }} />{Math.floor(price).toLocaleString("pt-BR")}<span className="cents">{Math.round((price - Math.floor(price)) * 100).toString().padStart(2, "0")}</span>
+                  R$<span style={{ display: "inline-block", width: "5px" }} />{Math.floor(price).toLocaleString("es-MX")}<span className="cents">{Math.round((price - Math.floor(price)) * 100).toString().padStart(2, "0")}</span>
                 </div>
               </>
             )}
@@ -617,7 +617,7 @@ function ReviewsBlock({ slug }: { slug: string }) {
               );
             })}
           </div>
-          <div className="reviews-count">{total.toLocaleString("pt-BR")} avaliações</div>
+          <div className="reviews-count">{total.toLocaleString("es-MX")} avaliações</div>
         </div>
       </div>
       <h3 className="reviews-subtitle">Opiniões em destaque</h3>
