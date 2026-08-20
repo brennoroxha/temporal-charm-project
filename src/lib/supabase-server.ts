@@ -219,15 +219,25 @@ async function responseError(res: Response) {
 
 function getSupabaseConfig() {
   const url = process.env.SUPABASE_URL ?? process.env.VITE_SUPABASE_URL;
+  // Prefer the service role key: checkout writes (orders, receipts) run
+  // server-side only, so no anonymous RLS policies are needed for them.
   const key =
+    process.env.SUPABASE_SERVICE_ROLE_KEY ??
     process.env.SUPABASE_PUBLISHABLE_KEY ??
     process.env.VITE_SUPABASE_PUBLISHABLE_KEY;
   if (!url || !key) {
     throw new Error(
-      "Missing SUPABASE_URL or SUPABASE_PUBLISHABLE_KEY environment variables"
+      "Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY environment variables"
     );
   }
   return { url: url.replace(/\/$/, ""), key };
+}
+
+// New-style Supabase API keys (sb_secret_/sb_publishable_) are opaque strings,
+// not JWTs, so they must not be sent as a bearer token.
+function authHeaders(key: string): Record<string, string> {
+  if (key.startsWith("sb_")) return { apikey: key };
+  return { apikey: key, Authorization: `Bearer ${key}` };
 }
 
 function encodePath(path: string) {
