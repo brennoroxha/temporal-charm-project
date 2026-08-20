@@ -276,7 +276,7 @@ function PagamentoPage() {
                           contentType: file.type || "application/octet-stream",
                           dataBase64: b64,
                         }});
-                        setUploadState("done"); setUploadMsg("¡Comprobante recibido!! Estamos validando.");
+                        setUploadState("done"); setUploadMsg("¡Comprobante recibido! Estamos validando.");
                         trackEvent("receipt_uploaded", { transactionId: String(pay.transactionId) });
                       } catch (err: any) {
                         setUploadState("error"); setUploadMsg(err?.message || "Falha no envio");
