@@ -1163,47 +1163,54 @@ export const lojaReviews: Record<string, LojaReview[]> = {
       "useful": 36
     }
   ],
-  "micro-ondas-brastemp-38l-inox": [
+  "horno-microondas-whirlpool-wm1807d-plata": [
     {
       "stars": 5,
-      "date": "10 septiembre 2024",
+      "date": "10 junio 2024",
       "images": [
-        "loja/images/reviews/ref/microondas_KPPT1P5BgHx9.webp",
-        "loja/images/reviews/ref/microondas_GJ5PnsvBEAU3.webp"
+        "https://http2.mlstatic.com/D_NQ_NP_833896-MLA112033638346_062026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_870801-MLA112033607108_062026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_983957-MLA113169308189_062026-O.webp"
       ],
-      "text": "Me encantó lindo apaixonada pela minha compra perfeito sem palavras.",
+      "text": "Se los recomiendo.",
       "useful": 102
     },
     {
       "stars": 5,
-      "date": "15 septiembre 2024",
+      "date": "15 junio 2024",
       "images": [
-        "loja/images/reviews/ref/microondas_lcXTh3zcoDRo.webp",
-        "loja/images/reviews/ref/microondas_myYfGBQB69lK.webp"
+        "https://http2.mlstatic.com/D_NQ_NP_2X_950640-MLA73139570260_122023-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_843917-MLA73223965027_122023-O.webp"
       ],
-      "text": "Chegou muito rapido! Muito espaçoso como eu queria. Cabe um travessa de lasanha tranquilo. E lindo.",
+      "text": "Exelente equipo hay que leer el manual para poder usarlo es práctico pequeño pero cumple con lo que buscaba.",
       "useful": 176
     },
     {
-      "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Melhor compra que já fiz, vale cada centavo.",
-      "useful": 39
+      "stars": 4,
+      "date": "20 junio 2024",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_885002-MLA111964576961_052026-O.webp"
+      ],
+      "text": "Me hizo falta el tablero de números pues es más fácil poner el tiempo así que darle play varias veces para sacar el tiempo tocó identificar que cada play son 30 seg así que si voy a poner 2 min toca precionar 4 veces play.Útil",
+      "useful": 89
     },
     {
       "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
-      "useful": 32
+      "date": "25 junio 2024",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_824387-MLA93948876602_102025-O.webp"
+      ],
+      "text": "Funciona muy bien, si esta grande, si cabe un plato grande y gira normal. Calienta bien, apenas llevo 2 semanas pero todo parece excelente.",
+      "useful": 64
     },
     {
       "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Excelente relación calidad-precio, acabamento impecável.",
-      "useful": 34
+      "date": "30 junio 2024",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_971429-MLA54849779669_042023-O.webp"
+      ],
+      "text": "Me cumple con mis nesecidades trabaja muy bien y calienta perfecto quedé muy satisfecho gracias.",
+      "useful": 58
     }
   ],
   "cafeteira-port-til-nescaf-c-psulas-bivolt": [

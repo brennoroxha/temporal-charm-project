@@ -41,7 +41,12 @@ export const lojaGallery: Record<string, string[]> = {
   "mesinha-penteadeira-camarim-com-organizador": [],
   "lavadora-de-alta-press-o-k-rcher-k2-plus": ["/loja/images/lavadora-de-alta-press-o-k-rcher-k2-plus.webp"],
   "kit-2-c-meras-ip-icsee-wi-fi": ["/loja/images/external/FtITsk5vesbw.webp", "/loja/images/external/IQCUuIIT2fvJ.webp", "/loja/images/external/OXBLwJ7HBvBj.webp"],
-  "micro-ondas-brastemp-38l-inox": [],
+  "horno-microondas-whirlpool-wm1807d-plata": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_613856-MLA99466441300_112025-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_804606-MLA99466490618_112025-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_650351-MLA99950928131_112025-F.webp",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_607937-MLA99950868471_112025-F.webp"
+  ],
   "cafeteira-port-til-nescaf-c-psulas-bivolt": [],
   "filtro-de-gua-electrolux-gelada-natural": ["/loja/images/filtro-de-gua-electrolux-gelada-natural.webp"],
   "jogo-de-len-ol-super-king-4-pe-as-600-fios": [],
