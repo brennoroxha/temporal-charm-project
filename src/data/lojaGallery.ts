@@ -12,6 +12,7 @@ export const lojaGallery: Record<string, string[]> = {
   "aspirador-de-p-e-gua-wap-gtw-10-1400w": ["/loja/images/extracted/aspirador_unique_1.webp", "/loja/images/extracted/aspirador_unique_2.webp", "/loja/images/extracted/aspirador_unique_3.webp"],
   "xiaomi-redmi-note-14-pro-5g-12gb-512gb": ["/loja/images/extracted/XIAOMI14NOTE_1.webp", "/loja/images/extracted/XIAOMI14NOTE_2.webp"],
   "refrigerador-whirlpool-9-pies": [
+    "https://http2.mlstatic.com/D_NQ_NP_824599-MLM74032540130_012024-O.webp",
     "https://http2.mlstatic.com/D_NQ_NP_967347-MLM74032646014_012024-O.webp",
     "https://http2.mlstatic.com/D_NQ_NP_725946-MLM74032646020_012024-O.webp",
     "https://http2.mlstatic.com/D_NQ_NP_842359-MLM74032540134_012024-O.webp"

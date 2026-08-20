@@ -146,7 +146,7 @@ export function CartDrawer({ open, onOpenChange }: CartDrawerProps) {
                                  {formatMXN(parsePrice(it.price) * it.qty)}
                                </span>
                                <span className="bg-[#00a650] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-none whitespace-nowrap">
-                                 5% OFF
+                                 95% OFF
                                </span>
                              </div>
                           </div>
