@@ -565,11 +565,11 @@ function CheckoutPage() {
                     </div>
                 </>
 
-                <button type="submit" className="co-btn" disabled={!step2Ok} style={{ marginTop: 14 }}>Continuar para pagamento</button>
+                <button type="submit" className="co-btn" disabled={!step2Ok} style={{ marginTop: 14 }}>Continuar para el pago</button>
                 <div style={{ textAlign: "center", marginTop: 12 }}>
                   <button type="button" onClick={() => setStep(1)} className="co-back" style={{ background: "none", border: 0, color: "#8B948F", fontSize: 14, cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 4 }}>
                     <ArrowLeft size={12} />
-                    Voltar para identificação
+                    Volver a identificación
                   </button>
                 </div>
               </form>
