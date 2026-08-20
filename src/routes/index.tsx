@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-      ainda ta dando erro olha
+      testa dando erro para gerar o pagamento via SPEI
     </div>
   );
 }
