@@ -472,14 +472,14 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 7.655,14"
   },
   {
-    "id": "lava-e-seca-samsung-inox-11kg",
-    "title": "Lava y Seca Samsung Inox 11kg - Bivolt",
-    "price": "$ 373,88",
-    "img": "/loja/images/external/lavar1.webp",
-    "slug": "lava-e-seca-samsung-inox-11kg",
+    "id": "lavasecadora-automatica-lg-inverter-12kg-acero",
+    "title": "Lavasecadora automática LG inverter hasta 12kg color acero",
+    "price": "$ 814,98",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_643580-MLU79010361533_092024-F.webp",
+    "slug": "lavasecadora-automatica-lg-inverter-12kg-acero",
     "stock": 5,
     "voltagem": false,
-    "oldPrice": "$ 7.477,68"
+    "oldPrice": "$ 16.299,60"
   },
   {
     "id": "jbl-go-4-preta-2",

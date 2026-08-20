@@ -1616,20 +1616,60 @@ export const lojaReviews: Record<string, LojaReview[]> = {
       "useful": 13
     }
   ],
-  "lava-e-seca-samsung-inox-11kg": [
+  "lavasecadora-automatica-lg-inverter-12kg-acero": [
     {
       "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "Melhor compra que já fiz, vale cada centavo.",
-      "useful": 45
+      "date": "10 marzo 2024",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_692409-MLA97127447295_112025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_760289-MLA96672869102_112025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_889007-MLA97127273605_112025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_951263-MLA97127292881_112025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_918090-MLA97127292883_112025-O.webp"
+      ],
+      "text": "¡Producto de excelente calidad y acabado! ¡Lo recomiendo a todos!",
+      "useful": 120
     },
     {
       "stars": 5,
-      "date": "10 enero 2025",
-      "images": [],
-      "text": "O produto é exatamente como na descrição, estou muy satisfecho.",
-      "useful": 50
+      "date": "15 marzo 2024",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_675209-MLA96164738530_102025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_950395-MLA96164907644_102025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_855703-MLA96164947208_102025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_829667-MLA96164987540_102025-O.webp"
+      ],
+      "text": "¡Excelente! Muy silencioso. El motor de accionamiento directo es muy bueno y silencioso.",
+      "useful": 98
+    },
+    {
+      "stars": 5,
+      "date": "20 marzo 2024",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_838522-MLA112360847044_062026-B.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_676594-MLA112360642412_062026-O.webp"
+      ],
+      "text": "Sin comentarios, producto excelente. La esposa quedó radiante, creo que estaré bien por unos 3 días, jajaja.",
+      "useful": 87
+    },
+    {
+      "stars": 4,
+      "date": "25 marzo 2024",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_628924-MLA85839987645_062025-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_772704-MLA85532440450_062025-O.webp"
+      ],
+      "text": "Muy buena, pero hay que ver un tutorial antes de encenderla e instalarla. Pero la recomiendo.",
+      "useful": 56
+    },
+    {
+      "stars": 5,
+      "date": "30 marzo 2024",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_765010-MLA89373939152_082025-O.webp"
+      ],
+      "text": "Ya lo he usado dos veces y me encanta. Ya no necesito colgar la ropa, jaja.",
+      "useful": 73
     }
   ],
   "ar-condicionado-split-lg-24-000-btus-2": [
