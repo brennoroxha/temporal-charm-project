@@ -206,6 +206,9 @@ function PagamentoPage() {
           </div>
         </div>
       </header>
+      <div style={{ position: "sticky", top: 0, zIndex: 40 }}>
+        <OfferTimerBanner />
+      </div>
 
       <div className="pg-wrap">
         <h1 className="pg-title">Já é quase seu...</h1>
