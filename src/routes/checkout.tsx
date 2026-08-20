@@ -471,7 +471,7 @@ function CheckoutPage() {
                 disabled={!step1Ok}
                 onClick={() => setStep(2)}
               >
-                Continuar para entrega
+                Continuar para el envío
               </button>
               <div style={{ textAlign: "center", marginTop: 12 }}>
                 <button onClick={() => navigate({ to: "/loja" })} className="co-back" style={{ color: "#8B948F", fontSize: 14, display: "inline-flex", alignItems: "center", gap: 4, background: "none", border: 0, padding: 0, cursor: "pointer" }}>
