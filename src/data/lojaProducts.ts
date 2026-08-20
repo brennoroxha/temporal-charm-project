@@ -2,24 +2,24 @@ import { LojaProduct } from "./types";
 
 export const lojaProducts: LojaProduct[] = [
   {
-    "id": "jbl-boombox-3-preta",
-    "title": "JBL Boombox 3 Negro",
-    "price": "$ 222,32",
-    "img": "/loja/images/jbl-boombox-3-preta.webp",
-    "slug": "jbl-boombox-3-preta",
+    "id": "bocina-jbl-boombox-3-portatil-bluetooth-waterproof-black",
+    "title": "Bocina JBL Boombox 3 portátil con bluetooth waterproof black",
+    "price": "$ 356,94",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_661367-MLU74377889634_022024-F.webp",
+    "slug": "bocina-jbl-boombox-3-portatil-bluetooth-waterproof-black",
     "stock": 6,
     "voltagem": false,
-    "oldPrice": "$ 4.446,40"
+    "oldPrice": "$ 7.138,87"
   },
   {
-    "id": "iphone-17-pro-max-256gb",
-    "title": "iPhone 17 Pro Max 256GB",
-    "price": "$ 1.270,07",
-    "img": "/loja/images/iphone-17-pro-max-256gb.webp",
-    "slug": "iphone-17-pro-max-256gb",
+    "id": "apple-iphone-17-pro-max-256gb-naranja-cosmico",
+    "title": "Apple iPhone 17 Pro Max (256 GB) - Naranja cósmico - Sólo eSIM",
+    "price": "$ 1.365,00",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_841813-MLA96120291343_102025-F.webp",
+    "slug": "apple-iphone-17-pro-max-256gb-naranja-cosmico",
     "stock": 4,
     "voltagem": false,
-    "oldPrice": "$ 25.401,45"
+    "oldPrice": "$ 27.299,93"
   },
   {
     "id": "scooter-electrica-500w-48v-10ah-80km-con-asiento-c3",
@@ -52,14 +52,14 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 16.800,33"
   },
   {
-    "id": "caixa-de-som-jbl-boombox-4-bluetooth",
-    "title": "Altavoz JBL Boombox 4 Bluetooth",
-    "price": "$ 451,19",
-    "img": "/loja/images/caixa-de-som-jbl-boombox-4-bluetooth.webp",
-    "slug": "caixa-de-som-jbl-boombox-4-bluetooth",
+    "id": "bocina-jbl-partybox-encore-2-plus-negra",
+    "title": "Bocina JBL PartyBox Encore 2 Plus portátil con bluetooth negra",
+    "price": "$ 294,96",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_659762-MLA110059315281_042026-F.webp",
+    "slug": "bocina-jbl-partybox-encore-2-plus-negra",
     "stock": 15,
     "voltagem": false,
-    "oldPrice": "$ 9.023,77"
+    "oldPrice": "$ 5.899,27"
   },
   {
     "id": "jbl-partybox-520-potencia-y-fiesta-sin-limites",
@@ -82,44 +82,44 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 16.891,00"
   },
   {
-    "id": "tablet-samsung-galaxy-tab-a11-11-6gb-128gb-5g",
-    "title": "Tablet Samsung Galaxy Tab A11 11\" 6GB/128GB 5G",
-    "price": "$ 267,18",
-    "img": "/loja/images/tablet-samsung-galaxy-tab-a11-11-6gb-128gb-5g.webp",
-    "slug": "tablet-samsung-galaxy-tab-a11-11-6gb-128gb-5g",
+    "id": "tablet-galaxy-tab-a11-plus-plata-128gb-6gb-samsung",
+    "title": "Tablet Galaxy Tab A11+ Plata 128gb 6gb Ram Plateado Samsung",
+    "price": "$ 229,96",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_748643-MLA98069414906_112025-F.webp",
+    "slug": "tablet-galaxy-tab-a11-plus-plata-128gb-6gb-samsung",
     "stock": 17,
     "voltagem": false,
-    "oldPrice": "$ 5.343,54"
+    "oldPrice": "$ 4.599,20"
   },
   {
-    "id": "patinete-el-trico-honeywhale-m2-pro-500w",
-    "title": "Patinete Eléctrico Honeywhale M2 Pro 500W",
-    "price": "$ 484,26",
-    "img": "/loja/images/external/61_danGOjvL._AC_SX679_.webp",
-    "slug": "patinete-el-trico-honeywhale-m2-pro-500w",
+    "id": "honey-whale-e9t-scooter-patin-electrico-32-kmh-negro",
+    "title": "Honey Whale E9t Scooter Patin Electrico 32 Km/h Honeywhale Negro",
+    "price": "$ 499,96",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_856713-MLA88910956991_072025-F.webp",
+    "slug": "honey-whale-e9t-scooter-patin-electrico-32-kmh-negro",
     "stock": 3,
     "voltagem": false,
-    "oldPrice": "$ 9.685,16"
+    "oldPrice": "$ 9.999,27"
   },
   {
-    "id": "aspirador-de-p-e-gua-wap-gtw-10-1400w",
-    "title": "Aspiradora de Polvo y Agua WAP GTW 10 1400W",
-    "price": "$ 196,13",
-    "img": "/loja/images/extracted/aspirador_unique_0.webp",
-    "slug": "aspirador-de-p-e-gua-wap-gtw-10-1400w",
+    "id": "aspiradora-agua-y-solidos-3700-watts-truper-naranja",
+    "title": "Aspiradora De Agua Y Solidos 3,700 Watts Máximo, Truper Color Naranja",
+    "price": "$ 197,00",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_726919-MLA99964647563_112025-F.webp",
+    "slug": "aspiradora-agua-y-solidos-3700-watts-truper-naranja",
     "stock": 16,
     "voltagem": true,
-    "oldPrice": "$ 3.922,52"
+    "oldPrice": "$ 3.940,01"
   },
   {
-    "id": "xiaomi-redmi-note-14-pro-5g-12gb-512gb",
-    "title": "Xiaomi Redmi Note 14 Pro 5G 12GB/512GB",
-    "price": "$ 314,00",
-    "img": "/loja/images/xiaomi-redmi-note-14-pro-5g-12gb-512gb.webp",
-    "slug": "xiaomi-redmi-note-14-pro-5g-12gb-512gb",
+    "id": "xiaomi-redmi-note-14-pro-plus-5g-12gb-256gb-azul",
+    "title": "Teléfono Xiaomi Redmi Note 14 Pro Plus 5g 12 GB RAM 256 GB ROM 200 MP Azul",
+    "price": "$ 346,12",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_756475-MLA95974697447_102025-F.webp",
+    "slug": "xiaomi-redmi-note-14-pro-plus-5g-12gb-256gb-azul",
     "stock": 13,
     "voltagem": false,
-    "oldPrice": "$ 6.279,97"
+    "oldPrice": "$ 6.922,47"
   },
   {
     "id": "refrigerador-whirlpool-9-pies",
@@ -172,14 +172,14 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 6.299,93"
   },
   {
-    "id": "fritadeira-air-fryer-oven-mondial-2-em-1",
-    "title": "Freidora Air Fryer Oven Mondial 2 en 1",
-    "price": "$ 266,00",
-    "img": "/loja/images/extracted/fritadeira-air-fryer-oven-mondial-2-em-1.webp",
-    "slug": "fritadeira-air-fryer-oven-mondial-2-em-1",
+    "id": "freidora-de-aire-flex-2-zonas-11-litros-ckstaf11mcddf-oster",
+    "title": "Freidora De Aire Flex 2 Zonas De Cocción 11 Litros CKSTAF11MCDDF Oster",
+    "price": "$ 196,49",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_738351-MLA99296057805_112025-F.webp",
+    "slug": "freidora-de-aire-flex-2-zonas-11-litros-ckstaf11mcddf-oster",
     "stock": 3,
     "voltagem": true,
-    "oldPrice": "$ 5.319,96"
+    "oldPrice": "$ 3.929,87"
   },
   {
     "id": "samsung-smart-tv-43-qled-4k-2026",
