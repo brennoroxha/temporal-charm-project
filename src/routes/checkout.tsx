@@ -116,11 +116,11 @@ function CheckoutPage() {
       .then((r) => r.json())
       .then((j) => {
         if (cancelled) return;
-        if (j.erro) return;
-        setRua(j.logradouro || "");
-        setBairro(j.bairro || "");
-        setCidade(j.localidade || "");
-        setEstado((j.uf || "").toUpperCase());
+        const place = j.places?.[0];
+        if (!place) return;
+        setBairro(place["place name"] || "");
+        setCidade(place["place name"] || "");
+        setEstado(place["state abbreviation"] || "");
       })
       .catch(() => {})
       .finally(() => { if (!cancelled) setCepLoading(false); });
