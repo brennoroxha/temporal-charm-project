@@ -153,8 +153,7 @@ function createStorageBucket(url: string, key: string, bucket: "receipts") {
       const res = await fetch(endpoint, {
         method: "POST",
         headers: {
-          apikey: key,
-          Authorization: `Bearer ${key}`,
+          ...authHeaders(key),
           "content-type": options.contentType,
           "x-upsert": options.upsert ? "true" : "false",
         },
