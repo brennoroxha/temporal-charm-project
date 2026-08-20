@@ -14,7 +14,8 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-porque voce ta colocando o texto doque eu peço na home page?????????????????????????????????? nao pedi para por nad ana hoempage
+remova RFC
+do checkout
     </div>
   );
 }
