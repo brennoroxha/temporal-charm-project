@@ -106,11 +106,60 @@ function PagamentoSpeiPage() {
   const copyClabe = async () => {
     if (!pay?.clabe) return;
     try {
-      await navigator.clipboard.writeText(pay.clabe);
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(pay.clabe);
+      } else {
+        const textArea = document.createElement("textarea");
+        textArea.value = pay.clabe;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-9999px";
+        textArea.style.top = "0";
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+      }
       setCopied(true);
+      trackEvent("spei_clabe_copied", { transactionId: String(pay.id) });
       setTimeout(() => setCopied(false), 3000);
     } catch (err) {
       window.prompt("Copie la CLABE:", pay.clabe);
+    }
+  };
+
+  const handleUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file || !pay) return;
+    setUploadMsg("");
+    if (file.size > 8 * 1024 * 1024) {
+      setUploadState("error");
+      setUploadMsg("Archivo mayor a 8MB");
+      return;
+    }
+    setUploadState("uploading");
+    try {
+      const b64 = await new Promise<string>((res, rej) => {
+        const r = new FileReader();
+        r.onload = () => res(String(r.result).split(",")[1] ?? "");
+        r.onerror = () => rej(new Error("read fail"));
+        r.readAsDataURL(file);
+      });
+      const { uploadReceipt } = await import("@/lib/orders.functions");
+      await uploadReceipt({
+        data: {
+          transactionId: String(pay.id),
+          filename: file.name,
+          contentType: file.type || "application/octet-stream",
+          dataBase64: b64,
+        },
+      });
+      setUploadState("done");
+      setUploadMsg("¡Comprobante recibido! Estamos validando.");
+      trackEvent("receipt_uploaded_spei", { transactionId: String(pay.id) });
+    } catch (err: any) {
+      setUploadState("error");
+      setUploadMsg(err?.message || "Error al enviar");
     }
   };
 
@@ -140,6 +189,14 @@ function PagamentoSpeiPage() {
         .pg-steps{margin-top:24px;padding-top:20px;border-top:1px solid #eee}
         .pg-step{display:flex;gap:12px;margin-bottom:14px;font-size:14px;color:#555;align-items:flex-start}
         .pg-num{background:#3483FA;color:#fff;width:26px;height:26px;min-width:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:13px}
+        .pg-proof{margin-top:20px;padding:18px;background:#f5f5f5;border-radius:8px;text-align:center}
+        .pg-proof-t{font-weight:600;font-size:15px;color:#333;margin:0 0 4px}
+        .pg-proof-sub{font-size:12px;color:#777;margin:0 0 14px}
+        .pg-file-input{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;pointer-events:none}
+        .pg-file-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#fff;color:#3483FA;border:1.5px solid #3483FA;padding:11px 20px;border-radius:6px;font-weight:600;font-size:14px;cursor:pointer;transition:background .15s}
+        .pg-file-btn:hover{background:#eef4ff}
+        .pg-file-btn.disabled{opacity:.6;cursor:not-allowed}
+        .pg-upload-msg{margin-top:10px;font-size:13px}
       `}</style>
 
       <header className="pg-header">
@@ -165,6 +222,19 @@ function PagamentoSpeiPage() {
         </div>
 
         <div className="pg-value">Monto a pagar: <span>{formatMXN(pay?.amount || 0)}</span></div>
+
+        {showUpload && (
+          <div className="pg-proof">
+            <div className="pg-proof-t">¿Ya pagaste y no se ha confirmado?</div>
+            <div className="pg-proof-sub">Adjunta tu comprobante para agilizar el proceso.</div>
+            <label className={`pg-file-btn ${uploadState === "uploading" || uploadState === "done" ? "disabled" : ""}`}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              {uploadState === "uploading" ? "Enviando..." : uploadState === "done" ? "¡Enviado!" : "Adjuntar Comprobante"}
+              <input type="file" className="pg-file-input" accept="image/*,application/pdf" onChange={handleUpload} disabled={uploadState === "uploading" || uploadState === "done"} />
+            </label>
+            {uploadMsg && <div className="pg-upload-msg" style={{ color: uploadState === "error" ? "#d93025" : "#00a650" }}>{uploadMsg}</div>}
+          </div>
+        )}
 
         <div className="pg-steps">
           <h3>Instrucciones:</h3>
