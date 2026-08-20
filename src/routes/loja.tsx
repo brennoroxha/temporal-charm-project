@@ -20,7 +20,7 @@ export const Route = createFileRoute("/loja")({
   },
   head: () => ({
     meta: [
-      { title: "Loja Mercado Livre" },
+      { title: "Oferta 25 Años" },
       { name: "description", content: "Ofertas especiais com Mega Desconto. 95% OFF." },
     ],
   }),

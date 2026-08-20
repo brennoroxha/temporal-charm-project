@@ -9,7 +9,7 @@ import { listPageViews, listSessionEvents, listVisitLogs } from "@/lib/analytics
 import { supabase } from "@/integrations/supabase/client";
 
 export const Route = createFileRoute("/_authenticated/admin")({
-  head: () => ({ meta: [{ title: "Ofertas 25 Anos - Admin" }] }),
+  head: () => ({ meta: [{ title: "Oferta 25 Años - Admin" }] }),
   component: AdminPage,
 });
 
