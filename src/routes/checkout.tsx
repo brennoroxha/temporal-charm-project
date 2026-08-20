@@ -529,8 +529,8 @@ function CheckoutPage() {
                       <input id="bairro" className="co-input" placeholder="Tu colonia" value={bairro} onChange={(e) => setBairro(e.target.value)} />
                     </div>
                     <div className="co-field">
-                      <label className="co-label" htmlFor="cidade">Cidade</label>
-                      <input id="cidade" className="co-input" placeholder="Sua cidade" autoComplete="address-level2" value={cidade} onChange={(e) => setCidade(e.target.value)} />
+                      <label className="co-label" htmlFor="cidade">Ciudad / Municipio</label>
+                      <input id="cidade" className="co-input" placeholder="Tu ciudad" autoComplete="address-level2" value={cidade} onChange={(e) => setCidade(e.target.value)} />
                     </div>
                     <div className="co-field">
                       <label className="co-label" htmlFor="uf">UF</label>
