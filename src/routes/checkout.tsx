@@ -191,11 +191,11 @@ function CheckoutPage() {
         fbclid: new URLSearchParams(window.location.search).get("fbclid") || "",
       };
 
-      const res = await freepayPix({
+      const res = await xpagSpei({
         data: {
-          amount: Math.round(total * 100),
-          customer: { name: nome, email, cpf, phone: telefone },
-          items: cart.map((it) => ({ title: it.title, unitPrice: parsePrice(it.price) * 100, quantity: it.qty })),
+          amount: total,
+          customer: { name: nome, email, rfc: cpf, phone: telefone },
+          items: cart.map((it) => ({ title: it.title, unitPrice: parsePrice(it.price), quantity: it.qty })),
           shipping: { street: rua, streetNumber: numero, zipCode: cep, neighborhood: bairro, city: cidade, state: estado, complement: complemento },
           metadata: { ...utms }
         }
