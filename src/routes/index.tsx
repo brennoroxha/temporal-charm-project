@@ -14,8 +14,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-remova RFC
-do checkout
+porque voce ta colocando o texto doque eu peço na home page?????????????????????????????????? nao pedi para por nad ana hoempage
     </div>
   );
 }
