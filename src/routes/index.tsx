@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-em entrega, mude o valor R$ 16,93 para $ 51,28
+em pago,  a logo do SPEI ta quebrada, coloque esta por favor: https://cdn.worldvectorlogo.com/logos/spei-1.svg
     </div>
   );
 }
