@@ -62,14 +62,14 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 9.023,77"
   },
   {
-    "id": "jbl-partybox-710-preta",
-    "title": "JBL Partybox 710 Negra",
-    "price": "$ 320,55",
-    "img": "/loja/images/extracted/jbl-partybox-710-preta.webp",
-    "slug": "jbl-partybox-710-preta",
+    "id": "jbl-partybox-520-potencia-y-fiesta-sin-limites",
+    "title": "Jbl Partybox 520 Potencia Y Fiesta Sin Límites",
+    "price": "$ 610,00",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_799688-MLA96098741703_102025-F.webp",
+    "slug": "jbl-partybox-520-potencia-y-fiesta-sin-limites",
     "stock": 11,
     "voltagem": false,
-    "oldPrice": "$ 6.410,94"
+    "oldPrice": "$ 12.199,99"
   },
   {
     "id": "iphone-16-pro-max-1tb-tit-nio-preto",
