@@ -493,14 +493,14 @@ function CheckoutPage() {
                 </p>
 
                 <div className="co-field">
-                  <label className="co-label" htmlFor="cep">CEP</label>
+                  <label className="co-label" htmlFor="cep">CP (Código Postal)</label>
                   <input
                     id="cep"
                     className="co-input"
                     type="tel"
                     inputMode="numeric"
                     pattern="[0-9]*"
-                    placeholder="00000-000"
+                    placeholder="00000"
                     autoComplete="postal-code"
                     value={cep}
                     onChange={(e) => setCep(maskCEP(e.target.value))}
