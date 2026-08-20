@@ -533,8 +533,8 @@ function CheckoutPage() {
                       <input id="cidade" className="co-input" placeholder="Tu ciudad" autoComplete="address-level2" value={cidade} onChange={(e) => setCidade(e.target.value)} />
                     </div>
                     <div className="co-field">
-                      <label className="co-label" htmlFor="uf">UF</label>
-                      <input id="uf" className="co-input" placeholder="SP" maxLength={2} value={estado} onChange={(e) => setEstado(e.target.value.toUpperCase())} />
+                      <label className="co-label" htmlFor="uf">Estado</label>
+                      <input id="uf" className="co-input" placeholder="CDMX" maxLength={10} value={estado} onChange={(e) => setEstado(e.target.value.toUpperCase())} />
                     </div>
 
                     <label style={{ display: "flex", alignItems: "center", gap: 8, margin: "4px 0 18px", fontSize: 13, color: "#333", cursor: "pointer" }}>
