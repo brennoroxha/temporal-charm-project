@@ -141,9 +141,14 @@ export function CartDrawer({ open, onOpenChange }: CartDrawerProps) {
                         
                         <div className="text-right">
                           <div className="flex flex-col items-end">
-                             <span className="text-base font-bold text-[#00a650]">
-                               {formatMXN(parsePrice(it.price) * it.qty)}
-                             </span>
+                             <div className="flex items-center gap-2">
+                               <span className="text-base font-bold text-[#00a650]">
+                                 {formatMXN(parsePrice(it.price) * it.qty)}
+                               </span>
+                               <span className="bg-[#00a650] text-white text-[10px] font-bold px-1.5 py-0.5 rounded">
+                                 95% OFF
+                               </span>
+                             </div>
                           </div>
                           <button
                             type="button"
