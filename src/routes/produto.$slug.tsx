@@ -239,9 +239,9 @@ function ProdutoPage() {
         .stock-info + .stock-sub{font-size:13px;color:#555;margin-top:0;display:flex;align-items:center;gap:4px;flex-wrap:wrap}
         .full-badge{display:inline-flex;align-items:center;background:#00a650;color:#fff;font-size:11px;font-weight:700;padding:2px 6px 2px 4px;border-radius:0;letter-spacing:.3px}
         .full-badge::before{content:"⚡";margin-right:2px;font-size:11px}
-        .info-price{font-size:36px;font-weight:700;color:#000;line-height:1;margin-bottom:4px}
+        .info-price{font-size:36px;font-weight:700;color:#000;line-height:1;margin-bottom:4px;display:flex;align-items:baseline;gap:8px}
         .info-price .cents{font-size:13px;font-weight:500;display:inline-block;vertical-align:top;line-height:1;margin-left:0;position:relative;top:2px}
-        .info-price-off{background:#00a650;color:#fff;font-size:14px;font-weight:700;padding:2px 6px;border-radius:0;text-decoration:none;line-height:1.2;display:inline-flex;align-items:center;justify-content:center;text-align:center;margin-left:8px}
+        .info-price-off{background:#00a650;color:#fff;font-size:14px;font-weight:700;padding:2px 6px;border-radius:0;text-decoration:none;line-height:1.2;display:inline-flex;align-items:center;justify-content:center;text-align:center;white-space:nowrap}
         .product-badge{display:inline-block;font-size:10.4px;font-weight:400;padding:2px 5px;border-radius:0;margin-top:0;line-height:1.2}
         .product-badge.best{background:#ff7733;color:#fff}
         .product-badge.official{background:#000;color:#fff}

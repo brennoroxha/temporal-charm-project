@@ -95,9 +95,9 @@ function LojaPage() {
         .loja-info{padding:10px 14px 14px;display:flex;flex-direction:column;flex:1;gap:0}
         .loja-title{font-size:14px;line-height:1.35;color:#333;font-weight:500;min-height:38px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:6px}
         .loja-old-price{font-size:12px;color:#999;text-decoration:line-through;margin:0;line-height:1.1}
-        .loja-price-row{display:flex;align-items:center;gap:6px;line-height:1.1;flex-wrap:nowrap;width:100%}
+        .loja-price-row{display:flex;align-items:baseline;gap:6px;line-height:1.1;flex-wrap:nowrap;width:100%}
         .loja-price{color:#000;font-weight:600;font-size:22px;line-height:1.1;margin-top:0}
-        .loja-discount{color:#fff;background:#00a650;font-size:12px;font-weight:700;padding:2px 4px;border-radius:0;display:inline-block;margin-left:4px}
+        .loja-discount{color:#fff;background:#00a650;font-size:12px;font-weight:700;padding:2px 4px;border-radius:0;display:inline-block;white-space:nowrap}
         .loja-stock{font-size:12px;padding:2px 6px;border-radius:0;width:fit-content;margin-top:0;font-weight:400}
         .loja-stock.low{color:#ff2e2e;background:#ffdcdc;padding-left:6px;font-weight:600}
         .loja-stock.out{color:#fff;background:#ff0000;padding:2px 8px;font-weight:700;text-transform:uppercase;border-radius:0}
