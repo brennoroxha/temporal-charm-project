@@ -323,7 +323,7 @@ function CheckoutPage() {
 
           </div>
         </header>
-        <OfferTimerBanner />
+        {/* OfferTimerBanner removido */}
       </div>
 
       <div className="co-wrap">

@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-titulo das paginas mude para Oferta 25 Años
+checkout nao deve ter o banner abaixo do header
     </div>
   );
 }
