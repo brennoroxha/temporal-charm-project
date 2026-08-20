@@ -166,7 +166,7 @@ function LojaPage() {
                       </div>
                       {p.stock !== undefined && (
                         <div className={`loja-stock ${p.stock <= 6 ? 'low' : p.stock <= 10 ? 'medium' : 'high'}`}>
-                          Quedan {p.stock} unidades
+                          ÚLTIMAS {p.stock} UNIDADES
                         </div>
                       )}
                       <div className="loja-shipping" style={{ display: "flex", alignItems: "center", gap: 4 }}>
