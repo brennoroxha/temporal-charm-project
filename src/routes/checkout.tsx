@@ -389,7 +389,7 @@ function CheckoutPage() {
             <div className="co-summary-head" onClick={() => setOpenIdent((v) => !v)}>
               <h2 style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <span style={{ width: 26, height: 26, background: "#000", color: "#fff", borderRadius: 4, display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: 14, fontWeight: 700 }}>1</span>
-                Identificação
+                Identificación
               </h2>
               <div className={`co-summary-right ${openIdent ? "open" : ""}`}>
                 <span style={{ fontWeight: 400, color: "#6b7570", fontSize: 13 }}>{nome}</span>
@@ -400,9 +400,9 @@ function CheckoutPage() {
               <div className="co-summary-body" style={{ fontSize: 14, color: "#555", paddingTop: 12 }}>
                 <div>{nome}</div>
                 <div>{email}</div>
-                <div>CPF {cpf}</div>
+                <div>RFC {cpf}</div>
                 <div>{telefone}</div>
-                <button type="button" className="co-btn-secondary" style={{ marginTop: 10 }} onClick={() => setStep(1)}>Alterar dados</button>
+                <button type="button" className="co-btn-secondary" style={{ marginTop: 10 }} onClick={() => setStep(1)}>Alterar datos</button>
               </div>
             )}
           </div>
@@ -413,7 +413,7 @@ function CheckoutPage() {
             <div className="co-summary-head" onClick={() => setOpenAddress((v) => !v)}>
               <h2 style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <span style={{ width: 26, height: 26, background: "#000", color: "#fff", borderRadius: 4, display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: 14, fontWeight: 700 }}>2</span>
-                Endereço de entrega
+                Dirección de entrega
               </h2>
               <div className={`co-summary-right ${openAddress ? "open" : ""}`}>
                 <span style={{ fontWeight: 400, color: "#6b7570", fontSize: 13 }}>{rua}, {numero}</span>
@@ -424,7 +424,7 @@ function CheckoutPage() {
               <div className="co-summary-body" style={{ fontSize: 14, color: "#555", paddingTop: 12 }}>
                 <div>{rua}, {numero}</div>
                 <div>{bairro} - {cidade}/{estado}</div>
-                <div>CEP {cep}</div>
+                <div>CP {cep}</div>
                 <button type="button" className="co-btn-secondary" style={{ marginTop: 10 }} onClick={() => setStep(2)}>Alterar endereço</button>
               </div>
             )}
