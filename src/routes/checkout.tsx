@@ -201,8 +201,8 @@ function CheckoutPage() {
         }
       });
       
-      sessionStorage.setItem("pixPayment", JSON.stringify(res));
-      navigate({ to: "/pagamento" });
+      sessionStorage.setItem("speiPayment", JSON.stringify(res));
+      navigate({ to: "/pagamento-spei" });
     } catch (err: any) {
       alert(err.message || "Error al procesar el pago.");
     } finally {
