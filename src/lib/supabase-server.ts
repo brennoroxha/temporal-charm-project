@@ -184,8 +184,7 @@ async function request<T>(
   const res = await fetch(endpoint, {
     method: options.method,
     headers: {
-      apikey: key,
-      Authorization: `Bearer ${key}`,
+      ...authHeaders(key),
       "content-type": "application/json",
       ...options.headers,
     },
