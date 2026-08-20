@@ -17,7 +17,7 @@ type Props = {
 };
 
 export function LojaHeader({ cartCount = 0, onCartClick, initialQuery = "", customMobileMenu }: Props) {
-  const [city, setCity] = useState<string>("Carregando...");
+  const [city, setCity] = useState<string>("Cargando...");
   const [q, setQ] = useState(initialQuery);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const cartEverOpened = useRef(false);

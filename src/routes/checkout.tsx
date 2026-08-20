@@ -204,7 +204,7 @@ function CheckoutPage() {
       sessionStorage.setItem("pixPayment", JSON.stringify(res));
       navigate({ to: "/pagamento" });
     } catch (err: any) {
-      alert(err.message || "Erro ao processar pagamento.");
+      alert(err.message || "Error al procesar el pago.");
     } finally {
       setPayLoading(false);
     }
