@@ -116,8 +116,8 @@ function LojaPage() {
         .loja-card .rating-count{font-size:12px;color:#999}
       `}</style>
 
-      <LojaHeader cartCount={cartCount} initialQuery={q} />
-      <div style={{ position: "sticky", top: 55, zIndex: 40 }}>
+      <div style={{ position: "sticky", top: 0, zIndex: 60 }}>
+        <LojaHeader cartCount={cartCount} initialQuery={q} />
         <OfferTimerBanner />
       </div>
 

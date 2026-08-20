@@ -306,22 +306,22 @@ function CheckoutPage() {
 
       `}</style>
 
-      <header className="co-header">
-        <div className="co-header-inner">
-          <a href="/loja" className="co-logo" aria-label="Mercado Livre">
-            <img src={mlDesktopLogo} alt="Mercado Livre" />
-          </a>
-          <div className="co-secure">
-            <Lock size={22} strokeWidth={2.2} color="#000" />
-            <div>
-              <div className="top">PAGAMENTO</div>
-              <div className="bot">100% SEGURO</div>
+      <div style={{ position: "sticky", top: 0, zIndex: 60 }}>
+        <header className="co-header">
+          <div className="co-header-inner">
+            <a href="/loja" className="co-logo" aria-label="Mercado Livre">
+              <img src={mlDesktopLogo} alt="Mercado Livre" />
+            </a>
+            <div className="co-secure">
+              <Lock size={22} strokeWidth={2.2} color="#000" />
+              <div>
+                <div className="top">PAGAMENTO</div>
+                <div className="bot">100% SEGURO</div>
+              </div>
             </div>
-          </div>
 
-        </div>
-      </header>
-      <div style={{ position: "sticky", top: 0, zIndex: 40 }}>
+          </div>
+        </header>
         <OfferTimerBanner />
       </div>
 

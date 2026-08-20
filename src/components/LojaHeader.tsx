@@ -85,7 +85,7 @@ export function LojaHeader({ cartCount = 0, onCartClick, initialQuery = "", cust
         .ml-cart svg{width:20px;height:20px}
 
         .ml-mobile-wrap{display:none}
-        .ml-header-mobile{background:#FFE600;padding:8px 12px;display:flex;flex-direction:column;gap:8px;position:sticky;top:0;z-index:50;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+        .ml-header-mobile{background:#FFE600;padding:8px 12px;display:flex;flex-direction:column;gap:8px;position:relative;z-index:50;box-shadow:0 1px 2px rgba(0,0,0,.08)}
         .ml-header-mobile-top{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;min-width:0}
         .ml-header-mobile-top > *:last-child{justify-self:end}
         .ml-header-mobile-top > *:first-child{min-width:32px;overflow:visible;justify-self:start}
