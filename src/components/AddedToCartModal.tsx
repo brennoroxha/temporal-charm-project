@@ -58,9 +58,9 @@ export function AddedToCartModal({ open, onClose, product }: Props) {
               <span className="atc-check"><Check size={12} strokeWidth={3} /></span>
             </div>
             <div className="atc-info">
-              <p className="t1">Adicionado ao carrinho</p>
+              <p className="t1">Agregado al carrito</p>
               <p className="t2">{product.title}</p>
-              <p className="t3">{product.qty} unidade{product.qty > 1 ? "s" : ""}</p>
+              <p className="t3">{product.qty} unidad{product.qty > 1 ? "es" : ""}</p>
             </div>
           </div>
           <div className="atc-actions">
