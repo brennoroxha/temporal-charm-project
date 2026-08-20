@@ -27,7 +27,7 @@ type PixPayment = {
 };
 
 function formatMXN(v: number): string {
-  return "$ " + v.toLocaleString("es-MX", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  return v.toLocaleString("es-MX", { style: "currency", currency: "MXN", minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
 function PagamentoPage() {
