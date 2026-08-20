@@ -6,7 +6,7 @@ import { lojaGallery } from "@/data/lojaGallery";
 import { lojaReviews } from "@/data/lojaReviews";
 import { ShoppingCart, Truck, ShieldCheck, RotateCcw, Star, ThumbsUp, ThumbsDown, Award, Heart, Share2, BadgeCheck, Loader2, ArrowLeft } from "lucide-react";
 import { LojaHeader } from "@/components/LojaHeader";
-import { OfferTimerBanner } from "@/components/OfferTimerBanner";
+
 const AddedToCartModal = lazy(() =>
   import("@/components/AddedToCartModal").then((m) => ({ default: m.AddedToCartModal })),
 );
@@ -351,7 +351,6 @@ function ProdutoPage() {
             </button>
           )}
         />
-        <OfferTimerBanner />
       </div>
 
       
