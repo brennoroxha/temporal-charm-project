@@ -97,14 +97,14 @@ function LojaPage() {
         .loja-old-price{font-size:12px;color:#999;text-decoration:line-through;margin:0;line-height:1.1}
         .loja-price-row{display:flex;align-items:baseline;gap:6px;line-height:1.1}
         .loja-price{color:#000;font-weight:600;font-size:22px;line-height:1.1;margin-top:0}
-        .loja-discount{color:#fff;background:#00a650;font-size:12px;font-weight:700;padding:2px 4px;border-radius:4px;display:inline-block;margin-left:4px}
-        .loja-stock{font-size:12px;padding:2px 6px;border-radius:4px;width:fit-content;margin-top:0;font-weight:400}
+        .loja-discount{color:#fff;background:#00a650;font-size:12px;font-weight:700;padding:2px 4px;border-radius:0;display:inline-block;margin-left:4px}
+        .loja-stock{font-size:12px;padding:2px 6px;border-radius:0;width:fit-content;margin-top:0;font-weight:400}
         .loja-stock.low{color:#ff2e2e;background:#ffdcdc;padding-left:6px;font-weight:600}
-        .loja-stock.out{color:#fff;background:#ff0000;padding:2px 8px;font-weight:700;text-transform:uppercase;border-radius:4px}
+        .loja-stock.out{color:#fff;background:#ff0000;padding:2px 8px;font-weight:700;text-transform:uppercase;border-radius:0}
         .loja-stock.medium{color:#847900;background:#ffffc7}
         .loja-stock.high{color:#008412;background:#cbffc7}
         .loja-shipping{color:#00a650;font-weight:600;font-size:13px}
-        .loja-btn{margin-top:auto;display:flex;align-items:center;justify-content:center;gap:8px;height:38px;border:1px solid #3483FA;color:#3483FA;background:#fff;border-radius:6px;font-weight:600;font-size:14px;cursor:pointer;text-decoration:none;transition:background .15s}
+        .loja-btn{margin-top:auto;display:flex;align-items:center;justify-content:center;gap:8px;height:38px;border:1px solid #3483FA;color:#3483FA;background:#fff;border-radius:0;font-weight:600;font-size:14px;cursor:pointer;text-decoration:none;transition:background .15s}
         .loja-btn:hover{background:#eaf2ff}
         .loja-btn svg{width:16px;height:16px}
         .loja-btn:disabled{cursor:wait;opacity:.9}

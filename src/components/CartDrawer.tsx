@@ -100,7 +100,7 @@ export function CartDrawer({ open, onOpenChange }: CartDrawerProps) {
             </div>
           ) : (
             <div className="p-4 space-y-4">
-              <div className="bg-white rounded-lg shadow-sm border border-black/5 overflow-hidden">
+              <div className="bg-white rounded-none shadow-sm border border-black/5 overflow-hidden">
                 <div className="p-3 border-b border-gray-100 flex items-center gap-2">
                   <span className="font-bold text-sm">Productos</span>
                   <img src={fullIcon.url} alt="FULL" className="h-4" loading="lazy" decoding="async" />
@@ -110,7 +110,7 @@ export function CartDrawer({ open, onOpenChange }: CartDrawerProps) {
                     <img 
                       src={lojaImageSrc(it.img)} 
                       alt={it.title} 
-                      className="w-20 h-20 object-contain flex-shrink-0 bg-white border border-gray-100 rounded" 
+                      className="w-20 h-20 object-contain flex-shrink-0 bg-white border border-gray-100 rounded-none" 
                     />
                     <div className="flex-1 min-w-0 flex flex-col gap-2">
                       <p className="text-sm text-gray-800 font-medium line-clamp-2 leading-tight">
@@ -145,8 +145,9 @@ export function CartDrawer({ open, onOpenChange }: CartDrawerProps) {
                                <span className="text-base font-bold text-[#00a650]">
                                  {formatMXN(parsePrice(it.price) * it.qty)}
                                </span>
-                               <span className="bg-[#00a650] text-white text-[10px] font-bold px-1.5 py-0.5 rounded">
+                               <span className="bg-[#00a650] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-none">
                                  95% OFF
+
                                </span>
                              </div>
                           </div>
@@ -189,14 +190,14 @@ export function CartDrawer({ open, onOpenChange }: CartDrawerProps) {
                 onOpenChange(false);
                 navigate({ to: "/checkout" });
               }}
-              className="w-full h-10 bg-[#3483FA] text-white font-semibold text-sm rounded-lg hover:bg-[#2968c8] transition-colors shadow-md"
+              className="w-full h-10 bg-[#3483FA] text-white font-semibold text-sm rounded-none hover:bg-[#2968c8] transition-colors shadow-md"
             >
               Finalizar Compra
             </button>
             <button
               type="button"
               onClick={() => onOpenChange(false)}
-              className="w-full h-10 mt-2 bg-white text-[#3483FA] border border-[#3483FA] font-semibold text-sm rounded-lg hover:bg-[#f0f7ff] transition-colors"
+              className="w-full h-10 mt-2 bg-white text-[#3483FA] border border-[#3483FA] font-semibold text-sm rounded-none hover:bg-[#f0f7ff] transition-colors"
             >
               Continuar Comprando
             </button>
