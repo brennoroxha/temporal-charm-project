@@ -320,6 +320,9 @@ function CheckoutPage() {
 
         </div>
       </header>
+      <div style={{ position: "sticky", top: 0, zIndex: 40 }}>
+        <OfferTimerBanner />
+      </div>
 
       <div className="co-wrap">
         <div className="progress" role="list">
