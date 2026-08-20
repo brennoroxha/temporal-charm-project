@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Lock } from "lucide-react";
+import { Lock, Copy, Check, Upload, AlertCircle, Loader2 } from "lucide-react";
 import { trackEvent } from "@/lib/track";
 import mlDesktopLogo from "@/assets/logomx2.png.asset.json";
 import { OfferTimerBanner } from "@/components/OfferTimerBanner";
@@ -8,7 +8,7 @@ import { OfferTimerBanner } from "@/components/OfferTimerBanner";
 export const Route = createFileRoute("/pagamento-spei")({
   head: () => ({
     meta: [
-      { title: "Pago SPEI - Mercado Livre" },
+      { title: "Pago SPEI - Mercado Libre" },
       { name: "description", content: "Finalice su pago vía SPEI." },
     ],
   }),
@@ -17,24 +17,27 @@ export const Route = createFileRoute("/pagamento-spei")({
 
 type SpeiItem = { slug: string; title: string; image: string; qty: number; unitPrice: number };
 type SpeiPayment = {
-  id: string;
+  transactionId: string;
   clabe: string;
-  instructions: any;
+  bankName: string;
+  beneficiaryName: string;
   amount: number;
+  customerName: string;
   items?: SpeiItem[];
 };
 
 function formatMXN(v: number): string {
-  return "$ " + v.toLocaleString("es-MX", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  return v.toLocaleString("es-MX", { style: "currency", currency: "MXN", minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
 function PagamentoSpeiPage() {
   const [pay, setPay] = useState<SpeiPayment | null>(null);
   const [remaining, setRemaining] = useState(29 * 60 + 53);
   const [copied, setCopied] = useState(false);
-  const [showUpload, setShowUpload] = useState(false);
   const [uploadState, setUploadState] = useState<"idle" | "uploading" | "done" | "error">("idle");
   const [uploadMsg, setUploadMsg] = useState<string>("");
+  const [fileName, setFileName] = useState<string>("");
+  const [showUpload, setShowUpload] = useState(false);
 
   useEffect(() => {
     const t = setTimeout(() => setShowUpload(true), 20000);
@@ -43,11 +46,11 @@ function PagamentoSpeiPage() {
 
   useEffect(() => {
     try {
-      const raw = sessionStorage.getItem("speiPayment");
+      const raw = sessionStorage.getItem("pixPayment");
       if (!raw) { window.location.href = "/checkout"; return; }
       const parsed = JSON.parse(raw);
       setPay(parsed);
-      trackEvent("pagamento_spei_view", { transactionId: String(parsed?.id ?? "") });
+      trackEvent("pagamento_view", { transactionId: String(parsed?.transactionId ?? ""), method: "spei" });
     } catch { window.location.href = "/checkout"; }
   }, []);
 
@@ -57,15 +60,15 @@ function PagamentoSpeiPage() {
   }, []);
 
   useEffect(() => {
-    if (!pay?.id) return;
+    if (!pay?.transactionId) return;
     let stopped = false;
-    const firedKey = `purchaseFired:${pay.id}`;
+    const firedKey = `purchaseFired:${pay.transactionId}`;
     if (typeof window !== "undefined" && sessionStorage.getItem(firedKey)) return;
 
     const check = async () => {
       try {
         const { getOrderStatus } = await import("@/lib/orders.functions");
-        const r = await getOrderStatus({ data: { transactionId: String(pay.id) } });
+        const r = await getOrderStatus({ data: { transactionId: String(pay.transactionId) } });
         if (stopped) return;
         if (r.status === "paid" || r.status === "receipt_uploaded") {
           const value = Number(r.amount ?? pay.amount ?? 0);
@@ -75,21 +78,21 @@ function PagamentoSpeiPage() {
               send_to: "AW-18267532945/M09HCP3G8cwcEJHd0YZE",
               value,
               currency: "MXN",
-              transaction_id: String(pay.id),
+              transaction_id: String(pay.transactionId),
             });
             w.gtag("event", "purchase", {
-              transaction_id: String(pay.id),
+              transaction_id: String(pay.transactionId),
               value,
               currency: "MXN",
             });
           }
           if (typeof w.fbPurchase === "function") {
-            w.fbPurchase(value, String(pay.id));
+            w.fbPurchase(value, String(pay.transactionId));
           }
           if (typeof w.utmifyTrack === "function") {
             w.utmifyTrack("Purchase", {
               value: value,
-              order_id: String(pay.id),
+              order_id: String(pay.transactionId),
               currency: "MXN"
             });
           }
@@ -101,19 +104,20 @@ function PagamentoSpeiPage() {
     check();
     const iv = setInterval(check, 5000);
     return () => { stopped = true; clearInterval(iv); };
-  }, [pay?.id, pay?.amount]);
+  }, [pay?.transactionId, pay?.amount]);
 
-  const copyClabe = async () => {
-    if (!pay?.clabe) return;
+  const mm = String(Math.floor(remaining / 60)).padStart(2, "0");
+  const ss = String(remaining % 60).padStart(2, "0");
+
+  const copyText = async (text: string) => {
     try {
       if (navigator.clipboard && window.isSecureContext) {
-        await navigator.clipboard.writeText(pay.clabe);
+        await navigator.clipboard.writeText(text);
       } else {
         const textArea = document.createElement("textarea");
-        textArea.value = pay.clabe;
+        textArea.value = text;
         textArea.style.position = "fixed";
         textArea.style.left = "-9999px";
-        textArea.style.top = "0";
         document.body.appendChild(textArea);
         textArea.focus();
         textArea.select();
@@ -121,128 +125,178 @@ function PagamentoSpeiPage() {
         document.body.removeChild(textArea);
       }
       setCopied(true);
-      trackEvent("spei_clabe_copied", { transactionId: String(pay.id) });
-      setTimeout(() => setCopied(false), 3000);
+      setTimeout(() => setCopied(false), 2000);
     } catch (err) {
-      window.prompt("Copie la CLABE:", pay.clabe);
+      console.error("Erro ao copiar:", err);
     }
   };
 
-  const handleUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file || !pay) return;
-    setUploadMsg("");
-    if (file.size > 8 * 1024 * 1024) {
-      setUploadState("error");
-      setUploadMsg("Archivo mayor a 8MB");
-      return;
-    }
-    setUploadState("uploading");
-    try {
-      const b64 = await new Promise<string>((res, rej) => {
-        const r = new FileReader();
-        r.onload = () => res(String(r.result).split(",")[1] ?? "");
-        r.onerror = () => rej(new Error("read fail"));
-        r.readAsDataURL(file);
-      });
-      const { uploadReceipt } = await import("@/lib/orders.functions");
-      await uploadReceipt({
-        data: {
-          transactionId: String(pay.id),
-          filename: file.name,
-          contentType: file.type || "application/octet-stream",
-          dataBase64: b64,
-        },
-      });
-      setUploadState("done");
-      setUploadMsg("¡Comprobante recibido! Estamos validando.");
-      trackEvent("receipt_uploaded_spei", { transactionId: String(pay.id) });
-    } catch (err: any) {
-      setUploadState("error");
-      setUploadMsg(err?.message || "Error al enviar");
-    }
-  };
-
-  const mm = String(Math.floor(remaining / 60)).padStart(2, "0");
-  const ss = String(remaining % 60).padStart(2, "0");
+  const formattedAmount = formatMXN(pay?.amount || 0);
+  const [intPart, decPart] = formattedAmount.split('.');
 
   return (
-    <div style={{ minHeight: "100vh", background: "#f5f5f5", fontFamily: '-apple-system,"Segoe UI",Roboto,Arial,sans-serif', color: "#333" }}>
-      <style>{`
-        .pg-header{background:#fff058;box-shadow:0 1px 2px rgba(0,0,0,.08)}
-        .pg-header-inner{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-        .pg-logo img{height:33px;width:auto;display:block}
-        .pg-secure{display:flex;align-items:center;gap:8px;text-transform:uppercase;font-size:13px;color:#000;text-align:right;font-weight:500}
-        .pg-secure .top{font-size:14px;font-weight:700}
-        .pg-wrap{width:95%;max-width:520px;margin:20px auto;background:#fff;border-radius:10px;padding:24px 22px;box-shadow:0 1px 3px rgba(0,0,0,.1)}
-        .pg-title{font-size:22px;font-weight:700;color:#333;margin:0 0 8px;text-align:center}
-        .pg-sub{font-size:14px;color:#555;margin:0 0 8px;text-align:center;line-height:1.5}
-        .pg-sub b{color:#3483FA}
-        .pg-wait{display:flex;align-items:center;justify-content:center;gap:8px;margin:18px 0 14px;padding:10px;background:#e3f2fd;color:#1976d2;border-radius:6px;font-size:14px;font-weight:500}
-        .pg-clabe-box{background:#f9f9f9;border:1px solid #ddd;border-radius:8px;padding:16px;margin:20px 0;text-align:center}
-        .pg-clabe-label{font-size:12px;color:#777;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
-        .pg-clabe-value{font-size:24px;font-weight:700;color:#333;letter-spacing:2px;margin-bottom:12px}
-        .pg-copy{width:100%;background:#3483FA;color:#fff;border:0;padding:14px;border-radius:6px;font-weight:600;font-size:15px;cursor:pointer}
-        .pg-copy.copied{background:#00a650}
-        .pg-value{text-align:center;margin:18px 0 8px;font-weight:600;font-size:18px;color:#333}
-        .pg-value span{color:#00a650;font-size:22px}
-        .pg-steps{margin-top:24px;padding-top:20px;border-top:1px solid #eee}
-        .pg-step{display:flex;gap:12px;margin-bottom:14px;font-size:14px;color:#555;align-items:flex-start}
-        .pg-num{background:#3483FA;color:#fff;width:26px;height:26px;min-width:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:13px}
-        .pg-proof{margin-top:20px;padding:18px;background:#f5f5f5;border-radius:8px;text-align:center}
-        .pg-proof-t{font-weight:600;font-size:15px;color:#333;margin:0 0 4px}
-        .pg-proof-sub{font-size:12px;color:#777;margin:0 0 14px}
-        .pg-file-input{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;pointer-events:none}
-        .pg-file-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#fff;color:#3483FA;border:1.5px solid #3483FA;padding:11px 20px;border-radius:6px;font-weight:600;font-size:14px;cursor:pointer;transition:background .15s}
-        .pg-file-btn:hover{background:#eef4ff}
-        .pg-file-btn.disabled{opacity:.6;cursor:not-allowed}
-        .pg-upload-msg{margin-top:10px;font-size:13px}
-      `}</style>
-
-      <header className="pg-header">
-        <div className="pg-header-inner">
-          <a href="/loja" className="pg-logo"><img src={mlDesktopLogo.url} alt="Logo" /></a>
-          <div className="pg-secure"><Lock size={20} /><div><div className="top">PAGO</div><div>100% SEGURO</div></div></div>
+    <div style={{ minHeight: "100vh", background: "#f5f5f5", fontFamily: 'Proxima Nova,-apple-system,Helvetica,Arial,sans-serif', color: "#333" }}>
+      <header style={{ background: "#fff058", boxShadow: "0 1px 2px rgba(0,0,0,.08)" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "14px 20px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <a href="/loja" style={{ display: "block" }}>
+            <img src={mlDesktopLogo.url} alt="Mercado Libre" style={{ height: 33, width: "auto" }} />
+          </a>
+          <div style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, fontWeight: 500 }}>
+            <Lock size={20} strokeWidth={2.5} />
+            <div style={{ textAlign: "right" }}>
+              <div style={{ fontWeight: 700 }}>PAGO</div>
+              <div>100% SEGURO</div>
+            </div>
+          </div>
         </div>
       </header>
+
       <OfferTimerBanner />
 
-      <div className="pg-wrap">
-        <h1 className="pg-title">Finaliza tu pago SPEI</h1>
-        <p className="pg-sub">Realiza la transferencia dentro de <b>{mm}:{ss}</b></p>
+      <div style={{ width: "95%", maxWidth: 520, margin: "20px auto", background: "#fff", padding: 24, boxShadow: "0 1px 3px rgba(0,0,0,.1)" }}>
+        <h1 style={{ fontSize: 22, fontWeight: 700, textAlign: "center", marginBottom: 8 }}>Ya casi es tuyo...</h1>
+        <p style={{ fontSize: 14, textAlign: "center", color: "#666", marginBottom: 20 }}>
+          Realiza la transferencia en los próximos <b>{mm}:{ss}</b> para asegurar tu pedido.
+        </p>
 
-        <div className="pg-wait">Esperando confirmación...</div>
-
-        <div className="pg-clabe-box">
-          <div className="pg-clabe-label">CLABE Interbancaria</div>
-          <div className="pg-clabe-value">{pay?.clabe || "Generando..."}</div>
-          <button className={`pg-copy ${copied ? "copied" : ""}`} onClick={copyClabe}>
-            {copied ? "¡CLABE Copiada!" : "Copiar CLABE"}
-          </button>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 8, padding: 12, background: "#e3f2fd", color: "#1976d2", borderRadius: 6, fontSize: 14, fontWeight: 500, marginBottom: 24 }}>
+          <Loader2 className="animate-spin" size={18} />
+          Esperando transferencia...
         </div>
 
-        <div className="pg-value">Monto a pagar: <span>{formatMXN(pay?.amount || 0)}</span></div>
+        <div style={{ border: "1px solid #eee", borderRadius: 8, padding: 20, marginBottom: 24 }}>
+          <div style={{ fontSize: 13, color: "#666", marginBottom: 4 }}>Total a pagar:</div>
+          <div style={{ fontSize: 28, fontWeight: 700, color: "#00a650", display: "flex", alignItems: "flex-start", marginBottom: 20 }}>
+            {intPart}
+            <span style={{ fontSize: 14, marginTop: 4 }}>.{decPart || '00'}</span>
+          </div>
+
+          <div style={{ marginBottom: 16 }}>
+            <div style={{ fontSize: 12, color: "#666", textTransform: "uppercase", fontWeight: 600, marginBottom: 4 }}>CLABE Interbancaria</div>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", background: "#f8f8f8", padding: "12px 16px", borderRadius: 6, border: "1px solid #ddd" }}>
+              <span style={{ fontFamily: "monospace", fontSize: 16, fontWeight: 600, letterSpacing: 1 }}>{pay?.clabe || "Cargando..."}</span>
+              <button 
+                onClick={() => pay?.clabe && copyText(pay.clabe)}
+                style={{ background: "none", border: 0, color: "#3483fa", cursor: "pointer", display: "flex", alignItems: "center", gap: 4, fontSize: 13, fontWeight: 600 }}
+              >
+                {copied ? <Check size={16} color="#00a650" /> : <Copy size={16} />}
+                {copied ? "Copiado" : "Copiar"}
+              </button>
+            </div>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+            <div>
+              <div style={{ fontSize: 12, color: "#666", textTransform: "uppercase", fontWeight: 600, marginBottom: 4 }}>Banco</div>
+              <div style={{ fontSize: 14, fontWeight: 600 }}>{pay?.bankName || "Cargando..."}</div>
+            </div>
+            <div>
+              <div style={{ fontSize: 12, color: "#666", textTransform: "uppercase", fontWeight: 600, marginBottom: 4 }}>Beneficiario</div>
+              <div style={{ fontSize: 14, fontWeight: 600 }}>{pay?.beneficiaryName || "XPag Global"}</div>
+            </div>
+          </div>
+        </div>
+
+        <div style={{ background: "#fffbe6", border: "1px solid #ffe58f", padding: 16, borderRadius: 8, marginBottom: 24, fontSize: 13, display: "flex", gap: 12 }}>
+          <AlertCircle size={20} color="#faad14" style={{ flexShrink: 0 }} />
+          <div>
+            <strong>Importante:</strong> La transferencia debe ser por el monto exacto para que el sistema la detecte automáticamente.
+          </div>
+        </div>
 
         {showUpload && (
-          <div className="pg-proof">
-            <div className="pg-proof-t">¿Ya pagaste y no se ha confirmado?</div>
-            <div className="pg-proof-sub">Adjunta tu comprobante para agilizar el proceso.</div>
-            <label className={`pg-file-btn ${uploadState === "uploading" || uploadState === "done" ? "disabled" : ""}`}>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-              {uploadState === "uploading" ? "Enviando..." : uploadState === "done" ? "¡Enviado!" : "Adjuntar Comprobante"}
-              <input type="file" className="pg-file-input" accept="image/*,application/pdf" onChange={handleUpload} disabled={uploadState === "uploading" || uploadState === "done"} />
+          <div style={{ background: "#f5f5f5", padding: 20, borderRadius: 8, textAlign: "center", marginBottom: 24 }}>
+            <h3 style={{ fontSize: 15, fontWeight: 700, marginBottom: 4 }}>¿Ya realizaste el pago?</h3>
+            <p style={{ fontSize: 12, color: "#666", marginBottom: 16 }}>Adjunta tu comprobante para agilizar la validación.</p>
+            
+            <label style={{ 
+              display: "inline-flex", 
+              alignItems: "center", 
+              gap: 8, 
+              background: uploadState === "done" ? "#00a650" : "#3483fa", 
+              color: "#fff", 
+              padding: "12px 24px", 
+              borderRadius: 6, 
+              fontWeight: 600, 
+              fontSize: 14, 
+              cursor: uploadState === "uploading" ? "default" : "pointer",
+              opacity: uploadState === "uploading" ? 0.7 : 1
+            }}>
+              {uploadState === "uploading" ? <Loader2 className="animate-spin" size={18} /> : uploadState === "done" ? <Check size={18} /> : <Upload size={18} />}
+              {uploadState === "uploading" ? "Enviando..." : uploadState === "done" ? "¡Comprobante enviado!" : "Adjuntar comprobante"}
+              <input 
+                type="file" 
+                style={{ display: "none" }} 
+                accept="image/*,application/pdf"
+                disabled={uploadState === "uploading" || uploadState === "done"}
+                onChange={async (e) => {
+                  const file = e.target.files?.[0];
+                  if (!file || !pay) return;
+                  setFileName(file.name);
+                  if (file.size > 8 * 1024 * 1024) { setUploadState("error"); setUploadMsg("Archivo muy grande (máx 8MB)"); return; }
+                  
+                  setUploadState("uploading");
+                  try {
+                    const b64 = await new Promise<string>((res) => {
+                      const r = new FileReader();
+                      r.onload = () => res(String(r.result).split(",")[1] || "");
+                      r.readAsDataURL(file);
+                    });
+                    const { uploadReceipt } = await import("@/lib/orders.functions");
+                    await uploadReceipt({ data: {
+                      transactionId: String(pay.transactionId),
+                      filename: file.name,
+                      contentType: file.type || "application/octet-stream",
+                      dataBase64: b64,
+                    }});
+                    setUploadState("done");
+                    setUploadMsg("Recibido. Estamos validando su pago.");
+                  } catch (err) {
+                    setUploadState("error");
+                    setUploadMsg("Error al enviar. Intente de nuevo.");
+                  }
+                }}
+              />
             </label>
-            {uploadMsg && <div className="pg-upload-msg" style={{ color: uploadState === "error" ? "#d93025" : "#00a650" }}>{uploadMsg}</div>}
+            {uploadMsg && <div style={{ marginTop: 10, fontSize: 12, color: uploadState === "error" ? "#d93025" : "#00a650" }}>{uploadMsg}</div>}
           </div>
         )}
 
-        <div className="pg-steps">
-          <h3>Instrucciones:</h3>
-          <div className="pg-step"><div className="pg-num">1</div><div>Copia la CLABE de arriba</div></div>
-          <div className="pg-step"><div className="pg-num">2</div><div>Entra a tu app bancaria</div></div>
-          <div className="pg-step"><div className="pg-num">3</div><div>Realiza una transferencia SPEI</div></div>
-          <div className="pg-step"><div className="pg-num">4</div><div>Usa la CLABE y el monto exacto</div></div>
+        <div style={{ borderTop: "1px solid #eee", paddingTop: 20 }}>
+          <h3 style={{ fontSize: 16, fontWeight: 700, marginBottom: 16 }}>Pasos a seguir:</h3>
+          {[
+            "Copia la CLABE interbancaria de 18 dígitos.",
+            "Entra a la aplicación de tu banco.",
+            "Selecciona Transferir / SPEI.",
+            "Pega la CLABE, ingresa el monto exacto y confirma.",
+            "¡Listo! Tu pedido se actualizará en unos minutos."
+          ].map((step, i) => (
+            <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, fontSize: 14, color: "#555", alignItems: "flex-start" }}>
+              <div style={{ background: "#3483fa", color: "#fff", width: 24, height: 24, borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontWeight: 600, fontSize: 12 }}>{i+1}</div>
+              <div style={{ lineHeight: "24px" }}>{step}</div>
+            </div>
+          ))}
         </div>
+
+        {pay?.items && pay.items.length > 0 && (
+          <div style={{ borderTop: "1px solid #eee", marginTop: 20, paddingTop: 20 }}>
+            <h3 style={{ fontSize: 16, fontWeight: 700, marginBottom: 16 }}>Resumen del pedido</h3>
+            {pay.items.map((it) => (
+              <div key={it.slug} style={{ display: "flex", gap: 12, marginBottom: 12 }}>
+                <img src={it.image} alt={it.title} style={{ width: 50, height: 50, objectFit: "contain", border: "1px solid #eee", borderRadius: 4 }} />
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontSize: 13, lineHeight: "1.3", marginBottom: 4, display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>{it.title}</div>
+                  <div style={{ fontSize: 12, color: "#666" }}>Cant: {it.qty} · {formatMXN(it.unitPrice)}</div>
+                </div>
+                <div style={{ fontSize: 14, fontWeight: 600 }}>{formatMXN(it.unitPrice * it.qty)}</div>
+              </div>
+            ))}
+            <div style={{ display: "flex", justifyContent: "space-between", marginTop: 12, paddingTop: 12, borderTop: "1px solid #f5f5f5", fontWeight: 700 }}>
+              <span>Total</span>
+              <span style={{ color: "#00a650" }}>{formatMXN(pay.amount)}</span>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
