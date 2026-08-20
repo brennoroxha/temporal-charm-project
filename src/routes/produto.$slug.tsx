@@ -236,6 +236,8 @@ function ProdutoPage() {
         .stock-info{margin-top:14px;font-size:15px;font-weight:600;color:#000}
         .stock-info.out{color:#fff;background:#ff0000;padding:4px 10px;border-radius:0;display:inline-block;font-weight:700;text-transform:uppercase}
         .stock-info.low{color:#ff2e2e;background:#ffdcdc;padding:2px 6px;border-radius:0;display:inline-block;font-size:12px;font-weight:400}
+        .stock-info.medium{color:#847900;background:#ffffc7;padding:2px 6px;border-radius:0;display:inline-block;font-size:12px;font-weight:400}
+        .stock-info.high{color:#00a650;background:#e6f6ef;padding:2px 6px;border-radius:0;display:inline-block;font-size:12px;font-weight:400}
         .stock-info + .stock-sub{font-size:13px;color:#555;margin-top:0;display:flex;align-items:center;gap:4px;flex-wrap:wrap}
         .full-badge{display:inline-flex;align-items:center;background:#00a650;color:#fff;font-size:11px;font-weight:700;padding:2px 6px 2px 4px;border-radius:0;letter-spacing:.3px}
         .full-badge::before{content:"⚡";margin-right:2px;font-size:11px}
@@ -491,7 +493,7 @@ function ProdutoPage() {
               ) : 'Stock disponible'}
             </div>
             {product.stock !== 0 && product.stock !== undefined && (
-              <div className="stock-info low" style={{ marginBottom: 0, marginTop: 4 }}>
+              <div className={`stock-info ${product.stock <= 6 ? 'low' : product.stock <= 10 ? 'medium' : 'high'}`} style={{ marginBottom: 0, marginTop: 4 }}>
                 ÚLTIMAS {product.stock} UNIDADES
               </div>
             )}
