@@ -128,7 +128,7 @@ function LojaPage() {
           <div style={{ padding: "8px 4px 12px", fontSize: 14, color: "#333" }}>
             {products.length > 0
               ? <>Resultados para <b>"{q}"</b> ({products.length})</>
-              : <>Nenhum produto encontrado para <b>"{q}"</b>. <button type="button" onClick={() => navigate({ to: "/loja", search: {} as any })} style={{ background: "transparent", border: 0, color: "#3483FA", cursor: "pointer", padding: 0, textDecoration: "underline" }}>Limpar busca</button></>}
+              : <>No se encontraron productos para <b>"{q}"</b>. <button type="button" onClick={() => navigate({ to: "/loja", search: {} as any })} style={{ background: "transparent", border: 0, color: "#3483FA", cursor: "pointer", padding: 0, textDecoration: "underline" }}>Limpiar búsqueda</button></>}
           </div>
         )}
         <div className="loja-grid">
@@ -166,11 +166,11 @@ function LojaPage() {
                       </div>
                       {p.stock !== undefined && (
                         <div className={`loja-stock ${p.stock <= 6 ? 'low' : p.stock <= 10 ? 'medium' : 'high'}`}>
-                          Restam {p.stock} unidades
+                          Quedan {p.stock} unidades
                         </div>
                       )}
                       <div className="loja-shipping" style={{ display: "flex", alignItems: "center", gap: 4 }}>
-                        Frete <img src={fullIcon.url} alt="FULL" style={{ height: 18, verticalAlign: "middle" }} />
+                        Envío <img src={fullIcon.url} alt="FULL" style={{ height: 18, verticalAlign: "middle" }} />
                       </div>
                     </Link>
                   ) : (
@@ -179,7 +179,7 @@ function LojaPage() {
                       {p.stock !== undefined && (
                         <div className={`loja-stock out`}>
                           <span style={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                            X SEM ESTOQUE
+                            X SIN STOCK
                           </span>
                         </div>
                       )}
