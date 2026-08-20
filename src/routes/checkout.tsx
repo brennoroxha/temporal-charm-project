@@ -517,7 +517,7 @@ function CheckoutPage() {
                       <input id="rua" className="co-input" placeholder="Calle, avenida..." autoComplete="address-line1" value={rua} onChange={(e) => setRua(e.target.value)} />
                     </div>
                     <div className="co-field">
-                      <label className="co-label" htmlFor="numero">Número</label>
+                      <label className="co-label" htmlFor="numero">Número exterior</label>
                       <input id="numero" className="co-input" placeholder="123" value={numero} onChange={(e) => setNumero(e.target.value)} />
                     </div>
                     <div className="co-field">
