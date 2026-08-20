@@ -476,7 +476,7 @@ function CheckoutPage() {
               <div style={{ textAlign: "center", marginTop: 12 }}>
                 <button onClick={() => navigate({ to: "/loja" })} className="co-back" style={{ color: "#8B948F", fontSize: 14, display: "inline-flex", alignItems: "center", gap: 4, background: "none", border: 0, padding: 0, cursor: "pointer" }}>
                   <ArrowLeft size={12} />
-                  Voltar ao carrinho
+                  Volver al carrito
                 </button>
               </div>
             </div>
