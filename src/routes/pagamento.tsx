@@ -235,7 +235,10 @@ function PagamentoPage() {
           {copied ? "Código copiado!" : "Copiar código de pago"}
         </button>
 
-        <div className="pg-value">Monto a pagar: <span>{formatMXN(pay?.amount || 0)}</span></div>
+        <div className="pg-value">Monto a pagar: <span style={{ display: "inline-flex", alignItems: "flex-start" }}>
+          {formatMXN(pay?.amount || 0).split(',')[0]}
+          <span style={{ fontSize: "0.5em", marginTop: 4, marginLeft: 1 }}>{formatMXN(pay?.amount || 0).split(',')[1] || '00'}</span>
+        </span></div>
 
         {showUpload && (
           <div className="pg-proof">
