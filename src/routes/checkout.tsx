@@ -8,7 +8,7 @@ import { type LojaProduct } from "@/data/types";
 
 import { lojaImageSrc } from "@/lib/lojaImage";
 import { trackEvent, trackFieldOnce } from "@/lib/track";
-import mlDesktopLogo from "@/assets/ml-desktop-local.webp";
+import mlDesktopLogo from "@/assets/logomx2.png.asset.json";
 import iconeFull from "@/assets/iconefull.png.asset.json";
 import { OfferTimerBanner } from "@/components/OfferTimerBanner";
 
@@ -310,7 +310,7 @@ function CheckoutPage() {
         <header className="co-header">
           <div className="co-header-inner">
             <a href="/loja" className="co-logo" aria-label="Mercado Livre">
-              <img src={mlDesktopLogo} alt="Mercado Livre" />
+              <img src={mlDesktopLogo.url} alt="Mercado Livre" />
             </a>
             <div className="co-secure">
               <Lock size={22} strokeWidth={2.2} color="#000" />
