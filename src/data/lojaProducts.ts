@@ -262,14 +262,14 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 6.410,94"
   },
   {
-    "id": "ar-condicionado-split-lg-24-000-btus",
-    "title": "Aire Acondicionado Split LG 24.000 BTUs",
-    "price": "$ 504,75",
-    "img": "/loja/images/ar-condicionado-split-lg-24-000-btus.webp",
-    "slug": "ar-condicionado-split-lg-24-000-btus",
+    "id": "aire-minisplit-220v-mirage-2-toneladas-24000-btu-x5",
+    "title": "Aire Minisplit 220v Mirage 2 Toneladas 24000 Btu X5",
+    "price": "$ 591,64",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_947383-MLM114061774033_072026-F.webp",
+    "slug": "aire-minisplit-220v-mirage-2-toneladas-24000-btu-x5",
     "stock": 14,
     "voltagem": true,
-    "oldPrice": "$ 10.095,10"
+    "oldPrice": "$ 11.832,72"
   },
   {
     "id": "kit-combinado-dewalt-20v-7-herramientas",

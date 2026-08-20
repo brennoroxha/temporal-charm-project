@@ -105,7 +105,7 @@ export const lojaGallery: Record<string, string[]> = {
   "olla-a-presion-hamilton-beach-7-5l-quikcook": ["https://http2.mlstatic.com/D_NQ_NP_2X_769279-MLA99880260369_112025-F.webp", "https://http2.mlstatic.com/frontend-assets/vpp-frontend/picture-play.svg", "https://http2.mlstatic.com/D_NQ_NP_905561-MLA94800155110_102025-F.jpg", "https://http2.mlstatic.com/D_NQ_NP_2X_850757-MLA82278094354_022025-F.webp"],
   "iphone-15-256gb-rosa": ["/loja/images/iphone-15-256gb-rosa.webp"],
   "iphone-15-256gb-azul": ["/loja/images/iphone-15-256gb-azul.webp"],
-  "ar-condicionado-split-lg-24-000-btus": [],
+  "aire-minisplit-220v-mirage-2-toneladas-24000-btu-x5": ["https://http2.mlstatic.com/D_NQ_NP_2X_947383-MLM114061774033_072026-F.webp", "https://http2.mlstatic.com/D_NQ_NP_2X_782469-MLM112860023860_072026-F.webp", "https://http2.mlstatic.com/D_NQ_NP_2X_738458-MLM106405450208_022026-F.webp", "https://http2.mlstatic.com/D_NQ_NP_2X_736477-MLM106405330156_022026-F.webp"],
   "horno-microondas-whirlpool-wm1807d-plata": [
     "https://http2.mlstatic.com/D_NQ_NP_2X_613856-MLA99466441300_112025-F.webp",
     "https://http2.mlstatic.com/D_NQ_NP_2X_804606-MLA99466490618_112025-F.webp",
