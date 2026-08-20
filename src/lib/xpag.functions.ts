@@ -90,9 +90,9 @@ export const createXpagSpei = createServerFn({ method: "POST" })
     }
 
 
-    if (!res.ok) {
+    if (!res.ok || json?.ok === false) {
       console.error("XPag API error", res.status, json);
-      throw new Error(json?.message || `XPag API Error ${res.status}`);
+      throw new Error(json?.error || json?.message || `XPag API Error ${res.status}`);
     }
 
 
