@@ -542,7 +542,7 @@ function CheckoutPage() {
                       Guardar esta dirección para próximas compras.
                     </label>
 
-                    <p className="co-section-title">Forma de envio</p>
+                    <p className="co-section-title">Forma de envío</p>
                     <div role="radiogroup" aria-label="Forma de envio">
                       <label className={`co-ship ${shipping === "standard" ? "sel" : ""}`}>
                         <input type="radio" name="frete" value="standard" checked={shipping === "standard"} onChange={() => setShipping("standard")} />
