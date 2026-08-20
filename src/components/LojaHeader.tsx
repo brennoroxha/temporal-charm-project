@@ -62,7 +62,7 @@ export function LojaHeader({ cartCount = 0, onCartClick, initialQuery = "", cust
   return (
     <>
       <style>{`
-        .ml-header{background:#FFE600;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+        .ml-header{background:#efcf05;box-shadow:0 1px 2px rgba(0,0,0,.08)}
         .ml-header-top{max-width:1200px;margin:0 auto;padding:14px 20px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:24px}
         .ml-logo{display:flex;align-items:center;text-decoration:none;color:#000}
         .ml-logo img{height:33px;width:auto;display:block}
@@ -85,7 +85,7 @@ export function LojaHeader({ cartCount = 0, onCartClick, initialQuery = "", cust
         .ml-cart svg{width:20px;height:20px}
 
         .ml-mobile-wrap{display:none}
-        .ml-header-mobile{background:#FFE600;padding:8px 12px;display:flex;flex-direction:column;gap:8px;position:relative;z-index:50;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+        .ml-header-mobile{background:#efcf05;padding:8px 12px;display:flex;flex-direction:column;gap:8px;position:relative;z-index:50;box-shadow:0 1px 2px rgba(0,0,0,.08)}
         .ml-header-mobile-top{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;min-width:0}
         .ml-header-mobile-top > *:last-child{justify-self:end}
         .ml-header-mobile-top > *:first-child{min-width:32px;overflow:visible;justify-self:start}
@@ -94,7 +94,7 @@ export function LojaHeader({ cartCount = 0, onCartClick, initialQuery = "", cust
         .ml-search-mobile{display:none}
         .ml-icon-btn{background:transparent;border:0;color:#000;cursor:pointer;padding:4px;display:flex;align-items:center;justify-content:center;position:relative}
         .ml-icon-btn svg{width:24px;height:24px}
-        .ml-location-mobile{background:#FFE600;padding:10px 12px 10px;display:flex;align-items:center;gap:6px;font-size:13px;color:#000;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-shadow:0 2px 3px rgba(0,0,0,.08)}
+        .ml-location-mobile{background:#efcf05;padding:10px 12px 10px;display:flex;align-items:center;gap:6px;font-size:13px;color:#000;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-shadow:0 2px 3px rgba(0,0,0,.08)}
         .ml-location-mobile svg{width:16px;height:16px;color:#000;flex-shrink:0}
         .ml-location-mobile .lbl{color:#333;font-size:13px}
         .ml-location-mobile .val{font-weight:400}
