@@ -138,7 +138,7 @@ function PagamentoPage() {
     } catch (err) {
       console.error("Error al copiar PIX:", err);
       // Fallback final via prompt para garantir que o usuário consiga o código
-      window.prompt("Pressione Ctrl+C ou mantenha pressionado para copiar o código PIX:", pay.qrcode);
+      window.prompt("Presione Ctrl+C o mantenga presionado para copiar el código PIX:", pay.qrcode);
     }
   };
 
