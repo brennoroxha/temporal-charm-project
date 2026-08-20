@@ -77,12 +77,22 @@ export const createXpagSpei = createServerFn({ method: "POST" })
       body: JSON.stringify(payload),
     });
 
-    const json: any = await res.json();
+    const raw = await res.text();
+    let json: any = null;
+    try {
+      json = JSON.parse(raw);
+    } catch {
+      console.error("XPag non-JSON response", res.status, raw.slice(0, 300));
+      throw new Error(
+        `XPag respondió con un formato inválido (HTTP ${res.status}). Verifica la URL de la API y la clave configurada.`,
+      );
+    }
 
     if (!res.ok) {
       console.error("XPag API error", res.status, json);
-      throw new Error(json.message || `XPag API Error ${res.status}`);
+      throw new Error(json?.message || `XPag API Error ${res.status}`);
     }
+
 
     const tx = json.data || json;
     const transactionId = tx.id;
