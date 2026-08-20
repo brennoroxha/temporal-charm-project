@@ -53,7 +53,7 @@ export const lojaProducts: LojaProduct[] = [
   },
   {
     "id": "caixa-de-som-jbl-boombox-4-bluetooth",
-    "title": "Caixa de Som JBL Boombox 4 Bluetooth",
+    "title": "Altavoz JBL Boombox 4 Bluetooth",
     "price": "$ 451,19",
     "img": "/loja/images/caixa-de-som-jbl-boombox-4-bluetooth.webp",
     "slug": "caixa-de-som-jbl-boombox-4-bluetooth",
@@ -73,7 +73,7 @@ export const lojaProducts: LojaProduct[] = [
   },
   {
     "id": "iphone-16-pro-max-1tb-tit-nio-preto",
-    "title": "iPhone 16 Pro Max 1TB Titânio Negro",
+    "title": "iPhone 16 Pro Max 1TB Titanio Negro",
     "price": "$ 841,48",
     "img": "/loja/images/iphone-16-pro-max-1tb-tit-nio-preto.webp",
     "slug": "iphone-16-pro-max-1tb-tit-nio-preto",
@@ -93,7 +93,7 @@ export const lojaProducts: LojaProduct[] = [
   },
   {
     "id": "patinete-el-trico-honeywhale-m2-pro-500w",
-    "title": "Patinete Elétrico Honeywhale M2 Pro 500W",
+    "title": "Patinete Eléctrico Honeywhale M2 Pro 500W",
     "price": "$ 484,26",
     "img": "/loja/images/external/61_danGOjvL._AC_SX679_.webp",
     "slug": "patinete-el-trico-honeywhale-m2-pro-500w",
@@ -103,7 +103,7 @@ export const lojaProducts: LojaProduct[] = [
   },
   {
     "id": "aspirador-de-p-e-gua-wap-gtw-10-1400w",
-    "title": "Aspirador de Pó e Água WAP GTW 10 1400W",
+    "title": "Aspiradora de Polvo y Agua WAP GTW 10 1400W",
     "price": "$ 196,13",
     "img": "/loja/images/extracted/aspirador_unique_0.webp",
     "slug": "aspirador-de-p-e-gua-wap-gtw-10-1400w",
@@ -213,7 +213,7 @@ export const lojaProducts: LojaProduct[] = [
   },
   {
     "id": "iphone-15-pro-max-512gb-tit-nio-preto",
-    "title": "iPhone 15 Pro Max 512GB Titânio Negro",
+    "title": "iPhone 15 Pro Max 512GB Titanio Negro",
     "price": "$ 441,69",
     "img": "/loja/images/extracted/iphone-15-pro-max-512gb-titânio-preto.webp",
     "slug": "iphone-15-pro-max-512gb-tit-nio-preto",
@@ -413,7 +413,7 @@ export const lojaProducts: LojaProduct[] = [
   },
   {
     "id": "apple-iphone-15-pro-max-256gb-tit-nio-azul",
-    "title": "Apple iPhone 15 Pro Max 256GB Titânio Azul",
+    "title": "Apple iPhone 15 Pro Max 256GB Titanio Azul",
     "price": "$ 441,69",
     "img": "/loja/images/extracted/apple-iphone-15-pro-max-256-gb-titânio-azul.webp",
     "slug": "apple-iphone-15-pro-max-256gb-tit-nio-azul",
@@ -423,7 +423,7 @@ export const lojaProducts: LojaProduct[] = [
   },
   {
     "id": "apple-ipad-256gb-tit-nio-azul",
-    "title": "Apple iPad 256GB Titânio Azul",
+    "title": "Apple iPad 256GB Titanio Azul",
     "price": "$ 375,23",
     "img": "/loja/images/extracted/apple-ipad-256gb-titânio-azul.webp",
     "slug": "apple-ipad-256gb-tit-nio-azul",
@@ -463,7 +463,7 @@ export const lojaProducts: LojaProduct[] = [
   },
   {
     "id": "guarda-roupa-casal-8-portas-preto-fosco",
-    "title": "Armario Matrimonial 8 Portas Negro Fosco",
+    "title": "Armario Matrimonial 8 Puertas Negro Mate",
     "price": "$ 382,76",
     "img": "/loja/images/external/g1.webp",
     "slug": "guarda-roupa-casal-8-portas-preto-fosco",
