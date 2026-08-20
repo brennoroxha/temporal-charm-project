@@ -192,7 +192,7 @@ function PagamentoPage() {
         .pg-total span{color:#00a650;font-size:18px}
       `}</style>
 
-      <div style={{ position: "sticky", top: 0, zIndex: 60 }}>
+      <div>
         <header className="pg-header">
           <div className="pg-header-inner">
             <a href="/loja" className="pg-logo" aria-label="Mercado Livre">

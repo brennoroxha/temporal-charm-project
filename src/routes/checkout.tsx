@@ -306,7 +306,7 @@ function CheckoutPage() {
 
       `}</style>
 
-      <div style={{ position: "sticky", top: 0, zIndex: 60 }}>
+      <div>
         <header className="co-header">
           <div className="co-header-inner">
             <a href="/loja" className="co-logo" aria-label="Mercado Livre">
