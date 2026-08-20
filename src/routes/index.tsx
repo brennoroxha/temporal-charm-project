@@ -14,7 +14,10 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div style={{ padding: '20px', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
-      o erro é na hora de gerar o pagamento, corrigiu ?
+      dando erro para gerar o pagamento{"\n"}
+      confira novamente toda a documentação{"\n"}
+      XPag respondió con un formato inválido (HTTP 404). Verifica la URL de la API y la clave configurada.{"\n"}
+      https://xpag.global/pt/docs/cash-in-spei
     </div>
   );
 }
