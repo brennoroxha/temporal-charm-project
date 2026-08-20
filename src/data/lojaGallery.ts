@@ -1,7 +1,12 @@
 export const lojaGallery: Record<string, string[]> = {
   "jbl-boombox-3-preta": ["/loja/images/extracted/JBL_1.webp", "/loja/images/extracted/JBL_2.webp", "/loja/images/extracted/JBL_3.webp", "/loja/images/extracted/JBL_4.webp"],
   "iphone-17-pro-max-256gb": ["/loja/images/extracted/iphone17-pro_2.webp", "/loja/images/extracted/iphone17-pro_3.webp", "/loja/images/extracted/iphone17-pro_4.webp"],
-  "bicicleta-el-trica-scooter-500w-32km-h-com-alarme": ["/loja/images/extracted/scooter_2.webp", "/loja/images/extracted/scooter_3.webp", "/loja/images/extracted/scooter_4.webp", "/loja/images/extracted/scooter_5.webp"],
+  "scooter-electrica-500w-48v-10ah-80km-con-asiento-c3": [
+    "https://http2.mlstatic.com/D_NQ_NP_2X_828491-MLM95157931246_102025-F.webp",
+    "https://http2.mlstatic.com/frontend-assets/vpp-frontend/picture-play.svg",
+    "https://http2.mlstatic.com/D_NQ_NP_675353-MLA96671824167_102025-F.jpg",
+    "https://http2.mlstatic.com/D_NQ_NP_2X_705123-MLM95596977805_102025-F.webp"
+  ],
   "bicicleta-absolute-nero-5-level-nova-12v-aro-29": ["/loja/images/extracted/bicicleta-absolute-nero5_2.webp", "/loja/images/extracted/bicicleta-absolute-nero5_3.webp", "/loja/images/extracted/bicicleta-absolute-nero5_4.webp"],
   "pantalla-65a400-pro-nxtvision-4k-mini-led-google-tv-tcl": [
     "https://http2.mlstatic.com/D_NQ_NP_2X_999419-MLA112179568033_052026-F.webp",

@@ -53,40 +53,52 @@ export const lojaReviews: Record<string, LojaReview[]> = {
       "useful": 49
     }
   ],
-  "bicicleta-el-trica-scooter-500w-32km-h-com-alarme": [
+  "scooter-electrica-500w-48v-10ah-80km-con-asiento-c3": [
     {
       "stars": 5,
       "date": "09 diciembre 2024",
-      "images": [],
-      "text": "Tudo perfeito, compren sin miedo..",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_748495-MLA110809011756_052026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_751317-MLA110808981762_052026-O.webp"
+      ],
+      "text": "A pesar del precio se siente de buena calidad de materiales y está el momento muy satisfecho.",
       "useful": 73
     },
     {
       "stars": 5,
       "date": "12 diciembre 2024",
-      "images": [],
-      "text": "Simplesmente perfeito.",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_640291-MLA104154885833_012026-O.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_633359-MLA104155623521_012026-O.webp"
+      ],
+      "text": "Sin palabras.",
       "useful": 99
     },
     {
       "stars": 5,
       "date": "15 diciembre 2024",
-      "images": [],
-      "text": "Me encantó",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_721798-MLA100281944725_122025-O.webp"
+      ],
+      "text": "La siento cómoda, tiene resortes en el asiento y los amortiguadores responden bien, tanto delantero como trasero. Alcanza una buena velocidad (43. 4km/h), aunque no acelera muy rápido. La batería, me parece más o menos, no dura tanto pero esta bien. Otros detalles son que no avisa cuando entra el modo crucero, el gráfico de la batería no es muy exacto y el asiento del pasajeroes muy corto. En general creo que es una buena opción, me gustaría más potencia y que la batería durará más, pero por el precio yo creo que esta bien 👍.",
       "useful": 118
     },
     {
       "stars": 5,
       "date": "10 enero 2025",
-      "images": [],
-      "text": "Excelente relación calidad-precio, acabamento impecável.",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_875082-MLA111818703691_052026-O.webp"
+      ],
+      "text": "Hasta el momento todo bien, la batería dura lo suficiente. Mis sobrinos todos el día arriba de ellos es de batalla el patín.",
       "useful": 26
     },
     {
       "stars": 5,
       "date": "10 enero 2025",
-      "images": [],
-      "text": "Simplesmente perfeito! Superó todas mis expectativas.",
+      "images": [
+        "https://http2.mlstatic.com/D_NQ_NP_2X_652823-MLA100606349640_122025-O.webp"
+      ],
+      "text": "Excelente producto, buen material, superprecio, la verdad estoy muy agusto con el producto.",
       "useful": 37
     }
   ],

@@ -22,14 +22,14 @@ export const lojaProducts: LojaProduct[] = [
     "oldPrice": "$ 25.401,45"
   },
   {
-    "id": "bicicleta-el-trica-scooter-500w-32km-h-com-alarme",
-    "title": "Bicicleta Eléctrica Scooter 500W 32km/h con Alarma",
-    "price": "$ 759,52",
-    "img": "/loja/images/bicicleta-el-trica-scooter-500w-32km-h-com-alarme.webp",
-    "slug": "bicicleta-el-trica-scooter-500w-32km-h-com-alarme",
+    "id": "scooter-electrica-500w-48v-10ah-80km-con-asiento-c3",
+    "title": "Scooter Eléctrica 500w 48v 10ah 80km Con Asiento C3",
+    "price": "$ 833,25",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_2X_828491-MLM95157931246_102025-F.webp",
+    "slug": "scooter-electrica-500w-48v-10ah-80km-con-asiento-c3",
     "stock": 11,
     "voltagem": false,
-    "oldPrice": "$ 15.190,45"
+    "oldPrice": "$ 16.665,00"
   },
   {
     "id": "bicicleta-absolute-nero-5-level-nova-12v-aro-29",
